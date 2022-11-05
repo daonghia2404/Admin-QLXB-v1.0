@@ -1,0 +1,208 @@
+include ../common/Data.pug
+include ../common/Functions.pug
+
+include ../components/Input.pug
+include ../components/Checkbox.pug
+include ../components/Radio.pug
+include ../components/TextArea.pug
+include ../components/Card.pug
+include ../components/Avatar.pug
+include ../components/DashboardTotalCard.pug
+include ../components/Table.pug
+include ../components/Badge.pug
+include ../components/Button.pug
+include ../components/JobCard.pug
+include ../components/ScrollSpy.pug
+include ../components/Accordion.pug
+include ../components/Select.pug
+include ../components/DatePicker.pug
+include ../components/Switch.pug
+include ../components/Tab.pug
+include ../components/Pagination.pug
+include ../components/Modal.pug
+include ../components/Step.pug
+include ../components/FieldEditable.pug
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title VMHT QLXB
+		block head
+
+		//- Favicon
+		link(rel="icon" type="image/png" href="./assets/images/logo.svg")
+
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet")
+
+		//- CSS Implementing Plugins
+		//- <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
+
+		<link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
+		<link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
+		<link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
+
+		<link rel="stylesheet" href="./assets/css/theme.min.css">
+
+		//- CSS
+		link(rel="stylesheet" type="text/css" href="./assets/css/main.css")
+
+
+	body.has-navbar-vertical-aside.navbar-vertical-aside-show-xl.footer-offset(data-hs-scrollspy-options='{ "target": "#scrollSpy" }' data-offset="0")
+		include ../components/ButtonOnTop.pug
+
+		<script src="./assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+
+		block header
+
+		include ../containers/Header.pug
+		include ../containers/Navbar.pug
+
+		main#content.main.pointer-event(role="main")
+			block pages
+
+			include ../containers/Footer.pug
+
+
+		//-  JS Global Compulsory 
+		<script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+		<script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+		<script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		//-  JS Implementing Plugins
+		<script src="./assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside.min.js"></script>
+		<script src="./assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+		<script src="./assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+		<script src="./assets/vendor/select2/dist/js/select2.full.min.js"></script>
+		<script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
+		<script src="./assets/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+		<script src="./assets/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+		<script src="./assets/vendor/daterangepicker/moment.min.js"></script>
+		<script src="./assets/vendor/daterangepicker/daterangepicker.js"></script>
+		<script src="./assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+		<script src="./assets/vendor/datatables.net.extensions/select/select.min.js"></script>
+		<script src="./assets/vendor/clipboard/dist/clipboard.min.js"></script>
+		<script src="./assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
+		<script src="./assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
+		<script src="./assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+		<script src="./assets/vendor/dropzone/dist/min/dropzone.min.js"></script>
+		<script src="./assets/vendor/sortablejs/Sortable.min.js"></script>
+
+		//- JS Front
+		<script src="./assets/js/theme.min.js"></script>
+
+
+		//-  JS Plugins Init.
+		script.
+			$(document).on('ready', function () {
+				$('.js-navbar-vertical-aside-toggle-invoker').click(function () {
+					$('.js-navbar-vertical-aside-toggle-invoker i').tooltip('hide');
+				});
+
+				// initialization of navbar vertical navigation
+				var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
+
+				// initialization of tooltip in navbar vertical menu
+				$('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
+
+				$(".js-nav-tooltip-link").on("show.bs.tooltip", function(e) {
+					if (!$("body").hasClass("navbar-vertical-aside-mini-mode")) {
+						return false;
+					}
+				});
+
+				// initialization of unfold
+				$('.js-hs-unfold-invoker').each(function () {
+					var unfold = new HSUnfold($(this)).init();
+				});
+
+				// initialization of form search
+				$('.js-form-search').each(function () {
+					new HSFormSearch($(this)).init()
+				});
+
+				// initialization of select2
+				$('.js-select2-custom').each(function () {
+					var select2 = $.HSCore.components.HSSelect2.init($(this));
+				});
+
+				// initialization of daterangepicker
+				$('.js-daterangepicker').daterangepicker();
+
+				$('.js-daterangepicker-times').daterangepicker({
+					timePicker: true,
+					startDate: moment().startOf('hour'),
+					endDate: moment().startOf('hour').add(32, 'hour'),
+					locale: {
+						format: 'M/DD hh:mm A'
+					}
+				});
+
+				var start = moment();
+				var end = moment();
+
+				function cb(start, end) {
+					$('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+				}
+
+				$('#js-daterangepicker-predefined').daterangepicker({
+					startDate: start,
+					endDate: end,
+					ranges: {
+						'Today': [moment(), moment()],
+						'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+						'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+						'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+						'This Month': [moment().startOf('month'), moment().endOf('month')],
+						'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+					}
+				}, cb);
+
+				cb(start, end);
+
+				// initialization of clipboard
+				$('.js-clipboard').each(function() {
+					var clipboard = $.HSCore.components.HSClipboard.init(this);
+				});
+
+				// initialization of sticky blocks
+				$('.js-sticky-block').each(function () {
+					var stickyBlock = new HSStickyBlock($(this)).init();
+				});
+
+				// initialization of scroll nav
+				var scrollspy = new HSScrollspy($('body'), {
+					// !SETTING "resolve" PARAMETER AND RETURNING "resolve('completed')" IS REQUIRED
+					offset: 76,
+					beforeScroll: function(resolve) {
+						return resolve('completed');
+					}
+				}).init();
+
+				// initialization of flatpickr
+				$('.js-flatpickr').each(function () {
+					$.HSCore.components.HSFlatpickr.init($(this));
+				});
+
+				// initialization of dropzone file attach module
+				$('.dropzone-custom').each(function () {
+					var dropzone = $.HSCore.components.HSDropzone.init('#' + $(this).attr('id'));
+				});
+
+				// initialization of sortable
+				$('.js-sortable').each(function () {
+					var sortable = $.HSCore.components.HSSortable.init($(this));
+				});
+			});
+
+		script.
+			if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+
+		//- Java Script
+		block script
+
+		script(src="./assets/js/main.js") 

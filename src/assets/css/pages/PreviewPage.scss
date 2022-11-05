@@ -1,0 +1,64 @@
+.PreviewPage {
+  &-submit {
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 15px;
+
+    .Button {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+  }
+
+  &-margin {
+    margin-left: -1px;
+    margin-right: -1px;
+
+    &.bottom {
+      margin-bottom: -1px;
+    }
+  }
+
+  &-view-file {
+    height: 690px;
+    background: #ECECEC;
+    border: 1px solid #E7EAF3;
+
+    &-header {
+      border: 1px solid #E7EAF3;
+      padding: 8px 20px;
+      background: #E7EAF3;
+
+      &-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #1E2022;
+        line-height: 30px;
+        @include ellipsis(1);
+      }
+
+      &-btns {
+        .Button {
+          border-radius: 0;
+          border: none;
+
+          &:not(:last-child) {
+            border-right: 1px solid #E7EAF3;
+          }
+
+          &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

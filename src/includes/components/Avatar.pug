@@ -1,0 +1,10 @@
+mixin Avatar({ image, text, background = '#377DFF', size = '', online })
+  .Avatar.avatar.avatar-circle(class=`${size}` style=`background: ${background};`) 
+    if (online)
+      .Avatar-online
+
+    if (image)
+      img.avatar-img(src=`${image}`, alt="")
+
+    else if (text)
+      span.avatar-initials= text

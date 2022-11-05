@@ -1,0 +1,52 @@
+.Step {
+  position: relative;
+
+  &-line {
+    position: absolute;
+    background: #E7EAF3;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &-percent {
+      @include fullAbsolute;
+      background: #377DFF;
+    }
+  }
+
+  &-item {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    padding: 0 4px;
+
+    &.active {
+      .Step-item {
+        &-circle {
+          background: #377DFF;
+          color: #ffffff;
+          border-color: #377DFF;
+        }
+      }
+    }
+
+    &-circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #E7EAF3;
+      transition: $common-transition;
+      margin: 0 auto 8px;
+      font-size: 24px;
+      background: #F9FBFF;
+      color: #F9FBFF;
+    }
+
+    &-label {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #677788;
+    }
+  }
+}

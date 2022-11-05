@@ -1,0 +1,26 @@
+.Header {
+  &-title {
+    font-size: 18px;
+    color: #1E2022;
+    font-weight: 600;
+  }
+
+  &-account {
+    padding: 0 0 0 12px;
+    border-left: 1px solid #E7EAF3;
+
+    &-name {
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #000000;
+    }
+
+    &-job {
+      font-size: 11px;
+      line-height: 1;
+      color: #000000;
+    }
+  }
+}

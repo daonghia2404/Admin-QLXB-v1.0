@@ -1,0 +1,10 @@
+mixin Pagination({ className = '' })
+  ul.Pagination.pagination.mb-0(class=`${className}`)
+    li.page-item 
+      a(href="#").page-link Trước
+    each item in [1,2]
+      li.page-item(class=`${item === 1 ? 'active' : ''}`)
+        a(href="#").page-link= item
+    li.page-item 
+      a(href="#").page-link Sau
+    

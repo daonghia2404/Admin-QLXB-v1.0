@@ -1,0 +1,7 @@
+.Accordion {
+  &-parent {
+    &>.Card {
+      margin: -1px;
+    }
+  }
+}

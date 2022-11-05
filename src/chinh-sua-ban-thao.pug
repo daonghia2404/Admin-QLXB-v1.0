@@ -1,0 +1,50 @@
+extends includes/layouts/Guest.pug
+
+block header
+  - const pageTitle = 'Chỉnh sửa bản thảo (Biên tập bản thảo)'
+
+block pages
+  .PreviewPage 
+    .content.container-fluid
+      .row 
+        .col-lg-9.pr-lg-2
+          +Card({})
+            .PreviewPage-submit.d-flex.flex-wrap.mb-3.border-bottom(style="margin-top: -15px;")
+              +Button({ title: 'Gửi', icon: 'tio-send-outlined mr-1', variant: 'btn-primary' })  
+              +Button({ title: 'Xem danh sách lịch sử', icon: 'tio-invisible mr-1', variant: 'btn-soft-dark' })  
+
+            .PreviewPage-view-file-header.d-flex.align-items-center.justify-content-between 
+              .PreviewPage-view-file-header-title Bản thảo - 1. Phê duyệt đề tài - Hoàng Hôn Của Phía Đông.docx 
+              .PreviewPage-view-file-header-btns.d-flex.align-items-center 
+                +Button({ title: 'Thông tin', size: 'btn-sm', variant: 'btn-white' })
+                +Button({ title: 'Mở mẫu', size: 'btn-sm', variant: 'btn-white' })
+                +Button({ title: 'Lưu nháp', size: 'btn-sm', variant: 'btn-white' })
+                +Button({ title: 'Đọc thử', size: 'btn-sm', variant: 'btn-white' })
+
+            .PreviewPage-view-file.mb-3
+
+            +Card({ title: 'Thông tin Cơ bản' })
+              +Table({ className: 'mb-3' })
+                tbody
+                  tr
+                    td.text-nowrap #[strong Trạng thái]
+                    td.w-100 Bản nháp / đã gửi vào bản đăng ký Xuất bản phẩm
+                  tr
+                    td.text-nowrap #[strong Thuộc Xuất bản phẩm]
+                    td.w-100
+                      |HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
+                      +Button({ className: 'ml-2', title: 'Gửi', badge: true, variant: 'btn-primary' })
+                      +Button({ className: 'ml-2', title: 'Xem danh sách lịch sử của XBP', badge: true, variant: 'btn-success' })
+
+              +TextArea({ label: 'GHI CHÚ', placeholder: 'Nhập nội dung tại đây' })
+              
+            #scrollSpyEnd
+
+        .col-lg-3.pl-lg-2
+          +ScrollSpy({
+            showChildren: true,
+            id: 'scrollSpy',
+            parentId: 'scrollSpyParent',
+            endId: 'scrollSpyEnd',
+          })
+            +Button({ className: 'w-100 border', title: 'Quay lại', icon: 'tio-chevron-left mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })

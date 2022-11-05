@@ -1,0 +1,84 @@
+extends includes/layouts/Guest.pug
+
+block header
+  - const pageTitle = 'Xem trước file đính kèm'
+
+block pages
+  .PreviewPage 
+    .content.container-fluid
+      .row 
+        .col-lg-9
+          +Card({ noPadding: true })
+            .PreviewPage-view-file-header.d-flex.align-items-center.justify-content-between 
+              .PreviewPage-view-file-header-title Bản thảo - 1. Phê duyệt đề tài - Hoàng Hôn Của Phía Đông.docx 
+              .PreviewPage-view-file-header-btns.d-flex.align-items-center 
+                +Button({ title: 'Tải lên', size: 'btn-sm', variant: 'btn-white' })
+                +Button({ title: 'Chỉnh sửa', size: 'btn-sm', variant: 'btn-white' })
+
+            .PreviewPage-view-file.mb-3
+
+            +Card({ className: 'PreviewPage-margin bottom' })
+              +Tab({
+                lineStyle: true,
+                style: 'margin: -15px -15px 0; padding: 0 15px;',
+                className: 'mb-3',
+                options: [
+                  { id: 'tab1', tabId: 'tabId1', label: 'Thông tin về file' },
+                  { id: 'tab2', tabId: 'tabId2', label: 'So sánh các thay đổi' },
+                ],
+              })
+
+              .tab-content
+                .tab-pane.fade(id=`tabId1` role="tabpanel" class=`show active`)
+                  .row
+                    .col-md-6.pr-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr
+                            td.text-nowrap #[strong Dung lượng]
+                            td.w-100 0,21 Mb
+                          tr
+                            td.text-nowrap #[strong Người tải lên]
+                            td.w-100 Hoàng Ngọc Dung
+                    .col-md-6.pl-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr
+                            td.text-nowrap #[strong Ngày tải lên]
+                            td.w-100 03:13 21/09/2022
+                          tr
+                            td.text-nowrap #[strong Ngày sửa]
+                            td.w-100 14:13 24/09/2022
+
+                .tab-pane.fade(id=`tabId2` role="tabpanel")
+                  +Table({ showPagination: true })
+                    thead 
+                      tr 
+                        th.text-center #
+                        th Tên file
+                        th.text-center Xem
+                        th.text-center Thao tác
+                        th Ngày tải lên
+                    tbody 
+                      each item in [1,2,3,4,5]
+                        tr 
+                          td= item
+                          td Bản thảo - 1. Phê duyệt đề tài - Hoàng Hôn Của Phía Đông.docx 
+                          td 
+                            .center
+                              +Button({ title: 'Xem', variant: 'btn-primary', badge: true })
+                          td 
+                            .center
+                              +Button({ title: 'Tải về', variant: 'btn-success', badge: true })
+                          td 03:13 21/09/2022
+
+            #scrollSpyEnd
+
+        .col-lg-3
+          +ScrollSpy({
+            showChildren: true,
+            id: 'scrollSpy',
+            parentId: 'scrollSpyParent',
+            endId: 'scrollSpyEnd',
+          })
+            +Button({ className: 'w-100 border', title: 'Quay lại', icon: 'tio-chevron-left mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })

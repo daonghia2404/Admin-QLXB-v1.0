@@ -1,0 +1,22 @@
+.Avatar {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  .avatar-initials {
+    color: #ffffff;
+  }
+
+  &-online {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ffffff;
+    background: #06C8A6;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}

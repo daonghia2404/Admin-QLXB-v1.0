@@ -1,0 +1,410 @@
+extends includes/layouts/Guest.pug
+
+block header
+  - const pageTitle = 'Chi tiết thông tin Xuất bản phẩm'
+
+block pages
+  .PreviewPage 
+    .content.container-fluid
+      .row 
+        .col-lg-9.pr-lg-2
+          +Card({ id: 'bieuso', noPadding: true })
+            .PreviewPage-submit.d-flex.flex-wrap.mb-3.border-bottom
+              +Button({ title: 'Xét Duyệt XBP', icon: 'tio-checkmark-square-outlined mr-1', variant: 'btn-primary' })  
+              +Button({ title: 'Từ chối', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
+              +Button({ title: 'Comment', icon: 'tio-sms-chat-outlined mr-1', variant: 'btn-soft-dark' })  
+              +Button({ title: 'Chỉnh sửa', icon: 'tio-edit mr-1', variant: 'btn-soft-dark' })  
+
+            div.px-2.py-5#tiendo
+              +Step({
+                percent: 66,
+                options: [
+                  { active: true, label: '1. Phê Duyệt đề tài	' },
+                  { active: true, label: '2. Xin cấp phép xuất bản' },
+                  { active: true, label: '3.Ký hợp đồng tác giả' },
+                  { active: true, label: '4. Biên tập' },
+                  { label: '5. Chế bản' },
+                  { label: '6. Ra quyết định in' },
+                ],
+              })
+
+            .accordion
+              +Accordion({ className: 'PreviewPage-margin', mainId: 'thongtinchung', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin chung về bản đắng ký xuất bản phẩm' })
+                .row 
+                  .col-md-6.pr-md-2.mb-3
+                    +Table({})
+                      tbody
+                        tr 
+                          td.text-nowrap #[strong Tên Xuất bản phẩm]
+                          td.w-100 Tuyển tập hội nghị khoa học thường niên năm 2022 Proceedings of the annual conference of thuy loi university
+                        tr 
+                          td.text-nowrap #[strong Người đăng ký]
+                          td.w-100 Đỗ Ngọc Long
+                        tr 
+                          td.text-nowrap #[strong Phương thức xuất bản]
+                          td.w-100 Tự xuất bản
+                        tr 
+                          td.text-nowrap #[strong Mã số Nội bộ]
+                          td.w-100 0303243XD22
+
+                  .col-md-6.pl-md-2.mb-3
+                    +Table({})
+                      tbody
+                        tr 
+                          td.text-nowrap #[strong Tác giả]
+                          td.w-100 Bộ Nông nghiệp và Phát triển Nông thôn - Trường Đại học Thủy lợi
+                        tr 
+                          td.text-nowrap #[strong Ngày đăng ký]
+                          td.w-100 22/09/2022
+                        tr 
+                          td.text-nowrap #[strong Chủ đề]
+                          td.w-100 Khoa học - Kĩ thuật
+                        tr 
+                          td.text-nowrap #[strong Loại Xuất bản phẩm]
+                          td.w-100 Sách giấy, Sách điện tử
+
+              +Accordion({ className: 'PreviewPage-margin', mainId: 'quanlycongviec', id: 'Accordion2', parentId: 'AccordionParent', title: 'Quản lý công việc (danh sách việc cần làm)', noPadding: true })
+                .border-bottom.background.px-4.py-3
+                  h4.mb-0
+                    <i class="tio-settings-outlined mr-2"></i>
+                    |Tiến trình xử lý xuất bản phẩm
+
+                .FormPage-trees
+                  .FormPage-trees-wrapper
+                    .FormPage-trees-wrapper-title 1. Phê Duyệt đề tài	
+                    .FormPage-trees-group
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '1. Phê Duyệt đề tài', labelId: 'Checkbox1' })
+                          +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
+
+                  .FormPage-trees-wrapper
+                    .FormPage-trees-wrapper-title 2. Xin cấp phép xuất bản
+                    .FormPage-trees-group
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '2.1 Duyệt cấp phép CXB', labelId: 'Checkbox2' })
+                          +Badge({ title: 'Tuỳ biến', className: 'ml-2', variant: 'badge-soft-danger text-danger' })
+                          +Badge({ title: 'Xong', className: 'ml-2', variant: 'badge-soft-success text-success' })
+
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '2.2 Xin cấp phép CXB', labelId: 'Checkbox3' })
+                          +Badge({ title: 'Tuỳ biến', className: 'ml-2', variant: 'badge-soft-danger text-danger' })
+                          +Badge({ title: 'Xong', className: 'ml-2', variant: 'badge-soft-success text-success' })
+
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '2.3 CXB đã phê duyệt', labelId: 'Checkbox4' })
+                          +Badge({ title: 'Tuỳ biến', className: 'ml-2', variant: 'badge-soft-danger text-danger' })
+                          +Badge({ title: 'Xong', className: 'ml-2', variant: 'badge-soft-success text-success' })
+
+
+                  .FormPage-trees-wrapper
+                    .FormPage-trees-wrapper-title 3.Ký hợp đồng tác giả
+                    .FormPage-trees-group
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '3.Ký hợp đồng tác giả', labelId: 'Checkbox5' })
+                          +Badge({ title: 'Tuỳ biến', className: 'ml-2', variant: 'badge-soft-danger text-danger' })
+                          +Badge({ title: 'Bình thường', className: 'ml-2', variant: 'badge-soft-info text-info' })
+
+
+                  .FormPage-trees-wrapper
+                    .FormPage-trees-wrapper-title 4. Biên tập
+                    .FormPage-trees-group
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '4.1 BTV Sửa bản thảo', labelId: 'Checkbox6' })
+                          +Badge({ title: 'Tuỳ biến', className: 'ml-2', variant: 'badge-soft-danger text-danger' })
+                          +Badge({ title: 'Chậm', className: 'ml-2', variant: 'badge-soft-warning text-warning' })
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '4.2 Yêu cầu thiết kế', labelId: 'Checkbox7' })
+                          +Badge({ title: 'Tuỳ biến', className: 'ml-2', variant: 'badge-soft-danger text-danger' })
+                          +Badge({ title: 'Xong', className: 'ml-2', variant: 'badge-soft-success text-success' })
+
+
+                  .FormPage-trees-wrapper
+                    .FormPage-trees-wrapper-title 5. Chế bản
+                    .FormPage-trees-group
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '5.1 Thiết kế bìa', labelId: 'Checkbox8' })
+                          +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '5.2 BTV Duyệt Market bìa', labelId: 'Checkbox9' })
+                          +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '5.3 Duyệt Market ruột', labelId: 'Checkbox10' })
+                          +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '5.4 BTV Duyệt Market ruột', labelId: 'Checkbox11' })
+                          +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '5.5 Chế bản bông', labelId: 'Checkbox12' })
+                          +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '5.6 Phê duyệt bông', labelId: 'Checkbox13' })
+                          +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
+
+                  .FormPage-trees-wrapper
+                    .FormPage-trees-wrapper-title 6. Ra quyết định in	
+                    .FormPage-trees-group
+                      .FormPage-trees-group-item
+                        +Checkbox({ title: '6. Ra quyết định in', labelId: 'Checkbox14' })
+                          +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
+
+              +Accordion({ className: 'PreviewPage-margin', mainId: 'banthaofile', id: 'Accordion3', parentId: 'AccordionParent', title: 'Bản thảo & FILE' })
+                form(action="#") 
+                  +Tab({
+                    className: 'mb-3',
+                    options: [
+                      { id: 'tab1', tabId: 'tabId1', label: 'Tất cả' },
+                      { id: 'tab2', tabId: 'tabId2', label: 'Phê duyệt đề tài' },
+                      { id: 'tab3', tabId: 'tabId3', label: '2.1 Duyệt cấp phép CXB' },
+                      { id: 'tab4', tabId: 'tabId4', label: '2.2 Xin cấp phép CXB' },
+                      { id: 'tab5', tabId: 'tabId5', label: '3. Ký HĐ Tác giả' },
+                      { id: 'tab6', tabId: 'tabId6', label: '4.2 Yêu cầu thiết kế' },
+                      { id: 'tab7', tabId: 'tabId7', label: '5.1 Thiết kế bìa' },
+                      { id: 'tab8', tabId: 'tabId8', label: '5.2 BTV Duyệt Market bìa	' },
+                    ],
+                  })
+                  .tab-content 
+                    each item, index in ['tabId1', 'tabId2', 'tabId3', 'tabId4', 'tabId5', 'tabId6', 'tabId7', 'tabId8']
+                      .tab-pane.fade(id=`${item}` role="tabpanel" class=`${index === 0 ? 'show active' : ''}`)
+                        +Table({})
+                          thead 
+                            tr 
+                              th.text-center #
+                              th Loại
+                              th Người bình luận
+                              th Thời gian
+                          tbody 
+                            each item in [1,2,3,4,5]
+                              tr 
+                                td.text-center= item
+                                td 
+                                  .Table-icon   
+                                    if (item % 2 === 0)
+                                      img(src="./assets/icons/icon-docx.svg" alt="")
+                                    else
+                                      img(src="./assets/icons/icon-pdf.svg" alt="")
+                                td 
+                                  .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
+                                td.text-nowrap 23:13’ 27/06/2022
+
+              +Accordion({ className: 'PreviewPage-margin', mainId: 'thongtinkhac', id: 'Accordion4', parentId: 'AccordionParent', title: 'Thông tin khác' })
+                .accordion
+                  +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent', title: 'Thông tin Cơ bản', dark: true })
+                    +Table({})
+                      tbody
+                        tr 
+                          td.text-nowrap #[strong Tên XBP]
+                          td.w-100 HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
+                        tr 
+                          td.text-nowrap #[strong Tên gốc]
+                          td.w-100
+                        tr 
+                          td.text-nowrap #[strong Tác giả]
+                          td.w-100
+                            |NGUYỄN THỊ BÍCH NGỌC
+                            +Button({ className: 'ml-2', title: 'Chủ biên', variant: 'btn-info', badge: true, })
+                        tr 
+                          td.text-nowrap #[strong Tác giả]
+                          td.w-100
+                        tr 
+                          td.text-nowrap #[strong Phương thức xuất bản]
+                          td.w-100 Tự xuất bản
+                        tr 
+                          td.text-nowrap #[strong Đăng ký mới/ Tái bản]
+                          td.w-100 Đăng ký mới
+
+                  +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent', title: 'Đối tượng sử dụng và phân loại', dark: true })
+                    .row
+                      .col-md-6.pr-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Chủ đề]
+                              td.w-100 Khoa học - Kỹ thuật
+                            tr 
+                              td.text-nowrap #[strong Nhóm độ tuổi]
+                              td.w-100 12-18
+                            tr 
+                              td.text-nowrap #[strong Lĩnh vực - Ngành]
+                              td.w-100 Khoa học - Kỹ thuật
+
+                      .col-md-6.pl-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Nhóm đối tượng]
+                              td.w-100 Khoa học - Kỹ thuật
+                            tr 
+                              td.text-nowrap #[strong Trình độ]
+                              td.w-100
+
+                  +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent', title: 'Thông tin ngôn ngữ', dark: true })
+                    .row
+                      .col-md-6.pr-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Là sách dịch?]
+                              td.w-100 Có
+                            tr 
+                              td.text-nowrap #[strong Ngôn ngữ gốc]
+                              td.w-100 Tiếng Anh
+                            tr 
+                              td.text-nowrap #[strong Dịch từ ấn phẩm]
+                              td.w-100
+                                span.ellipsis HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
+
+                      .col-md-6.pl-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Dịch giả]
+                              td.w-100 NGUYỄN THỊ BÍCH NGỌC
+                            tr 
+                              td.text-nowrap #[strong Ngôn ngữ xuất bản]
+                              td.w-100 Tiếng Việt
+
+                  +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent', title: 'Thông tin định dạng', dark: true })
+                    .row
+                      .col-md-6.pr-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Loại Xuẩt bản phẩm]
+                              td.w-100 Sách in, Sách điển tử
+                            tr 
+                              td.text-nowrap #[strong Khổ sách]
+                              td.w-100 Chiều dài: 24,0 cm, Chiều rông: 17,0 cm
+                            tr 
+                              td.text-nowrap #[strong Ngày đủ bản thảo]
+                              td.w-100 27/09/2022
+                            tr 
+                              td.text-nowrap #[strong Loại giấy ruột]
+                              td.w-100 C150
+                            tr 
+                              td.text-nowrap #[strong Số màu in ruột]
+                              td.w-100 1
+                            tr 
+                              td.text-nowrap #[strong Số lượng in]
+                              td.w-100 1000
+                            tr 
+                              td.text-nowrap #[strong Phát hành tại]
+                              td.w-100 NXB Xây Dựng
+
+                      .col-md-6.pl-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Số trang]
+                              td.w-100 620
+                            tr 
+                              td.text-nowrap #[strong Giá bìa]
+                              td.w-100 240.000 đ
+                            tr 
+                              td.text-nowrap #[strong Ngày dự kiến ra sách]
+                              td.w-100 62027/09/2022
+                            tr 
+                              td.text-nowrap #[strong Loại giấy bìa]
+                              td.w-100 C350
+                            tr 
+                              td.text-nowrap #[strong Số màu in bìa]
+                              td.w-100 4
+                            tr 
+                              td.text-nowrap #[strong Định dạng điện tử]
+                              td.w-100 pdf
+
+                  +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent', title: 'Thông tin Bản quyền', dark: true })
+                    .row
+                      .col-md-6.pr-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Sở hữu bản quyền]
+                              td.w-100 NXB Xây Dựng
+                            tr 
+                              td.text-nowrap #[strong Người chịu trách nhiệm]
+                              td.w-100 Đào Ngọc Long
+                            tr 
+                              td.text-nowrap #[strong Bản quyền đến]
+                              td.w-100 27/09/2022
+
+                      .col-md-6.pl-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Kiểu bản quyền]
+                              td.w-100 Có thời hạn
+                            tr 
+                              td.text-nowrap #[strong Bản quyền từ]
+                              td.w-100 27/09/2022
+
+                  +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent', title: 'Thông tin Hợp đồng xuất bản', dark: true })
+                    .row
+                      .col-md-6.pr-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Số hợp đồng]
+                              td.w-100 HKDH8239203
+                            tr 
+                              td.text-nowrap #[strong Ngày hiệu lực]
+                              td.w-100 27/09/2022
+
+                      .col-md-6.pl-md-2.mb-3
+                        +Table({})
+                          tbody
+                            tr 
+                              td.text-nowrap #[strong Kiểu hợp đồng]
+                              td.w-100 Có thời hạn
+                            tr 
+                              td.text-nowrap #[strong Ngày hết hạn]
+                              td.w-100 27/09/2022
+
+
+              +Accordion({ className: 'PreviewPage-margin', mainId: 'lichsuxuatbanpham', id: 'Accordion5', parentId: 'AccordionParent', title: 'Lịch sử thao tác', suffixText: 'T3 - 30/06/2021', noPadding: true })
+                +Table({ style: 'margin: -1px', showPagination: true })
+                  tbody 
+                    each item in [1,2,3,4,5]
+                      tr
+                        td.text-center= item
+                        td Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022
+
+              +Accordion({ className: 'PreviewPage-margin', mainId: 'binhluanvaduyet', id: 'Accordion6', parentId: 'AccordionParent', title: 'Bình luận và duyệt', suffixText: 'T3 - 30/06/2021', noPadding: true })
+                +Table({ style: 'margin: -1px', showPagination: true })
+                  thead 
+                    tr 
+                      th.text-center #
+                      th Công đoạn
+                      th Người bình luận
+                      th Nội dung bình luận
+                      th Trạng thái
+                      th Thời gian
+                  tbody 
+                    each item in [1,2,3,4,5]
+                      tr
+                        td.text-center= item
+                        td Phê duyệt đề tài
+                        td Giám đốc
+                        td Tôi duyệt đề tài này
+                        td
+                          .center
+                            +Button({ title: item % 2 === 0 ? 'Đã duyệt' : 'Trả lại', variant: item % 2 === 0 ? 'btn-primary' : 'btn-soft-dark', badge: true })
+                        td 23:13 30/09/22
+
+            #scrollSpyEnd
+
+        .col-lg-3.pl-lg-2
+          +ScrollSpy({
+            title: 'Điều hướng trên trang',
+            id: 'scrollSpy',
+            parentId: 'scrollSpyParent',
+            endId: 'scrollSpyEnd',
+            options: [
+              { link: '#tiendo', title: 'Tiến độ' },
+              { link: '#thongtinchung', title: 'Thông tin chung' },
+              { link: '#quanlycongviec', title: 'Quản lý công việc' },
+              { link: '#banthaofile', title: 'Bản thảo & File' },
+              { link: '#thongtinkhac', title: 'Thông tin khác' },
+              { link: '#lichsuxuatbanpham', title: 'Lịch sử Xuất bản phẩm' },
+              { link: '#binhluanvaduyet', title: 'Xem bản khai Xuất bản phẩm' },
+            ]
+          })

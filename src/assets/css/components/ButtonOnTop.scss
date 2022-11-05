@@ -1,0 +1,20 @@
+.ButtonOnTop {
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #E7EAF3;
+  bottom: 32px;
+  right: 32px;
+  transition: $common-transition;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10%);
+
+  &.active {
+    pointer-events: unset;
+    opacity: 1;
+    transform: none;
+  }
+}

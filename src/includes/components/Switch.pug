@@ -1,0 +1,12 @@
+mixin Switch({ label, labelId, checked, reverse })
+  .Switch
+    label.toggle-switch.d-flex.align-items-center(for=labelId || false class=`${reverse ? 'flex-row-reverse' : ''}`)
+      input(type="checkbox" checked=checked || false id=labelId || false).toggle-switch-input
+
+      span.toggle-switch-label
+        span.toggle-switch-indicator
+
+      if (label)
+        span.toggle-switch-content
+          span.d-block= label
+      

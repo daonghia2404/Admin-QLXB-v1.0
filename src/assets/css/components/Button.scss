@@ -1,0 +1,19 @@
+.Button {
+  &.Button-badge {
+    padding: 2px 8px;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 2px;
+
+    &.btn-lg {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 4px 8px;
+      border-radius: 5px;
+    }
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+}

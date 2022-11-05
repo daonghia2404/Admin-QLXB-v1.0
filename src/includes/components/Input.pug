@@ -1,0 +1,24 @@
+mixin InputChildren({ type, labelId, placeholder, value, disabled, upload })
+  input(type=`${type}` id=`${labelId}` class="form-control" placeholder=`${placeholder}` value=value || false disabled=upload || disabled || false)
+
+mixin Input({ className = '', type = 'text', placeholder = '', labelId = '', label, required, suffixText, value, disabled, upload })
+  .Input(class=`${className}`)
+    if (label)
+      label.form-label(for=`${labelId}`)
+        = label
+        if (required)
+          span.required.ml-1 (*)
+
+    if (suffixText)
+      .input-group
+        +InputChildren({ type, labelId, placeholder, value, disabled, upload })  
+
+        if (upload)
+          input(type="file").Input-upload
+
+        if (suffixText)
+          .input-group-append
+            .input-group-text(class=`${upload ? 'text-primary' : ''}`)= suffixText
+    else
+      +InputChildren({ type, labelId, placeholder, value, disabled, upload })
+

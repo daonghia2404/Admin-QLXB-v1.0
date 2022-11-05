@@ -1,0 +1,78 @@
+.FieldEditable {
+  &.header {
+    .FieldEditable {
+      &-header {
+        background: #F9FBFF;
+
+        &-item {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  &-header {
+    border-top: 1px solid #E7EAF3;
+    min-height: 40px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 20px;
+      color: #58637C;
+
+      &:not(:last-child) {
+        border-right: 1px solid #E7EAF3;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        width: 25%;
+      }
+
+      &:last-child {
+        width: 50%;
+      }
+
+      &-actions {
+        .Button {
+          font-size: 12px;
+          padding: 4px;
+          border-radius: 0;
+          width: 28px;
+          height: 28px;
+
+          &:not(:first-child) {
+            border-left: none;
+          }
+
+          &:first-child {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+          }
+        }
+      }
+
+      &-collapse {
+        .Button {
+          font-size: 12px;
+          padding: 4px;
+          border-radius: 0;
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+
+  &-body {
+    border-top: 1px solid #E7EAF3;
+    padding: 15px;
+  }
+}

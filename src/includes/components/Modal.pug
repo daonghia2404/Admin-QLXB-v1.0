@@ -1,0 +1,11 @@
+mixin Modal({ className = '', active, id = '', title, center, size = '' })
+  .Modal.modal.fade(class=`${className} ${active ? 'show' : ''}` id=`${id}` tabindex="-1" role="dialog" aria-hidden="true" style=`${active ? 'display: block;' : ''}`)
+    .modal-dialog(role="document" class=`${size} ${center ? 'modal-dialog-scrollable modal-dialog-centered' : ''}`)
+      .modal-content
+        .modal-header
+          h5.modal-title= title
+          button.btn.btn-xs.btn-icon.btn-ghost-secondary(type="button" data-dismiss="modal" aria-label="Close")
+            <i class="tio-clear tio-lg"></i>
+        .modal-body
+          block
+      

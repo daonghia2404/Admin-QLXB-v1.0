@@ -1,0 +1,23 @@
+mixin DatePickerChildren({ labelId, placeholder })
+  input.js-flatpickr.form-control.flatpickr-custom(type="text" placeholder=`${placeholder}` data-hs-flatpickr-options=`{ "dateFormat": "d/m/y" }`)
+       
+mixin DatePicker({ className = '', placeholder, labelId, label, iconSuffix })
+  .DatePicker(class=`${className} ${iconSuffix ? 'suffix' : ''}`)
+    label.form-label(for=`${labelId}`)
+      = label
+      if (required)
+        span.required.ml-1 (*)
+
+    if (iconSuffix)
+      .input-group
+        +DatePickerChildren({ labelId, options, placeholder })  
+
+        if (iconSuffix)
+          .input-group-append
+            .input-group-text
+              i(class=`${iconSuffix}`)
+
+    else
+      +DatePickerChildren({ labelId, options, placeholder })
+
+    

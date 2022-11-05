@@ -1,0 +1,17 @@
+.ModalConfirmSendForm {
+  &-body {
+    .Table {
+      margin: -12px -15px;
+
+      td {
+        border: none !important;
+        background: $white !important;
+      }
+    }
+  }
+
+  &-footer {
+    margin: 32px -32px -32px;
+    padding: 15px;
+  }
+}

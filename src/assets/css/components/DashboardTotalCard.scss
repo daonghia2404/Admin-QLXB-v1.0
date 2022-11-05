@@ -1,0 +1,33 @@
+.DashboardTotalCard {
+  position: relative;
+  padding: 15px 8px 15px 15px;
+  background: #E9F6F9;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &-title {
+    @include ellipsis(1);
+    font-size: 14px;
+    line-height: 16px;
+    color: #132144;
+    margin-bottom: 4px;
+  }
+
+  &-value {
+    font-size: 20px;
+    color: #132144;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  &-icon {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    font-size: 38px;
+    color: $white;
+    right: 10px;
+    bottom: 0;
+    @include centerOriginImage;
+  }
+}

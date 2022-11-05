@@ -1,0 +1,9 @@
+mixin Step({ options = [], percent = 0 })
+  .Step.d-flex.align-items-start
+    .Step-line(style=`width: calc(100% / ${options.length} * ${options.length - 1})`)
+      .Step-line-percent(style=`width: ${percent}%;`)
+    each item in options 
+      .Step-item(class=`${item.active ? 'active' : ''}`)
+        .Step-item-circle.d-flex.align-items-center.justify-content-center
+          <i class="tio-checkmark-circle-outlined"></i>
+        .Step-item-label= item.label

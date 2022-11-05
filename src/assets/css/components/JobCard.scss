@@ -1,0 +1,59 @@
+.JobCard {
+  padding: 16px 12px;
+  column-gap: 8px;
+
+  &.dark {
+    background: #F9FBFF;
+  }
+
+  &-info {
+    &-header {
+      column-gap: 8px;
+      margin-bottom: 8px;
+
+      &-title {
+        flex: 1;
+        @include ellipsis(1);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #58637C;
+      }
+
+      &-status {
+        column-gap: 8px;
+
+        .Button {
+          padding: 2px 14px;
+          font-size: 10px;
+          font-weight: 600;
+          line-height: 12px;
+          border-radius: 4px;
+        }
+      }
+    }
+
+    &-body {
+      &-text {
+        column-gap: 4px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #58637C;
+        margin-bottom: 4px;
+      }
+    }
+
+    &-actions {
+      column-gap: 10px;
+      padding-top: 8px;
+      border-top: 1px dashed #E7EAF3;
+
+      .Button {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 4px 16px;
+        border-radius: 2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.Input {
+  .input-group {
+    position: relative;
+  }
+
+  &-upload {
+    @include fullAbsolute;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+  }
+}

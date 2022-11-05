@@ -1,0 +1,6 @@
+mixin Button({ className = '', variant = 'btn-success', type = 'button', size = 'middle', title, badge, icon, circle, modalId })
+  button.Button.btn(class=`${className} ${!title && icon ? 'btn-icon' : ''} ${circle ? 'circle' : ''} ${variant} ${size} ${badge ? 'Button-badge' : ''}` type=`${type}` data-toggle=modalId ? "modal" : false data-target=modalId ? `#${modalId}` : false)
+    if (icon)
+      i(class=`${icon}`)
+
+    =title

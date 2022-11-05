@@ -1,0 +1,39 @@
+mixin Card({ className = '', style, id = '', block, title, size = 'middle', noPadding, dark, orange, fullHeight, iconHeader, accordionId, accordionParentId, suffixText, sortable, editable })
+  .Card.card(id=`${id}` class=`card-${size} ${dark ? 'dark' : ''} ${orange ? 'orange' : ''} ${className} ${fullHeight ? 'full-height' : ''}` style=style || false) 
+    if (title)
+      .card-header.d-flex.align-items-center.justify-content-between
+        h3.card-header-title.d-flex.align-items-center
+          if (iconHeader)
+            i(class=`${iconHeader}`)
+
+          = title
+
+        if (sortable)
+          .Card-sortable-arrow.ml-auto.mr-3.js-arrange-up
+            <i class="tio-chevron-up"></i>
+          .Card-sortable-arrow.mr-3.js-arrange-down
+            <i class="tio-chevron-down"></i>
+          .Card-sortable-arrow.js-arrange-remove
+            <i class="tio-clear"></i>
+
+        if (accordionId)
+          .Card-collapse-arrow.ml-auto(role="button" data-toggle="collapse" data-target=`#${accordionId}` aria-expanded="true" aria-controls=`${accordionId}`)
+            <i class="tio-chevron-down"></i>
+
+        if (suffixText)
+          .Card-suffix-text.ml-2= suffixText
+
+        if (editable)
+          +Button({ className: 'Card-editable-btn ml-auto', title: 'Thêm Field mặc định', variant: 'btn-white' })
+          +Button({ className: 'Card-editable-btn ml-3', title: 'Thêm Field tùy chỉnh', variant: 'btn-white' })
+
+    if (accordionParentId)
+      .collapse.show(id=`${accordionId}` data-parent=`#${accordionParentId}`)
+        .card-body(class=`${noPadding ? 'p-0' : ''}`)
+          block
+
+    else
+      .card-body(class=`${noPadding ? 'p-0' : ''}`)
+        block
+
+    

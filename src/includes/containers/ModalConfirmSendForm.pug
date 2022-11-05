@@ -1,0 +1,55 @@
++Modal({ title: 'Xác nhận gửi biểu mẫu', className: 'ModalConfirmSendForm', id: 'ModalConfirmSendForm', center: true, size: 'modal-lg' })
+  .ModalConfirmSendForm-body 
+    +Table({})
+      tbody 
+        tr 
+          td.text-nowrap Biểu mẫu
+          td.w-100 Đăng ký Xuất bản phẩm
+        tr 
+          td.text-nowrap Ngày đăng
+          td.w-100 17/10/2022
+        tr 
+          td.text-nowrap Người tạo
+          td.w-100 Hoàng Đức Tuấn
+        tr 
+          td.text-nowrap Người nhận
+          td.w-100
+            +Select({
+              iconPrepend: 'tio-search',
+              showSearch: true,
+              placeholder: 'Tìm & thêm người nhận',
+              options: [
+                { label: 'Người nhận 1', value: '1' },
+                { label: 'Người nhận 2', value: '2' },
+                { label: 'Người nhận 3', value: '3' },
+              ],
+            })
+        each item in [1,2,3]
+          tr 
+            td.text-nowrap= `Người duyệt ${item}`
+            td.w-100
+              .d-flex.align-items-center
+                +Select({
+                  className: 'w-100',
+                  placeholder: '--- Chọn người duyệt ---',
+                  multiple: true,
+                  options: [
+                    { label: 'Người duyệt 1', value: '1' },
+                    { label: 'Người duyệt 2', value: '2' },
+                    { label: 'Người duyệt 3', value: '3' },
+                  ],
+                })
+                +Checkbox({ className: 'ml-3', title: 'Vượt quyền', labelId: 'Checkbox1' })
+        
+
+  .ModalConfirmSendForm-footer.border-top
+    .row.justify-content-between 
+      .col.col-auto
+        +Button({ title: 'Quay lại', size: 'btn-sm', icon: 'bio-arrow-backward mr-1', variant: 'btn-soft-dark' })
+      .col.col-auto
+        .row.gx-1
+          .col.col-auto
+            +Button({ title: 'Lưu nháp', size: 'btn-sm', icon: 'tio-save-outlined mr-1', variant: 'btn-soft-dark' })
+          .col.col-auto
+            +Button({ title: 'Gửi duyệt', size: 'btn-sm', icon: 'tio-send-outlined mr-1', variant: 'btn-primary' })
+

@@ -1,0 +1,6 @@
+mixin Tab({ className = '', options = [], lineStyle, style = '' })
+  .Tab(class=`${className} ${lineStyle ? 'line-style' : ''}` style=`${style}`)
+    ul.nav.nav-segment.nav-pills(role="tablist")
+      each item, index in options
+        li.nav-item
+          a.nav-link(class=`${index === 0 ? 'active' : ''}` id=`${item.id}` href=`#${item.tabId}` data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true")= item.label

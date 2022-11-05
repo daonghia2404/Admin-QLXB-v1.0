@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VMHT QLXB</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
+<link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
+<link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/css/theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  </head>
+  <body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset" data-hs-scrollspy-options="{ &quot;target&quot;: &quot;#scrollSpy&quot; }" data-offset="0">
+    <div class="ButtonOnTop d-flex align-items-center justify-content-center"><i class="tio-chevron-up"></i></div><script src="./assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script><header id="header" class="Header navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
+<div class="navbar-nav-wrap">
+<div class="navbar-brand-wrapper">
+<a class="navbar-brand" href="./index.html" aria-label="Front">
+<img class="navbar-brand-logo" src="./assets/images/logo.svg" alt="Logo">
+<img class="navbar-brand-logo-mini" src="./assets/images/logo.svg" alt="Logo">
+</a>
+</div>
+<div class="navbar-nav-wrap-content-left">
+<button type="button" class="js-navbar-vertical-aside-toggle-invoker close mr-3">
+<i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip" data-placement="right" title="Collapse"></i>
+<i class="tio-last-page navbar-vertical-aside-toggle-full-align" data-template='<div class="tooltip d-none d-sm-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-toggle="tooltip" data-placement="right" title="Expand"></i>
+</button>
+    <div class="Header-title">Xem trước người duyệt</div></div>
+<div class="navbar-nav-wrap-content-right">
+<ul class="navbar-nav align-items-center flex-row">
+<li class="nav-item d-md-none">
+<div class="hs-unfold">
+<a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;" data-hs-unfold-options='{ "target": "#searchDropdown", "type": "css-animation", "animationIn": "fadeIn", "hasOverlay": "rgba(46, 52, 81, 0.1)", "closeBreakpoint": "md" }'>
+<i class="tio-search"></i>
+</a>
+</div>
+</li>
+<li class="nav-item d-none d-sm-inline-block">
+<div class="hs-unfold">
+<a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;" data-hs-unfold-options='{ "target": "#notificationDropdown", "type": "css-animation" }'>
+<i class="tio-notifications-on-outlined"></i>
+<span class="btn-status btn-sm-status btn-status-danger"></span>
+</a>
+<div id="notificationDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right navbar-dropdown-menu" style="width: 25rem;">
+<div class="card-header">
+<span class="card-title h4">Notifications</span>
+<div class="hs-unfold">
+<a class="js-hs-unfold-invoker btn btn-icon btn-sm btn-ghost-secondary rounded-circle" href="javascript:;" data-hs-unfold-options='{ "target": "#notificationSettingsOneDropdown", "type": "css-animation" }'>
+<i class="tio-more-vertical"></i>
+</a>
+<div id="notificationSettingsOneDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right">
+<span class="dropdown-header">Settings</span>
+<a class="dropdown-item" href="#">
+<i class="tio-archive dropdown-item-icon"></i>Archive all</a>
+<a class="dropdown-item" href="#">
+<i class="tio-all-done dropdown-item-icon"></i>Mark all as read</a>
+<a class="dropdown-item" href="#">
+<i class="tio-toggle-off dropdown-item-icon"></i>Disable notifications</a>
+<a class="dropdown-item" href="#">
+<i class="tio-gift dropdown-item-icon"></i>What's new?</a>
+<div class="dropdown-divider"></div>
+<span class="dropdown-header">Feedback</span>
+<a class="dropdown-item" href="#">
+<i class="tio-chat-outlined dropdown-item-icon"></i>Report</a>
+</div>
+</div>
+</div>
+<ul class="nav nav-tabs nav-justified" id="notificationTab" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" id="notificationNavOne-tab" data-toggle="tab" href="#notificationNavOne" role="tab" aria-controls="notificationNavOne" aria-selected="true">Messages (3)</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="notificationNavTwo-tab" data-toggle="tab" href="#notificationNavTwo" role="tab" aria-controls="notificationNavTwo" aria-selected="false">Archived</a>
+</li>
+</ul>
+<div class="card-body-height">
+<div class="tab-content" id="notificationTabContent">
+<div class="tab-pane fade show active" id="notificationNavOne" role="tabpanel" aria-labelledby="notificationNavOne-tab">
+<ul class="list-group list-group-flush navbar-card-list-group">
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck1" checked="checked">
+<label class="custom-control-label" for="notificationCheck1"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-circle">
+<img class="avatar-img" src="./assets/img/160x160/img3.jpg" alt="Image Description">
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Brian Warner</span>
+<p class="card-text font-size-sm">changed an issue from "In Progress" to <span class="badge badge-success">Review</span></p>
+</div>
+<small class="col-auto text-muted text-cap">2hr</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck2" checked="checked">
+<label class="custom-control-label" for="notificationCheck2"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+<span class="avatar-initials">K</span>
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Klara Hampton</span>
+<p class="card-text font-size-sm">mentioned you in a comment</p>
+<blockquote class="blockquote blockquote-sm">Nice work, love! You really nailed it. Keep it up!</blockquote>
+</div>
+<small class="col-auto text-muted text-cap">10hr</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck4" checked="checked">
+<label class="custom-control-label" for="notificationCheck4"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-circle">
+<img class="avatar-img" src="./assets/img/160x160/img10.jpg" alt="Image Description">
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Ruby Walter</span>
+<p class="card-text font-size-sm">joined the Slack group HS Team</p>
+</div>
+<small class="col-auto text-muted text-cap">3dy</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck3">
+<label class="custom-control-label" for="notificationCheck3"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-circle">
+<img class="avatar-img" src="./assets/svg/brands/google.svg" alt="Image Description">
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">from Google</span>
+<p class="card-text font-size-sm">Start using forms to capture the information of prospects visiting your Google website</p>
+</div>
+<small class="col-auto text-muted text-cap">17dy</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck5">
+<label class="custom-control-label" for="notificationCheck5"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-circle">
+<img class="avatar-img" src="./assets/img/160x160/img7.jpg" alt="Image Description">
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Sara Villar</span>
+<p class="card-text font-size-sm">completed <i class="tio-folder-bookmarked text-primary"></i> FD-7 task</p>
+</div>
+<small class="col-auto text-muted text-cap">2mn</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+</ul>
+</div>
+<div class="tab-pane fade" id="notificationNavTwo" role="tabpanel" aria-labelledby="notificationNavTwo-tab">
+<ul class="list-group list-group-flush navbar-card-list-group">
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck7">
+<label class="custom-control-label" for="notificationCheck7"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+<span class="avatar-initials">A</span>
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Anne Richard</span>
+<p class="card-text font-size-sm">accepted your invitation to join Notion</p>
+</div>
+<small class="col-auto text-muted text-cap">1dy</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck6">
+<label class="custom-control-label" for="notificationCheck6"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-circle">
+<img class="avatar-img" src="./assets/img/160x160/img5.jpg" alt="Image Description">
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Finch Hoot</span>
+<p class="card-text font-size-sm">left Slack group HS projects</p>
+</div>
+<small class="col-auto text-muted text-cap">3dy</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck8">
+<label class="custom-control-label" for="notificationCheck8"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-dark avatar-circle">
+<span class="avatar-initials">HS</span>
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Htmlstream</span>
+<p class="card-text font-size-sm">you earned a "Top endorsed" <i class="tio-verified text-primary"></i> badge</p>
+</div>
+<small class="col-auto text-muted text-cap">6dy</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck9">
+<label class="custom-control-label" for="notificationCheck9"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-circle">
+<img class="avatar-img" src="./assets/img/160x160/img8.jpg" alt="Image Description">
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Linda Bates</span>
+<p class="card-text font-size-sm">Accepted your connection</p>
+</div>
+<small class="col-auto text-muted text-cap">17dy</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+<li class="list-group-item custom-checkbox-list-wrapper">
+<div class="row">
+<div class="col-auto position-static">
+<div class="d-flex align-items-center">
+<div class="custom-control custom-checkbox custom-checkbox-list">
+<input type="checkbox" class="custom-control-input" id="notificationCheck10">
+<label class="custom-control-label" for="notificationCheck10"></label>
+<span class="custom-checkbox-list-stretched-bg"></span>
+</div>
+<div class="avatar avatar-sm avatar-soft-dark avatar-circle">
+<span class="avatar-initials">L</span>
+</div>
+</div>
+</div>
+<div class="col ml-n3">
+<span class="card-title h5">Lewis Clarke</span>
+<p class="card-text font-size-sm">completed <i class="tio-folder-bookmarked text-primary"></i> FD-134 task</p>
+</div>
+<small class="col-auto text-muted text-cap">2mn</small>
+</div>
+<a class="stretched-link" href="#"></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<a class="card-footer text-center" href="#">View all notifications<i class="tio-chevron-right"></i>
+</a>
+</div>
+</div>
+</li>
+    <li class="nav-item">
+      <div class="Header-account">
+        <div class="Header-account-name">Nguyễn Thu Hòa</div>
+        <div class="Header-account-job">Giám đốc</div>
+      </div>
+    </li><li class="nav-item">
+<div class="hs-unfold">
+<a class="js-hs-unfold-invoker navbar-dropdown-account-wrapper" href="javascript:;" data-hs-unfold-options='{ "target": "#accountNavbarDropdown", "type": "css-animation" }'>
+<div class="avatar avatar-sm avatar-circle">
+<img class="avatar-img" src="./assets/img/160x160/img6.jpg" alt="Image Description">
+<span class="avatar-status avatar-sm-status avatar-status-success"></span>
+</div>
+</a>
+<div id="accountNavbarDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right navbar-dropdown-menu navbar-dropdown-account" style="width: 16rem;">
+<div class="dropdown-item">
+<div class="media align-items-center">
+<div class="avatar avatar-sm avatar-circle mr-2">
+<img class="avatar-img" src="./assets/img/160x160/img6.jpg" alt="Image Description">
+</div>
+<div class="media-body">
+<span class="card-title h5">Mark Williams</span>
+<span class="card-text">mark@example.com</span>
+</div>
+</div>
+</div>
+<div class="dropdown-divider"></div>
+<div class="hs-unfold w-100">
+<a class="js-hs-unfold-invoker navbar-dropdown-submenu-item dropdown-item d-flex align-items-center" href="javascript:;" data-hs-unfold-options='{ "target": "#navSubmenuPagesAccountDropdown1", "event": "hover" }'>
+<span class="text-truncate pr-2" title="Set status">Set status</span>
+<i class="tio-chevron-right navbar-dropdown-submenu-item-invoker ml-auto"></i>
+</a>
+<div id="navSubmenuPagesAccountDropdown1" class="hs-unfold-content hs-unfold-has-submenu dropdown-unfold dropdown-menu navbar-dropdown-sub-menu">
+<a class="dropdown-item" href="#">
+<span class="legend-indicator bg-success mr-1"></span>
+<span class="text-truncate pr-2" title="Available">Available</span>
+</a>
+<a class="dropdown-item" href="#">
+<span class="legend-indicator bg-danger mr-1"></span>
+<span class="text-truncate pr-2" title="Busy">Busy</span>
+</a>
+<a class="dropdown-item" href="#">
+<span class="legend-indicator bg-warning mr-1"></span>
+<span class="text-truncate pr-2" title="Away">Away</span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">
+<span class="text-truncate pr-2" title="Reset status">Reset status</span>
+</a>
+</div>
+</div>
+<a class="dropdown-item" href="#">
+<span class="text-truncate pr-2" title="Profile &amp; account">Profile &amp; account</span>
+</a>
+<a class="dropdown-item" href="#">
+<span class="text-truncate pr-2" title="Settings">Settings</span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">
+<div class="media align-items-center">
+<div class="avatar avatar-sm avatar-dark avatar-circle mr-2">
+<span class="avatar-initials">HS</span>
+</div>
+<div class="media-body">
+<span class="card-title h5">Htmlstream <span class="badge badge-primary badge-pill text-uppercase ml-1">PRO</span></span>
+<span class="card-text">hs.example.com</span>
+</div>
+</div>
+</a>
+<div class="dropdown-divider"></div>
+<div class="hs-unfold w-100">
+<a class="js-hs-unfold-invoker navbar-dropdown-submenu-item dropdown-item d-flex align-items-center" href="javascript:;" data-hs-unfold-options='{ "target": "#navSubmenuPagesAccountDropdown2", "event": "hover" }'>
+<span class="text-truncate pr-2" title="Customization">Customization</span>
+<i class="tio-chevron-right navbar-dropdown-submenu-item-invoker ml-auto"></i>
+</a>
+<div id="navSubmenuPagesAccountDropdown2" class="hs-unfold-content hs-unfold-has-submenu dropdown-unfold dropdown-menu navbar-dropdown-sub-menu">
+<a class="dropdown-item" href="#">
+<span class="text-truncate pr-2" title="Invite people">Invite people</span>
+</a>
+<a class="dropdown-item" href="#">
+<span class="text-truncate pr-2" title="Analytics">Analytics</span>
+<i class="tio-open-in-new"></i>
+</a>
+<a class="dropdown-item" href="#">
+<span class="text-truncate pr-2" title="Customize Front">Customize Front</span>
+<i class="tio-open-in-new"></i>
+</a>
+</div>
+</div>
+<a class="dropdown-item" href="#">
+<span class="text-truncate pr-2" title="Manage team">Manage team</span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">
+<span class="text-truncate pr-2" title="Sign out">Sign out</span>
+</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</header><aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered">
+<div class="navbar-vertical-container">
+<div class="navbar-vertical-footer-offset">
+<div class="navbar-brand-wrapper justify-content-between">
+<a class="navbar-brand" href="./index.html" aria-label="Front">
+<img class="navbar-brand-logo" src="./assets/images/logo.svg" alt="Logo">
+<img class="navbar-brand-logo-mini" src="./assets/images/logo.svg" alt="Logo">
+</a>
+<button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-toggle btn btn-icon btn-xs btn-ghost-dark">
+<i class="tio-clear tio-lg"></i>
+</button>
+</div>
+<div class="navbar-vertical-content">
+<ul class="navbar-nav navbar-nav-lg nav-tabs">
+    <li class="nav-item"><a class="nav-link" href="#" title="Bảng điều khiển"><i class="nav-icon tio-home"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Bảng điều khiển</span></a>
+    </li>
+    <li class="show navbar-vertical-aside-has-menu"><a class="active nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="Quản lý Xuất bản phẩm"><i class="nav-icon tio-document-text-outlined"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Quản lý Xuất bản phẩm</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="active nav-link" href="#" title="Danh sách XBP"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Danh sách XBP</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Phê duyệt XBP"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Phê duyệt XBP</span></a></li>
+      </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu"><a class="nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="Phân loại đề tài"><i class="nav-icon tio-format-bullets"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Phân loại đề tài</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="nav-link" href="#" title="Quản lý cấp, lớp"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Quản lý cấp, lớp</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Quản lý ngôn ngữ"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Quản lý ngôn ngữ</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Quản lý môn học"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Quản lý môn học</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Quản lý bộ SGK"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Quản lý bộ SGK</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Ấn phẩm gốc (dịch)"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Ấn phẩm gốc (dịch)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Quản lý Mảng sách"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Quản lý Mảng sách</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Quản lý đối tượng"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Quản lý đối tượng</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Lĩnh vực - ngành"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Lĩnh vực - ngành</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Quản lý lứa tuổi"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Quản lý lứa tuổi</span></a></li>
+      </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu"><a class="nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="Quản lý Cấp mã CXB"><i class="nav-icon tio-key"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Quản lý Cấp mã CXB</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="nav-link" href="#" title="XBP cần cấp mã"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">XBP cần cấp mã</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="GĐ duyệt gửi CXB"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">GĐ duyệt gửi CXB</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="XBP chờ cấp mã"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">XBP chờ cấp mã</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="XBP đã cấp mã CXB"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">XBP đã cấp mã CXB</span></a></li>
+      </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu"><a class="nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="Quản lý Biên tập"><i class="nav-icon tio-documents-outlined"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Quản lý Biên tập</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="nav-link" href="#" title="Đề tài cần ký HĐ tác giả"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Đề tài cần ký HĐ tác giả</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Sửa bản thảo"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Sửa bản thảo</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Mô tả yêu cầu thiết kế"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Mô tả yêu cầu thiết kế</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Công cụ biên tập"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Công cụ biên tập</span></a></li>
+      </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu"><a class="nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="Quản lý Chế bản"><i class="nav-icon tio-feed-outlined"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Quản lý Chế bản</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="nav-link" href="#" title="Thiết kế bìa"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Thiết kế bìa</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Duyệt thiết kế bìa"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Duyệt thiết kế bìa</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Market ruột"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Market ruột</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Duyệt Market ruột"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Duyệt Market ruột</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Chế bản bông"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Chế bản bông</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Duyệt bông"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Duyệt bông</span></a></li>
+      </ul>
+    </li>
+    <li class="nav-item"><a class="nav-link" href="#" title="Quản lý In ấn"><i class="nav-icon tio-print"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Quản lý In ấn</span></a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu"><a class="nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="Quản lý Nộp lưu chiểu"><i class="nav-icon tio-disc"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Quản lý Nộp lưu chiểu</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="nav-link" href="#" title="Đề tài cần lưu chiểu"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Đề tài cần lưu chiểu</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Danh mục hồ sơ lưu chiểu"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Danh mục hồ sơ lưu chiểu</span></a></li>
+      </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu"><a class="nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="CSDL Lưu ý của đơn vị"><i class="nav-icon tio-sim-card"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">CSDL Lưu ý của đơn vị</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="nav-link" href="#" title="Từ cần lưu ý"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Từ cần lưu ý</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Chủ đề cần lưu ý"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Chủ đề cần lưu ý</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Nhóm từ cần lưu ý"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Nhóm từ cần lưu ý</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Tài liệu tra soát"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Tài liệu tra soát</span></a></li>
+      </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu"><a class="nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="CSDL Chung"><i class="nav-icon tio-chart-bar-4"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">CSDL Chung</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="nav-link" href="#" title="Từ cần lưu ý"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Từ cần lưu ý</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Nhóm từ cần lưu ý"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Nhóm từ cần lưu ý</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Chủ đề cần lưu ý"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Chủ đề cần lưu ý</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Tác giả cần lưu ý"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Tác giả cần lưu ý</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Quản lý dùng chung"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Quản lý dùng chung</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="CSDL ISBN"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">CSDL ISBN</span></a></li>
+      </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu"><a class="nav-link-toggle js-navbar-vertical-aside-menu-link nav-link" href="javascript:;" title="Quản lý đơn vị"><i class="nav-icon tio-layers-outlined"></i><span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Quản lý đơn vị</span></a>
+      <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+        <li class="nav-item"><a class="nav-link" href="#" title="QL Phòng ban"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">QL Phòng ban</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="QL Chức vụ"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">QL Chức vụ</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="QL Nhân sự"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">QL Nhân sự</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="QL biểu mẫu"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">QL biểu mẫu</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="Tra cứu Field"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">Tra cứu Field</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="QL quy trình"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">QL quy trình</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#" title="QL Công đoạn"><span class="tio-circle nav-indicator-icon"></span><span class="text-truncate">QL Công đoạn</span></a></li>
+      </ul>
+    </li><li class="nav-item">
+<small class="tio-more-horizontal nav-subtitle-replacer"></small>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+    <main class="main pointer-event" id="content" role="main">
+      <div class="PreviewPage"> 
+        <div class="content container-fluid">
+          <div class="row"> 
+            <div class="col-lg-9">
+              <div class="Card card card-middle" id="bieuin"> 
+                <div class="card-body p-0">
+                  <div class="PreviewPage-submit d-flex flex-wrap mb-3 border-bottom">
+                    <button class="Button btn btn-primary middle" type="button"><i class="tio-checkmark-square-outlined mr-1"></i>Duyệt
+                    </button>
+                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-clear mr-1"></i>Từ chối
+                    </button>
+                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-sms-chat-outlined mr-1"></i>Comment
+                    </button>
+                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-print mr-1"></i>In biểu
+                    </button>
+                  </div>
+                  <div class="PreviewPage-view-file"></div>
+                  <div id="scrollSpyEnd"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
+              <button class="navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0">Điều hướng trên trang</span><span class="navbar-toggle-default">
+<i class="tio-menu-hamburger"></i>
+</span>
+<span class="navbar-toggle-toggled">
+<i class="tio-clear"></i>
+</span>
+</span>
+              </button>
+              <div class="collapse navbar-collapse" id="scrollSpyParent">
+                <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
+                  <div class="Card card card-small dark" id=""> 
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h3 class="card-header-title d-flex align-items-center">Điều hướng trên trang
+                      </h3>
+                    </div>
+                    <div class="card-body p-0">
+                      <ul class="navbar-nav navbar-nav-lg nav-tabs card card-navbar-nav border-0 p-0">
+                        <li class="nav-item"><a class="nav-link" href="#bieuso">Biểu số</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#bieuin">Biểu in</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#xembankhaixuatbanpham">Xem bản khai Xuất bản phẩm</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><footer class="Footer footer">
+<div class="row justify-content-center align-items-center">
+<div class="col">
+      <p class="mb-0">Copyright © 2021 Công ty cổ phần công nghệ VHMT Việt Nam. All rights reserved.</p></div>
+</div>
+</footer>
+    </div></main><script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside.min.js"></script>
+<script src="./assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+<script src="./assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+<script src="./assets/vendor/select2/dist/js/select2.full.min.js"></script>
+<script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
+<script src="./assets/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+<script src="./assets/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+<script src="./assets/vendor/daterangepicker/moment.min.js"></script>
+<script src="./assets/vendor/daterangepicker/daterangepicker.js"></script>
+<script src="./assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+<script src="./assets/vendor/datatables.net.extensions/select/select.min.js"></script>
+<script src="./assets/vendor/clipboard/dist/clipboard.min.js"></script>
+<script src="./assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
+<script src="./assets/vendor/hs-sticky-block/dist/hs-sticky-block.min.js"></script>
+<script src="./assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
+<script src="./assets/vendor/dropzone/dist/min/dropzone.min.js"></script>
+<script src="./assets/vendor/sortablejs/Sortable.min.js"></script>
+<script src="./assets/js/theme.min.js"></script>
+    <script>
+      $(document).on('ready', function () {
+      	$('.js-navbar-vertical-aside-toggle-invoker').click(function () {
+      		$('.js-navbar-vertical-aside-toggle-invoker i').tooltip('hide');
+      	});
+      
+      	// initialization of navbar vertical navigation
+      	var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
+      
+      	// initialization of tooltip in navbar vertical menu
+      	$('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
+      
+      	$(".js-nav-tooltip-link").on("show.bs.tooltip", function(e) {
+      		if (!$("body").hasClass("navbar-vertical-aside-mini-mode")) {
+      			return false;
+      		}
+      	});
+      
+      	// initialization of unfold
+      	$('.js-hs-unfold-invoker').each(function () {
+      		var unfold = new HSUnfold($(this)).init();
+      	});
+      
+      	// initialization of form search
+      	$('.js-form-search').each(function () {
+      		new HSFormSearch($(this)).init()
+      	});
+      
+      	// initialization of select2
+      	$('.js-select2-custom').each(function () {
+      		var select2 = $.HSCore.components.HSSelect2.init($(this));
+      	});
+      
+      	// initialization of daterangepicker
+      	$('.js-daterangepicker').daterangepicker();
+      
+      	$('.js-daterangepicker-times').daterangepicker({
+      		timePicker: true,
+      		startDate: moment().startOf('hour'),
+      		endDate: moment().startOf('hour').add(32, 'hour'),
+      		locale: {
+      			format: 'M/DD hh:mm A'
+      		}
+      	});
+      
+      	var start = moment();
+      	var end = moment();
+      
+      	function cb(start, end) {
+      		$('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      	}
+      
+      	$('#js-daterangepicker-predefined').daterangepicker({
+      		startDate: start,
+      		endDate: end,
+      		ranges: {
+      			'Today': [moment(), moment()],
+      			'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+      			'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+      			'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+      			'This Month': [moment().startOf('month'), moment().endOf('month')],
+      			'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+      		}
+      	}, cb);
+      
+      	cb(start, end);
+      
+      	// initialization of clipboard
+      	$('.js-clipboard').each(function() {
+      		var clipboard = $.HSCore.components.HSClipboard.init(this);
+      	});
+      
+      	// initialization of sticky blocks
+      	$('.js-sticky-block').each(function () {
+      		var stickyBlock = new HSStickyBlock($(this)).init();
+      	});
+      
+      	// initialization of scroll nav
+      	var scrollspy = new HSScrollspy($('body'), {
+      		// !SETTING "resolve" PARAMETER AND RETURNING "resolve('completed')" IS REQUIRED
+      		offset: 76,
+      		beforeScroll: function(resolve) {
+      			return resolve('completed');
+      		}
+      	}).init();
+      
+      	// initialization of flatpickr
+      	$('.js-flatpickr').each(function () {
+      		$.HSCore.components.HSFlatpickr.init($(this));
+      	});
+      
+      	// initialization of dropzone file attach module
+      	$('.dropzone-custom').each(function () {
+      		var dropzone = $.HSCore.components.HSDropzone.init('#' + $(this).attr('id'));
+      	});
+      
+      	// initialization of sortable
+      	$('.js-sortable').each(function () {
+      		var sortable = $.HSCore.components.HSSortable.init($(this));
+      	});
+      });
+      
+    </script>
+    <script>
+      if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="./assets/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+      
+    </script>
+    <script src="./assets/js/main.js"> </script>
+  </body>
+</html>

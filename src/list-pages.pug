@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title List Pages
+  body 
+    -
+      const dataLinks = [
+        { link: 'index.html', title: '0. Bảng điều khiển - QUẢN LÝ' },
+        { link: 'bang-dieu-khien-nhan-vien.html', title: '0. Bảng điều khiển - NHÂN VIÊN' },
+        { link: 'khai-bao-dang-ky-xuat-ban-pham.html', title: '0.0 Quản lý XBP - Khai báo đăng ký xuất bản phẩm' },
+        { link: 'xem-truoc-nguoi-duyet-bieu-so.html', title: '0.1 Quản lý XBP - Xem trước người duyệt - Biểu số' },
+        { link: 'xem-truoc-nguoi-duyet-bieu-in.html', title: '0.1 Quản lý XBP - Xem trước người duyệt - Biểu in' },
+        { link: 'quan-ly-xbp-chi-tiet-thong-tin-xuat-ban-pham.html', title: 'I. Quản lý XBP - Xem chi tiết toàn bộ thông tin Xuất bản phẩm' },
+        { link: 'xem-file-dinh-kem.html', title: 'I.1a Quản lý XBP - Xem file đính kèm - Thông tin File' },
+        { link: 'xem-file-dinh-kem.html', title: 'I.1b Quản lý XBP - Xem file đính kèm - So sánh thay đổi (Bấm vào tab so sánh thay đổi)' },
+        { link: 'quan-ly-xbp-them-tai-ban.html', title: '0.3 Quản lý XBP - Thêm tái bản' },
+        { link: 'chinh-sua-ban-thao.html', title: 'II. Chỉnh sửa bản thảo' },
+        { link: 'quan-ly-bieu-mau-khai-bao-bieu-mau-theo-quy-trinh.html', title: 'III. Quản lý biểu mẫu - Khai báo biểu mẫu theo quy trình' },
+        { link: 'quan-ly-bieu-mau-khai-bao-bieu-mau-theo-quy-trinh.html', title: 'V. Xác nhận gửi biểu mẫu (bấm vào nút Gửi duyệt)' },
+      ]
+
+    each item in dataLinks
+      a(href=`${item.link}` target="_blank")= item.title
+      br

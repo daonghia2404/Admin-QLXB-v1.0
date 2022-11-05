@@ -1,0 +1,98 @@
+.DashboardPage {
+  &-total-cards {
+    row-gap: 15px;
+    column-gap: 15px;
+
+    .DashboardTotalCard {
+      flex: 0 0 calc(100% / 5 - calc(15px * 4 / 5));
+      max-width: calc(100% / 5 - calc(15px * 4 / 5));
+    }
+  }
+
+  &-users {
+    &-item {
+      column-gap: 12px;
+      padding: 8px 15px;
+
+      .Avatar {
+        width: 28px;
+        flex: 0 0 28px;
+        max-width: 28px;
+        height: 28px;
+
+        .avatar-img {
+          width: 28px;
+        }
+      }
+
+      &:nth-child(even) {
+        background: #F9FBFF;
+      }
+
+      &-suffix,
+      &-title {
+        font-size: 14px;
+        line-height: 24px;
+        color: #132144;
+      }
+
+      &-title {
+        flex: 1;
+        @include ellipsis(1);
+      }
+
+      &-suffix {
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &-birthday {
+    padding: 64px 30px;
+    background: #FFF8F5 url('../images/bg-birthday.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 100%;
+
+    .Avatar {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 12px;
+    }
+
+    &-text {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      color: #132144;
+    }
+
+    &-user {
+      column-gap: 12px;
+
+      .Table {
+        margin: -1px;
+        height: 100%;
+
+        table {
+          height: 100%;
+        }
+      }
+
+      &-info {
+        &-title {
+          font-size: 14px;
+          line-height: 24px;
+          color: #132144;
+        }
+
+        &-description {
+          font-size: 12px;
+          line-height: 20px;
+          color: #132144;
+        }
+      }
+    }
+  }
+}

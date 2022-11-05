@@ -1,0 +1,40 @@
+.Select {
+  .select2-selection__placeholder {
+    @include ellipsis(1);
+  }
+
+  .input-group-merge {
+    overflow: unset;
+
+    .form-control:not(:first-child),
+    .form-select:not(:first-child) {
+      padding-left: 2rem;
+    }
+
+    .form-select {
+      background: transparent;
+    }
+  }
+
+  &.suffix {
+    .custom-select {
+      background: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  &-wrapper {
+    flex: 1;
+
+    &.has-prepend {
+      .custom-select {
+        padding-left: calc(16px * 2 + 4px);
+      }
+    }
+  }
+
+  .select2-container--default .custom-select .select2-search--inline .select2-search__field {
+    transform: translateY(4px);
+  }
+}

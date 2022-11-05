@@ -1,0 +1,366 @@
+extends includes/layouts/Guest.pug
+
+block header
+  - const pageTitle = 'Đăng ký tái bản'
+
+block pages
+  .FormPage 
+    .content.container-fluid
+      .row 
+        .col-lg-9.pr-lg-2
+          +Card({ noPadding: true })
+            .FormPage-submit.d-flex.flex-wrap.mb-3.border-bottom
+              +Button({ title: 'Gửi đăng ký ', icon: 'tio-send-outlined mr-1', variant: 'btn-primary' })  
+              +Button({ title: 'Lưu nháp', icon: 'tio-save-outlined mr-1', variant: 'btn-soft-dark' })  
+              +Button({ title: 'Huỷ', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
+
+            .accordion
+              +Accordion({ className: 'FormPage-margin', mainId: 'thongtinkhaibao', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin xuất bản' })
+                form(action="#") 
+                  h4.mb-3 Tái bản: Vật liệu và cấu tạo hoàn thiện nội thất
+
+                  .accordion
+                    +Accordion({ id: 'AccordionSub1', parentId: 'AccordionSubParent', title: 'I. Thông tin hồ sơ', dark: true })
+                      .row 
+                        .col-3.mb-3
+                          +Input({ label: 'Năm XB', placeholder: 'Nhập năm' })
+                        .col-3.mb-3
+                          +Input({ label: 'Năm tái bản', placeholder: 'Nhập năm' })
+                        .col-3.mb-3
+                          +Input({ label: 'Mã số CXB', placeholder: 'Nhập mã CXB' })
+                        .col-3.mb-3
+                          +Input({ label: 'Mã số ISBN', placeholder: 'Nhập mã ISBN' })
+
+                    +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent', title: 'II. Thông tin chung', dark: true })
+                      .row 
+                        .col-6.mb-3
+                          +Input({ label: 'Tên gốc', placeholder: 'Nhập tên XBP' })
+                        .col-6.mb-3
+                          +Select({
+                            label: 'Phương thức xuất bản',
+                            placeholder: 'Chọn phương thức xuất bản',
+                            options: [
+                              { label: 'Phương thức xuất bản 1', value: '1' },
+                              { label: 'Phương thức xuất bản 2', value: '2' },
+                              { label: 'Phương thức xuất bản 3', value: '3' },
+                            ],
+                            iconSuffix: 'tio-chevron-down',
+                          })
+                        .col-6.mb-3
+                          .d-flex.align-items-end
+                            +Input({ className: 'w-100', label: 'Tác giả', placeholder: 'Nhập tên để tìm tác giả' })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+                        .col-6.mb-3
+                          +Input({ label: 'Xuất bản lần thứ', placeholder: 'Nhập số lần xuất bản' })
+                        .col-6.mb-3
+                          .FormPage-sublist 
+                            .FormPage-sublist-title Tác giả đã chọn:
+                            .FormPage-sublist-table
+                              table
+                                each item in [1,2]
+                                  tr
+                                    td TS. BÙI BÁ NGUYÊN 
+                                    td 0863576034
+                                    td 
+                                      +Radio({ title: 'Là chủ biên', name: 'mainAuthor', labelId: `mainAuthor${item}` })
+                                    td
+                                      +Button({ icon: 'tio-delete-outlined', variant: 'btn-outline-danger' })
+
+                        .col-6.mb-3
+                          +Input({ label: 'Đơn vị đăng ký', placeholder: 'Nhập đơn vị đăng ký' })
+
+
+                    +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent', title: 'III. Thông tin hợp đồng xuất bản', dark: true })
+                      .row 
+                        .col-3.mb-3
+                          +Input({ label: 'Số Hợp đồng', placeholder: 'Nhập số HĐ' })
+                        .col-3.mb-3
+                          +Select({
+                            label: 'Kiểu HĐ',
+                            placeholder: 'Chọn kiểu HĐ',
+                            options: [
+                              { label: 'Kiểu HĐ 1', value: '1' },
+                              { label: 'Kiểu HĐ 2', value: '2' },
+                              { label: 'Kiểu HĐ 3', value: '3' },
+                            ],
+                            iconSuffix: 'tio-chevron-down',
+                          })
+                        .col-3.mb-3
+                          +DatePicker({ label: 'Ngày ký HĐ', placeholder: 'Ngày ký HĐ', iconSuffix: 'tio-date-range' })
+                        .col-3.mb-3
+                          +DatePicker({ label: 'Ngày hết hạn', placeholder: 'Ngày hết hạn', iconSuffix: 'tio-date-range' })
+
+                    +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent', title: 'IV. Đối tượng sử dụng và biên mục đề tài', dark: true })
+                      .row 
+                        .col-6.mb-3
+                          .d-flex.align-items-end
+                            +Select({
+                              className: 'w-100',
+                              label: 'Chủ đề',
+                              placeholder: '--- Chọn chủ đề ---',
+                              options: [
+                                { label: 'Chủ đề 1', value: '1' },
+                                { label: 'Chủ đề 2', value: '2' },
+                                { label: 'Chủ đề 3', value: '3' },
+                              ],
+                              iconSuffix: 'tio-chevron-down',
+                              required: true,
+                            })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                        .col-6.mb-3
+                          .d-flex.align-items-end
+                            +Select({
+                              className: 'w-100',
+                              label: 'Nhóm đối tượng',
+                              placeholder: '--- Chọn nhóm đối tượng ---',
+                              options: [
+                                { label: 'Nhóm đối tượng 1', value: '1' },
+                                { label: 'Nhóm đối tượng 2', value: '2' },
+                                { label: 'Nhóm đối tượng 3', value: '3' },
+                              ],
+                              iconSuffix: 'tio-chevron-down',
+                              required: true,
+                            })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                        .col-6.mb-3
+                          .d-flex.align-items-end
+                            +Select({
+                              className: 'w-100',
+                              label: 'Nhóm độ tuổi',
+                              placeholder: '--- Chọn nhóm độ tuổi ---',
+                              options: [
+                                { label: 'Nhóm độ tuổi 1', value: '1' },
+                                { label: 'Nhóm độ tuổi 2', value: '2' },
+                                { label: 'Nhóm độ tuổi 3', value: '3' },
+                              ],
+                              iconSuffix: 'tio-chevron-down',
+                              required: true,
+                            })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                        .col-6.mb-3
+                          .d-flex.align-items-end
+                            +Select({
+                              className: 'w-100',
+                              label: 'Trình độ',
+                              placeholder: '--- Chọn trình độ ---',
+                              options: [
+                                { label: 'Trình độ 1', value: '1' },
+                                { label: 'Trình độ 2', value: '2' },
+                                { label: 'Trình độ 3', value: '3' },
+                              ],
+                              iconSuffix: 'tio-chevron-down',
+                              required: true,
+                            })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                        .col-6.mb-3
+                          .d-flex.align-items-end
+                            +Select({
+                              className: 'w-100',
+                              label: 'Lĩnh vực - Ngành',
+                              placeholder: '--- Chọn Lĩnh vực - Ngành ---',
+                              options: [
+                                { label: 'Lĩnh vực - Ngành 1', value: '1' },
+                                { label: 'Lĩnh vực - Ngành 2', value: '2' },
+                                { label: 'Lĩnh vực - Ngành 3', value: '3' },
+                              ],
+                              iconSuffix: 'tio-chevron-down',
+                              required: true,
+                            })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                    +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent', title: 'V. Thông tin bản thảo', dark: true })
+                      .row 
+                        .col-6.mb-3
+                          +Input({ label: 'File bản thảo', placeholder: 'Upload file', value: 'Tên-văn-bản-sau-khi-tải-lên.doc', required: true, suffixText: 'Tải lên', upload: true })
+
+                          p.mt-2
+                            <i class="tio-warning-outlined mr-2"></i>
+                            |Lưu ý !!! Định dạng file cho phép: DOC, DOCX
+
+                        .col-6.mb-3 
+                          .d-flex.align-items-end
+                            +Input({ className: 'w-100', label: 'Số trang', required: true, placeholder: 'Nhập số trang bản thảo' })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                    +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent', title: 'V. Thông tin bản thảo', dark: true })
+                      .FormPage-switch-wrapper
+                        .row 
+                          .col-3
+                            +Switch({ label: 'Ấn phẩm điện tử', reverse: true })
+                          .col-3
+                            +Switch({ label: 'Ấn phẩm in', reverse: true })
+                          .col-3
+                            +Switch({ label: 'Sách dịch', reverse: true })
+                          .col-3
+                            +Switch({ label: 'Sách có bản quyền', reverse: true })
+
+                    +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent', title: 'VII. Thông tin ấn phẩm điện tử', dark: true })
+                      .row 
+                        .col-6.mb-3
+                          +Select({
+                            label: 'Chuẩn phát hành',
+                            placeholder: '--- Chọn Chuẩn phát hành ---',
+                            options: [
+                              { label: 'Chuẩn phát hành 1', value: '1' },
+                              { label: 'Chuẩn phát hành 2', value: '2' },
+                              { label: 'Chuẩn phát hành 3', value: '3' },
+                            ],
+                            iconSuffix: 'tio-chevron-down',
+                            required: true,
+                          })
+
+                        .col-6.mb-3 
+                          .d-flex.align-items-end
+                            +Select({
+                              className: 'w-100',
+                              label: 'Phát hành tại',
+                              placeholder: '--- Chọn Phát hành tại ---',
+                              options: [
+                                { label: 'Phát hành tại 1', value: '1' },
+                                { label: 'Phát hành tại 2', value: '2' },
+                                { label: 'Phát hành tại 3', value: '3' },
+                              ],
+                              iconSuffix: 'tio-chevron-down',
+                              required: true,
+                            })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                    +Accordion({ id: 'AccordionSub8', parentId: 'AccordionSubParent', title: 'VIII. Thông tin ấn phẩm in', dark: true })
+                      .row 
+                        .col-6.mb-3
+                          +Input({ label: 'Số trang', required: true, placeholder: 'Nhập số trang' })
+                        .col-6.mb-3
+                          label.form-label Khổ sách - Rộng(cm) x Dài(cm)
+
+                          .d-flex.align-items-end
+                            +Input({ className: 'w-100', placeholder: 'Nhập độ rộng' })
+                            +Input({ className: 'w-100 ml-3', placeholder: 'Nhập độ dài' })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                        .col-3.mb-3
+                          +DatePicker({ label: 'Ngày đủ bản thảo', placeholder: 'Ngày đủ bản thảo', iconSuffix: 'tio-date-range' })
+                        .col-3.mb-3
+                          +DatePicker({ label: 'Ngày ra bản sách', placeholder: 'Ngày ra bản sách', iconSuffix: 'tio-date-range' })
+                        .col-3.mb-3
+                          +Input({ label: 'Loại giấy ruột', placeholder: 'VD: BB60' })
+                        .col-3.mb-3
+                          +Input({ label: 'Loại giấy bìa', placeholder: 'VD: C250' })
+                        .col-3.mb-3
+                          +Input({ label: 'Số màu in ruột', placeholder: 'VD: 4' })
+                        .col-3.mb-3
+                          +Input({ label: 'Số màu in bìa', placeholder: 'VD: 4' })
+                        .col-3.mb-3
+                          +Input({ label: 'Số lượng in lần 1', placeholder: 'VD: 1000' })
+                        .col-3.mb-3
+                          +Input({ label: 'Giá bìa', placeholder: 'VD: 5.000.000' })
+
+                    +Accordion({ id: 'AccordionSub9', parentId: 'AccordionSubParent', title: 'IX. Thông tin sách dịch', dark: true })
+                      .row 
+                        .col-6.mb-3
+                          .d-flex.align-items-end
+                            +Select({
+                              className: 'w-100',
+                              label: 'Tên dịch giả',
+                              placeholder: '--- Chọn dịch giả ---',
+                              options: [
+                                { label: 'Tên dịch giả 1', value: '1' },
+                                { label: 'Tên dịch giả 2', value: '2' },
+                                { label: 'Tên dịch giả 3', value: '3' },
+                              ],
+                              iconSuffix: 'tio-chevron-down',
+                            })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                        .col-6.mb-3
+                          .d-flex.align-items-end
+                            +Input({ className: 'w-100', label: 'Dịch từ ấn phẩm', placeholder: 'Nhập dịch từ ấn phẩm', value: 'INSIDE REAL ESTATE Buy, Sell and Profit in any Property Market', required: true })
+                            +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
+
+                        .col-6.mb-3
+                          .FormPage-sublist 
+                            .FormPage-sublist-title Thông tin dịch giả:
+                            .FormPage-sublist-table
+                              table
+                                  tr
+                                    td Email:...
+                                    td Điện thoại...
+                                  tr
+                                    td Địa chỉ:...
+                                    td
+
+                        .col-6.mb-3
+                          +Select({
+                            label: 'Ngôn ngữ xuất bản',
+                            placeholder: '--- Chọn ngôn ngữ xuất bản ---',
+                            options: [
+                              { label: 'Ngôn ngữ xuất bản 1', value: '1' },
+                              { label: 'Ngôn ngữ xuất bản 2', value: '2' },
+                              { label: 'Ngôn ngữ xuất bản 3', value: '3' },
+                            ],
+                            iconSuffix: 'tio-chevron-down',
+                            required: true,
+                          })
+
+                        .col-6.mb-3
+                          +Select({
+                            label: 'Ngôn ngữ gốc',
+                            placeholder: '--- Chọn ngôn ngữ gốc ---',
+                            options: [
+                              { label: 'Ngôn ngữ gốc 1', value: '1' },
+                              { label: 'Ngôn ngữ gốc 2', value: '2' },
+                              { label: 'Ngôn ngữ gốc 3', value: '3' },
+                            ],
+                            iconSuffix: 'tio-chevron-down',
+                            required: true,
+                          })
+                        
+                    +Accordion({ id: 'AccordionSub10', parentId: 'AccordionSubParent', title: 'X. Thông tin bản quyền', dark: true })
+                      .row 
+                        .col-6.mb-3
+                          +Input({ label: 'Người chịu trách nhiệm', placeholder: 'Nhập tên người chịu trách nhiệm bản quyền' })
+                        .col-6.mb-3
+                          +Select({
+                            label: 'Loại bản quyền',
+                            placeholder: '--- Chọn loại bản quyền ---',
+                            options: [
+                              { label: 'Loại bản quyền 1', value: '1' },
+                              { label: 'Loại bản quyền 2', value: '2' },
+                              { label: 'Loại bản quyền 3', value: '3' },
+                            ],
+                            iconSuffix: 'tio-chevron-down',
+                          })
+                        .col-4.mb-3
+                          +Input({ label: 'Bản quyền thuộc', placeholder: 'Nhập tên chủ sở hữu bản quyền' })
+                        .col-4.mb-3
+                          +DatePicker({ label: 'Bản quyền từ', placeholder: 'Ngày bản quyền bắt đầu', iconSuffix: 'tio-date-range' })
+                        .col-4.mb-3
+                          +DatePicker({ label: 'Bản quyền đến', placeholder: 'Ngày bản quyền kết thúc', iconSuffix: 'tio-date-range' })
+                        .col-12.mb-3
+                          +TextArea({ label: 'Thông tin bổ sung', placeholder: 'Nhập nội dung tại đây' })
+
+              +Accordion({ className: 'FormPage-margin bottom', mainId: 'cacthongtinkhac', id: 'Accordion2', parentId: 'AccordionParent', title: 'Các thông tin khác' })
+                form(action="#") 
+                  .row
+                    .col-12.mb-3
+                      +TextArea({ label: 'ĐỀ CƯƠNG' })
+
+                    .col-12.mb-3
+                      +TextArea({ label: 'GHI CHÚ', placeholder: 'Nhập nội dung tại đây' })
+
+            #scrollSpyEnd
+
+        .col-lg-3.pl-lg-2
+          +ScrollSpy({
+            title: 'Điều hướng trên trang',
+            id: 'scrollSpy',
+            parentId: 'scrollSpyParent',
+            endId: 'scrollSpyEnd',
+            options: [
+              { link: '#thongtinkhaibao', title: 'Thông tin khai báo' },
+              { link: '#cacthongtinkhac', title: 'Các thông tin khác' },
+            ]
+          })

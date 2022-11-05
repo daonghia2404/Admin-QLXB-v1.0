@@ -1,0 +1,15 @@
+mixin Radio({ className = '', name = '', classNameRadio = '', labelId, size = 'middle', label = '', title, required })
+  .Radio(class=`${className}`)
+    if (label)
+      label.form-label(for=`${labelId}`)
+        = label
+        if (required)
+          span.required.ml-1 (*)
+
+    .custom-control.custom-radio(class=`${classNameRadio}`)
+      input(type="radio" id=labelId || false checked=checked || false name=`${name}`).custom-control-input
+      if (title)
+        label.custom-control-label.text-nowrap(for=labelId || false)
+          = title
+          block
+      

@@ -1,0 +1,23 @@
+mixin Table({ className = '', emptyText, style = '', showPagination })
+  .Table(class=`${className}` style=`${style}`)
+    table.table
+      block
+    
+    if (emptyText)
+      .Table-empty= emptyText
+
+    if (showPagination)
+      .Table-pagination.d-flex.align-items-center.justify-content-between.border-start.border-end.border-bottom
+        .Table-pagination-perpage.d-flex.align-items-center
+          span.Table-pagination-perpage-text Hiển thị:
+          +Select({
+            options: [
+              { label: 5, value: 5 },
+              { label: 10, value: 10 },
+              { label: 15, value: 15 },
+              { label: 20, value: 20 },
+            ],
+          })
+          span.Table-pagination-perpage-text / 28
+        +Pagination({})
+      

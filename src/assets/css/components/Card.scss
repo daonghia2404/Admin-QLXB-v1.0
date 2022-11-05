@@ -1,0 +1,101 @@
+.Card {
+  &.card {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &.card-small {
+    .card-header {
+      padding: 8px 15px;
+
+      .card-header-title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+    }
+  }
+
+  &.card-middle {
+    .card-header {
+      padding: 8px 15px;
+
+      .card-header-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28px;
+      }
+    }
+  }
+
+  &.dark {
+    .card-header {
+      background: #E7EAF3;
+
+      .card-header-title {
+        color: #132144;
+      }
+    }
+
+    .Card {
+
+      &-suffix-text,
+      &-sortable-arrow,
+      &-collapse-arrow {
+        color: #132144;
+      }
+    }
+  }
+
+  &.orange {
+    .card-header {
+      background: #FD7E14;
+    }
+  }
+
+  &.full-height {
+    height: 100%;
+
+    .card-body {
+      min-height: calc(100% - 45px);
+    }
+  }
+
+  .card-header {
+    background: #06C8A6;
+
+    &:first-child {
+      border-radius: 0;
+    }
+
+    .card-header-title {
+      color: #ffffff;
+      column-gap: 8px;
+    }
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  &-collapse-arrow,
+  &-sortable-arrow {
+    cursor: pointer;
+    font-size: 16px;
+    color: $white;
+  }
+
+  &-suffix-text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  &-editable-btn {
+    &.Button {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 4px 15px;
+    }
+  }
+}

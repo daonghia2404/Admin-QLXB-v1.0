@@ -1,0 +1,34 @@
+mixin SelectChildren({ labelId, options, placeholder, showSearch, multiple })
+  select.js-select2-custom.form-select(multiple=multiple || false id=labelId || false autocomplete="off" data-hs-select2-options=`{ "minimumResultsForSearch": "${showSearch ? 'false' : -1}", "placeholder": "${placeholder}" }`)
+    if (placeholder)
+      option(label="empty")
+
+    each item in options
+      option(value=`${item.value}`)= item.label
+
+mixin Select({ className = '', placeholder, options = [], labelId, label, iconSuffix, iconPrepend, showSearch, multiple })
+  .Select(class=`${className} ${iconSuffix ? 'suffix' : ''}`)
+    if (label)
+      label.form-label(for=labelId || false)
+        = label
+        if (required)
+          span.required.ml-1 (*)
+
+    if (iconSuffix || iconPrepend)
+      .input-group(class=`${iconPrepend ? 'input-group-merge' : ''}`)
+        if (iconPrepend)
+          .input-group-prepend
+            span.input-group-text
+              i(class=`${iconPrepend}`)
+
+        div.Select-wrapper(class=`${iconPrepend ? 'has-prepend' : ''}`)
+          +SelectChildren({ labelId, options, placeholder, showSearch, multiple })
+
+        if (iconSuffix)
+          .input-group-append
+            .input-group-text
+              i(class=`${iconSuffix}`)
+    else
+      +SelectChildren({ labelId, options, placeholder, showSearch, multiple })
+
+    

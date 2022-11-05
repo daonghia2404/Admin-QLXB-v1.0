@@ -1,0 +1,85 @@
+mixin FieldEditable({ title, attribute, id, header, accordionId = '', accordionParentId = '', defaultField = true, className = '' })
+  .FieldEditable.Accordion.border-0(class=`${header ? 'header' : ''} ${className}`)
+    .Accordion-parent(id=`${accordionParentId}`)
+      .FieldEditable-header.d-flex
+        .FieldEditable-header-item.name= title
+        .FieldEditable-header-item.type 
+          = attribute
+          if (!header)
+            +Button({ title: defaultField ? 'Mặc định' : 'Tùy chỉnh', variant: defaultField ? 'btn-primary' : 'btn-success', badge: true })
+
+        .FieldEditable-header-item.id
+          = id
+
+          if (!header)
+            .FieldEditable-header-item-actions.d-flex.align-items-center.ml-auto
+              +Button({ className: 'sortablejs-custom-handle', icon: 'tio-move-page', variant: 'btn-white' })
+              +Button({ className: 'js-arrange-up', icon: 'tio-arrow-upward', variant: 'btn-white' })
+              +Button({ className: 'js-arrange-down', icon: 'tio-arrow-downward', variant: 'btn-white' })
+              +Button({ icon: 'tio-copy', variant: 'btn-white' })
+              +Button({ className: 'js-arrange-remove', icon: 'tio-clear', variant: 'btn-white' })
+
+            .FieldEditable-header-item-collapse.d-flex.align-items-center.ml-2
+              +Button({ icon: 'tio-remove', variant: 'btn-ghost-white' })
+              div(role="button" data-toggle="collapse" data-target=`#${accordionId}` aria-expanded="true" aria-controls=`${accordionId}`)
+                +Button({ icon: 'tio-edit', variant: 'btn-ghost-white' })
+
+
+      .accordion-collapse.collapse(id=`${accordionId}` data-parent=`#${accordionParentId}`)
+        .accordion-body
+          .FieldEditable-body
+            if (defaultField)
+              .row
+                .col-6
+                  +Input({ label: 'Tiêu đề field', placeholder: '(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)' })
+                .col-6
+                  .d-flex.align-items-end
+                    +Select({
+                      className: 'w-100',
+                      label: 'Tên thuộc tính',
+                      placeholder: 'Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)',
+                      options: [
+                        { label: 'Tên thuộc tính 1', value: '1' },
+                        { label: 'Tên thuộc tính 2', value: '2' },
+                        { label: 'Tên thuộc tính 3', value: '3' },
+                      ],
+                      iconSuffix: 'tio-chevron-down',
+                    })
+                    +Button({ className: 'ml-3', variant: 'btn-primary', title: 'Thêm' })
+
+            else
+              .row 
+                .col-12.mb-3
+                  +Input({ label: 'Tiêu đề field', placeholder: 'Chưa có tiêu đề' })
+                .col-6.mb-3
+                  +Select({
+                    label: 'Kiểu Field tùy chỉnh',
+                    placeholder: '--- Chọn kiểu dữ liệu ---',
+                    options: [
+                      { label: 'Kiểu Field tùy chỉnh 1', value: '1' },
+                      { label: 'Kiểu Field tùy chỉnh 2', value: '2' },
+                      { label: 'Kiểu Field tùy chỉnh 3', value: '3' },
+                    ],
+                    iconSuffix: 'tio-chevron-down',
+                  })
+                .col-6.mb-3
+                  +Input({ label: 'Text Gợi ý', placeholder: 'Nhập text Gợi ý', value: 'Mã XBP' })
+                .col-6.mb-3
+                  +Select({
+                    label: 'Người điền',
+                    placeholder: '--- Chọn người điền ---',
+                    options: [
+                      { label: 'Người điền 1', value: '1' },
+                      { label: 'Người điền 2', value: '2' },
+                      { label: 'Người điền 3', value: '3' },
+                    ],
+                    iconSuffix: 'tio-chevron-down',
+                  })
+                .col-6.mb-3
+                  +Checkbox({
+                    classNameCheckbox: 'mt-2',
+                    label: 'Có bắt buộc nhập?',
+                    title: 'Có',
+                    labelId: 'Checkbox1',
+                  })
+

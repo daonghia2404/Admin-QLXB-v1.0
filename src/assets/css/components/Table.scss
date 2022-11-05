@@ -1,0 +1,153 @@
+.Table {
+  overflow: auto;
+
+  &-empty {
+    padding: 12px 15px;
+    text-transform: uppercase;
+    color: #677788;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  &-order {
+    position: relative;
+    margin-right: 4px;
+
+    span {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 48px;
+      color: #E7EAF3;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #BDC5D1;
+      position: relative;
+      z-index: 2;
+      letter-spacing: -2px;
+      display: block;
+      transform: translate(15%, 15%);
+    }
+
+    &::before {
+      @include centerAbsolute;
+      width: 36px;
+      height: 36px;
+      background: url('../icons/icon-book-spell.svg');
+      background-size: cover;
+      background-position: center;
+      content: '';
+      z-index: 1;
+    }
+
+    &.birthday {
+      span {
+        color: #FFE9DF;
+        border-color: #FD7E14;
+        transform: translate(15%, 20%);
+      }
+
+      &::before {
+        background: url('../icons/icon-calendar-orange.svg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      &::after {
+        width: 11px;
+        height: 14px;
+        background: url('../icons/icon-birthday-hat.svg');
+        position: absolute;
+        z-index: 3;
+        top: 14px;
+        left: 5px;
+        content: '';
+      }
+
+    }
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 0;
+
+    th,
+    td {
+      font-size: 14px !important;
+      line-height: 20px;
+      border: 1px solid #E7EAF3 !important;
+      vertical-align: middle;
+    }
+
+    thead {
+      th {
+        padding: 12px 15px;
+        background: #F8FAFD;
+        text-transform: uppercase;
+        font-weight: 700 !important;
+        color: #677788;
+        white-space: nowrap;
+        border-bottom: none;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          td {
+            background: #F9FBFF;
+          }
+        }
+      }
+
+      td {
+        padding: 12px 15px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .ellipsis {
+    @include ellipsis(1);
+  }
+
+  .center {
+    text-align: center;
+    display: flex;
+    justify-content: center
+  }
+
+  &-link {
+    color: #377DFF;
+  }
+
+  &-icon {
+    @include centerOriginImage;
+  }
+
+  &-pagination {
+    padding: 15px 35px;
+
+    &-perpage {
+      font-size: 14px;
+      line-height: 22px;
+      color: #677788;
+
+      &-text {
+        position: relative;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .Select {
+        margin-right: -4px;
+
+        .custom-select {
+          box-shadow: none;
+          border: none;
+          min-height: auto;
+        }
+      }
+    }
+  }
+}

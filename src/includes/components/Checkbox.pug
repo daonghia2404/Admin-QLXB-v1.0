@@ -1,0 +1,14 @@
+mixin Checkbox({ className = '', classNameCheckbox = '', labelId, size = 'middle', label = '', title, required, checked })
+  .Checkbox(class=`${className}`)
+    if (label)
+      label.form-label
+        = label
+        if (required)
+          span.required.ml-1 (*)
+
+    .custom-control.custom-checkbox(class=`${classNameCheckbox}`)
+      input(type="checkbox" id=labelId || false checked=checked || false).custom-control-input
+      if (title)
+        label.custom-control-label.text-nowrap(for=labelId || false)
+          = title
+          block

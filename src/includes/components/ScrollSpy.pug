@@ -1,0 +1,30 @@
+mixin ScrollSpy({ title, id, parentId, endId, options = [], showChildren })
+  //- Navbar
+  <div class="ScrollSpy navbar-vertical navbar-expand-lg">
+    //- Navbar Toggle
+    button.navbar-toggler.btn.btn-block.btn-white.mb-3(type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls=`${parentId}` data-toggle="collapse" data-target=`#${parentId}`)
+      <span class="d-flex justify-content-between align-items-center">
+        span.h5.mb-0= title
+
+        <span class="navbar-toggle-default">
+          <i class="tio-menu-hamburger"></i>
+        </span>
+
+        <span class="navbar-toggle-toggled">
+          <i class="tio-clear"></i>
+        </span>
+      </span>
+    </button>
+    //- End Navbar Toggle
+
+    //- Navbar Collapse
+    .collapse.navbar-collapse(id=`${parentId}`)
+      .ScrollSpy-wrapper.js-sticky-block.js-scrollspy(id=`${id}` data-hs-sticky-block-options=`{ "parentSelector": "#${parentId}", "targetSelector": "#header", "startPoint": "#${parentId}", "endPoint": "#${endId}", "stickyOffsetTop": 8 }`)
+        if showChildren
+          block
+        else
+          +Card({ title, size: 'small', dark: true, noPadding: true })
+            ul.navbar-nav.navbar-nav-lg.nav-tabs.card.card-navbar-nav.border-0.p-0
+              each item in options
+                li.nav-item
+                  a.nav-link(href=`${item.link}` class=`${item.active ? 'active' : ''}`)= item.title

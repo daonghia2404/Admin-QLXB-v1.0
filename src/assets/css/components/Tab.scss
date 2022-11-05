@@ -1,0 +1,65 @@
+.Tab {
+  overflow: auto;
+  border-radius: .5rem;
+
+  .nav-segment {
+    flex-wrap: nowrap;
+
+    .nav-link {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      font-size: 12px;
+      line-height: 16px;
+
+      &.active {
+        border-color: #E7EAF3;
+        box-shadow: 0px 6px 12px rgba(140, 152, 164, 0.08);
+      }
+    }
+  }
+
+  .nav-link {
+    white-space: nowrap;
+  }
+
+  &.line-style {
+    .nav-segment {
+      width: 100%;
+      background: transparent;
+      padding: 0;
+      border-bottom: 1px solid #E7EAF3;
+
+      .nav-link {
+        position: relative;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 16px 32px;
+        border-radius: 0;
+        box-shadow: none;
+        color: #677788;
+        border: none;
+        font-weight: 700;
+
+        &::before {
+          position: absolute;
+          height: 3px;
+          content: '';
+          width: 100%;
+          background: #377DFF;
+          bottom: 0;
+          left: 0;
+          transition: $common-transition;
+          transform: scaleX(0);
+        }
+
+        &.active {
+          color: #377DFF;
+
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+}
