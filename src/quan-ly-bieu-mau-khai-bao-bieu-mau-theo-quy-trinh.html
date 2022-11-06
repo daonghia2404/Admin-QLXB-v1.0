@@ -28,16 +28,9 @@
 <i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip" data-placement="right" title="Collapse"></i>
 <i class="tio-last-page navbar-vertical-aside-toggle-full-align" data-template='<div class="tooltip d-none d-sm-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-toggle="tooltip" data-placement="right" title="Expand"></i>
 </button>
-    <div class="Header-title">Khai báo biểu mẫu theo quy trình</div></div>
+    <div class="Header-title d-none d-md-block">Khai báo biểu mẫu theo quy trình</div></div>
 <div class="navbar-nav-wrap-content-right">
 <ul class="navbar-nav align-items-center flex-row">
-<li class="nav-item d-md-none">
-<div class="hs-unfold">
-<a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;" data-hs-unfold-options='{ "target": "#searchDropdown", "type": "css-animation", "animationIn": "fadeIn", "hasOverlay": "rgba(46, 52, 81, 0.1)", "closeBreakpoint": "md" }'>
-<i class="tio-search"></i>
-</a>
-</div>
-</li>
 <li class="nav-item d-none d-sm-inline-block">
 <div class="hs-unfold">
 <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="javascript:;" data-hs-unfold-options='{ "target": "#notificationDropdown", "type": "css-animation" }'>
@@ -314,7 +307,7 @@
 </div>
 </div>
 </li>
-    <li class="nav-item">
+    <li class="nav-item d-none d-md-block">
       <div class="Header-account">
         <div class="Header-account-name">Nguyễn Thu Hòa</div>
         <div class="Header-account-job">Giám đốc</div>
@@ -688,28 +681,28 @@
                             <div class="card-body">
                               <form action="#"> 
                                 <div class="row">
-                                  <div class="col-6 mb-3">
+                                  <div class="col-md-6 col-sm-12 mb-3">
                                     <div class="Input">
                                       <label class="form-label" for="">Tên biểu mẫu
                                       </label>
                                       <input class="form-control" type="text" id="" placeholder="Nhập tên XBP"/>
                                     </div>
                                   </div>
-                                  <div class="col-6 mb-3">
+                                  <div class="col-md-6 col-sm-12 mb-3">
                                     <div class="Input">
                                       <label class="form-label" for="">Mã biểu mẫu
                                       </label>
                                       <input class="form-control" type="text" id="" placeholder="Nhập mã biểu mẫu" value="XBPA283029 (mã tự sinh không sửa)" disabled="disabled"/>
                                     </div>
                                   </div>
-                                  <div class="col-4 mb-3">
+                                  <div class="col-md-4 col-sm-12 mb-3">
                                     <div class="Input">
                                       <label class="form-label" for="">Người tạo
                                       </label>
                                       <input class="form-control" type="text" id="" placeholder="Nhập tên người tạo" value="Tự xuất bản"/>
                                     </div>
                                   </div>
-                                  <div class="col-4 mb-3">
+                                  <div class="col-md-4 col-sm-12 mb-3">
                                     <div class="DatePicker  suffix">
                                       <label class="form-label" for="undefined">Ngày tạo
                                       </label>
@@ -721,7 +714,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-4 mb-3">
+                                  <div class="col-md-4 col-sm-12 mb-3">
                                     <div class="Select  suffix">
                                       <label class="form-label">Loại biểu mẫu
                                       </label>
@@ -759,14 +752,14 @@
                         <div class="card-body p-0">
                           <div class="card-body">
                             <div class="row"> 
-                              <div class="col-6">
+                              <div class="col-md-6 col-sm-12">
                                 <div class="Input">
                                   <label class="form-label" for="">Tiêu đề cụm thông tin
                                   </label>
                                   <input class="form-control" type="text" id="" placeholder="vd: Thông tin cơ bản"/>
                                 </div>
                               </div>
-                              <div class="col-6">
+                              <div class="col-md-6 col-sm-12">
                                 <div class="Select  suffix">
                                   <label class="form-label">Kiểu độ rộng nhóm
                                   </label>
@@ -797,14 +790,14 @@
                               </button>
                             </div>
                             <div class="card-body p-0">
-                              <div class="accordion">
+                              <div class="accordion overflow-auto">
                                 <div class="FieldEditable Accordion border-0 header ">
                                   <div class="Accordion-parent" id="">
                                     <div class="FieldEditable-header d-flex">
                                       <div class="FieldEditable-header-item name">Tên trường dữ liệu</div>
                                       <div class="FieldEditable-header-item type"> Thuộc tính
                                       </div>
-                                      <div class="FieldEditable-header-item id">ID
+                                      <div class="FieldEditable-header-item id"><span class="mr-2">ID</span>
                                       </div>
                                     </div>
                                     <div class="accordion-collapse collapse" id="" data-parent="#">
@@ -856,7 +849,7 @@
                                           <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
                                           </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id">#FCD0099
+                                        <div class="FieldEditable-header-item id"><span class="mr-2">#FCD0099</span>
                                           <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                             <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                             </button>
@@ -927,7 +920,7 @@
                                           <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
                                           </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id">#FCD0099
+                                        <div class="FieldEditable-header-item id"><span class="mr-2">#FCD0099</span>
                                           <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                             <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                             </button>
@@ -998,7 +991,7 @@
                                           <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
                                           </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id">#FCD0099
+                                        <div class="FieldEditable-header-item id"><span class="mr-2">#FCD0099</span>
                                           <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                             <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                             </button>
@@ -1069,7 +1062,7 @@
                                           <button class="Button btn    btn-success middle Button-badge" type="button">Tùy chỉnh
                                           </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id">#FTC0099
+                                        <div class="FieldEditable-header-item id"><span class="mr-2">#FTC0099</span>
                                           <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                             <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                             </button>
@@ -1182,14 +1175,14 @@
                         <div class="card-body p-0">
                           <div class="card-body">
                             <div class="row"> 
-                              <div class="col-6">
+                              <div class="col-md-6 col-sm-12">
                                 <div class="Input">
                                   <label class="form-label" for="">Tiêu đề cụm thông tin
                                   </label>
                                   <input class="form-control" type="text" id="" placeholder="vd: Thông tin cơ bản"/>
                                 </div>
                               </div>
-                              <div class="col-6">
+                              <div class="col-md-6 col-sm-12">
                                 <div class="Select  suffix">
                                   <label class="form-label">Kiểu độ rộng nhóm
                                   </label>
@@ -1220,14 +1213,14 @@
                               </button>
                             </div>
                             <div class="card-body p-0">
-                              <div class="accordion">
+                              <div class="accordion overflow-auto">
                                 <div class="FieldEditable Accordion border-0 header ">
                                   <div class="Accordion-parent" id="">
                                     <div class="FieldEditable-header d-flex">
                                       <div class="FieldEditable-header-item name">Tên trường dữ liệu</div>
                                       <div class="FieldEditable-header-item type"> Thuộc tính
                                       </div>
-                                      <div class="FieldEditable-header-item id">ID
+                                      <div class="FieldEditable-header-item id"><span class="mr-2">ID</span>
                                       </div>
                                     </div>
                                     <div class="accordion-collapse collapse" id="" data-parent="#">
@@ -1279,7 +1272,7 @@
                                           <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
                                           </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id">#FCD0099
+                                        <div class="FieldEditable-header-item id"><span class="mr-2">#FCD0099</span>
                                           <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                             <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                             </button>
@@ -1350,7 +1343,7 @@
                                           <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
                                           </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id">#FCD0099
+                                        <div class="FieldEditable-header-item id"><span class="mr-2">#FCD0099</span>
                                           <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                             <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                             </button>
@@ -1421,7 +1414,7 @@
                                           <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
                                           </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id">#FCD0099
+                                        <div class="FieldEditable-header-item id"><span class="mr-2">#FCD0099</span>
                                           <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                             <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                             </button>
@@ -1492,7 +1485,7 @@
                                           <button class="Button btn    btn-success middle Button-badge" type="button">Tùy chỉnh
                                           </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id">#FTC0099
+                                        <div class="FieldEditable-header-item id"><span class="mr-2">#FTC0099</span>
                                           <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                             <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                             </button>
@@ -1608,14 +1601,14 @@
                               <form action="#"> 
                                 <div class="card-body">
                                   <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-12 mb-3">
                                       <div class="Input">
                                         <label class="form-label" for="">Tiêu đề cụm thông tin
                                         </label>
                                         <input class="form-control" type="text" id="" placeholder="Nhập tiêu đề cụm thông tin" value="Chữ ký các cấp"/>
                                       </div>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-md-4 col-sm-12 mb-3">
                                       <div class="Select  suffix">
                                         <label class="form-label">Kiểu độ rộng nhóm
                                         </label>
@@ -1634,7 +1627,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="col-4 mb-3">
+                                    <div class="col-md-4 col-sm-12 mb-3">
                                       <div class="Checkbox">
                                         <label class="form-label">Hiện tiêu đề khi in
                                         </label>
@@ -1657,14 +1650,14 @@
                                     </button>
                                   </div>
                                   <div class="card-body p-0">
-                                    <div class="accordion">
+                                    <div class="accordion overflow-auto">
                                       <div class="FieldEditable Accordion border-0 header ">
                                         <div class="Accordion-parent" id="">
                                           <div class="FieldEditable-header d-flex">
                                             <div class="FieldEditable-header-item name">Tên trường dữ liệu</div>
                                             <div class="FieldEditable-header-item type"> Thuộc tính
                                             </div>
-                                            <div class="FieldEditable-header-item id">ID
+                                            <div class="FieldEditable-header-item id"><span class="mr-2">ID</span>
                                             </div>
                                           </div>
                                           <div class="accordion-collapse collapse" id="" data-parent="#">
@@ -1716,7 +1709,7 @@
                                                 <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
                                                 </button>
                                               </div>
-                                              <div class="FieldEditable-header-item id">#FCD0099
+                                              <div class="FieldEditable-header-item id"><span class="mr-2">#FCD0099</span>
                                                 <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                                   <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                                   </button>
@@ -1787,7 +1780,7 @@
                                                 <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
                                                 </button>
                                               </div>
-                                              <div class="FieldEditable-header-item id">#FCD0099
+                                              <div class="FieldEditable-header-item id"><span class="mr-2">#FCD0099</span>
                                                 <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
                                                   <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
                                                   </button>

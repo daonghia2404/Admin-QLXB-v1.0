@@ -2,46 +2,46 @@
 <html lang="en">
 <head>
     <title>Code coverage report for src/utils/classes.js</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type='text/css'>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
         .coverage-summary .sorter {
             background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
 <body>
-<div class='wrapper'>
-  <div class='pad1'>
+<div class="wrapper">
+  <div class="pad1">
     <h1>
       <a href="../../index.html">All files</a> / <a href="index.html">src/utils</a> classes.js
     </h1>
-    <div class='clearfix'>
-      <div class='fl pad1y space-right2'>
+    <div class="clearfix">
+      <div class="fl pad1y space-right2">
         <span class="strong">54.72% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>29/53</span>
+        <span class="fraction">29/53</span>
       </div>
-      <div class='fl pad1y space-right2'>
+      <div class="fl pad1y space-right2">
         <span class="strong">33.33% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>10/30</span>
+        <span class="fraction">10/30</span>
       </div>
-      <div class='fl pad1y space-right2'>
+      <div class="fl pad1y space-right2">
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>7/7</span>
+        <span class="fraction">7/7</span>
       </div>
-      <div class='fl pad1y space-right2'>
+      <div class="fl pad1y space-right2">
         <span class="strong">58% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>29/50</span>
+        <span class="fraction">29/50</span>
       </div>
     </div>
   </div>
-  <div class='status-line medium'></div>
+  <div class="status-line medium"></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -409,8 +409,8 @@ module.exports = function(el){
  */
 &nbsp;
 function ClassList(el) {
-  <span class="missing-if-branch" title="if path not taken" >I</span>if (!el || !el.nodeType) {
-<span class="cstat-no" title="statement not covered" >    throw new Error('A DOM element reference is required');</span>
+  <span class="missing-if-branch" title="if path not taken">I</span>if (!el || !el.nodeType) {
+<span class="cstat-no" title="statement not covered">    throw new Error('A DOM element reference is required');</span>
   }
   this.el = el;
   this.list = el.classList;
@@ -426,17 +426,17 @@ function ClassList(el) {
 &nbsp;
 ClassList.prototype.add = function(name){
   // classList
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (this.list) {
+  <span class="missing-if-branch" title="else path not taken">E</span>if (this.list) {
     this.list.add(name);
     return this;
   }
 &nbsp;
   // fallback
-  var arr = <span class="cstat-no" title="statement not covered" >this.array();</span>
-  var i = <span class="cstat-no" title="statement not covered" >index(arr, name);</span>
-<span class="cstat-no" title="statement not covered" >  if (!~i) <span class="cstat-no" title="statement not covered" >arr.push(name);</span></span>
-<span class="cstat-no" title="statement not covered" >  this.el.className = arr.join(' ');</span>
-<span class="cstat-no" title="statement not covered" >  return this;</span>
+  var arr = <span class="cstat-no" title="statement not covered">this.array();</span>
+  var i = <span class="cstat-no" title="statement not covered">index(arr, name);</span>
+<span class="cstat-no" title="statement not covered">  if (!~i) <span class="cstat-no" title="statement not covered">arr.push(name);</span></span>
+<span class="cstat-no" title="statement not covered">  this.el.className = arr.join(' ');</span>
+<span class="cstat-no" title="statement not covered">  return this;</span>
 };
 &nbsp;
 /**
@@ -451,17 +451,17 @@ ClassList.prototype.add = function(name){
 &nbsp;
 ClassList.prototype.remove = function(name){
   // classList
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (this.list) {
+  <span class="missing-if-branch" title="else path not taken">E</span>if (this.list) {
     this.list.remove(name);
     return this;
   }
 &nbsp;
   // fallback
-  var arr = <span class="cstat-no" title="statement not covered" >this.array();</span>
-  var i = <span class="cstat-no" title="statement not covered" >index(arr, name);</span>
-<span class="cstat-no" title="statement not covered" >  if (~i) <span class="cstat-no" title="statement not covered" >arr.splice(i, 1);</span></span>
-<span class="cstat-no" title="statement not covered" >  this.el.className = arr.join(' ');</span>
-<span class="cstat-no" title="statement not covered" >  return this;</span>
+  var arr = <span class="cstat-no" title="statement not covered">this.array();</span>
+  var i = <span class="cstat-no" title="statement not covered">index(arr, name);</span>
+<span class="cstat-no" title="statement not covered">  if (~i) <span class="cstat-no" title="statement not covered">arr.splice(i, 1);</span></span>
+<span class="cstat-no" title="statement not covered">  this.el.className = arr.join(' ');</span>
+<span class="cstat-no" title="statement not covered">  return this;</span>
 };
 &nbsp;
 &nbsp;
@@ -479,10 +479,10 @@ ClassList.prototype.remove = function(name){
 &nbsp;
 ClassList.prototype.toggle = function(name, force){
   // classList
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (this.list) {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if ("undefined" !== typeof force) {
-<span class="cstat-no" title="statement not covered" >      if (force !== this.list.toggle(name, force)) {</span>
-<span class="cstat-no" title="statement not covered" >        this.list.toggle(name); </span>// toggle again to correct
+  <span class="missing-if-branch" title="else path not taken">E</span>if (this.list) {
+    <span class="missing-if-branch" title="if path not taken">I</span>if ("undefined" !== typeof force) {
+<span class="cstat-no" title="statement not covered">      if (force !== this.list.toggle(name, force)) {</span>
+<span class="cstat-no" title="statement not covered">        this.list.toggle(name); </span>// toggle again to correct
       }
     } else {
       this.list.toggle(name);
@@ -491,21 +491,21 @@ ClassList.prototype.toggle = function(name, force){
   }
 &nbsp;
   // fallback
-<span class="cstat-no" title="statement not covered" >  if ("undefined" !== typeof force) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!force) {</span>
-<span class="cstat-no" title="statement not covered" >      this.remove(name);</span>
+<span class="cstat-no" title="statement not covered">  if ("undefined" !== typeof force) {</span>
+<span class="cstat-no" title="statement not covered">    if (!force) {</span>
+<span class="cstat-no" title="statement not covered">      this.remove(name);</span>
     } else {
-<span class="cstat-no" title="statement not covered" >      this.add(name);</span>
+<span class="cstat-no" title="statement not covered">      this.add(name);</span>
     }
   } else {
-<span class="cstat-no" title="statement not covered" >    if (this.has(name)) {</span>
-<span class="cstat-no" title="statement not covered" >      this.remove(name);</span>
+<span class="cstat-no" title="statement not covered">    if (this.has(name)) {</span>
+<span class="cstat-no" title="statement not covered">      this.remove(name);</span>
     } else {
-<span class="cstat-no" title="statement not covered" >      this.add(name);</span>
+<span class="cstat-no" title="statement not covered">      this.add(name);</span>
     }
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return this;</span>
+<span class="cstat-no" title="statement not covered">  return this;</span>
 };
 &nbsp;
 /**
@@ -516,10 +516,10 @@ ClassList.prototype.toggle = function(name, force){
  */
 &nbsp;
 ClassList.prototype.array = function(){
-  var className = this.el.getAttribute('class') || <span class="branch-1 cbranch-no" title="branch not covered" >'';</span>
+  var className = this.el.getAttribute('class') || <span class="branch-1 cbranch-no" title="branch not covered">'';</span>
   var str = className.replace(/^\s+|\s+$/g, '');
   var arr = str.split(re);
-  <span class="missing-if-branch" title="if path not taken" >I</span>if ('' === arr[0]) <span class="cstat-no" title="statement not covered" >arr.shift();</span>
+  <span class="missing-if-branch" title="if path not taken">I</span>if ('' === arr[0]) <span class="cstat-no" title="statement not covered">arr.shift();</span>
   return arr;
 };
 &nbsp;
@@ -533,17 +533,17 @@ ClassList.prototype.array = function(){
 &nbsp;
 ClassList.prototype.has =
 ClassList.prototype.contains = function(name){
-  return this.list ? this.list.contains(name) : <span class="branch-1 cbranch-no" title="branch not covered" >!! ~index(this.array(), name);</span>
+  return this.list ? this.list.contains(name) : <span class="branch-1 cbranch-no" title="branch not covered">!! ~index(this.array(), name);</span>
 };
 &nbsp;</pre></td></tr>
 </table></pre>
-<div class='push'></div><!-- for sticky footer -->
+<div class="push"></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
-<div class='footer quiet pad2 space-top1 center small'>
+<div class="footer quiet pad2 space-top1 center small">
   Code coverage
   generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Jan 29 2017 19:36:51 GMT+0100 (CET)
 </div>
-</div>
+
 <script src="../../prettify.js"></script>
 <script>
 window.onload = function () {

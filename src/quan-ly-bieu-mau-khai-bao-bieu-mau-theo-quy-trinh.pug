@@ -22,15 +22,15 @@ block pages
               +Accordion({ className: 'FormPage-margin', mainId: 'thongtinbieuin', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin biểu mẫu' })
                 form(action="#") 
                   .row
-                    .col-6.mb-3
+                    .col-md-6.col-sm-12.mb-3
                       +Input({ label: 'Tên biểu mẫu', placeholder: 'Nhập tên XBP' })
-                    .col-6.mb-3
+                    .col-md-6.col-sm-12.mb-3
                       +Input({ label: 'Mã biểu mẫu', placeholder: 'Nhập mã biểu mẫu', value: 'XBPA283029 (mã tự sinh không sửa)', disabled: true })
-                    .col-4.mb-3
+                    .col-md-4.col-sm-12.mb-3
                       +Input({ label: 'Người tạo', placeholder: 'Nhập tên người tạo', value: 'Tự xuất bản' })
-                    .col-4.mb-3
+                    .col-md-4.col-sm-12.mb-3
                       +DatePicker({ label: 'Ngày tạo', placeholder: 'Ngày tạo', iconSuffix: 'tio-date-range' })
-                    .col-4.mb-3
+                    .col-md-4.col-sm-12.mb-3
                       +Select({
                         label: 'Loại biểu mẫu',
                         placeholder: '--- Chọn loại biểu mẫu ---',
@@ -46,9 +46,9 @@ block pages
                 +Card({ className: 'FormPage-margin js-arrange-item', title: 'Tên CỤM THÔNG TIN: Cụm Dữ liệu 1 (chưa đặt tên)', sortable: true, noPadding: true })
                   .card-body
                     .row 
-                      .col-6
+                      .col-md-6.col-sm-12
                         +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'vd: Thông tin cơ bản' })
-                      .col-6
+                      .col-md-6.col-sm-12
                         +Select({
                             label: 'Kiểu độ rộng nhóm',
                             placeholder: '1 cột / 2 cột / 3 cột ',
@@ -61,7 +61,7 @@ block pages
                           })
 
                   +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
-                    .accordion
+                    .accordion.overflow-auto
                       +FieldEditable({
                         header: true,
                         title: 'Tên trường dữ liệu',
@@ -107,9 +107,9 @@ block pages
                 +Card({ className: 'FormPage-margin js-arrange-item', title: 'Tên cụm THÔNG TIN: MÔ TẢ BẢN THẢO', sortable: true, noPadding: true })
                   .card-body
                     .row 
-                      .col-6
+                      .col-md-6.col-sm-12
                         +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'vd: Thông tin cơ bản' })
-                      .col-6
+                      .col-md-6.col-sm-12
                         +Select({
                             label: 'Kiểu độ rộng nhóm',
                             placeholder: '1 cột / 2 cột / 3 cột ',
@@ -122,7 +122,7 @@ block pages
                           })
 
                   +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
-                    .accordion
+                    .accordion.overflow-auto
                       +FieldEditable({
                         header: true,
                         title: 'Tên trường dữ liệu',
@@ -169,9 +169,9 @@ block pages
                 form(action="#") 
                   .card-body
                     .row
-                      .col-4
+                      .col-md-4.col-sm-12.mb-3
                         +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'Nhập tiêu đề cụm thông tin', value: 'Chữ ký các cấp' })
-                      .col-4
+                      .col-md-4.col-sm-12.mb-3
                         +Select({
                           label: 'Kiểu độ rộng nhóm',
                           placeholder: '--- Chọn loại biểu mẫu ---',
@@ -182,7 +182,7 @@ block pages
                           ],
                           iconSuffix: 'tio-chevron-down',
                         })
-                      .col-4.mb-3
+                      .col-md-4.col-sm-12.mb-3
                         +Checkbox({
                           classNameCheckbox: 'mt-2',
                           label: 'Hiện tiêu đề khi in',
@@ -191,7 +191,7 @@ block pages
                         })
 
                   +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
-                    .accordion
+                    .accordion.overflow-auto
                       +FieldEditable({
                         header: true,
                         title: 'Tên trường dữ liệu',

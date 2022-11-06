@@ -9,7 +9,7 @@ mixin FieldEditable({ title, attribute, id, header, accordionId = '', accordionP
             +Button({ title: defaultField ? 'Mặc định' : 'Tùy chỉnh', variant: defaultField ? 'btn-primary' : 'btn-success', badge: true })
 
         .FieldEditable-header-item.id
-          = id
+          span.mr-2= id
 
           if (!header)
             .FieldEditable-header-item-actions.d-flex.align-items-center.ml-auto

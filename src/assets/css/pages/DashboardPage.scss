@@ -6,6 +6,11 @@
     .DashboardTotalCard {
       flex: 0 0 calc(100% / 5 - calc(15px * 4 / 5));
       max-width: calc(100% / 5 - calc(15px * 4 / 5));
+
+      @media (max-width: 768px) {
+        flex: 0 0 calc(100% / 2 - calc(15px * 1 / 2));
+        max-width: calc(100% / 2 - calc(15px * 1 / 2));
+      }
     }
   }
 

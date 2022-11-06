@@ -2,46 +2,46 @@
 <html lang="en">
 <head>
     <title>Code coverage report for src/utils/fuzzy.js</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../prettify.css" />
-    <link rel="stylesheet" href="../../base.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type='text/css'>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../prettify.css">
+    <link rel="stylesheet" href="../../base.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
         .coverage-summary .sorter {
             background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
 <body>
-<div class='wrapper'>
-  <div class='pad1'>
+<div class="wrapper">
+  <div class="pad1">
     <h1>
       <a href="../../index.html">All files</a> / <a href="index.html">src/utils</a> fuzzy.js
     </h1>
-    <div class='clearfix'>
-      <div class='fl pad1y space-right2'>
+    <div class="clearfix">
+      <div class="fl pad1y space-right2">
         <span class="strong">95.08% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>58/61</span>
+        <span class="fraction">58/61</span>
       </div>
-      <div class='fl pad1y space-right2'>
+      <div class="fl pad1y space-right2">
         <span class="strong">75% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>24/32</span>
+        <span class="fraction">24/32</span>
       </div>
-      <div class='fl pad1y space-right2'>
+      <div class="fl pad1y space-right2">
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/3</span>
+        <span class="fraction">3/3</span>
       </div>
-      <div class='fl pad1y space-right2'>
+      <div class="fl pad1y space-right2">
         <span class="strong">98.31% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>58/59</span>
+        <span class="fraction">58/59</span>
       </div>
     </div>
   </div>
-  <div class='status-line high'></div>
+  <div class="status-line high"></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -294,13 +294,13 @@
     var Match_Location = options.location || 0;
 &nbsp;
     //Determines how close the match must be to the fuzzy location (specified above). An exact letter match which is 'distance' characters away from the fuzzy location would score as a complete mismatch. A distance of '0' requires the match be at the exact location specified, a threshold of '1000' would require a perfect match to be within 800 characters of the fuzzy location to be found using a 0.8 threshold.
-    var Match_Distance = options.distance || <span class="branch-1 cbranch-no" title="branch not covered" >100;</span>
+    var Match_Distance = options.distance || <span class="branch-1 cbranch-no" title="branch not covered">100;</span>
 &nbsp;
     // At what point does the match algorithm give up. A threshold of '0.0' requires a perfect match (of both letters and location), a threshold of '1.0' would match anything.
-    var Match_Threshold = options.threshold || <span class="branch-1 cbranch-no" title="branch not covered" >0.4;</span>
+    var Match_Threshold = options.threshold || <span class="branch-1 cbranch-no" title="branch not covered">0.4;</span>
 &nbsp;
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (pattern === text) <span class="cstat-no" title="statement not covered" >return true; </span>// Exact match
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (pattern.length &gt; 32) <span class="cstat-no" title="statement not covered" >return false; </span>// This algorithm cannot be used
+    <span class="missing-if-branch" title="if path not taken">I</span>if (pattern === text) <span class="cstat-no" title="statement not covered">return true; </span>// Exact match
+    <span class="missing-if-branch" title="if path not taken">I</span>if (pattern.length &gt; 32) <span class="cstat-no" title="statement not covered">return false; </span>// This algorithm cannot be used
 &nbsp;
     // Set starting location at beginning text and initialise the alphabet.
     var loc = Match_Location,
@@ -326,9 +326,9 @@
         var accuracy = e / pattern.length,
             proximity = Math.abs(loc - x);
 &nbsp;
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (!Match_Distance) {
+        <span class="missing-if-branch" title="if path not taken">I</span>if (!Match_Distance) {
             // Dodge divide by zero error.
-<span class="cstat-no" title="statement not covered" >            return proximity ? 1.0 : accuracy;</span>
+<span class="cstat-no" title="statement not covered">            return proximity ? 1.0 : accuracy;</span>
         }
         return accuracy + (proximity / Match_Distance);
     }
@@ -389,7 +389,7 @@
                 var score = match_bitapScore_(d, j - 1);
                 // This match will almost certainly be better than any existing match.
                 // But check anyway.
-                <span class="missing-if-branch" title="else path not taken" >E</span>if (score &lt;= score_threshold) {
+                <span class="missing-if-branch" title="else path not taken">E</span>if (score &lt;= score_threshold) {
                     // Told you so.
                     score_threshold = score;
                     best_loc = j - 1;
@@ -414,13 +414,13 @@
 };
 &nbsp;</pre></td></tr>
 </table></pre>
-<div class='push'></div><!-- for sticky footer -->
+<div class="push"></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
-<div class='footer quiet pad2 space-top1 center small'>
+<div class="footer quiet pad2 space-top1 center small">
   Code coverage
   generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Jan 29 2017 19:36:51 GMT+0100 (CET)
 </div>
-</div>
+
 <script src="../../prettify.js"></script>
 <script>
 window.onload = function () {

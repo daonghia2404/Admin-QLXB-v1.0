@@ -22,20 +22,20 @@ block pages
                   .accordion
                     +Accordion({ id: 'AccordionSub1', parentId: 'AccordionSubParent', title: 'I. Thông tin hồ sơ', dark: true })
                       .row 
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Năm XB', placeholder: 'Nhập năm' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Năm tái bản', placeholder: 'Nhập năm' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Mã số CXB', placeholder: 'Nhập mã CXB' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Mã số ISBN', placeholder: 'Nhập mã ISBN' })
 
                     +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent', title: 'II. Thông tin chung', dark: true })
                       .row 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Tên gốc', placeholder: 'Nhập tên XBP' })
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Select({
                             label: 'Phương thức xuất bản',
                             placeholder: 'Chọn phương thức xuất bản',
@@ -46,13 +46,13 @@ block pages
                             ],
                             iconSuffix: 'tio-chevron-down',
                           })
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
                             +Input({ className: 'w-100', label: 'Tác giả', placeholder: 'Nhập tên để tìm tác giả' })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Xuất bản lần thứ', placeholder: 'Nhập số lần xuất bản' })
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .FormPage-sublist 
                             .FormPage-sublist-title Tác giả đã chọn:
                             .FormPage-sublist-table
@@ -66,15 +66,15 @@ block pages
                                     td
                                       +Button({ icon: 'tio-delete-outlined', variant: 'btn-outline-danger' })
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Đơn vị đăng ký', placeholder: 'Nhập đơn vị đăng ký' })
 
 
                     +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent', title: 'III. Thông tin hợp đồng xuất bản', dark: true })
                       .row 
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Số Hợp đồng', placeholder: 'Nhập số HĐ' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Select({
                             label: 'Kiểu HĐ',
                             placeholder: 'Chọn kiểu HĐ',
@@ -85,14 +85,14 @@ block pages
                             ],
                             iconSuffix: 'tio-chevron-down',
                           })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +DatePicker({ label: 'Ngày ký HĐ', placeholder: 'Ngày ký HĐ', iconSuffix: 'tio-date-range' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +DatePicker({ label: 'Ngày hết hạn', placeholder: 'Ngày hết hạn', iconSuffix: 'tio-date-range' })
 
                     +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent', title: 'IV. Đối tượng sử dụng và biên mục đề tài', dark: true })
                       .row 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
                             +Select({
                               className: 'w-100',
@@ -108,7 +108,7 @@ block pages
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
                             +Select({
                               className: 'w-100',
@@ -124,7 +124,7 @@ block pages
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
                             +Select({
                               className: 'w-100',
@@ -140,7 +140,7 @@ block pages
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
                             +Select({
                               className: 'w-100',
@@ -156,7 +156,7 @@ block pages
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
                             +Select({
                               className: 'w-100',
@@ -174,14 +174,14 @@ block pages
 
                     +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent', title: 'V. Thông tin bản thảo', dark: true })
                       .row 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'File bản thảo', placeholder: 'Upload file', value: 'Tên-văn-bản-sau-khi-tải-lên.doc', required: true, suffixText: 'Tải lên', upload: true })
 
                           p.mt-2
                             <i class="tio-warning-outlined mr-2"></i>
                             |Lưu ý !!! Định dạng file cho phép: DOC, DOCX
 
-                        .col-6.mb-3 
+                        .col-md-6.col-sm-12.mb-3 
                           .d-flex.align-items-end
                             +Input({ className: 'w-100', label: 'Số trang', required: true, placeholder: 'Nhập số trang bản thảo' })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
@@ -189,18 +189,18 @@ block pages
                     +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent', title: 'V. Thông tin bản thảo', dark: true })
                       .FormPage-switch-wrapper
                         .row 
-                          .col-3
+                          .col-lg-3.col-md-6.col-sm-12
                             +Switch({ label: 'Ấn phẩm điện tử', reverse: true })
-                          .col-3
+                          .col-lg-3.col-md-6.col-sm-12
                             +Switch({ label: 'Ấn phẩm in', reverse: true })
-                          .col-3
+                          .col-lg-3.col-md-6.col-sm-12
                             +Switch({ label: 'Sách dịch', reverse: true })
-                          .col-3
+                          .col-lg-3.col-md-6.col-sm-12
                             +Switch({ label: 'Sách có bản quyền', reverse: true })
 
                     +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent', title: 'VII. Thông tin ấn phẩm điện tử', dark: true })
                       .row 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Select({
                             label: 'Chuẩn phát hành',
                             placeholder: '--- Chọn Chuẩn phát hành ---',
@@ -213,7 +213,7 @@ block pages
                             required: true,
                           })
 
-                        .col-6.mb-3 
+                        .col-md-6.col-sm-12.mb-3 
                           .d-flex.align-items-end
                             +Select({
                               className: 'w-100',
@@ -231,9 +231,9 @@ block pages
 
                     +Accordion({ id: 'AccordionSub8', parentId: 'AccordionSubParent', title: 'VIII. Thông tin ấn phẩm in', dark: true })
                       .row 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Số trang', required: true, placeholder: 'Nhập số trang' })
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           label.form-label Khổ sách - Rộng(cm) x Dài(cm)
 
                           .d-flex.align-items-end
@@ -241,26 +241,26 @@ block pages
                             +Input({ className: 'w-100 ml-3', placeholder: 'Nhập độ dài' })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +DatePicker({ label: 'Ngày đủ bản thảo', placeholder: 'Ngày đủ bản thảo', iconSuffix: 'tio-date-range' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +DatePicker({ label: 'Ngày ra bản sách', placeholder: 'Ngày ra bản sách', iconSuffix: 'tio-date-range' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Loại giấy ruột', placeholder: 'VD: BB60' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Loại giấy bìa', placeholder: 'VD: C250' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Số màu in ruột', placeholder: 'VD: 4' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Số màu in bìa', placeholder: 'VD: 4' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Số lượng in lần 1', placeholder: 'VD: 1000' })
-                        .col-3.mb-3
+                        .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Giá bìa', placeholder: 'VD: 5.000.000' })
 
                     +Accordion({ id: 'AccordionSub9', parentId: 'AccordionSubParent', title: 'IX. Thông tin sách dịch', dark: true })
                       .row 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
                             +Select({
                               className: 'w-100',
@@ -275,12 +275,12 @@ block pages
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
                             +Input({ className: 'w-100', label: 'Dịch từ ấn phẩm', placeholder: 'Nhập dịch từ ấn phẩm', value: 'INSIDE REAL ESTATE Buy, Sell and Profit in any Property Market', required: true })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           .FormPage-sublist 
                             .FormPage-sublist-title Thông tin dịch giả:
                             .FormPage-sublist-table
@@ -292,7 +292,7 @@ block pages
                                     td Địa chỉ:...
                                     td
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Select({
                             label: 'Ngôn ngữ xuất bản',
                             placeholder: '--- Chọn ngôn ngữ xuất bản ---',
@@ -305,7 +305,7 @@ block pages
                             required: true,
                           })
 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Select({
                             label: 'Ngôn ngữ gốc',
                             placeholder: '--- Chọn ngôn ngữ gốc ---',
@@ -320,9 +320,9 @@ block pages
                         
                     +Accordion({ id: 'AccordionSub10', parentId: 'AccordionSubParent', title: 'X. Thông tin bản quyền', dark: true })
                       .row 
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Người chịu trách nhiệm', placeholder: 'Nhập tên người chịu trách nhiệm bản quyền' })
-                        .col-6.mb-3
+                        .col-md-6.col-sm-12.mb-3
                           +Select({
                             label: 'Loại bản quyền',
                             placeholder: '--- Chọn loại bản quyền ---',
@@ -333,11 +333,11 @@ block pages
                             ],
                             iconSuffix: 'tio-chevron-down',
                           })
-                        .col-4.mb-3
+                        .col-md-4.col-sm-12.mb-3
                           +Input({ label: 'Bản quyền thuộc', placeholder: 'Nhập tên chủ sở hữu bản quyền' })
-                        .col-4.mb-3
+                        .col-md-4.col-sm-12.mb-3
                           +DatePicker({ label: 'Bản quyền từ', placeholder: 'Ngày bản quyền bắt đầu', iconSuffix: 'tio-date-range' })
-                        .col-4.mb-3
+                        .col-md-4.col-sm-12.mb-3
                           +DatePicker({ label: 'Bản quyền đến', placeholder: 'Ngày bản quyền kết thúc', iconSuffix: 'tio-date-range' })
                         .col-12.mb-3
                           +TextArea({ label: 'Thông tin bổ sung', placeholder: 'Nhập nội dung tại đây' })
