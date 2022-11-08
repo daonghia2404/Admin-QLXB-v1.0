@@ -6,8 +6,8 @@ mixin SelectChildren({ labelId, options, placeholder, showSearch, multiple })
     each item in options
       option(value=`${item.value}`)= item.label
 
-mixin Select({ className = '', placeholder, options = [], labelId, label, iconSuffix, iconPrepend, showSearch, multiple })
-  .Select(class=`${className} ${iconSuffix ? 'suffix' : ''}`)
+mixin Select({ className = '', placeholder, options = [], labelId, label, iconSuffix, iconPrepend, showSearch, multiple, withArrow })
+  .Select(class=`${className} ${iconSuffix ? 'suffix' : ''} ${withArrow ? 'with-arrow' : ''}`)
     if (label)
       label.form-label(for=labelId || false)
         = label

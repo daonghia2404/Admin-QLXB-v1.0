@@ -24,6 +24,16 @@
     }
   }
 
+  &.with-arrow {
+    .input-group-append {
+      position: absolute;
+      height: 100%;
+      right: 0;
+      pointer-events: none;
+      background: #ffffff;
+    }
+  }
+
   &-wrapper {
     flex: 1;
 

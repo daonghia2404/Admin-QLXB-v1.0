@@ -19,6 +19,7 @@
       font-weight: 700;
       line-height: 48px;
       color: #E7EAF3;
+      font-family: 'Roboto Condensed', sans-serif;
       -webkit-text-stroke-width: 1px;
       -webkit-text-stroke-color: #BDC5D1;
       position: relative;
@@ -114,7 +115,14 @@
   .center {
     text-align: center;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    column-gap: 4px;
+
+    .Button {
+      &-badge {
+        flex: 1;
+      }
+    }
   }
 
   &-link {

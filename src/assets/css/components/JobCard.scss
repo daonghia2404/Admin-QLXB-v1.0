@@ -6,6 +6,37 @@
     background: #F9FBFF;
   }
 
+  &-order {
+    position: relative;
+    margin-right: 4px;
+
+    span {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 700;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #BDC5D1;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #ffffff;
+      position: relative;
+      z-index: 2;
+      letter-spacing: -2px;
+      display: block;
+      transform: translate(15%, 15%);
+    }
+
+    &::before {
+      @include centerAbsolute;
+      width: 24px;
+      height: 24px;
+      background: url('../icons/icon-book-spell.svg');
+      background-size: cover;
+      background-position: center;
+      content: '';
+      z-index: 1;
+    }
+  }
+
   &-info {
     &-header {
       column-gap: 8px;

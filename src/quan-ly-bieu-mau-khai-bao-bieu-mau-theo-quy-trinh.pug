@@ -11,7 +11,7 @@ block pages
       .row 
         .col-lg-9.pr-lg-2
           +Card({ noPadding: true })
-            .FormPage-submit.d-flex.flex-wrap.mb-3.border-bottom
+            .FormPage-submit.d-flex.flex-wrap.mb-3.border
               +Button({ title: 'Lưu nháp', icon: 'tio-save-outlined mr-1', variant: 'btn-soft-dark' })  
               +Button({ title: 'Gửi duyệt', icon: 'tio-send-outlined mr-1', variant: 'btn-soft-dark', modalId: 'ModalConfirmSendForm' })  
               +Button({ title: 'Duyệt', icon: 'tio-checkmark-circle-outlined mr-1', variant: 'btn-soft-dark' })  
@@ -19,7 +19,7 @@ block pages
               +Button({ title: 'In', icon: 'tio-print mr-1', variant: 'btn-soft-dark' })  
 
             .accordion
-              +Accordion({ className: 'FormPage-margin', mainId: 'thongtinbieuin', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin biểu mẫu' })
+              +Accordion({ className: '', mainId: 'thongtinbieuin', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin biểu mẫu' })
                 form(action="#") 
                   .row
                     .col-md-6.col-sm-12.mb-3
@@ -40,10 +40,11 @@ block pages
                           { label: 'Loại biểu mẫu 3', value: '3' },
                         ],
                         iconSuffix: 'tio-chevron-down',
+                        withArrow: true,
                       })
 
-              .js-arrange
-                +Card({ className: 'FormPage-margin js-arrange-item', title: 'Tên CỤM THÔNG TIN: Cụm Dữ liệu 1 (chưa đặt tên)', sortable: true, noPadding: true })
+              .js-arrange.FormPage-margin
+                +Card({ className: ' js-arrange-item', title: 'Tên CỤM THÔNG TIN: Cụm Dữ liệu 1 (chưa đặt tên)', sortable: true, noPadding: true })
                   .card-body
                     .row 
                       .col-md-6.col-sm-12
@@ -58,6 +59,7 @@ block pages
                               { label: '3 cột', value: '3' },
                             ],
                             iconSuffix: 'tio-chevron-down',
+                            withArrow: true,
                           })
 
                   +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
@@ -104,7 +106,7 @@ block pages
                           defaultField: false,
                         })
 
-                +Card({ className: 'FormPage-margin js-arrange-item', title: 'Tên cụm THÔNG TIN: MÔ TẢ BẢN THẢO', sortable: true, noPadding: true })
+                +Card({ className: ' js-arrange-item', title: 'Tên cụm THÔNG TIN: MÔ TẢ BẢN THẢO', sortable: true, noPadding: true })
                   .card-body
                     .row 
                       .col-md-6.col-sm-12
@@ -119,6 +121,7 @@ block pages
                               { label: '3 cột', value: '3' },
                             ],
                             iconSuffix: 'tio-chevron-down',
+                            withArrow: true,
                           })
 
                   +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
@@ -165,7 +168,7 @@ block pages
                           defaultField: false,
                         })
 
-              +Accordion({ className: 'FormPage-margin', id: 'Accordion4', parentId: 'AccordionParent', title: 'Chữ ký các cấp', noPadding: true })
+              +Accordion({ className: '', id: 'Accordion4', parentId: 'AccordionParent', title: 'Chữ ký các cấp', noPadding: true })
                 form(action="#") 
                   .card-body
                     .row
@@ -181,6 +184,7 @@ block pages
                             { label: '3 cột', value: '3' },
                           ],
                           iconSuffix: 'tio-chevron-down',
+                          withArrow: true,
                         })
                       .col-md-4.col-sm-12.mb-3
                         +Checkbox({
@@ -217,7 +221,7 @@ block pages
                           accordionParentId: 'AccordionEditableParent',
                         })
 
-              +Accordion({ className: 'FormPage-margin bottom', id: 'Accordion5', parentId: 'AccordionParent', title: 'Tùy chỉnh biểu mẫu in' })
+              +Accordion({ className: ' bottom', id: 'Accordion5', parentId: 'AccordionParent', title: 'Tùy chỉnh biểu mẫu in' })
                 +TextArea({ className: 'mb-3', label: 'Đầu trang in' })
                 +TextArea({ className: 'mb-3', label: 'Cuối trang in' })
 

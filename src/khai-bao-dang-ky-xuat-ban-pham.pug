@@ -9,13 +9,13 @@ block pages
       .row 
         .col-lg-9.pr-lg-2
           +Card({ noPadding: true })
-            .FormPage-submit.d-flex.flex-wrap.mb-3.border-bottom
+            .FormPage-submit.d-flex.flex-wrap.mb-3.border
               +Button({ title: 'Gửi duyệt', icon: 'tio-send-outlined mr-1', variant: 'btn-primary' })  
               +Button({ title: 'Lưu nháp', icon: 'tio-save-outlined mr-1', variant: 'btn-soft-dark' })  
               +Button({ title: 'Đóng', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
 
             .accordion
-              +Accordion({ className: 'FormPage-margin', mainId: 'thongtinkhaibao', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin xuất bản' })
+              +Accordion({ className: '', mainId: 'thongtinkhaibao', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin xuất bản' })
                 form(action="#") 
                   .row.mb-3
                     .col-12 
@@ -51,6 +51,7 @@ block pages
                               { label: 'Phương thức xuất bản 3', value: '3' },
                             ],
                             iconSuffix: 'tio-chevron-down',
+                            withArrow: true,
                           })
                         .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
@@ -71,6 +72,7 @@ block pages
                               { label: 'Kiểu HĐ 3', value: '3' },
                             ],
                             iconSuffix: 'tio-chevron-down',
+                            withArrow: true,
                           })
                         .col-lg-3.col-md-6.col-sm-12.mb-3
                           +DatePicker({ label: 'Ngày ký HĐ', placeholder: 'Ngày ký HĐ', iconSuffix: 'tio-date-range' })
@@ -91,6 +93,7 @@ block pages
                                 { label: 'Chủ đề 3', value: '3' },
                               ],
                               iconSuffix: 'tio-chevron-down',
+                              withArrow: true,
                               required: true,
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
@@ -107,6 +110,7 @@ block pages
                                 { label: 'Nhóm đối tượng 3', value: '3' },
                               ],
                               iconSuffix: 'tio-chevron-down',
+                              withArrow: true,
                               required: true,
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
@@ -123,6 +127,7 @@ block pages
                                 { label: 'Nhóm độ tuổi 3', value: '3' },
                               ],
                               iconSuffix: 'tio-chevron-down',
+                              withArrow: true,
                               required: true,
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
@@ -139,6 +144,7 @@ block pages
                                 { label: 'Trình độ 3', value: '3' },
                               ],
                               iconSuffix: 'tio-chevron-down',
+                              withArrow: true,
                               required: true,
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
@@ -155,6 +161,7 @@ block pages
                                 { label: 'Lĩnh vực - Ngành 3', value: '3' },
                               ],
                               iconSuffix: 'tio-chevron-down',
+                              withArrow: true,
                               required: true,
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
@@ -197,6 +204,7 @@ block pages
                               { label: 'Chuẩn phát hành 3', value: '3' },
                             ],
                             iconSuffix: 'tio-chevron-down',
+                            withArrow: true,
                             required: true,
                           })
 
@@ -212,6 +220,7 @@ block pages
                                 { label: 'Phát hành tại 3', value: '3' },
                               ],
                               iconSuffix: 'tio-chevron-down',
+                              withArrow: true,
                               required: true,
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
@@ -259,6 +268,7 @@ block pages
                                 { label: 'Tên dịch giả 3', value: '3' },
                               ],
                               iconSuffix: 'tio-chevron-down',
+                              withArrow: true,
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
@@ -272,6 +282,7 @@ block pages
                               { label: 'Ngôn ngữ gốc 3', value: '3' },
                             ],
                             iconSuffix: 'tio-chevron-down',
+                            withArrow: true,
                             required: true,
                           })
 
@@ -288,6 +299,7 @@ block pages
                                 { label: 'Nhóm đối tượng 3', value: '3' },
                               ],
                               iconSuffix: 'tio-chevron-down',
+                              withArrow: true,
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
@@ -301,6 +313,7 @@ block pages
                               { label: 'Ngôn ngữ xuất bản 3', value: '3' },
                             ],
                             iconSuffix: 'tio-chevron-down',
+                            withArrow: true,
                             required: true,
                           })
                         
@@ -318,6 +331,7 @@ block pages
                               { label: 'Loại bản quyền 3', value: '3' },
                             ],
                             iconSuffix: 'tio-chevron-down',
+                            withArrow: true,
                           })
                         .col-md-4.col-sm-12.mb-3
                           +Input({ label: 'Bản quyền thuộc', placeholder: 'Nhập tên chủ sở hữu bản quyền' })
@@ -328,7 +342,7 @@ block pages
                         .col-12.mb-3
                           +TextArea({ label: 'Thông tin bổ sung', placeholder: 'Nhập nội dung tại đây' })
 
-              +Accordion({ className: 'FormPage-margin', mainId: 'banthaofile', id: 'Accordion2', parentId: 'AccordionParent', title: 'Bản thảo & FILE' })
+              +Accordion({ className: '', mainId: 'banthaofile', id: 'Accordion2', parentId: 'AccordionParent', title: 'Bản thảo & FILE' })
                 form(action="#") 
                   +Tab({
                     className: 'mb-3',
@@ -367,7 +381,7 @@ block pages
                                   .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
                                 td.text-nowrap 23:13’ 27/06/2022
 
-              +Accordion({ className: 'FormPage-margin bottom', mainId: 'cacthongtinkhac', id: 'Accordion3', parentId: 'AccordionParent', title: 'Các thông tin khác' })
+              +Accordion({ className: ' bottom', mainId: 'cacthongtinkhac', id: 'Accordion3', parentId: 'AccordionParent', title: 'Các thông tin khác' })
                 form(action="#") 
                   .row
                     .col-12.mb-3
@@ -375,11 +389,6 @@ block pages
 
                     .col-12.mb-3
                       +TextArea({ label: 'GHI CHÚ', placeholder: 'Nhập nội dung tại đây' })
-
-            //- +Card({ className: 'FormPage-margin', id: 'banthaofile', title: 'Bản thảo & FILE' })
-            //-   div(style="height: 50vh")
-            //- +Card({ className: 'FormPage-margin', id: 'cacthongtinkhac', title: 'Các thông tin khác' })
-            //-   div(style="height: 50vh")
 
             #scrollSpyEnd
 

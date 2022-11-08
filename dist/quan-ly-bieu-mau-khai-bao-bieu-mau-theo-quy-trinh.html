@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VMHT QLXB</title>
-    <link rel="icon" type="image/png" href="./assets/images/logo.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
+    <link rel="icon" type="image/png" href="./assets/images/logo.svg"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
 <link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
 <link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
 <link rel="stylesheet" href="./assets/css/theme.min.css">
@@ -656,7 +656,7 @@
             <div class="col-lg-9 pr-lg-2">
               <div class="Card card card-middle" id=""> 
                 <div class="card-body p-0">
-                  <div class="FormPage-submit d-flex flex-wrap mb-3 border-bottom">
+                  <div class="FormPage-submit d-flex flex-wrap mb-3 border">
                     <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-save-outlined mr-1"></i>Lưu nháp
                     </button>
                     <button class="Button btn btn-soft-dark middle" type="button" data-toggle="modal" data-target="#ModalConfirmSendForm"><i class="tio-send-outlined mr-1"></i>Gửi duyệt
@@ -669,7 +669,7 @@
                     </button>
                   </div>
                   <div class="accordion">
-                    <div class="Accordion FormPage-margin" id="thongtinbieuin">
+                    <div class="Accordion" id="thongtinbieuin">
                       <div class="Accordion-parent" id="AccordionParent">
                         <div class="Card card card-middle" id=""> 
                           <div class="card-header d-flex align-items-center justify-content-between">
@@ -715,7 +715,7 @@
                                     </div>
                                   </div>
                                   <div class="col-md-4 col-sm-12 mb-3">
-                                    <div class="Select suffix">
+                                    <div class="Select suffix with-arrow">
                                       <label class="form-label">Loại biểu mẫu
                                       </label>
                                       <div class="input-group">
@@ -740,8 +740,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="js-arrange">
-                      <div class="Card card card-middle FormPage-margin js-arrange-item" id=""> 
+                    <div class="js-arrange FormPage-margin">
+                      <div class="Card card card-middle js-arrange-item" id=""> 
                         <div class="card-header d-flex align-items-center justify-content-between">
                           <h3 class="card-header-title d-flex align-items-center">Tên CỤM THÔNG TIN: Cụm Dữ liệu 1 (chưa đặt tên)
                           </h3>
@@ -760,7 +760,7 @@
                                 </div>
                               </div>
                               <div class="col-md-6 col-sm-12">
-                                <div class="Select suffix">
+                                <div class="Select suffix with-arrow">
                                   <label class="form-label">Kiểu độ rộng nhóm
                                   </label>
                                   <div class="input-group">
@@ -813,7 +813,7 @@
                                             </div>
                                             <div class="col-6">
                                               <div class="d-flex align-items-end">
-                                                <div class="Select w-100 suffix">
+                                                <div class="Select w-100 suffix with-arrow">
                                                   <label class="form-label">Tên thuộc tính
                                                   </label>
                                                   <div class="input-group">
@@ -863,8 +863,6 @@
                                             </button>
                                           </div>
                                           <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                            <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                            </button>
                                             <div role="button" data-toggle="collapse" data-target="#AccordionEditable1" aria-expanded="true" aria-controls="AccordionEditable1">
                                               <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                               </button>
@@ -885,7 +883,7 @@
                                               </div>
                                               <div class="col-6">
                                                 <div class="d-flex align-items-end">
-                                                  <div class="Select w-100 suffix">
+                                                  <div class="Select w-100 suffix with-arrow">
                                                     <label class="form-label">Tên thuộc tính
                                                     </label>
                                                     <div class="input-group">
@@ -934,8 +932,6 @@
                                             </button>
                                           </div>
                                           <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                            <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                            </button>
                                             <div role="button" data-toggle="collapse" data-target="#AccordionEditable2" aria-expanded="true" aria-controls="AccordionEditable2">
                                               <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                               </button>
@@ -956,7 +952,7 @@
                                               </div>
                                               <div class="col-6">
                                                 <div class="d-flex align-items-end">
-                                                  <div class="Select w-100 suffix">
+                                                  <div class="Select w-100 suffix with-arrow">
                                                     <label class="form-label">Tên thuộc tính
                                                     </label>
                                                     <div class="input-group">
@@ -1005,8 +1001,6 @@
                                             </button>
                                           </div>
                                           <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                            <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                            </button>
                                             <div role="button" data-toggle="collapse" data-target="#AccordionEditable3" aria-expanded="true" aria-controls="AccordionEditable3">
                                               <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                               </button>
@@ -1027,7 +1021,7 @@
                                               </div>
                                               <div class="col-6">
                                                 <div class="d-flex align-items-end">
-                                                  <div class="Select w-100 suffix">
+                                                  <div class="Select w-100 suffix with-arrow">
                                                     <label class="form-label">Tên thuộc tính
                                                     </label>
                                                     <div class="input-group">
@@ -1076,8 +1070,6 @@
                                             </button>
                                           </div>
                                           <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                            <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                            </button>
                                             <div role="button" data-toggle="collapse" data-target="#AccordionEditable4" aria-expanded="true" aria-controls="AccordionEditable4">
                                               <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                               </button>
@@ -1097,7 +1089,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-6 mb-3">
-                                                <div class="Select suffix">
+                                                <div class="Select suffix with-arrow">
                                                   <label class="form-label">Kiểu Field tùy chỉnh
                                                   </label>
                                                   <div class="input-group">
@@ -1123,7 +1115,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-6 mb-3">
-                                                <div class="Select suffix">
+                                                <div class="Select suffix with-arrow">
                                                   <label class="form-label">Người điền
                                                   </label>
                                                   <div class="input-group">
@@ -1164,7 +1156,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="Card card card-middle FormPage-margin js-arrange-item" id=""> 
+                      <div class="Card card card-middle js-arrange-item" id=""> 
                         <div class="card-header d-flex align-items-center justify-content-between">
                           <h3 class="card-header-title d-flex align-items-center">Tên cụm THÔNG TIN: MÔ TẢ BẢN THẢO
                           </h3>
@@ -1183,7 +1175,7 @@
                                 </div>
                               </div>
                               <div class="col-md-6 col-sm-12">
-                                <div class="Select suffix">
+                                <div class="Select suffix with-arrow">
                                   <label class="form-label">Kiểu độ rộng nhóm
                                   </label>
                                   <div class="input-group">
@@ -1236,7 +1228,7 @@
                                             </div>
                                             <div class="col-6">
                                               <div class="d-flex align-items-end">
-                                                <div class="Select w-100 suffix">
+                                                <div class="Select w-100 suffix with-arrow">
                                                   <label class="form-label">Tên thuộc tính
                                                   </label>
                                                   <div class="input-group">
@@ -1286,8 +1278,6 @@
                                             </button>
                                           </div>
                                           <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                            <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                            </button>
                                             <div role="button" data-toggle="collapse" data-target="#AccordionEditable5" aria-expanded="true" aria-controls="AccordionEditable5">
                                               <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                               </button>
@@ -1308,7 +1298,7 @@
                                               </div>
                                               <div class="col-6">
                                                 <div class="d-flex align-items-end">
-                                                  <div class="Select w-100 suffix">
+                                                  <div class="Select w-100 suffix with-arrow">
                                                     <label class="form-label">Tên thuộc tính
                                                     </label>
                                                     <div class="input-group">
@@ -1357,8 +1347,6 @@
                                             </button>
                                           </div>
                                           <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                            <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                            </button>
                                             <div role="button" data-toggle="collapse" data-target="#AccordionEditable6" aria-expanded="true" aria-controls="AccordionEditable6">
                                               <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                               </button>
@@ -1379,7 +1367,7 @@
                                               </div>
                                               <div class="col-6">
                                                 <div class="d-flex align-items-end">
-                                                  <div class="Select w-100 suffix">
+                                                  <div class="Select w-100 suffix with-arrow">
                                                     <label class="form-label">Tên thuộc tính
                                                     </label>
                                                     <div class="input-group">
@@ -1428,8 +1416,6 @@
                                             </button>
                                           </div>
                                           <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                            <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                            </button>
                                             <div role="button" data-toggle="collapse" data-target="#AccordionEditable7" aria-expanded="true" aria-controls="AccordionEditable7">
                                               <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                               </button>
@@ -1450,7 +1436,7 @@
                                               </div>
                                               <div class="col-6">
                                                 <div class="d-flex align-items-end">
-                                                  <div class="Select w-100 suffix">
+                                                  <div class="Select w-100 suffix with-arrow">
                                                     <label class="form-label">Tên thuộc tính
                                                     </label>
                                                     <div class="input-group">
@@ -1499,8 +1485,6 @@
                                             </button>
                                           </div>
                                           <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                            <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                            </button>
                                             <div role="button" data-toggle="collapse" data-target="#AccordionEditable8" aria-expanded="true" aria-controls="AccordionEditable8">
                                               <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                               </button>
@@ -1520,7 +1504,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-6 mb-3">
-                                                <div class="Select suffix">
+                                                <div class="Select suffix with-arrow">
                                                   <label class="form-label">Kiểu Field tùy chỉnh
                                                   </label>
                                                   <div class="input-group">
@@ -1546,7 +1530,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-6 mb-3">
-                                                <div class="Select suffix">
+                                                <div class="Select suffix with-arrow">
                                                   <label class="form-label">Người điền
                                                   </label>
                                                   <div class="input-group">
@@ -1588,7 +1572,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="Accordion FormPage-margin" id="">
+                    <div class="Accordion" id="">
                       <div class="Accordion-parent" id="AccordionParent">
                         <div class="Card card card-middle" id=""> 
                           <div class="card-header d-flex align-items-center justify-content-between">
@@ -1609,7 +1593,7 @@
                                       </div>
                                     </div>
                                     <div class="col-md-4 col-sm-12 mb-3">
-                                      <div class="Select suffix">
+                                      <div class="Select suffix with-arrow">
                                         <label class="form-label">Kiểu độ rộng nhóm
                                         </label>
                                         <div class="input-group">
@@ -1673,7 +1657,7 @@
                                                   </div>
                                                   <div class="col-6">
                                                     <div class="d-flex align-items-end">
-                                                      <div class="Select w-100 suffix">
+                                                      <div class="Select w-100 suffix with-arrow">
                                                         <label class="form-label">Tên thuộc tính
                                                         </label>
                                                         <div class="input-group">
@@ -1723,8 +1707,6 @@
                                                   </button>
                                                 </div>
                                                 <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                                  <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                                  </button>
                                                   <div role="button" data-toggle="collapse" data-target="#AccordionEditable9" aria-expanded="true" aria-controls="AccordionEditable9">
                                                     <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                                     </button>
@@ -1745,7 +1727,7 @@
                                                     </div>
                                                     <div class="col-6">
                                                       <div class="d-flex align-items-end">
-                                                        <div class="Select w-100 suffix">
+                                                        <div class="Select w-100 suffix with-arrow">
                                                           <label class="form-label">Tên thuộc tính
                                                           </label>
                                                           <div class="input-group">
@@ -1794,8 +1776,6 @@
                                                   </button>
                                                 </div>
                                                 <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                                  <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-remove"></i>
-                                                  </button>
                                                   <div role="button" data-toggle="collapse" data-target="#AccordionEditable10" aria-expanded="true" aria-controls="AccordionEditable10">
                                                     <button class="Button btn btn-icon btn-ghost-white middle" type="button"><i class="tio-edit"></i>
                                                     </button>
@@ -1816,7 +1796,7 @@
                                                     </div>
                                                     <div class="col-6">
                                                       <div class="d-flex align-items-end">
-                                                        <div class="Select w-100 suffix">
+                                                        <div class="Select w-100 suffix with-arrow">
                                                           <label class="form-label">Tên thuộc tính
                                                           </label>
                                                           <div class="input-group">
@@ -1853,7 +1833,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="Accordion FormPage-margin bottom" id="">
+                    <div class="Accordion bottom" id="">
                       <div class="Accordion-parent" id="AccordionParent">
                         <div class="Card card card-middle" id=""> 
                           <div class="card-header d-flex align-items-center justify-content-between">

@@ -22,8 +22,7 @@ gulp.task("pug", function buildHTML() {
 });
 
 //SASS - CSS
-var sass = require("gulp-sass");
-sass.compiler = require("node-sass");
+var sass = require('gulp-sass')(require('sass'));
 
 gulp.task("sass", () => {
   return gulp

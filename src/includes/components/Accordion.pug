@@ -1,7 +1,7 @@
-mixin Accordion({ className = '', id, parentId, title, mainId = '', dark, suffixText, noPadding, sortable })
+mixin Accordion({ className = '', id, parentId, title, mainId = '', dark, showDate, noPadding, sortable })
   .Accordion(class=`${className}` id=`${mainId}`)
     .Accordion-parent(id=`${parentId}`)
-      +Card({ title, accordionId: id, accordionParentId: parentId, dark, suffixText, noPadding, sortable })
+      +Card({ title, accordionId: id, accordionParentId: parentId, dark, showDate, noPadding, sortable })
         block
     
     

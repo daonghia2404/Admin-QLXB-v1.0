@@ -9,7 +9,7 @@ block pages
       .row 
         .col-lg-9.pr-lg-2
           +Card({ id: 'bieuso', noPadding: true })
-            .PreviewPage-submit.d-flex.flex-wrap.mb-3.border-bottom
+            .PreviewPage-submit.d-flex.flex-wrap.mb-3.border
               +Button({ title: 'Xét Duyệt XBP', icon: 'tio-checkmark-square-outlined mr-1', variant: 'btn-primary' })  
               +Button({ title: 'Từ chối', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
               +Button({ title: 'Comment', icon: 'tio-sms-chat-outlined mr-1', variant: 'btn-soft-dark' })  
@@ -29,7 +29,7 @@ block pages
               })
 
             .accordion
-              +Accordion({ className: 'PreviewPage-margin', mainId: 'thongtinchung', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin chung về bản đắng ký xuất bản phẩm' })
+              +Accordion({ className: '', mainId: 'thongtinchung', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin chung về bản đắng ký xuất bản phẩm' })
                 .row 
                   .col-md-6.pr-md-2.mb-3
                     +Table({})
@@ -63,7 +63,7 @@ block pages
                           td.text-nowrap #[strong Loại Xuất bản phẩm]
                           td.w-100 Sách giấy, Sách điện tử
 
-              +Accordion({ className: 'PreviewPage-margin', mainId: 'quanlycongviec', id: 'Accordion2', parentId: 'AccordionParent', title: 'Quản lý công việc (danh sách việc cần làm)', noPadding: true })
+              +Accordion({ className: '', mainId: 'quanlycongviec', id: 'Accordion2', parentId: 'AccordionParent', title: 'Quản lý công việc (danh sách việc cần làm)', noPadding: true })
                 .border-bottom.background.px-4.py-3
                   h4.mb-0
                     <i class="tio-settings-outlined mr-2"></i>
@@ -147,7 +147,7 @@ block pages
                         +Checkbox({ title: '6. Ra quyết định in', labelId: 'Checkbox14' })
                           +Badge({ title: 'Tự động', className: 'ml-2', variant: 'badge-soft-success text-success' })
 
-              +Accordion({ className: 'PreviewPage-margin', mainId: 'banthaofile', id: 'Accordion3', parentId: 'AccordionParent', title: 'Bản thảo & FILE' })
+              +Accordion({ className: '', mainId: 'banthaofile', id: 'Accordion3', parentId: 'AccordionParent', title: 'Bản thảo & FILE' })
                 form(action="#") 
                   +Tab({
                     className: 'mb-3',
@@ -186,7 +186,7 @@ block pages
                                   .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
                                 td.text-nowrap 23:13’ 27/06/2022
 
-              +Accordion({ className: 'PreviewPage-margin', mainId: 'thongtinkhac', id: 'Accordion4', parentId: 'AccordionParent', title: 'Thông tin khác' })
+              +Accordion({ className: '', mainId: 'thongtinkhac', id: 'Accordion4', parentId: 'AccordionParent', title: 'Thông tin khác' })
                 .accordion
                   +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent', title: 'Thông tin Cơ bản', dark: true })
                     +Table({})
@@ -360,7 +360,7 @@ block pages
                               td.w-100 27/09/2022
 
 
-              +Accordion({ className: 'PreviewPage-margin', mainId: 'lichsuxuatbanpham', id: 'Accordion5', parentId: 'AccordionParent', title: 'Lịch sử thao tác', suffixText: 'T3 - 30/06/2021', noPadding: true })
+              +Accordion({ className: '', mainId: 'lichsuxuatbanpham', id: 'Accordion5', parentId: 'AccordionParent', title: 'Lịch sử thao tác', showDate: true, noPadding: true })
                 +Table({ style: 'margin: -1px', showPagination: true })
                   tbody 
                     each item in [1,2,3,4,5]
@@ -368,7 +368,7 @@ block pages
                         td.text-center= item
                         td Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022
 
-              +Accordion({ className: 'PreviewPage-margin', mainId: 'binhluanvaduyet', id: 'Accordion6', parentId: 'AccordionParent', title: 'Bình luận và duyệt', suffixText: 'T3 - 30/06/2021', noPadding: true })
+              +Accordion({ className: '', mainId: 'binhluanvaduyet', id: 'Accordion6', parentId: 'AccordionParent', title: 'Bình luận và duyệt', showDate: true, noPadding: true })
                 +Table({ style: 'margin: -1px', showPagination: true })
                   thead 
                     tr 
@@ -376,7 +376,7 @@ block pages
                       th Công đoạn
                       th Người bình luận
                       th Nội dung bình luận
-                      th Trạng thái
+                      th.text-center Trạng thái
                       th Thời gian
                   tbody 
                     each item in [1,2,3,4,5]

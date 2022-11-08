@@ -3,6 +3,13 @@
     column-gap: 15px;
     row-gap: 15px;
     padding: 15px;
+    position: sticky;
+    top: 59px;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
+    z-index: 99;
+    background: #ffffff;
 
     .Button {
       font-size: 14px;

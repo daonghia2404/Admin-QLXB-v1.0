@@ -53,24 +53,27 @@
   }
 
   &-birthday {
-    padding: 64px 30px;
+    padding: 25px 10px;
     background: #FFF8F5 url('../images/bg-birthday.png');
     background-size: cover;
     background-position: center;
     text-align: center;
-    height: 100%;
 
     .Avatar {
-      width: 200px;
-      height: 200px;
-      margin-bottom: 12px;
+      width: 102px;
+      height: 102px;
+      margin-bottom: 6px;
     }
 
     &-text {
       font-weight: 700;
-      font-size: 20px;
-      line-height: 30px;
+      font-size: 14px;
+      line-height: 20px;
       color: #132144;
+
+      small {
+        font-size: 12px;
+      }
     }
 
     &-user {
@@ -93,9 +96,9 @@
         }
 
         &-description {
-          font-size: 12px;
-          line-height: 20px;
-          color: #132144;
+          font-size: 13px;
+          line-height: 18px;
+          color: #58637C;
         }
       }
     }
