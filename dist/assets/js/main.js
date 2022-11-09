@@ -85,16 +85,21 @@ const storageCollpase = {
       (collapse) => `#${collapse.id}`
     );
 
-    const storageBefore = localStorage.getItem(key)
+    const isEmpty =
+      localStorage.getItem(key) &&
+      JSON.parse(localStorage.getItem(key) || "[]").length === 0;
+
+    const storageBefore = !isEmpty
       ? JSON.parse(localStorage.getItem(key) || "[]")
       : initialCollapseStorage;
 
-    if (!localStorage.getItem(key)) {
+    if (isEmpty) {
       localStorage.setItem(key, JSON.stringify(initialCollapseStorage));
     }
 
     collapses.forEach((collapse) => {
-      if (storageBefore.includes(`#${collapse.id}`)) collapse.classList.add("show");
+      if (storageBefore.includes(`#${collapse.id}`))
+        collapse.classList.add("show");
       else collapse.classList.remove("show");
     });
 
