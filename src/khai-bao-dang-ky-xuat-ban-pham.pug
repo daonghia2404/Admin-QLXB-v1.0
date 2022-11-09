@@ -15,14 +15,14 @@ block pages
               +Button({ title: 'Đóng', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
 
             .accordion
-              +Accordion({ className: '', mainId: 'thongtinkhaibao', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin xuất bản' })
+              +Accordion({ className: '', mainId: 'thongtinkhaibao', id: 'Accordion1', parentId: 'AccordionParent1', title: 'Thông tin xuất bản' })
                 form(action="#") 
                   .row.mb-3
                     .col-12 
                       +Input({ label: 'Tên Xuất bản phẩm', placeholder: 'Nhập tên Xuất bản phẩm', required: true })
 
                   .accordion
-                    +Accordion({ id: 'AccordionSub1', parentId: 'AccordionSubParent', title: 'I. Thông tin hồ sơ', dark: true })
+                    +Accordion({ id: 'AccordionSub1', parentId: 'AccordionSubParent1', title: 'I. Thông tin hồ sơ', dark: true })
                       .row 
                         .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Mã số', placeholder: 'Mã XBP' })
@@ -33,7 +33,7 @@ block pages
                         .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Mã số ISBN', placeholder: 'Nhập mã ISBN' })
 
-                    +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent', title: 'II. Thông tin chung', dark: true })
+                    +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent2', title: 'II. Thông tin chung', dark: true })
                       .row 
                         .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Tên gốc', placeholder: 'Nhập tên XBP' })
@@ -58,7 +58,7 @@ block pages
                             +Input({ className: 'w-100', label: 'Đơn vị đăng ký', placeholder: 'Nhập tên để tìm tác giả', required: true })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                    +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent', title: 'III. Thông tin hợp đồng xuất bản', dark: true })
+                    +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent3', title: 'III. Thông tin hợp đồng xuất bản', dark: true })
                       .row 
                         .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Số Hợp đồng', placeholder: 'Nhập số HĐ' })
@@ -75,11 +75,11 @@ block pages
                             withArrow: true,
                           })
                         .col-lg-3.col-md-6.col-sm-12.mb-3
-                          +DatePicker({ label: 'Ngày ký HĐ', placeholder: 'Ngày ký HĐ', iconSuffix: 'tio-date-range' })
+                          +DatePicker({ label: 'Ngày ký HĐ', placeholder: 'Ngày ký HĐ', iconSuffix: 'tio-date-range', withArrow: true })
                         .col-lg-3.col-md-6.col-sm-12.mb-3
-                          +DatePicker({ label: 'Ngày hết hạn', placeholder: 'Ngày hết hạn', iconSuffix: 'tio-date-range' })
+                          +DatePicker({ label: 'Ngày hết hạn', placeholder: 'Ngày hết hạn', iconSuffix: 'tio-date-range', withArrow: true })
 
-                    +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent', title: 'IV. Đối tượng sử dụng và biên mục đề tài', dark: true })
+                    +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent4', title: 'IV. Đối tượng sử dụng và biên mục đề tài', dark: true })
                       .row 
                         .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
@@ -166,7 +166,7 @@ block pages
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                    +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent', title: 'V. Thông tin bản thảo', dark: true })
+                    +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent5', title: 'V. Thông tin bản thảo', dark: true })
                       .row 
                         .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'File bản thảo', placeholder: 'Upload file', value: 'Tên-văn-bản-sau-khi-tải-lên.doc', required: true, suffixText: 'Tải lên', upload: true })
@@ -180,7 +180,7 @@ block pages
                             +Input({ className: 'w-100', label: 'Số trang', required: true, placeholder: 'Nhập số trang bản thảo' })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                    +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent', title: 'V. Thông tin bản thảo', dark: true })
+                    +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent6', title: 'V. Thông tin bản thảo', dark: true })
                       .FormPage-switch-wrapper
                         .row 
                           .col-lg-3.col-md-6.col-sm-12
@@ -192,7 +192,7 @@ block pages
                           .col-lg-3.col-md-6.col-sm-12
                             +Switch({ label: 'Sách có bản quyền', reverse: true })
 
-                    +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent', title: 'VII. Thông tin ấn phẩm điện tử', dark: true })
+                    +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent7', title: 'VII. Thông tin ấn phẩm điện tử', dark: true })
                       .row 
                         .col-md-6.col-sm-12.mb-3
                           +Select({
@@ -225,7 +225,7 @@ block pages
                             })
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
-                    +Accordion({ id: 'AccordionSub8', parentId: 'AccordionSubParent', title: 'VIII. Thông tin ấn phẩm in', dark: true })
+                    +Accordion({ id: 'AccordionSub8', parentId: 'AccordionSubParent8', title: 'VIII. Thông tin ấn phẩm in', dark: true })
                       .row 
                         .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Số trang', required: true, placeholder: 'Nhập số trang' })
@@ -238,9 +238,9 @@ block pages
                             +Button({ className: 'border ml-3', icon: 'tio-add', variant: 'btn-light', circle: true })
 
                         .col-lg-3.col-md-6.col-sm-12.mb-3
-                          +DatePicker({ label: 'Ngày đủ bản thảo', placeholder: 'Ngày đủ bản thảo', iconSuffix: 'tio-date-range' })
+                          +DatePicker({ label: 'Ngày đủ bản thảo', placeholder: 'Ngày đủ bản thảo', iconSuffix: 'tio-date-range', withArrow: true })
                         .col-lg-3.col-md-6.col-sm-12.mb-3
-                          +DatePicker({ label: 'Ngày ra bản sách', placeholder: 'Ngày ra bản sách', iconSuffix: 'tio-date-range' })
+                          +DatePicker({ label: 'Ngày ra bản sách', placeholder: 'Ngày ra bản sách', iconSuffix: 'tio-date-range', withArrow: true })
                         .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Loại giấy ruột', placeholder: 'VD: BB60' })
                         .col-lg-3.col-md-6.col-sm-12.mb-3
@@ -254,7 +254,7 @@ block pages
                         .col-lg-3.col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Giá bìa', placeholder: 'VD: 5.000.000' })
 
-                    +Accordion({ id: 'AccordionSub9', parentId: 'AccordionSubParent', title: 'IX. Thông tin sách dịch', dark: true })
+                    +Accordion({ id: 'AccordionSub9', parentId: 'AccordionSubParent9', title: 'IX. Thông tin sách dịch', dark: true })
                       .row 
                         .col-md-6.col-sm-12.mb-3
                           .d-flex.align-items-end
@@ -317,7 +317,7 @@ block pages
                             required: true,
                           })
                         
-                    +Accordion({ id: 'AccordionSub10', parentId: 'AccordionSubParent', title: 'X. Thông tin bản quyền', dark: true })
+                    +Accordion({ id: 'AccordionSub10', parentId: 'AccordionSubParent10', title: 'X. Thông tin bản quyền', dark: true })
                       .row 
                         .col-md-6.col-sm-12.mb-3
                           +Input({ label: 'Người chịu trách nhiệm', placeholder: 'Nhập tên người chịu trách nhiệm bản quyền' })
@@ -336,13 +336,13 @@ block pages
                         .col-md-4.col-sm-12.mb-3
                           +Input({ label: 'Bản quyền thuộc', placeholder: 'Nhập tên chủ sở hữu bản quyền' })
                         .col-md-4.col-sm-12.mb-3
-                          +DatePicker({ label: 'Bản quyền từ', placeholder: 'Ngày bản quyền bắt đầu', iconSuffix: 'tio-date-range' })
+                          +DatePicker({ label: 'Bản quyền từ', placeholder: 'Ngày bản quyền bắt đầu', iconSuffix: 'tio-date-range', withArrow: true })
                         .col-md-4.col-sm-12.mb-3
-                          +DatePicker({ label: 'Bản quyền đến', placeholder: 'Ngày bản quyền kết thúc', iconSuffix: 'tio-date-range' })
+                          +DatePicker({ label: 'Bản quyền đến', placeholder: 'Ngày bản quyền kết thúc', iconSuffix: 'tio-date-range', withArrow: true })
                         .col-12.mb-3
                           +TextArea({ label: 'Thông tin bổ sung', placeholder: 'Nhập nội dung tại đây' })
 
-              +Accordion({ className: '', mainId: 'banthaofile', id: 'Accordion2', parentId: 'AccordionParent', title: 'Bản thảo & FILE' })
+              +Accordion({ className: '', mainId: 'banthaofile', id: 'Accordion2', parentId: 'AccordionParent2', title: 'Bản thảo & FILE' })
                 form(action="#") 
                   +Tab({
                     className: 'mb-3',
@@ -381,7 +381,7 @@ block pages
                                   .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
                                 td.text-nowrap 23:13’ 27/06/2022
 
-              +Accordion({ className: ' bottom', mainId: 'cacthongtinkhac', id: 'Accordion3', parentId: 'AccordionParent', title: 'Các thông tin khác' })
+              +Accordion({ className: ' bottom', mainId: 'cacthongtinkhac', id: 'Accordion3', parentId: 'AccordionParent3', title: 'Các thông tin khác' })
                 form(action="#") 
                   .row
                     .col-12.mb-3

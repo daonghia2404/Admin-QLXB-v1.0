@@ -10,7 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
 <link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
-<link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" href="./assets/css/theme.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
   </head>
@@ -546,7 +547,7 @@
                               <div class="input-group input-group-merge">
                                 <div class="input-group-prepend"><span class="input-group-text"><i class="tio-search"></i></span></div>
                                 <div class="Select-wrapper has-prepend">
-                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;false&quot;, &quot;placeholder&quot;: &quot;Tìm &amp; thêm người nhận&quot; }">
+                                  <select class="js-select2-custom form-select" multiple="multiple" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;false&quot;, &quot;placeholder&quot;: &quot;Tìm &amp; thêm người nhận&quot; }">
                                     <option label="empty"></option>
                                     <option value="1">Người nhận 1</option>
                                     <option value="2">Người nhận 2</option>
@@ -670,14 +671,14 @@
                   </div>
                   <div class="accordion">
                     <div class="Accordion" id="thongtinbieuin">
-                      <div class="Accordion-parent" id="AccordionParent">
+                      <div class="Accordion-parent" id="AccordionParent1">
                         <div class="Card card card-middle    " id=""> 
                           <div class="card-header d-flex align-items-center justify-content-between">
                             <h3 class="card-header-title d-flex align-items-center">Thông tin biểu mẫu
                             </h3>
                             <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion1" aria-expanded="true" aria-controls="Accordion1"><i class="tio-chevron-down"></i></div>
                           </div>
-                          <div class="collapse show" id="Accordion1" data-parent="#AccordionParent">
+                          <div class="collapse show" id="Accordion1" data-parent="#AccordionParent1">
                             <div class="card-body">
                               <form action="#"> 
                                 <div class="row">
@@ -703,7 +704,7 @@
                                     </div>
                                   </div>
                                   <div class="col-md-4 col-sm-12 mb-3">
-                                    <div class="DatePicker  suffix">
+                                    <div class="DatePicker  suffix with-arrow">
                                       <label class="form-label" for="undefined">Ngày tạo
                                       </label>
                                       <div class="input-group">
@@ -1573,14 +1574,14 @@
                       </div>
                     </div>
                     <div class="Accordion" id="">
-                      <div class="Accordion-parent" id="AccordionParent">
+                      <div class="Accordion-parent" id="AccordionParent2">
                         <div class="Card card card-middle    " id=""> 
                           <div class="card-header d-flex align-items-center justify-content-between">
                             <h3 class="card-header-title d-flex align-items-center">Chữ ký các cấp
                             </h3>
                             <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion4" aria-expanded="true" aria-controls="Accordion4"><i class="tio-chevron-down"></i></div>
                           </div>
-                          <div class="collapse show" id="Accordion4" data-parent="#AccordionParent">
+                          <div class="collapse show" id="Accordion4" data-parent="#AccordionParent2">
                             <div class="card-body p-0">
                               <form action="#"> 
                                 <div class="card-body">
@@ -1834,14 +1835,14 @@
                       </div>
                     </div>
                     <div class="Accordion  bottom" id="">
-                      <div class="Accordion-parent" id="AccordionParent">
+                      <div class="Accordion-parent" id="AccordionParent3">
                         <div class="Card card card-middle    " id=""> 
                           <div class="card-header d-flex align-items-center justify-content-between">
                             <h3 class="card-header-title d-flex align-items-center">Tùy chỉnh biểu mẫu in
                             </h3>
                             <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion5" aria-expanded="true" aria-controls="Accordion5"><i class="tio-chevron-down"></i></div>
                           </div>
-                          <div class="collapse show" id="Accordion5" data-parent="#AccordionParent">
+                          <div class="collapse show" id="Accordion5" data-parent="#AccordionParent3">
                             <div class="card-body">
                               <div class="TextArea mb-3">
                                 <label class="form-label" for="">Đầu trang in
@@ -1967,10 +1968,10 @@
       	var end = moment();
       
       	function cb(start, end) {
-      		$('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      		$('.js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
       	}
       
-      	$('#js-daterangepicker-predefined').daterangepicker({
+      	$('.js-daterangepicker-predefined').daterangepicker({
       		startDate: start,
       		endDate: end,
       		ranges: {

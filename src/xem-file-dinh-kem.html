@@ -10,7 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
 <link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
-<link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" href="./assets/css/theme.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
   </head>
@@ -796,10 +797,10 @@
       	var end = moment();
       
       	function cb(start, end) {
-      		$('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      		$('.js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
       	}
       
-      	$('#js-daterangepicker-predefined').daterangepicker({
+      	$('.js-daterangepicker-predefined').daterangepicker({
       		startDate: start,
       		endDate: end,
       		ranges: {

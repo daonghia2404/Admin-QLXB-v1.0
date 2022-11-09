@@ -365,8 +365,6 @@ template {
   border-radius: 2px;
 }
 .Button.Button-badge.btn-lg {
-  font-size: 14px;
-  line-height: 20px;
   padding: 4px 8px;
   border-radius: 5px;
 }
@@ -461,10 +459,10 @@ template {
 .Card-suffix-text {
   font-size: 14px;
   line-height: 20px;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .Card-editable-btn.Button {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   padding: 4px 15px;
 }
@@ -636,7 +634,7 @@ template {
   column-gap: 4px;
 }
 .Table .center .Button-badge {
-  flex: 1;
+  width: 70px;
 }
 .Table-link {
   color: #377DFF;
@@ -746,14 +744,17 @@ template {
 }
 .JobCard-info-actions {
   column-gap: 10px;
+  row-gap: 10px;
   padding-top: 8px;
   border-top: 1px dashed #E7EAF3;
 }
 .JobCard-info-actions .Button {
   font-size: 12px;
   line-height: 16px;
-  padding: 4px 16px;
+  padding: 4px 8px;
   border-radius: 2px;
+  white-space: nowrap;
+  width: 70px;
 }
 
 .ButtonOnTop {
@@ -826,7 +827,7 @@ template {
   flex: 1;
 }
 .Select-wrapper.has-prepend .custom-select {
-  padding-left: 36px;
+  padding-left: 20px;
 }
 .Select .select2-container--default .custom-select .select2-search--inline .select2-search__field {
   transform: translateY(4px);
@@ -834,6 +835,13 @@ template {
 
 .DatePicker .flatpickr-input {
   flex: 1 !important;
+}
+.DatePicker.with-arrow .input-group-append {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  pointer-events: none;
+  background: #ffffff;
 }
 
 .Switch .toggle-switch {
@@ -1119,7 +1127,7 @@ template {
   white-space: nowrap;
 }
 .DashboardPage-birthday {
-  padding: 25px 10px;
+  padding: 50px 10px;
   background: #FFF8F5 url("../images/bg-birthday.png");
   background-size: cover;
   background-position: center;
@@ -1173,7 +1181,7 @@ template {
   background: #ffffff;
 }
 .FormPage-submit .Button {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   padding: 8px 15px;
   border-radius: 5px;
@@ -1270,7 +1278,7 @@ template {
   background: #ffffff;
 }
 .PreviewPage-submit .Button {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
   padding: 8px 15px;
   border-radius: 5px;

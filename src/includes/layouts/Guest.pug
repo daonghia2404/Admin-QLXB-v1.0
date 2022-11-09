@@ -44,7 +44,8 @@ html
 
 		<link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
 		<link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
-		<link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
+		<link rel="stylesheet" href="./assets/vendor/flatpickr/dist/flatpickr.min.css">
+		<link rel="stylesheet" href="./assets/vendor/daterangepicker/daterangepicker.css">
 
 		<link rel="stylesheet" href="./assets/css/theme.min.css">
 
@@ -146,10 +147,10 @@ html
 				var end = moment();
 
 				function cb(start, end) {
-					$('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+					$('.js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
 				}
 
-				$('#js-daterangepicker-predefined').daterangepicker({
+				$('.js-daterangepicker-predefined').daterangepicker({
 					startDate: start,
 					endDate: end,
 					ranges: {

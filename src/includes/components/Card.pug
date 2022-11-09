@@ -17,9 +17,13 @@ mixin Card({ className = '', style, id = '', block, title, size = 'middle', noPa
             <i class="tio-clear"></i>
 
         if (showDate)
-          .Card-suffix-text.ml-auto.mr-2
-            i.tio-date-range.mr-1
-            |T3 - 30/06/2021
+          button.js-daterangepicker-predefined.ml-auto.mr-2.btn.btn-ghost.Card-suffix-text.p-0
+            i.tio-date-range.mr-2
+            span.js-daterangepicker-predefined-preview
+
+          //- .Card-suffix-text.ml-auto.mr-2
+          //-   i.tio-date-range.mr-1
+          //-   |T3 - 30/06/2021
 
         if (accordionId)
           .Card-collapse-arrow(role="button" data-toggle="collapse" data-target=`#${accordionId}` aria-expanded="true" aria-controls=`${accordionId}` class=`${showDate ? '' : 'ml-auto'}`)

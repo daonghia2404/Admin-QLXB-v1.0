@@ -19,7 +19,7 @@ block pages
               +Button({ title: 'In', icon: 'tio-print mr-1', variant: 'btn-soft-dark' })  
 
             .accordion
-              +Accordion({ className: '', mainId: 'thongtinbieuin', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin biểu mẫu' })
+              +Accordion({ className: '', mainId: 'thongtinbieuin', id: 'Accordion1', parentId: 'AccordionParent1', title: 'Thông tin biểu mẫu' })
                 form(action="#") 
                   .row
                     .col-md-6.col-sm-12.mb-3
@@ -29,7 +29,7 @@ block pages
                     .col-md-4.col-sm-12.mb-3
                       +Input({ label: 'Người tạo', placeholder: 'Nhập tên người tạo', value: 'Tự xuất bản' })
                     .col-md-4.col-sm-12.mb-3
-                      +DatePicker({ label: 'Ngày tạo', placeholder: 'Ngày tạo', iconSuffix: 'tio-date-range' })
+                      +DatePicker({ label: 'Ngày tạo', placeholder: 'Ngày tạo', iconSuffix: 'tio-date-range', withArrow: true })
                     .col-md-4.col-sm-12.mb-3
                       +Select({
                         label: 'Loại biểu mẫu',
@@ -168,7 +168,7 @@ block pages
                           defaultField: false,
                         })
 
-              +Accordion({ className: '', id: 'Accordion4', parentId: 'AccordionParent', title: 'Chữ ký các cấp', noPadding: true })
+              +Accordion({ className: '', id: 'Accordion4', parentId: 'AccordionParent2', title: 'Chữ ký các cấp', noPadding: true })
                 form(action="#") 
                   .card-body
                     .row
@@ -221,7 +221,7 @@ block pages
                           accordionParentId: 'AccordionEditableParent',
                         })
 
-              +Accordion({ className: ' bottom', id: 'Accordion5', parentId: 'AccordionParent', title: 'Tùy chỉnh biểu mẫu in' })
+              +Accordion({ className: ' bottom', id: 'Accordion5', parentId: 'AccordionParent3', title: 'Tùy chỉnh biểu mẫu in' })
                 +TextArea({ className: 'mb-3', label: 'Đầu trang in' })
                 +TextArea({ className: 'mb-3', label: 'Cuối trang in' })
 

@@ -10,7 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
 <link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
-<link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" href="./assets/css/theme.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
   </head>
@@ -602,10 +603,13 @@
                           <h3 class="card-header-title d-flex align-items-center">Sách mới đăng ký
                           </h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body p-0">
                           <div class="DashboardPage-job">
                             <div class="JobCard d-flex align-items-start">
-                              <div class="JobCard-order"><span>01</span></div>
+                              <div class="JobCard-avatar"> 
+                                <div class="Avatar avatar avatar-circle avatar-xs" style="background: #377DFF;"> <span class="avatar-initials">01</span>
+                                </div>
+                              </div>
                               <div class="JobCard-info"> 
                                 <div class="JobCard-info-header d-flex align-items-center"> 
                                   <div class="JobCard-info-header-title">Phê duyệt XBP: Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
@@ -622,11 +626,23 @@
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                       <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-user"></i><span>Nhận: BTV Vũ Hoài Nam</span></div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
                                          <i class="tio-time"></i><span>Bắt đầu:  31/09/22</span></div>
                                     </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
+                                    </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -637,7 +653,10 @@
                               </div>
                             </div>
                             <div class="JobCard d-flex align-items-start dark">
-                              <div class="JobCard-order"><span>02</span></div>
+                              <div class="JobCard-avatar"> 
+                                <div class="Avatar avatar avatar-circle avatar-xs" style="background: #377DFF;"> <span class="avatar-initials">02</span>
+                                </div>
+                              </div>
                               <div class="JobCard-info"> 
                                 <div class="JobCard-info-header d-flex align-items-center"> 
                                   <div class="JobCard-info-header-title">Phê duyệt XBP: Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
@@ -654,11 +673,23 @@
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                       <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-user"></i><span>Nhận: BTV Vũ Hoài Nam</span></div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
                                          <i class="tio-time"></i><span>Bắt đầu:  31/09/22</span></div>
                                     </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
+                                    </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -669,7 +700,10 @@
                               </div>
                             </div>
                             <div class="JobCard d-flex align-items-start">
-                              <div class="JobCard-order"><span>03</span></div>
+                              <div class="JobCard-avatar"> 
+                                <div class="Avatar avatar avatar-circle avatar-xs" style="background: #377DFF;"> <span class="avatar-initials">03</span>
+                                </div>
+                              </div>
                               <div class="JobCard-info"> 
                                 <div class="JobCard-info-header d-flex align-items-center"> 
                                   <div class="JobCard-info-header-title">Phê duyệt XBP: Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
@@ -686,11 +720,23 @@
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                       <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-user"></i><span>Nhận: BTV Vũ Hoài Nam</span></div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
                                          <i class="tio-time"></i><span>Bắt đầu:  31/09/22</span></div>
                                     </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
+                                    </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -701,7 +747,10 @@
                               </div>
                             </div>
                             <div class="JobCard d-flex align-items-start dark">
-                              <div class="JobCard-order"><span>04</span></div>
+                              <div class="JobCard-avatar"> 
+                                <div class="Avatar avatar avatar-circle avatar-xs" style="background: #377DFF;"> <span class="avatar-initials">04</span>
+                                </div>
+                              </div>
                               <div class="JobCard-info"> 
                                 <div class="JobCard-info-header d-flex align-items-center"> 
                                   <div class="JobCard-info-header-title">Phê duyệt XBP: Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
@@ -718,11 +767,23 @@
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                       <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-user"></i><span>Nhận: BTV Vũ Hoài Nam</span></div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
                                          <i class="tio-time"></i><span>Bắt đầu:  31/09/22</span></div>
                                     </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
+                                    </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -733,7 +794,10 @@
                               </div>
                             </div>
                             <div class="JobCard d-flex align-items-start">
-                              <div class="JobCard-order"><span>05</span></div>
+                              <div class="JobCard-avatar"> 
+                                <div class="Avatar avatar avatar-circle avatar-xs" style="background: #377DFF;"> <span class="avatar-initials">05</span>
+                                </div>
+                              </div>
                               <div class="JobCard-info"> 
                                 <div class="JobCard-info-header d-flex align-items-center"> 
                                   <div class="JobCard-info-header-title">Phê duyệt XBP: Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
@@ -750,11 +814,23 @@
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                       <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-user"></i><span>Nhận: BTV Vũ Hoài Nam</span></div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
                                          <i class="tio-time"></i><span>Bắt đầu:  31/09/22</span></div>
                                     </div>
+                                    <div class="col-md-6 col-sm-12">
+                                      <div class="JobCard-info-body-text d-flex align-items-start">
+                                         <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
+                                    </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -808,8 +884,12 @@
                                          <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
                                     </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -851,8 +931,12 @@
                                          <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
                                     </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -894,8 +978,12 @@
                                          <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
                                     </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -937,8 +1025,12 @@
                                          <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
                                     </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -980,8 +1072,12 @@
                                          <i class="tio-time-40-s"></i><span>Deadline: 31/09/22</span></div>
                                     </div>
                                   </div>
-                                  <div class="JobCard-info-actions d-flex"> 
-                                    <button class="Button btn btn-primary middle" type="button">Gửi
+                                  <div class="JobCard-info-actions d-flex flex-wrap">
+                                    <button class="Button btn btn-danger middle" type="button">Gửi
+                                    </button>
+                                    <button class="Button btn btn-warning middle" type="button">Nhận
+                                    </button>
+                                    <button class="Button btn btn-primary middle" type="button">Duyệt
                                     </button>
                                     <button class="Button btn btn-success middle" type="button">Phê duyệt
                                     </button>
@@ -1253,10 +1349,10 @@
       	var end = moment();
       
       	function cb(start, end) {
-      		$('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      		$('.js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
       	}
       
-      	$('#js-daterangepicker-predefined').daterangepicker({
+      	$('.js-daterangepicker-predefined').daterangepicker({
       		startDate: start,
       		endDate: end,
       		ranges: {

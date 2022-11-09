@@ -10,7 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
 <link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
-<link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" href="./assets/css/theme.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
   </head>
@@ -530,27 +531,27 @@
                   </div>
                   <div class="accordion">
                     <div class="Accordion" id="thongtinkhaibao">
-                      <div class="Accordion-parent" id="AccordionParent">
+                      <div class="Accordion-parent" id="AccordionParent1">
                         <div class="Card card card-middle    " id=""> 
                           <div class="card-header d-flex align-items-center justify-content-between">
                             <h3 class="card-header-title d-flex align-items-center">Thông tin xuất bản
                             </h3>
                             <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion1" aria-expanded="true" aria-controls="Accordion1"><i class="tio-chevron-down"></i></div>
                           </div>
-                          <div class="collapse show" id="Accordion1" data-parent="#AccordionParent">
+                          <div class="collapse show" id="Accordion1" data-parent="#AccordionParent1">
                             <div class="card-body">
                               <form action="#"> 
                                 <h4 class="mb-3">Tái bản: Vật liệu và cấu tạo hoàn thiện nội thất</h4>
                                 <div class="accordion">
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent1">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">I. Thông tin hồ sơ
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub1" aria-expanded="true" aria-controls="AccordionSub1"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub1" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub1" data-parent="#AccordionSubParent1">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
@@ -588,14 +589,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent2">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">II. Thông tin chung
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub2" aria-expanded="true" aria-controls="AccordionSub2"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub2" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub2" data-parent="#AccordionSubParent2">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-md-6 col-sm-12 mb-3">
@@ -699,14 +700,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent3">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">III. Thông tin hợp đồng xuất bản
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub3" aria-expanded="true" aria-controls="AccordionSub3"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub3" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub3" data-parent="#AccordionSubParent3">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
@@ -736,7 +737,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                                                <div class="DatePicker  suffix">
+                                                <div class="DatePicker  suffix with-arrow">
                                                   <label class="form-label" for="undefined">Ngày ký HĐ
                                                   </label>
                                                   <div class="input-group">
@@ -748,7 +749,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                                                <div class="DatePicker  suffix">
+                                                <div class="DatePicker  suffix with-arrow">
                                                   <label class="form-label" for="undefined">Ngày hết hạn
                                                   </label>
                                                   <div class="input-group">
@@ -766,14 +767,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent4">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">IV. Đối tượng sử dụng và biên mục đề tài
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub4" aria-expanded="true" aria-controls="AccordionSub4"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub4" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub4" data-parent="#AccordionSubParent4">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-md-6 col-sm-12 mb-3">
@@ -898,14 +899,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent5">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">V. Thông tin bản thảo
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub5" aria-expanded="true" aria-controls="AccordionSub5"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub5" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub5" data-parent="#AccordionSubParent5">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-md-6 col-sm-12 mb-3">
@@ -941,14 +942,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent6">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">V. Thông tin bản thảo
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub6" aria-expanded="true" aria-controls="AccordionSub6"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub6" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub6" data-parent="#AccordionSubParent6">
                                           <div class="card-body">
                                             <div class="FormPage-switch-wrapper">
                                               <div class="row"> 
@@ -988,14 +989,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent7">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">VII. Thông tin ấn phẩm điện tử
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub7" aria-expanded="true" aria-controls="AccordionSub7"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub7" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub7" data-parent="#AccordionSubParent7">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-md-6 col-sm-12 mb-3">
@@ -1047,14 +1048,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent8">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">VIII. Thông tin ấn phẩm in
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub8" aria-expanded="true" aria-controls="AccordionSub8"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub8" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub8" data-parent="#AccordionSubParent8">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-md-6 col-sm-12 mb-3">
@@ -1078,7 +1079,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                                                <div class="DatePicker  suffix">
+                                                <div class="DatePicker  suffix with-arrow">
                                                   <label class="form-label" for="undefined">Ngày đủ bản thảo
                                                   </label>
                                                   <div class="input-group">
@@ -1090,7 +1091,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-                                                <div class="DatePicker  suffix">
+                                                <div class="DatePicker  suffix with-arrow">
                                                   <label class="form-label" for="undefined">Ngày ra bản sách
                                                   </label>
                                                   <div class="input-group">
@@ -1150,14 +1151,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent9">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">IX. Thông tin sách dịch
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub9" aria-expanded="true" aria-controls="AccordionSub9"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub9" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub9" data-parent="#AccordionSubParent9">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-md-6 col-sm-12 mb-3">
@@ -1256,14 +1257,14 @@
                                     </div>
                                   </div>
                                   <div class="Accordion" id="">
-                                    <div class="Accordion-parent" id="AccordionSubParent">
+                                    <div class="Accordion-parent" id="AccordionSubParent10">
                                       <div class="Card card card-middle dark   " id=""> 
                                         <div class="card-header d-flex align-items-center justify-content-between">
                                           <h3 class="card-header-title d-flex align-items-center">X. Thông tin bản quyền
                                           </h3>
                                           <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub10" aria-expanded="true" aria-controls="AccordionSub10"><i class="tio-chevron-down"></i></div>
                                         </div>
-                                        <div class="collapse show" id="AccordionSub10" data-parent="#AccordionSubParent">
+                                        <div class="collapse show" id="AccordionSub10" data-parent="#AccordionSubParent10">
                                           <div class="card-body">
                                             <div class="row"> 
                                               <div class="col-md-6 col-sm-12 mb-3">
@@ -1300,7 +1301,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-md-4 col-sm-12 mb-3">
-                                                <div class="DatePicker  suffix">
+                                                <div class="DatePicker  suffix with-arrow">
                                                   <label class="form-label" for="undefined">Bản quyền từ
                                                   </label>
                                                   <div class="input-group">
@@ -1312,7 +1313,7 @@
                                                 </div>
                                               </div>
                                               <div class="col-md-4 col-sm-12 mb-3">
-                                                <div class="DatePicker  suffix">
+                                                <div class="DatePicker  suffix with-arrow">
                                                   <label class="form-label" for="undefined">Bản quyền đến
                                                   </label>
                                                   <div class="input-group">
@@ -1344,14 +1345,14 @@
                       </div>
                     </div>
                     <div class="Accordion  bottom" id="cacthongtinkhac">
-                      <div class="Accordion-parent" id="AccordionParent">
+                      <div class="Accordion-parent" id="AccordionParent2">
                         <div class="Card card card-middle    " id=""> 
                           <div class="card-header d-flex align-items-center justify-content-between">
                             <h3 class="card-header-title d-flex align-items-center">Các thông tin khác
                             </h3>
                             <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion2" aria-expanded="true" aria-controls="Accordion2"><i class="tio-chevron-down"></i></div>
                           </div>
-                          <div class="collapse show" id="Accordion2" data-parent="#AccordionParent">
+                          <div class="collapse show" id="Accordion2" data-parent="#AccordionParent2">
                             <div class="card-body">
                               <form action="#"> 
                                 <div class="row">
@@ -1485,10 +1486,10 @@
       	var end = moment();
       
       	function cb(start, end) {
-      		$('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      		$('.js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
       	}
       
-      	$('#js-daterangepicker-predefined').daterangepicker({
+      	$('.js-daterangepicker-predefined').daterangepicker({
       		startDate: start,
       		endDate: end,
       		ranges: {

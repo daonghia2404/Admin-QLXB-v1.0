@@ -31,7 +31,7 @@ block pages
               +Button({ title: 'In biểu', icon: 'tio-print mr-1', variant: 'btn-soft-dark' })  
 
             .accordion
-              +Accordion({ className: '', mainId: 'thongtinchung', id: 'Accordion1', parentId: 'AccordionParent', title: 'Thông tin chung' })
+              +Accordion({ className: '', mainId: 'thongtinchung', id: 'Accordion1', parentId: 'AccordionParent1', title: 'Thông tin chung' })
                 .row 
                   .col-md-6.pr-md-2.mb-3
                     +Table({})
@@ -57,7 +57,7 @@ block pages
                           td AKHDSH9237
 
                 .accordion
-                  +Accordion({ id: 'AccordionSub1', parentId: 'AccordionSubParent', title: 'Tiến độ đề tài', dark: true })
+                  +Accordion({ id: 'AccordionSub1', parentId: 'AccordionSubParent1', title: 'Tiến độ đề tài', dark: true })
                     +Table({})
                       tbody
                         tr 
@@ -76,7 +76,7 @@ block pages
                             .d-flex 
                               +Button({ title: 'Đang tiến hành', variant: 'btn-warning', badge: true, size: 'btn-lg' })
 
-                  +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent', title: 'Thông tin Cơ bản', dark: true })
+                  +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent2', title: 'Thông tin Cơ bản', dark: true })
                     +Table({})
                       tbody
                         tr 
@@ -100,7 +100,7 @@ block pages
                           td.text-nowrap #[strong Đăng ký mới/ Tái bản]
                           td.w-100 Đăng ký mới
 
-                  +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent', title: 'Đối tượng sử dụng và phân loại', dark: true })
+                  +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent3', title: 'Đối tượng sử dụng và phân loại', dark: true })
                     .row
                       .col-md-6.pr-md-2.mb-3
                         +Table({})
@@ -125,7 +125,7 @@ block pages
                               td.text-nowrap #[strong Trình độ]
                               td.w-100
 
-                  +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent', title: 'Thông tin ngôn ngữ', dark: true })
+                  +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent4', title: 'Thông tin ngôn ngữ', dark: true })
                     .row
                       .col-md-6.pr-md-2.mb-3
                         +Table({})
@@ -151,7 +151,7 @@ block pages
                               td.text-nowrap #[strong Ngôn ngữ xuất bản]
                               td.w-100 Tiếng Việt
 
-                  +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent', title: 'Thông tin định dạng', dark: true })
+                  +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent5', title: 'Thông tin định dạng', dark: true })
                     .row
                       .col-md-6.pr-md-2.mb-3
                         +Table({})
@@ -200,7 +200,7 @@ block pages
                               td.text-nowrap #[strong Định dạng điện tử]
                               td.w-100 pdf
 
-                  +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent', title: 'Thông tin Bản quyền', dark: true })
+                  +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent6', title: 'Thông tin Bản quyền', dark: true })
                     .row
                       .col-md-6.pr-md-2.mb-3
                         +Table({})
@@ -225,7 +225,7 @@ block pages
                               td.text-nowrap #[strong Bản quyền từ]
                               td.w-100 27/09/2022
 
-                  +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent', title: 'Thông tin Hợp đồng xuất bản', dark: true })
+                  +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent7', title: 'Thông tin Hợp đồng xuất bản', dark: true })
                     .row
                       .col-md-6.pr-md-2.mb-3
                         +Table({})
@@ -247,7 +247,7 @@ block pages
                               td.text-nowrap #[strong Ngày hết hạn]
                               td.w-100 27/09/2022
 
-              +Accordion({ className: '', mainId: 'banthaofile', id: 'Accordion2', parentId: 'AccordionParent', title: 'Bản thảo & FILE' })
+              +Accordion({ className: '', mainId: 'banthaofile', id: 'Accordion2', parentId: 'AccordionParent2', title: 'Bản thảo & FILE' })
                 form(action="#") 
                   +Tab({
                     className: 'mb-3',
@@ -286,7 +286,7 @@ block pages
                                   .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
                                 td.text-nowrap 23:13’ 27/06/2022
 
-              +Accordion({ className: '', mainId: 'lichsuthaotac', id: 'Accordion3', parentId: 'AccordionParent', title: 'Lịch sử thao tác', showDate: true, noPadding: true })
+              +Accordion({ className: '', mainId: 'lichsuthaotac', id: 'Accordion3', parentId: 'AccordionParent3', title: 'Lịch sử thao tác', showDate: true, noPadding: true })
                 +Table({ style: 'margin: -1px', showPagination: true })
                   tbody 
                     each item in [1,2,3,4,5]
@@ -294,7 +294,7 @@ block pages
                         td.text-center= item
                         td Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022
 
-              +Accordion({ className: '', mainId: 'binhluanvaduyet', id: 'Accordion4', parentId: 'AccordionParent', title: 'Bình luận và duyệt', showDate: true, noPadding: true })
+              +Accordion({ className: '', mainId: 'binhluanvaduyet', id: 'Accordion4', parentId: 'AccordionParent4', title: 'Bình luận và duyệt', showDate: true, noPadding: true })
                 +Table({ style: 'margin: -1px', showPagination: true })
                   thead 
                     tr 
@@ -316,7 +316,7 @@ block pages
                             +Button({ title: item % 2 === 0 ? 'Đã duyệt' : 'Trả lại', variant: item % 2 === 0 ? 'btn-primary' : 'btn-soft-dark', badge: true })
                         td 23:13 30/09/22
 
-              +Accordion({ className: ' bottom', mainId: 'nhanxet', id: 'Accordion5', parentId: 'AccordionParent', title: 'Nhận xét' })
+              +Accordion({ className: ' bottom', mainId: 'nhanxet', id: 'Accordion5', parentId: 'AccordionParent5', title: 'Nhận xét' })
                 .row 
                   .col-12 
                     +TextArea({ label: 'GHI CHÚ', placeholder: 'Nhập nội dung tại đây' })
@@ -331,11 +331,9 @@ block pages
             parentId: 'scrollSpyParent',
             endId: 'scrollSpyEnd',
           })
-            +Card({ className: 'mb-3', title: 'Điều hướng trên trang', size: 'small', dark: true, noPadding: true })
-              ul.navbar-nav.navbar-nav-lg.nav-tabs.card.card-navbar-nav.border-0.p-0
-                each item in dataScrollSpy1
-                  li.nav-item
-                    a.nav-link(href=`${item.link}` class=`${item.active ? 'active' : ''}`)= item.title
+            +Button({ className: 'w-100 border mb-3', title: 'Biểu số', icon: 'tio-laptop mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+            +Button({ className: 'w-100 border mb-3', title: 'Biểu in', icon: 'tio-print mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+            +Button({ className: 'w-100 border mb-3', title: 'Xem bản khai Xuất bản phẩm', icon: 'tio-document-text-outlined mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
 
             +Card({ className: 'mb-3', title: 'Điều hướng trên trang', size: 'small', dark: true, noPadding: true })
               ul.navbar-nav.navbar-nav-lg.nav-tabs.card.card-navbar-nav.border-0.p-0

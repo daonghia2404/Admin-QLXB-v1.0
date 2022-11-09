@@ -10,7 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/vendor/icon-set/style.css">
 <link rel="stylesheet" href="./assets/vendor/select2/dist/css/select2.min.css">
-<link rel="stylesheet" href="/assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="./assets/vendor/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" href="./assets/css/theme.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
   </head>
@@ -536,7 +537,7 @@
               </div>
             </div>
             <div class="col-lg-3"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
-              <button class="navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0">Điều hướng trên trang</span><span class="navbar-toggle-default">
+              <button class="navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0"></span><span class="navbar-toggle-default">
 <i class="tio-menu-hamburger"></i>
 </span>
 <span class="navbar-toggle-toggled">
@@ -546,19 +547,12 @@
               </button>
               <div class="collapse navbar-collapse" id="scrollSpyParent">
                 <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
-                  <div class="Card card card-small dark" id=""> 
-                    <div class="card-header d-flex align-items-center justify-content-between">
-                      <h3 class="card-header-title d-flex align-items-center">Điều hướng trên trang
-                      </h3>
-                    </div>
-                    <div class="card-body p-0">
-                      <ul class="navbar-nav navbar-nav-lg nav-tabs card card-navbar-nav border-0 p-0">
-                        <li class="nav-item"><a class="nav-link" href="#bieuso">Biểu số</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#bieuin">Biểu in</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#xembankhaixuatbanpham">Xem bản khai Xuất bản phẩm</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                  <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-laptop mr-1"></i>Biểu số
+                  </button>
+                  <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-print mr-1"></i>Biểu in
+                  </button>
+                  <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-document-text-outlined mr-1"></i>Xem bản khai Xuất bản phẩm
+                  </button>
                 </div>
               </div>
             </div>
@@ -640,10 +634,10 @@
       	var end = moment();
       
       	function cb(start, end) {
-      		$('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+      		$('.js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
       	}
       
-      	$('#js-daterangepicker-predefined').daterangepicker({
+      	$('.js-daterangepicker-predefined').daterangepicker({
       		startDate: start,
       		endDate: end,
       		ranges: {

@@ -1,11 +1,12 @@
 mixin JobCard({ order, dark })
   .JobCard.d-flex.align-items-start(class=`${dark ? 'dark' : ''}`)
-    if (order)
-      .JobCard-order
-        span= order
-    else
-      .JobCard-avatar 
-        +Avatar({ text: 'P', size: 'avatar-xs' })
+    //- if (order)
+    //-   .JobCard-order
+    //-     span= order
+    //- else
+
+    .JobCard-avatar 
+      +Avatar({ text: order ? order : 'P', size: 'avatar-xs' })
     .JobCard-info 
       .JobCard-info-header.d-flex.align-items-center 
         .JobCard-info-header-title Phê duyệt XBP: Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
@@ -18,23 +19,22 @@ mixin JobCard({ order, dark })
             .JobCard-info-body-text.d-flex.align-items-start 
               <i class="tio-user"></i>
               span Giao: TBBT Lê Văn Hân
-          if (!order)
-            .col-md-6.col-sm-12
-              .JobCard-info-body-text.d-flex.align-items-start 
-                <i class="tio-user"></i>
-                span Nhận: BTV Vũ Hoài Nam
+          .col-md-6.col-sm-12
+            .JobCard-info-body-text.d-flex.align-items-start 
+              <i class="tio-user"></i>
+              span Nhận: BTV Vũ Hoài Nam
           .col-md-6.col-sm-12
             .JobCard-info-body-text.d-flex.align-items-start 
               <i class="tio-time"></i>
               span Bắt đầu:  31/09/22
-          if (!order)
-            .col-md-6.col-sm-12
-              .JobCard-info-body-text.d-flex.align-items-start 
-                <i class="tio-time-40-s"></i>
-                span Deadline: 31/09/22
+          .col-md-6.col-sm-12
+            .JobCard-info-body-text.d-flex.align-items-start 
+              <i class="tio-time-40-s"></i>
+              span Deadline: 31/09/22
 
-        .JobCard-info-actions.d-flex 
-          +Button({ title: 'Gửi', variant: 'btn-primary' })
+        .JobCard-info-actions.d-flex.flex-wrap
+          +Button({ title: 'Gửi', variant: 'btn-danger' })
+          +Button({ title: 'Nhận', variant: 'btn-warning' })
+          +Button({ title: 'Duyệt', variant: 'btn-primary' })
           +Button({ title: 'Phê duyệt', variant: 'btn-success' })
           +Button({ title: 'Từ chối', variant: 'btn-soft-dark' })
-    

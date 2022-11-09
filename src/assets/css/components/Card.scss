@@ -88,12 +88,12 @@
   &-suffix-text {
     font-size: 14px;
     line-height: 20px;
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
   &-editable-btn {
     &.Button {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 20px;
       padding: 4px 15px;
     }

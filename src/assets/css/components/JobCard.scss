@@ -76,14 +76,17 @@
 
     &-actions {
       column-gap: 10px;
+      row-gap: 10px;
       padding-top: 8px;
       border-top: 1px dashed #E7EAF3;
 
       .Button {
         font-size: 12px;
         line-height: 16px;
-        padding: 4px 16px;
+        padding: 4px 8px;
         border-radius: 2px;
+        white-space: nowrap;
+        width: 70px;
       }
     }
   }

@@ -21,13 +21,12 @@ block pages
 
         .col-lg-3
           +ScrollSpy({
-            title: 'Điều hướng trên trang',
+            showChildren: true,
             id: 'scrollSpy',
             parentId: 'scrollSpyParent',
             endId: 'scrollSpyEnd',
-            options: [
-              { link: '#bieuso', title: 'Biểu số' },
-              { link: '#bieuin', title: 'Biểu in', active: true },
-              { link: '#xembankhaixuatbanpham', title: 'Xem bản khai Xuất bản phẩm' },
-            ]
           })
+            +Button({ className: 'w-100 border mb-3', title: 'Biểu số', icon: 'tio-laptop mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+            +Button({ className: 'w-100 border mb-3', title: 'Biểu in', icon: 'tio-print mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+            +Button({ className: 'w-100 border mb-3', title: 'Xem bản khai Xuất bản phẩm', icon: 'tio-document-text-outlined mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+          

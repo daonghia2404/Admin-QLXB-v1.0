@@ -1,8 +1,8 @@
 mixin DatePickerChildren({ labelId, placeholder })
   input.js-flatpickr.form-control.flatpickr-custom(type="text" placeholder=`${placeholder}` data-hs-flatpickr-options=`{ "dateFormat": "d/m/y" }`)
        
-mixin DatePicker({ className = '', placeholder, labelId, label, iconSuffix })
-  .DatePicker(class=`${className} ${iconSuffix ? 'suffix' : ''}`)
+mixin DatePicker({ className = '', placeholder, labelId, label, iconSuffix, withArrow })
+  .DatePicker(class=`${className} ${iconSuffix ? 'suffix' : ''} ${withArrow ? 'with-arrow' : ''}`)
     label.form-label(for=`${labelId}`)
       = label
       if (required)
