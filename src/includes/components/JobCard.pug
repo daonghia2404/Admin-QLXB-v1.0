@@ -1,4 +1,4 @@
-mixin JobCard({ order, dark })
+mixin JobCard({ order, dark, statusLabel, statusType })
   .JobCard.d-flex.align-items-start(class=`${dark ? 'dark' : ''}`)
     //- if (order)
     //-   .JobCard-order
@@ -11,7 +11,7 @@ mixin JobCard({ order, dark })
       .JobCard-info-header.d-flex.align-items-center 
         .JobCard-info-header-title Phê duyệt XBP: Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
         .JobCard-info-header-status.d-flex 
-          +Button({ title: 'Chậm', variant: 'btn-soft-warning' })
+          +Button({ title: statusLabel, variant: statusType, tag: true })
 
       .JobCard-info-body
         .row 

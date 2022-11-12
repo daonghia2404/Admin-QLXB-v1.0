@@ -85,9 +85,11 @@ const storageCollpase = {
       (collapse) => `#${collapse.id}`
     );
 
-    const isEmpty =
-      localStorage.getItem(key) &&
-      JSON.parse(localStorage.getItem(key) || "[]").length === 0;
+    const isEmpty = Boolean(
+      !localStorage.getItem(key) ||
+        (localStorage.getItem(key) &&
+          JSON.parse(localStorage.getItem(key) || "[]").length === 0)
+    );
 
     const storageBefore = !isEmpty
       ? JSON.parse(localStorage.getItem(key) || "[]")
@@ -98,9 +100,17 @@ const storageCollpase = {
     }
 
     collapses.forEach((collapse) => {
-      if (storageBefore.includes(`#${collapse.id}`))
+      const btnCollapse = document.querySelector(
+        `[data-toggle="collapse"][data-target="#${collapse.id}"]`
+      );
+      console.log(`#${collapse.id}`, collapse, btnCollapse)
+      if (storageBefore.includes(`#${collapse.id}`)) {
+        btnCollapse.classList.add("active");
         collapse.classList.add("show");
-      else collapse.classList.remove("show");
+      } else {
+        btnCollapse.classList.remove("active");
+        collapse.classList.remove("show");
+      }
     });
 
     const triggerCollapsesBtn = document.querySelectorAll(
@@ -117,9 +127,11 @@ const storageCollpase = {
           .className.includes("show");
 
         if (isCollapsed) {
+          btn.classList.add('active')
           const newStorage = [...storage, targetId];
           localStorage.setItem(key, JSON.stringify(newStorage));
         } else {
+          btn.classList.remove('active')
           const newStorage = storage.filter((item) => item !== targetId);
           localStorage.setItem(key, JSON.stringify(newStorage));
         }

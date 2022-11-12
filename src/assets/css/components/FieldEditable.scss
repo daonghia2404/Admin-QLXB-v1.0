@@ -15,6 +15,11 @@
     border-top: 1px solid #E7EAF3;
     min-height: 40px;
 
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      border-width: 3px;
+    }
+
     &-item {
       display: flex;
       align-items: center;
@@ -28,11 +33,23 @@
 
       &:nth-child(1),
       &:nth-child(2) {
-        width: 25%;
+        max-width: 25%;
+        flex: 0 0 25%;
       }
 
       &:last-child {
-        width: 50%;
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
+
+      @media (max-width: 768px) {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        border: none !important;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #E7EAF3 !important;
+        }
       }
 
       &-actions {

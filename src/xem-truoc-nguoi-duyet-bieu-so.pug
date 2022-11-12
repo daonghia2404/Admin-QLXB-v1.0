@@ -275,7 +275,7 @@ block pages
                           tbody 
                             each item in [1,2,3,4,5]
                               tr 
-                                td.text-center= item
+                                td.text-center.Table-index= item
                                 td 
                                   .Table-icon   
                                     if (item % 2 === 0)
@@ -291,7 +291,7 @@ block pages
                   tbody 
                     each item in [1,2,3,4,5]
                       tr
-                        td.text-center= item
+                        td.text-center.Table-index= item
                         td Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022
 
               +Accordion({ className: '', mainId: 'binhluanvaduyet', id: 'Accordion4', parentId: 'AccordionParent4', title: 'Bình luận và duyệt', showDate: true, noPadding: true })
@@ -307,7 +307,7 @@ block pages
                   tbody 
                     each item in [1,2,3,4,5]
                       tr
-                        td.text-center= item
+                        td.text-center.Table-index= item
                         td Phê duyệt đề tài
                         td Giám đốc
                         td Tôi duyệt đề tài này

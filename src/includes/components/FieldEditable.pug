@@ -1,14 +1,15 @@
 mixin FieldEditable({ title, attribute, id, header, accordionId = '', accordionParentId = '', defaultField = true, className = '' })
   .FieldEditable.Accordion.border-0(class=`${header ? 'header' : ''} ${className}`)
-    .Accordion-parent(id=`${accordionParentId}`)
+    - const randomParentId = `${parentId}_${Math.floor(Math.random() * 100000)}`
+    .Accordion-parent(id=`${randomParentId}`)
       .FieldEditable-header.d-flex
-        .FieldEditable-header-item.name= title
-        .FieldEditable-header-item.type 
+        .FieldEditable-header-item.name.text-nowrap= title
+        .FieldEditable-header-item.type.text-nowrap 
           = attribute
           if (!header)
             +Button({ title: defaultField ? 'Mặc định' : 'Tùy chỉnh', variant: defaultField ? 'btn-primary' : 'btn-success', badge: true })
 
-        .FieldEditable-header-item.id
+        .FieldEditable-header-item.id.text-nowrap
           span.mr-2= id
 
           if (!header)
@@ -25,64 +26,64 @@ mixin FieldEditable({ title, attribute, id, header, accordionId = '', accordionP
                 +Button({ icon: 'tio-edit', variant: 'btn-ghost-white' })
 
 
-      .accordion-collapse.collapse(id=`${accordionId}` data-parent=`#${accordionParentId}`)
-        .accordion-body
-          .FieldEditable-body
-            if (defaultField)
-              .row
-                .col-6
-                  +Input({ label: 'Tiêu đề field', placeholder: '(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)' })
-                .col-6
-                  .d-flex.align-items-end
+      if (!header)
+        .accordion-collapse(id=accordionId || false data-parent=`#${randomParentId}` class=`${accordionId ? 'collapse' : ''}`)
+          .accordion-body
+            .FieldEditable-body
+              if (defaultField)
+                .row
+                  .col-md-6.col-12.mb-3
+                    +Input({ label: 'Tiêu đề field', placeholder: '(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)' })
+                  .col-md-6.col-12.mb-3
+                    .d-flex.align-items-end
+                      +Select({
+                        className: 'w-100',
+                        label: 'Tên thuộc tính',
+                        placeholder: 'Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)',
+                        options: [
+                          { label: 'Tên thuộc tính 1', value: '1' },
+                          { label: 'Tên thuộc tính 2', value: '2' },
+                          { label: 'Tên thuộc tính 3', value: '3' },
+                        ],
+                        iconSuffix: 'tio-chevron-down',
+                        withArrow: true,
+                      })
+                      +Button({ className: 'ml-3', variant: 'btn-primary', title: 'Thêm' })
+
+              else
+                .row 
+                  .col-12.mb-3
+                    +Input({ label: 'Tiêu đề field', placeholder: 'Chưa có tiêu đề' })
+                  .col-md-6.col-12.mb-3
                     +Select({
-                      className: 'w-100',
-                      label: 'Tên thuộc tính',
-                      placeholder: 'Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)',
+                      label: 'Kiểu Field tùy chỉnh',
+                      placeholder: '--- Chọn kiểu dữ liệu ---',
                       options: [
-                        { label: 'Tên thuộc tính 1', value: '1' },
-                        { label: 'Tên thuộc tính 2', value: '2' },
-                        { label: 'Tên thuộc tính 3', value: '3' },
+                        { label: 'Kiểu Field tùy chỉnh 1', value: '1' },
+                        { label: 'Kiểu Field tùy chỉnh 2', value: '2' },
+                        { label: 'Kiểu Field tùy chỉnh 3', value: '3' },
                       ],
                       iconSuffix: 'tio-chevron-down',
                       withArrow: true,
                     })
-                    +Button({ className: 'ml-3', variant: 'btn-primary', title: 'Thêm' })
-
-            else
-              .row 
-                .col-12.mb-3
-                  +Input({ label: 'Tiêu đề field', placeholder: 'Chưa có tiêu đề' })
-                .col-6.mb-3
-                  +Select({
-                    label: 'Kiểu Field tùy chỉnh',
-                    placeholder: '--- Chọn kiểu dữ liệu ---',
-                    options: [
-                      { label: 'Kiểu Field tùy chỉnh 1', value: '1' },
-                      { label: 'Kiểu Field tùy chỉnh 2', value: '2' },
-                      { label: 'Kiểu Field tùy chỉnh 3', value: '3' },
-                    ],
-                    iconSuffix: 'tio-chevron-down',
-                    withArrow: true,
-                  })
-                .col-6.mb-3
-                  +Input({ label: 'Text Gợi ý', placeholder: 'Nhập text Gợi ý', value: 'Mã XBP' })
-                .col-6.mb-3
-                  +Select({
-                    label: 'Người điền',
-                    placeholder: '--- Chọn người điền ---',
-                    options: [
-                      { label: 'Người điền 1', value: '1' },
-                      { label: 'Người điền 2', value: '2' },
-                      { label: 'Người điền 3', value: '3' },
-                    ],
-                    iconSuffix: 'tio-chevron-down',
-                    withArrow: true,
-                  })
-                .col-6.mb-3
-                  +Checkbox({
-                    classNameCheckbox: 'mt-2',
-                    label: 'Có bắt buộc nhập?',
-                    title: 'Có',
-                    labelId: 'Checkbox1',
-                  })
-
+                  .col-md-6.col-12.mb-3
+                    +Input({ label: 'Text Gợi ý', placeholder: 'Nhập text Gợi ý', value: 'Mã XBP' })
+                  .col-md-6.col-12.mb-3
+                    +Select({
+                      label: 'Người điền',
+                      placeholder: '--- Chọn người điền ---',
+                      options: [
+                        { label: 'Người điền 1', value: '1' },
+                        { label: 'Người điền 2', value: '2' },
+                        { label: 'Người điền 3', value: '3' },
+                      ],
+                      iconSuffix: 'tio-chevron-down',
+                      withArrow: true,
+                    })
+                  .col-md-6.col-12.mb-3
+                    +Checkbox({
+                      classNameCheckbox: 'mt-2',
+                      label: 'Có bắt buộc nhập?',
+                      title: 'Có',
+                      labelId: 'Checkbox1',
+                    })

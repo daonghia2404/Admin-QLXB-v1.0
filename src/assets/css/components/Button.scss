@@ -13,6 +13,11 @@
     }
   }
 
+  &-tag {
+    user-select: none;
+    pointer-events: none;
+  }
+
   &.circle {
     border-radius: 50%;
   }

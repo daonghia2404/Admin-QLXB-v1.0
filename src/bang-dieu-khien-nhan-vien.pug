@@ -17,9 +17,10 @@ block pages
             .row 
               .col-lg-6.pr-lg-2
                 +Card({ className: 'mb-3', title: 'Sách mới đăng ký', fullHeight: true, noPadding: true })
-                  .DashboardPage-job
-                    each item in [1,2,3,4,5]
-                      +JobCard({ order: `0${item}`, dark: item % 2 === 0 })
+                  .overflow-auto(style="max-height: 875px;")
+                    .DashboardPage-job
+                      each item in dataJobCards
+                        +JobCard(item)
 
                   //- +Table({})
                   //-   thead 
@@ -43,9 +44,10 @@ block pages
 
               .col-lg-6.pl-lg-2
                 +Card({ className: 'mb-3', title: 'Việc của bạn', fullHeight: true, noPadding: true })
-                  .DashboardPage-job
-                    each item in [1,2,3,4,5]
-                      +JobCard({ dark: item % 2 === 0 })
+                  .overflow-auto(style="max-height: 875px;")
+                    .DashboardPage-job
+                      each item in dataJobCards
+                        +JobCard(item)
 
 
         .col-lg-3.pl-lg-2
@@ -53,32 +55,33 @@ block pages
             .DashboardPage-birthday.d-flex.align-items-center.justify-content-center.flex-column 
               +Avatar({ image: './assets/images/image-avatar.jpeg' })
               .DashboardPage-birthday-text Chúc mừng sinh nhật
-              .DashboardPage-birthday-text Vũ Thu Trang
+              .DashboardPage-birthday-text.text-uppercase Vũ Thu Trang
               .DashboardPage-birthday-text #[small Bộ phận: Biên tập]
 
           +Card({ className: 'DashboardPage-birthday-user mb-3', title: 'Sinh nhật sắp tới', iconHeader: 'tio-calendar-note', orange: true, noPadding: true })
-            +Table({})
-              tbody 
-                each item in [1,2,3,4,5]
-                  tr 
-                    td.text-center
-                      .Table-order.birthday
-                        span= `${item < 10 ? '0' : ''}${item}`
-                    td.w-100
-                      .DashboardPage-birthday-user.d-flex
-                        //- +Avatar({ image: './assets/images/image-avatar.jpeg', online: true, size: 'avatar-sm' })
-                        .DashboardPage-birthday-user-info 
-                          .DashboardPage-birthday-user-info-title Nguyễn Thu Hoài
-                          .DashboardPage-birthday-user-info-description
-                            i.tio-time.mr-1
-                            |Sinh nhật:  31/09/22
+            .overflow-auto(style="max-height: 375px")
+              +Table({})
+                tbody 
+                  each item in [1,2,3,4,5,6,7,8]
+                    tr 
+                      td.text-center
+                        .Table-order.birthday
+                          span= `${item < 10 ? '0' : ''}${item}`
+                      td.w-100
+                        .DashboardPage-birthday-user.d-flex
+                          //- +Avatar({ image: './assets/images/image-avatar.jpeg', online: true, size: 'avatar-sm' })
+                          .DashboardPage-birthday-user-info 
+                            .DashboardPage-birthday-user-info-title Nguyễn Thu Hoài
+                            .DashboardPage-birthday-user-info-description
+                              i.tio-time.mr-1
+                              |Sinh nhật:  31/09/22
 
           +Card({ className: 'mb-3', title: 'Top việc quá hạn', size: 'small', dark: true, noPadding: true })
             +Table({})
               tbody 
                 each item in [1,2,3,4,5]
                   tr 
-                    td.text-center= item
+                    td.text-center.Table-index= item
                     td 
                       .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
 

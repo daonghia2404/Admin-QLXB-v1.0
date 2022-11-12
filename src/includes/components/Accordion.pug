@@ -1,8 +1,8 @@
 mixin Accordion({ className = '', id, parentId, title, mainId = '', dark, showDate, noPadding, sortable })
   .Accordion(class=`${className}` id=`${mainId}`)
-    - const randomParentId = `${parentId}-${Math.random() * 100}`
+    - const randomParentId = `${parentId}_${Math.floor(Math.random() * 100000)}`
 
-    .Accordion-parent(id=`${parentId}`)
+    .Accordion-parent(id=`${randomParentId}`)
       +Card({ title, accordionId: id, accordionParentId: randomParentId, dark, showDate, noPadding, sortable })
         block
     

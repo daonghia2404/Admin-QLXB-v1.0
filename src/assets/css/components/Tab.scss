@@ -1,9 +1,9 @@
 .Tab {
   overflow: auto;
-  border-radius: .5rem;
 
   .nav-segment {
     flex-wrap: nowrap;
+    border-radius: 0 !important;
 
     .nav-link {
       border: 1px solid transparent;
