@@ -522,13 +522,15 @@
               <div class="Card card card-middle" id="bieuin"> 
                 <div class="card-body p-0">
                   <div class="PreviewPage-submit d-flex flex-wrap border">
-                    <button class="Button btn btn-primary middle" type="button"><i class="tio-checkmark-square-outlined mr-1"></i>Duyệt
+                    <button class="Button btn btn-primary middle" type="button"><i class="tio-checkmark-square-outlined mr-1"></i><span class="Button-title">Duyệt</span>
                     </button>
-                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-clear mr-1"></i>Từ chối
+                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-clear mr-1"></i><span class="Button-title">Từ chối</span>
                     </button>
-                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-sms-chat-outlined mr-1"></i>Comment
+                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-sms-chat-outlined mr-1"></i><span class="Button-title">Comment</span>
                     </button>
-                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-print mr-1"></i>In biểu
+                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-print mr-1"></i><span class="Button-title">In biểu</span>
+                    </button>
+                    <button class="Button btn show-on-mobile ml-auto js-open-scrollspy-mobile btn-icon btn-soft-dark middle" type="button"><i class="tio-menu-hamburger"></i><span class="Button-title"></span>
                     </button>
                   </div>
                   <div class="PreviewPage-view-file"></div>
@@ -536,23 +538,30 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
-              <button class="navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0"></span><span class="navbar-toggle-default">
+            <div class="col-lg-3">
+              <div class="ScrollSpy-drawer-mobile">
+                <div class="ScrollSpy-drawer-mobile-overlay"></div>
+                <div class="ScrollSpy-drawer-mobile-main"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
+                  <button class="active navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0"></span><span class="navbar-toggle-default">
 <i class="tio-menu-hamburger"></i>
 </span>
 <span class="navbar-toggle-toggled">
 <i class="tio-clear"></i>
 </span>
 </span>
-              </button>
-              <div class="collapse navbar-collapse" id="scrollSpyParent">
-                <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
-                  <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-laptop mr-1"></i>Biểu số
                   </button>
-                  <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-print mr-1"></i>Biểu in
-                  </button>
-                  <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-document-text-outlined mr-1"></i>Xem bản khai Xuất bản phẩm
-                  </button>
+                  <div class="collapse navbar-collapse show" id="scrollSpyParent">
+                    <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
+                      <div class="px-3 px-lg-0">
+                        <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-laptop mr-1"></i><span class="Button-title">Biểu số</span>
+                        </button>
+                        <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-print mr-1"></i><span class="Button-title">Biểu in</span>
+                        </button>
+                        <button class="Button btn w-100 border mb-3 btn-soft-dark btn-sm" type="button"><i class="tio-document-text-outlined mr-1"></i><span class="Button-title">Xem bản khai Xuất bản phẩm</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

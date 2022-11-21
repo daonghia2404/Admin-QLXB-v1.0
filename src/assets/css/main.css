@@ -365,6 +365,21 @@ template {
   overflow: hidden auto;
 }
 
+@media (max-width: 991px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.show-on-mobile {
+  display: none;
+}
+@media (max-width: 991px) {
+  .show-on-mobile {
+    display: block;
+  }
+}
+
 .Button.Button-badge {
   padding: 2px 8px;
   font-size: 12px;
@@ -829,6 +844,58 @@ template {
 .ScrollSpy-wrapper .nav .nav-item .nav-link.active {
   color: #377DFF;
 }
+@media (max-width: 991px) {
+  .ScrollSpy-drawer-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  .ScrollSpy-drawer-mobile.active {
+    opacity: 1;
+    pointer-events: unset;
+  }
+  .ScrollSpy-drawer-mobile.active .ScrollSpy-drawer-mobile-main {
+    transform: translateX(0);
+  }
+  .ScrollSpy-drawer-mobile-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .ScrollSpy-drawer-mobile-main {
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    height: 100%;
+    width: 300px;
+    right: 0;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+  .ScrollSpy-drawer-mobile-main .navbar-toggler {
+    border-radius: 0;
+  }
+  .ScrollSpy-drawer-mobile-main .ScrollSpy .Card {
+    border: none;
+  }
+  .ScrollSpy-drawer-mobile-main .ScrollSpy .card-header {
+    display: none !important;
+  }
+  .ScrollSpy-drawer-mobile-main .ScrollSpy .navbar-nav {
+    box-shadow: none;
+    border: none !important;
+  }
+}
 
 .Accordion-parent > .Card {
   margin: -1px;
@@ -1024,23 +1091,18 @@ template {
   color: #677788;
 }
 
-.FieldEditable.header .FieldEditable-header {
-  background: #F9FBFF;
-}
 .FieldEditable.header .FieldEditable-header-item {
+  background: #F3F4F6;
   font-weight: 700;
 }
 .FieldEditable-header {
-  border-top: 1px solid #E7EAF3;
   min-height: 40px;
 }
-@media (max-width: 768px) {
-  .FieldEditable-header {
-    flex-wrap: wrap;
-    border-width: 3px;
-  }
+.FieldEditable-header + .accordion-collapse {
+  min-width: 790px;
 }
 .FieldEditable-header-item {
+  border-top: 1px solid #E7EAF3;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1050,23 +1112,29 @@ template {
 .FieldEditable-header-item:not(:last-child) {
   border-right: 1px solid #E7EAF3;
 }
-.FieldEditable-header-item:nth-child(1), .FieldEditable-header-item:nth-child(2) {
-  max-width: 25%;
-  flex: 0 0 25%;
+.FieldEditable-header-item.order {
+  width: 90px;
+  flex: 0 0 90px;
+  max-width: 90px;
 }
-.FieldEditable-header-item:last-child {
-  max-width: 50%;
-  flex: 0 0 50%;
+.FieldEditable-header-item.type {
+  width: 210px;
+  flex: 0 0 210px;
+  max-width: 210px;
+  column-gap: 8px;
 }
-@media (max-width: 768px) {
-  .FieldEditable-header-item {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    border: none !important;
-  }
-  .FieldEditable-header-item:not(:last-child) {
-    border-bottom: 1px solid #E7EAF3 !important;
-  }
+.FieldEditable-header-item.name {
+  flex: 1;
+  min-width: 190px;
+}
+.FieldEditable-header-item.id {
+  width: 300px;
+  flex: 0 0 300px;
+  max-width: 300px;
+}
+.FieldEditable-header-item-actions.disabled {
+  opacity: 0;
+  pointer-events: none;
 }
 .FieldEditable-header-item-actions .Button {
   font-size: 12px;
@@ -1086,6 +1154,10 @@ template {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.FieldEditable-header-item-collapse.disabled {
+  opacity: 0;
+  pointer-events: none;
+}
 .FieldEditable-header-item-collapse .Button {
   font-size: 12px;
   padding: 4px;
@@ -1096,6 +1168,12 @@ template {
 .FieldEditable-body {
   border-top: 1px solid #E7EAF3;
   padding: 15px;
+}
+.FieldEditable-empty {
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8C98A4;
 }
 
 .Header-title {
@@ -1139,6 +1217,20 @@ template {
 .ModalConfirmSendForm-footer {
   margin: 32px -32px -32px;
   padding: 15px;
+}
+
+.ModalApproverDetailDiary .modal-body {
+  padding: 15px 32px;
+}
+.ModalApproverDetailDiary-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1E2022;
+  text-transform: uppercase;
+}
+.ModalApproverDetailDiary .Table {
+  margin-bottom: 30px;
 }
 
 .DashboardPage-total-cards {
@@ -1248,6 +1340,17 @@ template {
   padding: 8px 15px;
   border-radius: 5px;
 }
+@media (max-width: 991px) {
+  .FormPage-submit .Button {
+    padding: 8px 12px;
+  }
+  .FormPage-submit .Button-title {
+    display: none;
+  }
+  .FormPage-submit .Button i {
+    margin: 0 !important;
+  }
+}
 .FormPage-margin {
   margin-left: -1px;
   margin-right: -1px;
@@ -1332,6 +1435,11 @@ template {
   left: 0;
   transform: translateY(-6px);
 }
+.FormPage-add-group .Button {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .PreviewPage-submit {
   column-gap: 15px;
@@ -1351,6 +1459,17 @@ template {
   padding: 8px 15px;
   border-radius: 5px;
 }
+@media (max-width: 991px) {
+  .PreviewPage-submit .Button {
+    padding: 8px 12px;
+  }
+  .PreviewPage-submit .Button-title {
+    display: none;
+  }
+  .PreviewPage-submit .Button i {
+    margin: 0 !important;
+  }
+}
 .PreviewPage-margin {
   margin-left: -1px;
   margin-right: -1px;
@@ -1367,6 +1486,12 @@ template {
   border: 1px solid #E7EAF3;
   padding: 8px 20px;
   background: #E7EAF3;
+}
+@media (max-width: 575px) {
+  .PreviewPage-view-file-header {
+    flex-direction: column;
+    row-gap: 4px;
+  }
 }
 .PreviewPage-view-file-header-title {
   font-size: 14px;

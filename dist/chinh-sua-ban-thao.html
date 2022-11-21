@@ -522,21 +522,23 @@
               <div class="Card card card-middle mb-3" id=""> 
                 <div class="card-body">
                   <div class="PreviewPage-submit d-flex flex-wrap mb-3 border" style="margin-top: -16px; margin-left: -16px; margin-right: -16px;">
-                    <button class="Button btn btn-primary middle" type="button"><i class="tio-send-outlined mr-1"></i>Gửi
+                    <button class="Button btn btn-primary middle" type="button"><i class="tio-send-outlined mr-1"></i><span class="Button-title">Gửi</span>
                     </button>
-                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-invisible mr-1"></i>Xem danh sách lịch sử
+                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-invisible mr-1"></i><span class="Button-title">Xem danh sách lịch sử</span>
+                    </button>
+                    <button class="Button btn show-on-mobile ml-auto js-open-scrollspy-mobile btn-icon btn-soft-dark middle" type="button"><i class="tio-menu-hamburger"></i><span class="Button-title"></span>
                     </button>
                   </div>
                   <div class="PreviewPage-view-file-header d-flex align-items-center justify-content-between"> 
                     <div class="PreviewPage-view-file-header-title">Bản thảo - 1. Phê duyệt đề tài - Hoàng Hôn Của Phía Đông.docx </div>
                     <div class="PreviewPage-view-file-header-btns d-flex align-items-center"> 
-                      <button class="Button btn btn-white btn-sm" type="button">Thông tin
+                      <button class="Button btn btn-white btn-sm" type="button"><span class="Button-title">Thông tin</span>
                       </button>
-                      <button class="Button btn btn-white btn-sm" type="button">Mở mẫu
+                      <button class="Button btn btn-white btn-sm" type="button"><span class="Button-title">Mở mẫu</span>
                       </button>
-                      <button class="Button btn btn-white btn-sm" type="button">Lưu nháp
+                      <button class="Button btn btn-white btn-sm" type="button"><span class="Button-title">Lưu nháp</span>
                       </button>
-                      <button class="Button btn btn-white btn-sm" type="button">Đọc thử
+                      <button class="Button btn btn-white btn-sm" type="button"><span class="Button-title">Đọc thử</span>
                       </button>
                     </div>
                   </div>
@@ -559,9 +561,9 @@
                         <tr>
                           <td class="text-nowrap"><strong>Thuộc Xuất bản phẩm</strong></td>
                           <td class="w-100">HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
-                            <button class="Button btn ml-2 btn-primary middle Button-badge" type="button">Gửi
+                            <button class="Button btn ml-2 btn-primary middle Button-badge" type="button"><span class="Button-title">Gửi</span>
                             </button>
-                            <button class="Button btn ml-2 btn-success middle Button-badge" type="button">Xem danh sách lịch sử của XBP
+                            <button class="Button btn ml-2 btn-success middle Button-badge" type="button"><span class="Button-title">Xem danh sách lịch sử của XBP</span>
                             </button>
                           </td>
                         </tr>
@@ -577,19 +579,26 @@
               </div>
               <div id="scrollSpyEnd"></div>
             </div>
-            <div class="col-lg-3 pl-lg-2"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
-              <button class="navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0"></span><span class="navbar-toggle-default">
+            <div class="col-lg-3 pl-lg-2">
+              <div class="ScrollSpy-drawer-mobile">
+                <div class="ScrollSpy-drawer-mobile-overlay"></div>
+                <div class="ScrollSpy-drawer-mobile-main"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
+                  <button class="active navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0"></span><span class="navbar-toggle-default">
 <i class="tio-menu-hamburger"></i>
 </span>
 <span class="navbar-toggle-toggled">
 <i class="tio-clear"></i>
 </span>
 </span>
-              </button>
-              <div class="collapse navbar-collapse" id="scrollSpyParent">
-                <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
-                  <button class="Button btn w-100 border btn-soft-dark btn-sm" type="button"><i class="tio-chevron-left mr-1"></i>Quay lại
                   </button>
+                  <div class="collapse navbar-collapse show" id="scrollSpyParent">
+                    <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
+                      <div class="px-3 px-lg-0">
+                        <button class="Button btn w-100 border btn-soft-dark btn-sm" type="button"><i class="tio-chevron-left mr-1"></i><span class="Button-title">Quay lại</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -1,8 +1,9 @@
-mixin FieldEditable({ title, attribute, id, header, accordionId = '', accordionParentId = '', defaultField = true, className = '' })
+mixin FieldEditable({ order, title, attribute, id, header, accordionId = '', accordionParentId = '', defaultField = true, className = '' })
   .FieldEditable.Accordion.border-0(class=`${header ? 'header' : ''} ${className}`)
     - const randomParentId = `${parentId}_${Math.floor(Math.random() * 100000)}`
     .Accordion-parent(id=`${randomParentId}`)
       .FieldEditable-header.d-flex
+        .FieldEditable-header-item.order.text-nowrap= order
         .FieldEditable-header-item.name.text-nowrap= title
         .FieldEditable-header-item.type.text-nowrap 
           = attribute
@@ -12,18 +13,18 @@ mixin FieldEditable({ title, attribute, id, header, accordionId = '', accordionP
         .FieldEditable-header-item.id.text-nowrap
           span.mr-2= id
 
-          if (!header)
-            .FieldEditable-header-item-actions.d-flex.align-items-center.ml-auto
-              +Button({ className: 'sortablejs-custom-handle', icon: 'tio-move-page', variant: 'btn-white' })
-              +Button({ className: 'js-arrange-up', icon: 'tio-arrow-upward', variant: 'btn-white' })
-              +Button({ className: 'js-arrange-down', icon: 'tio-arrow-downward', variant: 'btn-white' })
-              +Button({ icon: 'tio-copy', variant: 'btn-white' })
-              +Button({ className: 'js-arrange-remove', icon: 'tio-clear', variant: 'btn-white' })
+          //- if (!header)
+          .FieldEditable-header-item-actions.d-flex.align-items-center.ml-auto(class=`${header ? 'disabled' : ''}`)
+            +Button({ className: 'sortablejs-custom-handle', icon: 'tio-move-page', variant: 'btn-white' })
+            +Button({ className: 'js-arrange-up', icon: 'tio-arrow-upward', variant: 'btn-white' })
+            +Button({ className: 'js-arrange-down', icon: 'tio-arrow-downward', variant: 'btn-white' })
+            +Button({ icon: 'tio-copy', variant: 'btn-white' })
+            +Button({ className: 'js-arrange-remove', icon: 'tio-clear', variant: 'btn-white' })
 
-            .FieldEditable-header-item-collapse.d-flex.align-items-center.ml-2
-              //- +Button({ icon: 'tio-remove', variant: 'btn-ghost-white' })
-              div(role="button" data-toggle="collapse" data-target=`#${accordionId}` aria-expanded="true" aria-controls=`${accordionId}`)
-                +Button({ icon: 'tio-edit', variant: 'btn-ghost-white' })
+          .FieldEditable-header-item-collapse.d-flex.align-items-center.ml-2(class=`${header ? 'disabled' : ''}`)
+            //- +Button({ icon: 'tio-remove', variant: 'btn-ghost-white' })
+            div(role="button" data-toggle="collapse" data-target=`#${accordionId}` aria-expanded="true" aria-controls=`${accordionId}`)
+              +Button({ icon: 'tio-edit', variant: 'btn-ghost-white' })
 
 
       if (!header)

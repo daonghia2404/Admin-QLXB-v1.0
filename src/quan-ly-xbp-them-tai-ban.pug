@@ -12,6 +12,7 @@ block pages
             +Button({ title: 'Gửi đăng ký ', icon: 'tio-send-outlined mr-1', variant: 'btn-primary' })  
             +Button({ title: 'Lưu nháp', icon: 'tio-save-outlined mr-1', variant: 'btn-soft-dark' })  
             +Button({ title: 'Huỷ', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
+            +Button({ className: 'show-on-mobile ml-auto js-open-scrollspy-mobile', icon: 'tio-menu-hamburger', variant: 'btn-soft-dark' })
 
           .accordion
             +Accordion({ className: 'mb-3', mainId: 'thongtinkhaibao', id: 'Accordion1', parentId: 'AccordionParent1', title: 'Thông tin xuất bản' })
@@ -366,13 +367,16 @@ block pages
           #scrollSpyEnd
 
         .col-lg-3.pl-lg-2
-          +ScrollSpy({
-            title: 'Điều hướng trên trang',
-            id: 'scrollSpy',
-            parentId: 'scrollSpyParent',
-            endId: 'scrollSpyEnd',
-            options: [
-              { link: '#thongtinkhaibao', title: 'Thông tin khai báo' },
-              { link: '#cacthongtinkhac', title: 'Các thông tin khác' },
-            ]
-          })
+          .ScrollSpy-drawer-mobile
+            .ScrollSpy-drawer-mobile-overlay
+            .ScrollSpy-drawer-mobile-main
+              +ScrollSpy({
+                title: 'Điều hướng trên trang',
+                id: 'scrollSpy',
+                parentId: 'scrollSpyParent',
+                endId: 'scrollSpyEnd',
+                options: [
+                  { link: '#thongtinkhaibao', title: 'Thông tin khai báo' },
+                  { link: '#cacthongtinkhac', title: 'Các thông tin khác' },
+                ]
+              })

@@ -16,6 +16,18 @@
       line-height: 20px;
       padding: 8px 15px;
       border-radius: 5px;
+
+      @media (max-width: 991px) {
+        padding: 8px 12px;
+
+        &-title {
+          display: none;
+        }
+
+        i {
+          margin: 0 !important;
+        }
+      }
     }
   }
 
@@ -120,6 +132,14 @@
           transform: translateY(-6px);
         }
       }
+    }
+  }
+
+  &-add-group {
+    .Button {
+      max-width: 200px;
+      width: 100%;
+      margin: 0 auto;
     }
   }
 }

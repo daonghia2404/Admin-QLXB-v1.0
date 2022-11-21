@@ -25,3 +25,17 @@
 .overflow-y-auto {
   overflow: hidden auto;
 }
+
+.hide-on-mobile {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.show-on-mobile {
+  display: none;
+
+  @media (max-width: 991px) {
+    display: block;
+  }
+}

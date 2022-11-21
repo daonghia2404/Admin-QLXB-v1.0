@@ -12,6 +12,7 @@ block pages
             .PreviewPage-submit.d-flex.flex-wrap.mb-3.border(style="margin-top: -16px; margin-left: -16px; margin-right: -16px;")
               +Button({ title: 'Gửi', icon: 'tio-send-outlined mr-1', variant: 'btn-primary' })  
               +Button({ title: 'Xem danh sách lịch sử', icon: 'tio-invisible mr-1', variant: 'btn-soft-dark' })  
+              +Button({ className: 'show-on-mobile ml-auto js-open-scrollspy-mobile', icon: 'tio-menu-hamburger', variant: 'btn-soft-dark' })
 
             .PreviewPage-view-file-header.d-flex.align-items-center.justify-content-between 
               .PreviewPage-view-file-header-title Bản thảo - 1. Phê duyệt đề tài - Hoàng Hôn Của Phía Đông.docx 
@@ -41,10 +42,14 @@ block pages
           #scrollSpyEnd
 
         .col-lg-3.pl-lg-2
-          +ScrollSpy({
-            showChildren: true,
-            id: 'scrollSpy',
-            parentId: 'scrollSpyParent',
-            endId: 'scrollSpyEnd',
-          })
-            +Button({ className: 'w-100 border', title: 'Quay lại', icon: 'tio-chevron-left mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+          .ScrollSpy-drawer-mobile
+            .ScrollSpy-drawer-mobile-overlay
+            .ScrollSpy-drawer-mobile-main
+              +ScrollSpy({
+                showChildren: true,
+                id: 'scrollSpy',
+                parentId: 'scrollSpyParent',
+                endId: 'scrollSpyEnd',
+              })
+                .px-3.px-lg-0
+                  +Button({ className: 'w-100 border', title: 'Quay lại', icon: 'tio-chevron-left mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })

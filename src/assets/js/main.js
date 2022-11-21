@@ -2,6 +2,7 @@ window.onload = () => {
   buttonOnTop.init();
   arrangeEvents.init();
   storageCollpase.init();
+  scrollByDrawerMobile.init();
 };
 
 const buttonOnTop = {
@@ -103,7 +104,7 @@ const storageCollpase = {
       const btnCollapse = document.querySelector(
         `[data-toggle="collapse"][data-target="#${collapse.id}"]`
       );
-      console.log(`#${collapse.id}`, collapse, btnCollapse)
+      console.log(`#${collapse.id}`, collapse, btnCollapse);
       if (storageBefore.includes(`#${collapse.id}`)) {
         btnCollapse.classList.add("active");
         collapse.classList.add("show");
@@ -127,15 +128,37 @@ const storageCollpase = {
           .className.includes("show");
 
         if (isCollapsed) {
-          btn.classList.add('active')
+          btn.classList.add("active");
           const newStorage = [...storage, targetId];
           localStorage.setItem(key, JSON.stringify(newStorage));
         } else {
-          btn.classList.remove('active')
+          btn.classList.remove("active");
           const newStorage = storage.filter((item) => item !== targetId);
           localStorage.setItem(key, JSON.stringify(newStorage));
         }
       })
     );
+  },
+};
+
+const scrollByDrawerMobile = {
+  init: function () {
+    this.config();
+  },
+  config: function () {
+    const btnOpen = document.querySelector(".js-open-scrollspy-mobile");
+    const main = document.querySelector(".ScrollSpy-drawer-mobile");
+
+    if (btnOpen && main) {
+      const overlay = main.querySelector(".ScrollSpy-drawer-mobile-overlay");
+
+      btnOpen.addEventListener("click", () => {
+        main.classList.add("active");
+      });
+
+      overlay.addEventListener("click", () => {
+        main.classList.remove("active");
+      });
+    }
   },
 };

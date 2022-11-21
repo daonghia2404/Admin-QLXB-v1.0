@@ -14,19 +14,24 @@ block pages
               +Button({ title: 'Từ chối', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
               +Button({ title: 'Comment', icon: 'tio-sms-chat-outlined mr-1', variant: 'btn-soft-dark' })  
               +Button({ title: 'In biểu', icon: 'tio-print mr-1', variant: 'btn-soft-dark' })  
+              +Button({ className: 'show-on-mobile ml-auto js-open-scrollspy-mobile', icon: 'tio-menu-hamburger', variant: 'btn-soft-dark' })
 
             .PreviewPage-view-file
 
             #scrollSpyEnd
 
         .col-lg-3
-          +ScrollSpy({
-            showChildren: true,
-            id: 'scrollSpy',
-            parentId: 'scrollSpyParent',
-            endId: 'scrollSpyEnd',
-          })
-            +Button({ className: 'w-100 border mb-3', title: 'Biểu số', icon: 'tio-laptop mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
-            +Button({ className: 'w-100 border mb-3', title: 'Biểu in', icon: 'tio-print mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
-            +Button({ className: 'w-100 border mb-3', title: 'Xem bản khai Xuất bản phẩm', icon: 'tio-document-text-outlined mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
-          
+          .ScrollSpy-drawer-mobile
+            .ScrollSpy-drawer-mobile-overlay
+            .ScrollSpy-drawer-mobile-main
+              +ScrollSpy({
+                showChildren: true,
+                id: 'scrollSpy',
+                parentId: 'scrollSpyParent',
+                endId: 'scrollSpyEnd',
+              })
+                .px-3.px-lg-0
+                  +Button({ className: 'w-100 border mb-3', title: 'Biểu số', icon: 'tio-laptop mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+                  +Button({ className: 'w-100 border mb-3', title: 'Biểu in', icon: 'tio-print mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+                  +Button({ className: 'w-100 border mb-3', title: 'Xem bản khai Xuất bản phẩm', icon: 'tio-document-text-outlined mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+              

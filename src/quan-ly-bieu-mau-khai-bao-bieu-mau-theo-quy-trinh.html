@@ -631,17 +631,17 @@
                 <div class="ModalConfirmSendForm-footer border-top">
                   <div class="row justify-content-between"> 
                     <div class="col col-auto">
-                      <button class="Button btn    btn-soft-dark btn-sm " type="button"><i class="bio-arrow-backward mr-1"></i>Quay lại
+                      <button class="Button btn    btn-soft-dark btn-sm " type="button"><i class="bio-arrow-backward mr-1"></i><span class="Button-title">Quay lại</span>
                       </button>
                     </div>
                     <div class="col col-auto">
                       <div class="row gx-1">
                         <div class="col col-auto">
-                          <button class="Button btn    btn-soft-dark btn-sm " type="button"><i class="tio-save-outlined mr-1"></i>Lưu nháp
+                          <button class="Button btn    btn-soft-dark btn-sm " type="button"><i class="tio-save-outlined mr-1"></i><span class="Button-title">Lưu nháp</span>
                           </button>
                         </div>
                         <div class="col col-auto">
-                          <button class="Button btn    btn-primary btn-sm " type="button"><i class="tio-send-outlined mr-1"></i>Gửi duyệt
+                          <button class="Button btn    btn-primary btn-sm " type="button"><i class="tio-send-outlined mr-1"></i><span class="Button-title">Gửi duyệt</span>
                           </button>
                         </div>
                       </div>
@@ -656,27 +656,29 @@
           <div class="row"> 
             <div class="col-lg-9 pr-lg-2">
               <div class="FormPage-submit d-flex flex-wrap mb-3 border">
-                <button class="Button btn    btn-soft-dark middle " type="button"><i class="tio-save-outlined mr-1"></i>Lưu nháp
+                <button class="Button btn    btn-soft-dark middle " type="button"><i class="tio-save-outlined mr-1"></i><span class="Button-title">Lưu nháp</span>
                 </button>
-                <button class="Button btn    btn-soft-dark middle " type="button" data-toggle="modal" data-target="#ModalConfirmSendForm"><i class="tio-send-outlined mr-1"></i>Gửi duyệt
+                <button class="Button btn    btn-soft-dark middle " type="button" data-toggle="modal" data-target="#ModalConfirmSendForm"><i class="tio-send-outlined mr-1"></i><span class="Button-title">Gửi duyệt</span>
                 </button>
-                <button class="Button btn    btn-soft-dark middle " type="button"><i class="tio-checkmark-circle-outlined mr-1"></i>Duyệt
+                <button class="Button btn    btn-soft-dark middle " type="button"><i class="tio-checkmark-circle-outlined mr-1"></i><span class="Button-title">Duyệt</span>
                 </button>
-                <button class="Button btn    btn-soft-dark middle " type="button"><i class="tio-invisible mr-1"></i>Xem trước
+                <button class="Button btn    btn-soft-dark middle " type="button"><i class="tio-invisible mr-1"></i><span class="Button-title">Xem trước</span>
                 </button>
-                <button class="Button btn    btn-soft-dark middle " type="button"><i class="tio-print mr-1"></i>In
+                <button class="Button btn    btn-soft-dark middle " type="button"><i class="tio-print mr-1"></i><span class="Button-title">In</span>
+                </button>
+                <button class="Button btn show-on-mobile ml-auto js-open-scrollspy-mobile btn-icon  btn-soft-dark middle " type="button"><i class="tio-menu-hamburger"></i><span class="Button-title"></span>
                 </button>
               </div>
               <div class="accordion">
                 <div class="Accordion mb-3" id="thongtinbieuin">
-                  <div class="Accordion-parent" id="AccordionParent1_61583">
+                  <div class="Accordion-parent" id="AccordionParent1_63637">
                     <div class="Card card card-middle    " id=""> 
                       <div class="card-header d-flex align-items-center justify-content-between">
                         <h3 class="card-header-title d-flex align-items-center">Thông tin biểu mẫu
                         </h3>
                         <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion1" aria-expanded="true" aria-controls="Accordion1"><i class="tio-chevron-down"></i></div>
                       </div>
-                      <div class="collapse show" id="Accordion1" data-parent="#AccordionParent1_61583">
+                      <div class="collapse show" id="Accordion1" data-parent="#AccordionParent1_63637">
                         <div class="card-body">
                           <form action="#"> 
                             <div class="row">
@@ -748,896 +750,285 @@
                       <div class="Card-sortable-arrow mr-3 js-arrange-down"><i class="tio-chevron-down"></i></div>
                       <div class="Card-sortable-arrow js-arrange-remove"><i class="tio-clear"></i></div>
                     </div>
-                    <div class="card-body p-0">
-                      <div class="card-body">
-                        <div class="row"> 
-                          <div class="col-md-6 col-sm-12 mb-3">
-                            <div class="Input">
-                              <label class="form-label" for="">Tiêu đề cụm thông tin
-                              </label>
-                              <input class="form-control" type="text" id="" placeholder="vd: Thông tin cơ bản"/>
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-sm-12 mb-3">
-                            <div class="Select  suffix with-arrow">
-                              <label class="form-label">Kiểu độ rộng nhóm
-                              </label>
-                              <div class="input-group">
-                                <div class="Select-wrapper">
-                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;1 cột / 2 cột / 3 cột &quot; }">
-                                    <option label="empty"></option>
-                                    <option value="1">1 cột</option>
-                                    <option value="2">2 cột</option>
-                                    <option value="3">3 cột</option>
-                                  </select>
-                                </div>
-                                <div class="input-group-append">
-                                  <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                </div>
+                    <div class="card-body">
+                      <div class="border mb-3">
+                        <div class="card-body">
+                          <div class="row"> 
+                            <div class="col-md-6 col-sm-12 mb-3">
+                              <div class="Input">
+                                <label class="form-label" for="">Tiêu đề cụm thông tin
+                                </label>
+                                <input class="form-control" type="text" id="" placeholder="vd: Thông tin cơ bản"/>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="Card card card-middle dark  FormPage-margin bottom " id=""> 
-                        <div class="card-header d-flex align-items-center justify-content-between with-buttons">
-                          <h3 class="card-header-title d-flex align-items-center">Các Field dữ liệu trong nhóm:
-                          </h3>
-                          <div class="Card-editable-btns flex ml-auto">
-                            <button class="Button btn Card-editable-btn   btn-white middle " type="button">Thêm Field mặc định
-                            </button>
-                            <button class="Button btn Card-editable-btn   btn-white middle " type="button">Thêm Field tùy chỉnh
-                            </button>
-                          </div>
-                        </div>
-                        <div class="card-body p-0">
-                          <div class="accordion overflow-auto">
-                            <div class="FieldEditable Accordion border-0 header ">
-                              <div class="Accordion-parent" id="undefined_77284">
-                                <div class="FieldEditable-header d-flex">
-                                  <div class="FieldEditable-header-item name text-nowrap">Tên trường dữ liệu</div>
-                                  <div class="FieldEditable-header-item type text-nowrap"> Thuộc tính
+                            <div class="col-md-6 col-sm-12 mb-3">
+                              <div class="Select  suffix with-arrow">
+                                <label class="form-label">Kiểu độ rộng nhóm
+                                </label>
+                                <div class="input-group">
+                                  <div class="Select-wrapper">
+                                    <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;1 cột / 2 cột / 3 cột &quot; }">
+                                      <option label="empty"></option>
+                                      <option value="1">1 cột</option>
+                                      <option value="2">2 cột</option>
+                                      <option value="3">3 cột</option>
+                                    </select>
                                   </div>
-                                  <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">ID</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="js-arrange js-sortable sortablejs-custom" data-hs-sortable-options="{ &quot;animation&quot;: 150, &quot;handle&quot;: &quot;.sortablejs-custom-handle&quot; }">
-                              <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                <div class="Accordion-parent" id="undefined_41536">
-                                  <div class="FieldEditable-header d-flex">
-                                    <div class="FieldEditable-header-item name text-nowrap">Tên tác giả</div>
-                                    <div class="FieldEditable-header-item type text-nowrap"> Tên tác giả
-                                      <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
-                                      </button>
-                                    </div>
-                                    <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
-                                      <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                        <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                        </button>
-                                        <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                        </button>
-                                      </div>
-                                      <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                        <div role="button" data-toggle="collapse" data-target="#AccordionEditable1" aria-expanded="true" aria-controls="AccordionEditable1">
-                                          <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-collapse collapse" id="AccordionEditable1" data-parent="#undefined_41536">
-                                    <div class="accordion-body">
-                                      <div class="FieldEditable-body">
-                                        <div class="row">
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Tiêu đề field
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="d-flex align-items-end">
-                                              <div class="Select w-100 suffix with-arrow">
-                                                <label class="form-label">Tên thuộc tính
-                                                </label>
-                                                <div class="input-group">
-                                                  <div class="Select-wrapper">
-                                                    <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
-                                                      <option label="empty"></option>
-                                                      <option value="1">Tên thuộc tính 1</option>
-                                                      <option value="2">Tên thuộc tính 2</option>
-                                                      <option value="3">Tên thuộc tính 3</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="input-group-append">
-                                                    <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <button class="Button btn ml-3   btn-primary middle " type="button">Thêm
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                <div class="Accordion-parent" id="undefined_22638">
-                                  <div class="FieldEditable-header d-flex">
-                                    <div class="FieldEditable-header-item name text-nowrap">Năm xuất bản</div>
-                                    <div class="FieldEditable-header-item type text-nowrap"> Năm xuất bản
-                                      <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
-                                      </button>
-                                    </div>
-                                    <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
-                                      <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                        <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                        </button>
-                                        <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                        </button>
-                                      </div>
-                                      <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                        <div role="button" data-toggle="collapse" data-target="#AccordionEditable2" aria-expanded="true" aria-controls="AccordionEditable2">
-                                          <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-collapse collapse" id="AccordionEditable2" data-parent="#undefined_22638">
-                                    <div class="accordion-body">
-                                      <div class="FieldEditable-body">
-                                        <div class="row">
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Tiêu đề field
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="d-flex align-items-end">
-                                              <div class="Select w-100 suffix with-arrow">
-                                                <label class="form-label">Tên thuộc tính
-                                                </label>
-                                                <div class="input-group">
-                                                  <div class="Select-wrapper">
-                                                    <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
-                                                      <option label="empty"></option>
-                                                      <option value="1">Tên thuộc tính 1</option>
-                                                      <option value="2">Tên thuộc tính 2</option>
-                                                      <option value="3">Tên thuộc tính 3</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="input-group-append">
-                                                    <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <button class="Button btn ml-3   btn-primary middle " type="button">Thêm
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                <div class="Accordion-parent" id="undefined_36925">
-                                  <div class="FieldEditable-header d-flex">
-                                    <div class="FieldEditable-header-item name text-nowrap">Nhà xuất bản</div>
-                                    <div class="FieldEditable-header-item type text-nowrap"> Nhà xuất bản
-                                      <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
-                                      </button>
-                                    </div>
-                                    <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
-                                      <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                        <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                        </button>
-                                        <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                        </button>
-                                      </div>
-                                      <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                        <div role="button" data-toggle="collapse" data-target="#AccordionEditable3" aria-expanded="true" aria-controls="AccordionEditable3">
-                                          <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-collapse collapse" id="AccordionEditable3" data-parent="#undefined_36925">
-                                    <div class="accordion-body">
-                                      <div class="FieldEditable-body">
-                                        <div class="row">
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Tiêu đề field
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="d-flex align-items-end">
-                                              <div class="Select w-100 suffix with-arrow">
-                                                <label class="form-label">Tên thuộc tính
-                                                </label>
-                                                <div class="input-group">
-                                                  <div class="Select-wrapper">
-                                                    <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
-                                                      <option label="empty"></option>
-                                                      <option value="1">Tên thuộc tính 1</option>
-                                                      <option value="2">Tên thuộc tính 2</option>
-                                                      <option value="3">Tên thuộc tính 3</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="input-group-append">
-                                                    <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <button class="Button btn ml-3   btn-primary middle " type="button">Thêm
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                <div class="Accordion-parent" id="undefined_45110">
-                                  <div class="FieldEditable-header d-flex">
-                                    <div class="FieldEditable-header-item name text-nowrap">Chưa có tiêu đề</div>
-                                    <div class="FieldEditable-header-item type text-nowrap"> Chưa chọn
-                                      <button class="Button btn    btn-success middle Button-badge" type="button">Tùy chỉnh
-                                      </button>
-                                    </div>
-                                    <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FTC0099</span>
-                                      <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                        <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                        </button>
-                                        <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                        </button>
-                                      </div>
-                                      <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                        <div role="button" data-toggle="collapse" data-target="#AccordionEditable4" aria-expanded="true" aria-controls="AccordionEditable4">
-                                          <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-collapse collapse" id="AccordionEditable4" data-parent="#undefined_45110">
-                                    <div class="accordion-body">
-                                      <div class="FieldEditable-body">
-                                        <div class="row"> 
-                                          <div class="col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Tiêu đề field
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="Chưa có tiêu đề"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Select  suffix with-arrow">
-                                              <label class="form-label">Kiểu Field tùy chỉnh
-                                              </label>
-                                              <div class="input-group">
-                                                <div class="Select-wrapper">
-                                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn kiểu dữ liệu ---&quot; }">
-                                                    <option label="empty"></option>
-                                                    <option value="1">Kiểu Field tùy chỉnh 1</option>
-                                                    <option value="2">Kiểu Field tùy chỉnh 2</option>
-                                                    <option value="3">Kiểu Field tùy chỉnh 3</option>
-                                                  </select>
-                                                </div>
-                                                <div class="input-group-append">
-                                                  <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Text Gợi ý
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="Nhập text Gợi ý" value="Mã XBP"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Select  suffix with-arrow">
-                                              <label class="form-label">Người điền
-                                              </label>
-                                              <div class="input-group">
-                                                <div class="Select-wrapper">
-                                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn người điền ---&quot; }">
-                                                    <option label="empty"></option>
-                                                    <option value="1">Người điền 1</option>
-                                                    <option value="2">Người điền 2</option>
-                                                    <option value="3">Người điền 3</option>
-                                                  </select>
-                                                </div>
-                                                <div class="input-group-append">
-                                                  <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Checkbox">
-                                              <label class="form-label">Có bắt buộc nhập?
-                                              </label>
-                                              <div class="custom-control custom-checkbox mt-2">
-                                                <input class="custom-control-input" type="checkbox" id="Checkbox1"/>
-                                                <label class="custom-control-label text-nowrap" for="Checkbox1">Có
-                                                </label>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                                  <div class="input-group-append">
+                                    <div class="input-group-text"><i class="tio-chevron-down"></i></div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="Card card card-middle    js-arrange-item " id=""> 
-                    <div class="card-header d-flex align-items-center justify-content-between">
-                      <h3 class="card-header-title d-flex align-items-center">Tên cụm THÔNG TIN: MÔ TẢ BẢN THẢO
-                      </h3>
-                      <div class="Card-sortable-arrow ml-auto mr-3 js-arrange-up"><i class="tio-chevron-up"></i></div>
-                      <div class="Card-sortable-arrow mr-3 js-arrange-down"><i class="tio-chevron-down"></i></div>
-                      <div class="Card-sortable-arrow js-arrange-remove"><i class="tio-clear"></i></div>
-                    </div>
-                    <div class="card-body p-0">
-                      <div class="card-body">
-                        <div class="row"> 
-                          <div class="col-md-6 col-sm-12 mb-3">
-                            <div class="Input">
-                              <label class="form-label" for="">Tiêu đề cụm thông tin
-                              </label>
-                              <input class="form-control" type="text" id="" placeholder="vd: Thông tin cơ bản"/>
+                        <div class="Card card card-middle dark  FormPage-margin bottom " id=""> 
+                          <div class="card-header d-flex align-items-center justify-content-between with-buttons">
+                            <h3 class="card-header-title d-flex align-items-center">Các Field dữ liệu trong nhóm:
+                            </h3>
+                            <div class="Card-editable-btns flex ml-auto">
+                              <button class="Button btn Card-editable-btn   btn-white middle " type="button"><span class="Button-title">Thêm Field mặc định</span>
+                              </button>
+                              <button class="Button btn Card-editable-btn   btn-white middle " type="button"><span class="Button-title">Thêm Field tùy chỉnh</span>
+                              </button>
                             </div>
                           </div>
-                          <div class="col-md-6 col-sm-12 mb-3">
-                            <div class="Select  suffix with-arrow">
-                              <label class="form-label">Kiểu độ rộng nhóm
-                              </label>
-                              <div class="input-group">
-                                <div class="Select-wrapper">
-                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;1 cột / 2 cột / 3 cột &quot; }">
-                                    <option label="empty"></option>
-                                    <option value="1">1 cột</option>
-                                    <option value="2">2 cột</option>
-                                    <option value="3">3 cột</option>
-                                  </select>
-                                </div>
-                                <div class="input-group-append">
-                                  <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="Card card card-middle dark  FormPage-margin bottom " id=""> 
-                        <div class="card-header d-flex align-items-center justify-content-between with-buttons">
-                          <h3 class="card-header-title d-flex align-items-center">Các Field dữ liệu trong nhóm:
-                          </h3>
-                          <div class="Card-editable-btns flex ml-auto">
-                            <button class="Button btn Card-editable-btn   btn-white middle " type="button">Thêm Field mặc định
-                            </button>
-                            <button class="Button btn Card-editable-btn   btn-white middle " type="button">Thêm Field tùy chỉnh
-                            </button>
-                          </div>
-                        </div>
-                        <div class="card-body p-0">
-                          <div class="accordion overflow-auto">
-                            <div class="FieldEditable Accordion border-0 header ">
-                              <div class="Accordion-parent" id="undefined_53519">
-                                <div class="FieldEditable-header d-flex">
-                                  <div class="FieldEditable-header-item name text-nowrap">Tên trường dữ liệu</div>
-                                  <div class="FieldEditable-header-item type text-nowrap"> Thuộc tính
-                                  </div>
-                                  <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">ID</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="js-arrange js-sortable sortablejs-custom" data-hs-sortable-options="{ &quot;animation&quot;: 150, &quot;handle&quot;: &quot;.sortablejs-custom-handle&quot; }">
-                              <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                <div class="Accordion-parent" id="undefined_77493">
-                                  <div class="FieldEditable-header d-flex">
-                                    <div class="FieldEditable-header-item name text-nowrap">Tên tác giả</div>
-                                    <div class="FieldEditable-header-item type text-nowrap"> Tên tác giả
-                                      <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
-                                      </button>
-                                    </div>
-                                    <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
-                                      <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                        <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                        </button>
-                                        <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                        </button>
+                          <div class="card-body p-0">
+                            <div class="accordion">
+                              <div class="overflow-auto">
+                                <div class="FieldEditable Accordion border-0 header ">
+                                  <div class="Accordion-parent" id="undefined_59672">
+                                    <div class="FieldEditable-header d-flex">
+                                      <div class="FieldEditable-header-item order text-nowrap">Thứ tự</div>
+                                      <div class="FieldEditable-header-item name text-nowrap">Tên trường dữ liệu</div>
+                                      <div class="FieldEditable-header-item type text-nowrap"> Thuộc tính
                                       </div>
-                                      <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                        <div role="button" data-toggle="collapse" data-target="#AccordionEditable5" aria-expanded="true" aria-controls="AccordionEditable5">
-                                          <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
+                                      <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">ID</span>
+                                        <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto disabled">
+                                          <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i><span class="Button-title"></span>
+                                          </button>
+                                          <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i><span class="Button-title"></span>
+                                          </button>
+                                          <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i><span class="Button-title"></span>
+                                          </button>
+                                          <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i><span class="Button-title"></span>
+                                          </button>
+                                          <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i><span class="Button-title"></span>
                                           </button>
                                         </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-collapse collapse" id="AccordionEditable5" data-parent="#undefined_77493">
-                                    <div class="accordion-body">
-                                      <div class="FieldEditable-body">
-                                        <div class="row">
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Tiêu đề field
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="d-flex align-items-end">
-                                              <div class="Select w-100 suffix with-arrow">
-                                                <label class="form-label">Tên thuộc tính
-                                                </label>
-                                                <div class="input-group">
-                                                  <div class="Select-wrapper">
-                                                    <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
-                                                      <option label="empty"></option>
-                                                      <option value="1">Tên thuộc tính 1</option>
-                                                      <option value="2">Tên thuộc tính 2</option>
-                                                      <option value="3">Tên thuộc tính 3</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="input-group-append">
-                                                    <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <button class="Button btn ml-3   btn-primary middle " type="button">Thêm
-                                              </button>
-                                            </div>
+                                        <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2 disabled">
+                                          <div role="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
+                                            <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i><span class="Button-title"></span>
+                                            </button>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
-                              </div>
-                              <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                <div class="Accordion-parent" id="undefined_44156">
-                                  <div class="FieldEditable-header d-flex">
-                                    <div class="FieldEditable-header-item name text-nowrap">Năm xuất bản</div>
-                                    <div class="FieldEditable-header-item type text-nowrap"> Năm xuất bản
-                                      <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
-                                      </button>
-                                    </div>
-                                    <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
-                                      <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                        <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                        </button>
-                                        <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                        </button>
-                                      </div>
-                                      <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                        <div role="button" data-toggle="collapse" data-target="#AccordionEditable6" aria-expanded="true" aria-controls="AccordionEditable6">
-                                          <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-collapse collapse" id="AccordionEditable6" data-parent="#undefined_44156">
-                                    <div class="accordion-body">
-                                      <div class="FieldEditable-body">
-                                        <div class="row">
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Tiêu đề field
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="d-flex align-items-end">
-                                              <div class="Select w-100 suffix with-arrow">
-                                                <label class="form-label">Tên thuộc tính
-                                                </label>
-                                                <div class="input-group">
-                                                  <div class="Select-wrapper">
-                                                    <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
-                                                      <option label="empty"></option>
-                                                      <option value="1">Tên thuộc tính 1</option>
-                                                      <option value="2">Tên thuộc tính 2</option>
-                                                      <option value="3">Tên thuộc tính 3</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="input-group-append">
-                                                    <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <button class="Button btn ml-3   btn-primary middle " type="button">Thêm
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                <div class="Accordion-parent" id="undefined_45611">
-                                  <div class="FieldEditable-header d-flex">
-                                    <div class="FieldEditable-header-item name text-nowrap">Nhà xuất bản</div>
-                                    <div class="FieldEditable-header-item type text-nowrap"> Nhà xuất bản
-                                      <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
-                                      </button>
-                                    </div>
-                                    <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
-                                      <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                        <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                        </button>
-                                        <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                        </button>
-                                      </div>
-                                      <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                        <div role="button" data-toggle="collapse" data-target="#AccordionEditable7" aria-expanded="true" aria-controls="AccordionEditable7">
-                                          <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-collapse collapse" id="AccordionEditable7" data-parent="#undefined_45611">
-                                    <div class="accordion-body">
-                                      <div class="FieldEditable-body">
-                                        <div class="row">
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Tiêu đề field
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="d-flex align-items-end">
-                                              <div class="Select w-100 suffix with-arrow">
-                                                <label class="form-label">Tên thuộc tính
-                                                </label>
-                                                <div class="input-group">
-                                                  <div class="Select-wrapper">
-                                                    <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
-                                                      <option label="empty"></option>
-                                                      <option value="1">Tên thuộc tính 1</option>
-                                                      <option value="2">Tên thuộc tính 2</option>
-                                                      <option value="3">Tên thuộc tính 3</option>
-                                                    </select>
-                                                  </div>
-                                                  <div class="input-group-append">
-                                                    <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <button class="Button btn ml-3   btn-primary middle " type="button">Thêm
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                <div class="Accordion-parent" id="undefined_86978">
-                                  <div class="FieldEditable-header d-flex">
-                                    <div class="FieldEditable-header-item name text-nowrap">Chưa có tiêu đề</div>
-                                    <div class="FieldEditable-header-item type text-nowrap"> Chưa chọn
-                                      <button class="Button btn    btn-success middle Button-badge" type="button">Tùy chỉnh
-                                      </button>
-                                    </div>
-                                    <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FTC0099</span>
-                                      <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                        <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                        </button>
-                                        <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                        </button>
-                                        <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                        </button>
-                                      </div>
-                                      <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                        <div role="button" data-toggle="collapse" data-target="#AccordionEditable8" aria-expanded="true" aria-controls="AccordionEditable8">
-                                          <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-collapse collapse" id="AccordionEditable8" data-parent="#undefined_86978">
-                                    <div class="accordion-body">
-                                      <div class="FieldEditable-body">
-                                        <div class="row"> 
-                                          <div class="col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Tiêu đề field
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="Chưa có tiêu đề"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Select  suffix with-arrow">
-                                              <label class="form-label">Kiểu Field tùy chỉnh
-                                              </label>
-                                              <div class="input-group">
-                                                <div class="Select-wrapper">
-                                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn kiểu dữ liệu ---&quot; }">
-                                                    <option label="empty"></option>
-                                                    <option value="1">Kiểu Field tùy chỉnh 1</option>
-                                                    <option value="2">Kiểu Field tùy chỉnh 2</option>
-                                                    <option value="3">Kiểu Field tùy chỉnh 3</option>
-                                                  </select>
-                                                </div>
-                                                <div class="input-group-append">
-                                                  <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Input">
-                                              <label class="form-label" for="">Text Gợi ý
-                                              </label>
-                                              <input class="form-control" type="text" id="" placeholder="Nhập text Gợi ý" value="Mã XBP"/>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Select  suffix with-arrow">
-                                              <label class="form-label">Người điền
-                                              </label>
-                                              <div class="input-group">
-                                                <div class="Select-wrapper">
-                                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn người điền ---&quot; }">
-                                                    <option label="empty"></option>
-                                                    <option value="1">Người điền 1</option>
-                                                    <option value="2">Người điền 2</option>
-                                                    <option value="3">Người điền 3</option>
-                                                  </select>
-                                                </div>
-                                                <div class="input-group-append">
-                                                  <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-6 col-12 mb-3">
-                                            <div class="Checkbox">
-                                              <label class="form-label">Có bắt buộc nhập?
-                                              </label>
-                                              <div class="custom-control custom-checkbox mt-2">
-                                                <input class="custom-control-input" type="checkbox" id="Checkbox1"/>
-                                                <label class="custom-control-label text-nowrap" for="Checkbox1">Có
-                                                </label>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="Accordion mb-3" id="">
-                  <div class="Accordion-parent" id="AccordionParent2_2952">
-                    <div class="Card card card-middle    " id=""> 
-                      <div class="card-header d-flex align-items-center justify-content-between">
-                        <h3 class="card-header-title d-flex align-items-center">Chữ ký các cấp
-                        </h3>
-                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion4" aria-expanded="true" aria-controls="Accordion4"><i class="tio-chevron-down"></i></div>
-                      </div>
-                      <div class="collapse show" id="Accordion4" data-parent="#AccordionParent2_2952">
-                        <div class="card-body p-0">
-                          <form action="#"> 
-                            <div class="card-body">
-                              <div class="row">
-                                <div class="col-md-4 col-sm-12 mb-3">
-                                  <div class="Input">
-                                    <label class="form-label" for="">Tiêu đề cụm thông tin
-                                    </label>
-                                    <input class="form-control" type="text" id="" placeholder="Nhập tiêu đề cụm thông tin" value="Chữ ký các cấp"/>
-                                  </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 mb-3">
-                                  <div class="Select  suffix with-arrow">
-                                    <label class="form-label">Kiểu độ rộng nhóm
-                                    </label>
-                                    <div class="input-group">
-                                      <div class="Select-wrapper">
-                                        <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn loại biểu mẫu ---&quot; }">
-                                          <option label="empty"></option>
-                                          <option value="1">1 cột</option>
-                                          <option value="2">2 cột</option>
-                                          <option value="3">3 cột</option>
-                                        </select>
-                                      </div>
-                                      <div class="input-group-append">
-                                        <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-4 col-sm-12 mb-3">
-                                  <div class="Checkbox">
-                                    <label class="form-label">Hiện tiêu đề khi in
-                                    </label>
-                                    <div class="custom-control custom-checkbox mt-2">
-                                      <input class="custom-control-input" type="checkbox" id="Checkbox1"/>
-                                      <label class="custom-control-label text-nowrap" for="Checkbox1">Có
-                                      </label>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="Card card card-middle dark  FormPage-margin bottom " id=""> 
-                              <div class="card-header d-flex align-items-center justify-content-between with-buttons">
-                                <h3 class="card-header-title d-flex align-items-center">Các Field dữ liệu trong nhóm:
-                                </h3>
-                                <div class="Card-editable-btns flex ml-auto">
-                                  <button class="Button btn Card-editable-btn   btn-white middle " type="button">Thêm Field mặc định
-                                  </button>
-                                  <button class="Button btn Card-editable-btn   btn-white middle " type="button">Thêm Field tùy chỉnh
-                                  </button>
-                                </div>
-                              </div>
-                              <div class="card-body p-0">
-                                <div class="accordion overflow-auto">
-                                  <div class="FieldEditable Accordion border-0 header ">
-                                    <div class="Accordion-parent" id="undefined_53126">
+                                <div class="js-arrange js-sortable sortablejs-custom" data-hs-sortable-options="{ &quot;animation&quot;: 150, &quot;handle&quot;: &quot;.sortablejs-custom-handle&quot; }">
+                                  <div class="FieldEditable Accordion border-0  js-arrange-item">
+                                    <div class="Accordion-parent" id="undefined_28222">
                                       <div class="FieldEditable-header d-flex">
-                                        <div class="FieldEditable-header-item name text-nowrap">Tên trường dữ liệu</div>
-                                        <div class="FieldEditable-header-item type text-nowrap"> Thuộc tính
+                                        <div class="FieldEditable-header-item order text-nowrap">1</div>
+                                        <div class="FieldEditable-header-item name text-nowrap">Tên tác giả</div>
+                                        <div class="FieldEditable-header-item type text-nowrap"> Tên tác giả
+                                          <button class="Button btn    btn-primary middle Button-badge" type="button"><span class="Button-title">Mặc định</span>
+                                          </button>
                                         </div>
-                                        <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">ID</span>
+                                        <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
+                                          <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
+                                            <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i><span class="Button-title"></span>
+                                            </button>
+                                          </div>
+                                          <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
+                                            <div role="button" data-toggle="collapse" data-target="#AccordionEditable1" aria-expanded="true" aria-controls="AccordionEditable1">
+                                              <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i><span class="Button-title"></span>
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-collapse collapse" id="AccordionEditable1" data-parent="#undefined_28222">
+                                        <div class="accordion-body">
+                                          <div class="FieldEditable-body">
+                                            <div class="row">
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="Input">
+                                                  <label class="form-label" for="">Tiêu đề field
+                                                  </label>
+                                                  <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="d-flex align-items-end">
+                                                  <div class="Select w-100 suffix with-arrow">
+                                                    <label class="form-label">Tên thuộc tính
+                                                    </label>
+                                                    <div class="input-group">
+                                                      <div class="Select-wrapper">
+                                                        <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
+                                                          <option label="empty"></option>
+                                                          <option value="1">Tên thuộc tính 1</option>
+                                                          <option value="2">Tên thuộc tính 2</option>
+                                                          <option value="3">Tên thuộc tính 3</option>
+                                                        </select>
+                                                      </div>
+                                                      <div class="input-group-append">
+                                                        <div class="input-group-text"><i class="tio-chevron-down"></i></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <button class="Button btn ml-3   btn-primary middle " type="button"><span class="Button-title">Thêm</span>
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="FieldEditable Accordion border-0  js-arrange-item">
+                                    <div class="Accordion-parent" id="undefined_75202">
+                                      <div class="FieldEditable-header d-flex">
+                                        <div class="FieldEditable-header-item order text-nowrap">2</div>
+                                        <div class="FieldEditable-header-item name text-nowrap">Năm xuất bản</div>
+                                        <div class="FieldEditable-header-item type text-nowrap"> Năm xuất bản
+                                          <button class="Button btn    btn-primary middle Button-badge" type="button"><span class="Button-title">Mặc định</span>
+                                          </button>
+                                        </div>
+                                        <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
+                                          <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
+                                            <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i><span class="Button-title"></span>
+                                            </button>
+                                          </div>
+                                          <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
+                                            <div role="button" data-toggle="collapse" data-target="#AccordionEditable2" aria-expanded="true" aria-controls="AccordionEditable2">
+                                              <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i><span class="Button-title"></span>
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-collapse collapse" id="AccordionEditable2" data-parent="#undefined_75202">
+                                        <div class="accordion-body">
+                                          <div class="FieldEditable-body">
+                                            <div class="row">
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="Input">
+                                                  <label class="form-label" for="">Tiêu đề field
+                                                  </label>
+                                                  <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="d-flex align-items-end">
+                                                  <div class="Select w-100 suffix with-arrow">
+                                                    <label class="form-label">Tên thuộc tính
+                                                    </label>
+                                                    <div class="input-group">
+                                                      <div class="Select-wrapper">
+                                                        <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
+                                                          <option label="empty"></option>
+                                                          <option value="1">Tên thuộc tính 1</option>
+                                                          <option value="2">Tên thuộc tính 2</option>
+                                                          <option value="3">Tên thuộc tính 3</option>
+                                                        </select>
+                                                      </div>
+                                                      <div class="input-group-append">
+                                                        <div class="input-group-text"><i class="tio-chevron-down"></i></div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <button class="Button btn ml-3   btn-primary middle " type="button"><span class="Button-title">Thêm</span>
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="js-arrange js-sortable sortablejs-custom" data-hs-sortable-options="{ &quot;animation&quot;: 150, &quot;handle&quot;: &quot;.sortablejs-custom-handle&quot; }">
-                                    <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                      <div class="Accordion-parent" id="undefined_2426">
-                                        <div class="FieldEditable-header d-flex">
-                                          <div class="FieldEditable-header-item name text-nowrap">Tên tác giả</div>
-                                          <div class="FieldEditable-header-item type text-nowrap"> Tên tác giả
-                                            <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
+                                  <div class="FieldEditable Accordion border-0  js-arrange-item">
+                                    <div class="Accordion-parent" id="undefined_41391">
+                                      <div class="FieldEditable-header d-flex">
+                                        <div class="FieldEditable-header-item order text-nowrap">3</div>
+                                        <div class="FieldEditable-header-item name text-nowrap">Nhà xuất bản</div>
+                                        <div class="FieldEditable-header-item type text-nowrap"> Nhà xuất bản
+                                          <button class="Button btn    btn-primary middle Button-badge" type="button"><span class="Button-title">Mặc định</span>
+                                          </button>
+                                        </div>
+                                        <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
+                                          <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
+                                            <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i><span class="Button-title"></span>
                                             </button>
                                           </div>
-                                          <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
-                                            <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                              <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
+                                          <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
+                                            <div role="button" data-toggle="collapse" data-target="#AccordionEditable3" aria-expanded="true" aria-controls="AccordionEditable3">
+                                              <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i><span class="Button-title"></span>
                                               </button>
-                                              <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                              </button>
-                                              <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                              </button>
-                                              <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                              </button>
-                                              <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                              </button>
-                                            </div>
-                                            <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                              <div role="button" data-toggle="collapse" data-target="#AccordionEditable9" aria-expanded="true" aria-controls="AccordionEditable9">
-                                                <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                                </button>
-                                              </div>
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="accordion-collapse collapse" id="AccordionEditable9" data-parent="#undefined_2426">
-                                          <div class="accordion-body">
-                                            <div class="FieldEditable-body">
-                                              <div class="row">
-                                                <div class="col-md-6 col-12 mb-3">
-                                                  <div class="Input">
-                                                    <label class="form-label" for="">Tiêu đề field
-                                                    </label>
-                                                    <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
-                                                  </div>
+                                      </div>
+                                      <div class="accordion-collapse collapse" id="AccordionEditable3" data-parent="#undefined_41391">
+                                        <div class="accordion-body">
+                                          <div class="FieldEditable-body">
+                                            <div class="row">
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="Input">
+                                                  <label class="form-label" for="">Tiêu đề field
+                                                  </label>
+                                                  <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
                                                 </div>
-                                                <div class="col-md-6 col-12 mb-3">
-                                                  <div class="d-flex align-items-end">
-                                                    <div class="Select w-100 suffix with-arrow">
-                                                      <label class="form-label">Tên thuộc tính
-                                                      </label>
-                                                      <div class="input-group">
-                                                        <div class="Select-wrapper">
-                                                          <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
-                                                            <option label="empty"></option>
-                                                            <option value="1">Tên thuộc tính 1</option>
-                                                            <option value="2">Tên thuộc tính 2</option>
-                                                            <option value="3">Tên thuộc tính 3</option>
-                                                          </select>
-                                                        </div>
-                                                        <div class="input-group-append">
-                                                          <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                        </div>
+                                              </div>
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="d-flex align-items-end">
+                                                  <div class="Select w-100 suffix with-arrow">
+                                                    <label class="form-label">Tên thuộc tính
+                                                    </label>
+                                                    <div class="input-group">
+                                                      <div class="Select-wrapper">
+                                                        <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
+                                                          <option label="empty"></option>
+                                                          <option value="1">Tên thuộc tính 1</option>
+                                                          <option value="2">Tên thuộc tính 2</option>
+                                                          <option value="3">Tên thuộc tính 3</option>
+                                                        </select>
+                                                      </div>
+                                                      <div class="input-group-append">
+                                                        <div class="input-group-text"><i class="tio-chevron-down"></i></div>
                                                       </div>
                                                     </div>
-                                                    <button class="Button btn ml-3   btn-primary middle " type="button">Thêm
-                                                    </button>
                                                   </div>
+                                                  <button class="Button btn ml-3   btn-primary middle " type="button"><span class="Button-title">Thêm</span>
+                                                  </button>
                                                 </div>
                                               </div>
                                             </div>
@@ -1645,67 +1036,101 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="FieldEditable Accordion border-0  js-arrange-item">
-                                      <div class="Accordion-parent" id="undefined_88039">
-                                        <div class="FieldEditable-header d-flex">
-                                          <div class="FieldEditable-header-item name text-nowrap">Năm xuất bản</div>
-                                          <div class="FieldEditable-header-item type text-nowrap"> Năm xuất bản
-                                            <button class="Button btn    btn-primary middle Button-badge" type="button">Mặc định
+                                  </div>
+                                  <div class="FieldEditable Accordion border-0  js-arrange-item">
+                                    <div class="Accordion-parent" id="undefined_88818">
+                                      <div class="FieldEditable-header d-flex">
+                                        <div class="FieldEditable-header-item order text-nowrap">4</div>
+                                        <div class="FieldEditable-header-item name text-nowrap">Chưa có tiêu đề</div>
+                                        <div class="FieldEditable-header-item type text-nowrap"> Chưa chọn
+                                          <button class="Button btn    btn-success middle Button-badge" type="button"><span class="Button-title">Tùy chỉnh</span>
+                                          </button>
+                                        </div>
+                                        <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FTC0099</span>
+                                          <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
+                                            <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i><span class="Button-title"></span>
+                                            </button>
+                                            <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i><span class="Button-title"></span>
                                             </button>
                                           </div>
-                                          <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">#FCD0099</span>
-                                            <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto">
-                                              <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i>
+                                          <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
+                                            <div role="button" data-toggle="collapse" data-target="#AccordionEditable4" aria-expanded="true" aria-controls="AccordionEditable4">
+                                              <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i><span class="Button-title"></span>
                                               </button>
-                                              <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i>
-                                              </button>
-                                              <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i>
-                                              </button>
-                                              <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i>
-                                              </button>
-                                              <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i>
-                                              </button>
-                                            </div>
-                                            <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2">
-                                              <div role="button" data-toggle="collapse" data-target="#AccordionEditable10" aria-expanded="true" aria-controls="AccordionEditable10">
-                                                <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i>
-                                                </button>
-                                              </div>
                                             </div>
                                           </div>
                                         </div>
-                                        <div class="accordion-collapse collapse" id="AccordionEditable10" data-parent="#undefined_88039">
-                                          <div class="accordion-body">
-                                            <div class="FieldEditable-body">
-                                              <div class="row">
-                                                <div class="col-md-6 col-12 mb-3">
-                                                  <div class="Input">
-                                                    <label class="form-label" for="">Tiêu đề field
-                                                    </label>
-                                                    <input class="form-control" type="text" id="" placeholder="(Tự nhận theo thuộc tính đã chọn ở loại field hoặc gõ lại)"/>
+                                      </div>
+                                      <div class="accordion-collapse collapse" id="AccordionEditable4" data-parent="#undefined_88818">
+                                        <div class="accordion-body">
+                                          <div class="FieldEditable-body">
+                                            <div class="row"> 
+                                              <div class="col-12 mb-3">
+                                                <div class="Input">
+                                                  <label class="form-label" for="">Tiêu đề field
+                                                  </label>
+                                                  <input class="form-control" type="text" id="" placeholder="Chưa có tiêu đề"/>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="Select  suffix with-arrow">
+                                                  <label class="form-label">Kiểu Field tùy chỉnh
+                                                  </label>
+                                                  <div class="input-group">
+                                                    <div class="Select-wrapper">
+                                                      <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn kiểu dữ liệu ---&quot; }">
+                                                        <option label="empty"></option>
+                                                        <option value="1">Kiểu Field tùy chỉnh 1</option>
+                                                        <option value="2">Kiểu Field tùy chỉnh 2</option>
+                                                        <option value="3">Kiểu Field tùy chỉnh 3</option>
+                                                      </select>
+                                                    </div>
+                                                    <div class="input-group-append">
+                                                      <div class="input-group-text"><i class="tio-chevron-down"></i></div>
+                                                    </div>
                                                   </div>
                                                 </div>
-                                                <div class="col-md-6 col-12 mb-3">
-                                                  <div class="d-flex align-items-end">
-                                                    <div class="Select w-100 suffix with-arrow">
-                                                      <label class="form-label">Tên thuộc tính
-                                                      </label>
-                                                      <div class="input-group">
-                                                        <div class="Select-wrapper">
-                                                          <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;Gõ tên thuộc tính để chọn (ví dụ: tên tác giả)&quot; }">
-                                                            <option label="empty"></option>
-                                                            <option value="1">Tên thuộc tính 1</option>
-                                                            <option value="2">Tên thuộc tính 2</option>
-                                                            <option value="3">Tên thuộc tính 3</option>
-                                                          </select>
-                                                        </div>
-                                                        <div class="input-group-append">
-                                                          <div class="input-group-text"><i class="tio-chevron-down"></i></div>
-                                                        </div>
-                                                      </div>
+                                              </div>
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="Input">
+                                                  <label class="form-label" for="">Text Gợi ý
+                                                  </label>
+                                                  <input class="form-control" type="text" id="" placeholder="Nhập text Gợi ý" value="Mã XBP"/>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="Select  suffix with-arrow">
+                                                  <label class="form-label">Người điền
+                                                  </label>
+                                                  <div class="input-group">
+                                                    <div class="Select-wrapper">
+                                                      <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn người điền ---&quot; }">
+                                                        <option label="empty"></option>
+                                                        <option value="1">Người điền 1</option>
+                                                        <option value="2">Người điền 2</option>
+                                                        <option value="3">Người điền 3</option>
+                                                      </select>
                                                     </div>
-                                                    <button class="Button btn ml-3   btn-primary middle " type="button">Thêm
-                                                    </button>
+                                                    <div class="input-group-append">
+                                                      <div class="input-group-text"><i class="tio-chevron-down"></i></div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 col-12 mb-3">
+                                                <div class="Checkbox">
+                                                  <label class="form-label">Có bắt buộc nhập?
+                                                  </label>
+                                                  <div class="custom-control custom-checkbox mt-2">
+                                                    <input class="custom-control-input" type="checkbox" id="Checkbox1"/>
+                                                    <label class="custom-control-label text-nowrap" for="Checkbox1">Có
+                                                    </label>
                                                   </div>
                                                 </div>
                                               </div>
@@ -1718,21 +1143,106 @@
                                 </div>
                               </div>
                             </div>
-                          </form>
+                          </div>
                         </div>
+                      </div>
+                      <div class="border mb-3">
+                        <div class="card-body">
+                          <div class="row"> 
+                            <div class="col-md-6 col-sm-12 mb-3">
+                              <div class="Input">
+                                <label class="form-label" for="">Tiêu đề cụm thông tin
+                                </label>
+                                <input class="form-control" type="text" id="" placeholder="vd: Thông tin cơ bản"/>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                              <div class="Select  suffix with-arrow">
+                                <label class="form-label">Kiểu độ rộng nhóm
+                                </label>
+                                <div class="input-group">
+                                  <div class="Select-wrapper">
+                                    <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;1 cột / 2 cột / 3 cột &quot; }">
+                                      <option label="empty"></option>
+                                      <option value="1">1 cột</option>
+                                      <option value="2">2 cột</option>
+                                      <option value="3">3 cột</option>
+                                    </select>
+                                  </div>
+                                  <div class="input-group-append">
+                                    <div class="input-group-text"><i class="tio-chevron-down"></i></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="Card card card-middle dark  FormPage-margin bottom " id=""> 
+                          <div class="card-header d-flex align-items-center justify-content-between with-buttons">
+                            <h3 class="card-header-title d-flex align-items-center">Các Field dữ liệu trong nhóm:
+                            </h3>
+                            <div class="Card-editable-btns flex ml-auto">
+                              <button class="Button btn Card-editable-btn   btn-white middle " type="button"><span class="Button-title">Thêm Field mặc định</span>
+                              </button>
+                              <button class="Button btn Card-editable-btn   btn-white middle " type="button"><span class="Button-title">Thêm Field tùy chỉnh</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="card-body p-0">
+                            <div class="accordion">
+                              <div class="overflow-auto">
+                                <div class="FieldEditable Accordion border-0 header ">
+                                  <div class="Accordion-parent" id="undefined_93647">
+                                    <div class="FieldEditable-header d-flex">
+                                      <div class="FieldEditable-header-item order text-nowrap">Thứ tự</div>
+                                      <div class="FieldEditable-header-item name text-nowrap">Tên trường dữ liệu</div>
+                                      <div class="FieldEditable-header-item type text-nowrap"> Thuộc tính
+                                      </div>
+                                      <div class="FieldEditable-header-item id text-nowrap"><span class="mr-2">ID</span>
+                                        <div class="FieldEditable-header-item-actions d-flex align-items-center ml-auto disabled">
+                                          <button class="Button btn sortablejs-custom-handle btn-icon  btn-white middle " type="button"><i class="tio-move-page"></i><span class="Button-title"></span>
+                                          </button>
+                                          <button class="Button btn js-arrange-up btn-icon  btn-white middle " type="button"><i class="tio-arrow-upward"></i><span class="Button-title"></span>
+                                          </button>
+                                          <button class="Button btn js-arrange-down btn-icon  btn-white middle " type="button"><i class="tio-arrow-downward"></i><span class="Button-title"></span>
+                                          </button>
+                                          <button class="Button btn  btn-icon  btn-white middle " type="button"><i class="tio-copy"></i><span class="Button-title"></span>
+                                          </button>
+                                          <button class="Button btn js-arrange-remove btn-icon  btn-white middle " type="button"><i class="tio-clear"></i><span class="Button-title"></span>
+                                          </button>
+                                        </div>
+                                        <div class="FieldEditable-header-item-collapse d-flex align-items-center ml-2 disabled">
+                                          <div role="button" data-toggle="collapse" data-target="#" aria-expanded="true" aria-controls="">
+                                            <button class="Button btn  btn-icon  btn-ghost-white middle " type="button"><i class="tio-edit"></i><span class="Button-title"></span>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FieldEditable-empty">Chưa có dữ liệu</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="FormPage-add-group d-flex justify-content-center">
+                        <button class="Button btn    btn-primary large " type="button"><i class="tio-add mr-1"></i><span class="Button-title">Thêm nhóm</span>
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="Accordion mb-3 bottom" id="">
-                  <div class="Accordion-parent" id="AccordionParent3_15279">
+                  <div class="Accordion-parent" id="AccordionParent3_850">
                     <div class="Card card card-middle    " id=""> 
                       <div class="card-header d-flex align-items-center justify-content-between">
                         <h3 class="card-header-title d-flex align-items-center">Tùy chỉnh biểu mẫu in
                         </h3>
                         <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion5" aria-expanded="true" aria-controls="Accordion5"><i class="tio-chevron-down"></i></div>
                       </div>
-                      <div class="collapse show" id="Accordion5" data-parent="#AccordionParent3_15279">
+                      <div class="collapse show" id="Accordion5" data-parent="#AccordionParent3_850">
                         <div class="card-body">
                           <div class="TextArea mb-3">
                             <label class="form-label" for="">Đầu trang in
@@ -1752,27 +1262,32 @@
               </div>
               <div id="scrollSpyEnd"></div>
             </div>
-            <div class="col-lg-3 pl-lg-2"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
-              <button class="navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0">Điều hướng trên trang</span><span class="navbar-toggle-default">
+            <div class="col-lg-3 pl-lg-2">
+              <div class="ScrollSpy-drawer-mobile">
+                <div class="ScrollSpy-drawer-mobile-overlay"></div>
+                <div class="ScrollSpy-drawer-mobile-main"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
+                  <button class="active navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0">Điều hướng trên trang</span><span class="navbar-toggle-default">
 <i class="tio-menu-hamburger"></i>
 </span>
 <span class="navbar-toggle-toggled">
 <i class="tio-clear"></i>
 </span>
 </span>
-              </button></button>
-              <div class="collapse navbar-collapse" id="scrollSpyParent">
-                <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
-                  <div class="Card card card-small dark   " id=""> 
-                    <div class="card-header d-flex align-items-center justify-content-between">
-                      <h3 class="card-header-title d-flex align-items-center">Điều hướng trên trang
-                      </h3>
-                    </div>
-                    <div class="card-body p-0">
-                      <ul class="navbar-nav navbar-nav-lg nav-tabs card card-navbar-nav border-0 p-0">
-                        <li class="nav-item"><a class="nav-link" href="#thongtinbieuin">Thông tin biểu in</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#themnhomfield">Thêm nhóm Field</a></li>
-                      </ul>
+                  </button></button>
+                  <div class="collapse navbar-collapse show" id="scrollSpyParent">
+                    <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
+                      <div class="Card card card-small dark   " id=""> 
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                          <h3 class="card-header-title d-flex align-items-center">Điều hướng trên trang
+                          </h3>
+                        </div>
+                        <div class="card-body p-0">
+                          <ul class="navbar-nav navbar-nav-lg nav-tabs card card-navbar-nav border-0 p-0">
+                            <li class="nav-item"><a class="nav-link" href="#thongtinbieuin">Thông tin biểu in</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#themnhomfield">Thêm nhóm Field</a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

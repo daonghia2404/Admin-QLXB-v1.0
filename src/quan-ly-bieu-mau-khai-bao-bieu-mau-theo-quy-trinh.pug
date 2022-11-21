@@ -16,6 +16,7 @@ block pages
             +Button({ title: 'Duyệt', icon: 'tio-checkmark-circle-outlined mr-1', variant: 'btn-soft-dark' })  
             +Button({ title: 'Xem trước', icon: 'tio-invisible mr-1', variant: 'btn-soft-dark' })  
             +Button({ title: 'In', icon: 'tio-print mr-1', variant: 'btn-soft-dark' })  
+            +Button({ className: 'show-on-mobile ml-auto js-open-scrollspy-mobile', icon: 'tio-menu-hamburger', variant: 'btn-soft-dark' })
 
           .accordion
             +Accordion({ className: 'mb-3', mainId: 'thongtinbieuin', id: 'Accordion1', parentId: 'AccordionParent1', title: 'Thông tin biểu mẫu' })
@@ -43,182 +44,231 @@ block pages
                     })
 
             .js-arrange.FormPage-margin.mb-3
-              +Card({ className: ' js-arrange-item', title: 'Tên CỤM THÔNG TIN: Cụm Dữ liệu 1 (chưa đặt tên)', sortable: true, noPadding: true })
-                .card-body
-                  .row 
-                    .col-md-6.col-sm-12.mb-3
-                      +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'vd: Thông tin cơ bản' })
-                    .col-md-6.col-sm-12.mb-3
-                      +Select({
-                        label: 'Kiểu độ rộng nhóm',
-                        placeholder: '1 cột / 2 cột / 3 cột ',
-                        options: [
-                          { label: '1 cột', value: '1' },
-                          { label: '2 cột', value: '2' },
-                          { label: '3 cột', value: '3' },
-                        ],
-                        iconSuffix: 'tio-chevron-down',
-                        withArrow: true,
+              +Card({ className: ' js-arrange-item', title: 'Tên CỤM THÔNG TIN: Cụm Dữ liệu 1 (chưa đặt tên)', sortable: true })
+                .border.mb-3
+                  .card-body
+                    .row 
+                      .col-md-6.col-sm-12.mb-3
+                        +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'vd: Thông tin cơ bản' })
+                      .col-md-6.col-sm-12.mb-3
+                        +Select({
+                          label: 'Kiểu độ rộng nhóm',
+                          placeholder: '1 cột / 2 cột / 3 cột ',
+                          options: [
+                            { label: '1 cột', value: '1' },
+                            { label: '2 cột', value: '2' },
+                            { label: '3 cột', value: '3' },
+                          ],
+                          iconSuffix: 'tio-chevron-down',
+                          withArrow: true,
+                          })
+
+                  +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
+                    .accordion
+                      .overflow-auto
+                        +FieldEditable({
+                          order: 'Thứ tự',
+                          header: true,
+                          title: 'Tên trường dữ liệu',
+                          attribute: 'Thuộc tính',
+                          id: 'ID',
                         })
 
-                +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
-                  .accordion.overflow-auto
-                    +FieldEditable({
-                      header: true,
-                      title: 'Tên trường dữ liệu',
-                      attribute: 'Thuộc tính',
-                      id: 'ID',
-                    })
+                        .js-arrange.js-sortable.sortablejs-custom(data-hs-sortable-options='{ "animation": 150, "handle": ".sortablejs-custom-handle" }')
+                          +FieldEditable({
+                            className: 'js-arrange-item',
+                            order: '1',
+                            title: 'Tên tác giả',
+                            attribute: 'Tên tác giả',
+                            id: '#FCD0099',
+                            accordionId: 'AccordionEditable1',
+                            accordionParentId: 'AccordionEditableParent',
+                          })
+                          +FieldEditable({
+                            className: 'js-arrange-item',
+                            order: '2',
+                            title: 'Năm xuất bản',
+                            attribute: 'Năm xuất bản',
+                            id: '#FCD0099',
+                            accordionId: 'AccordionEditable2',
+                            accordionParentId: 'AccordionEditableParent',
+                          })
+                          +FieldEditable({
+                            className: 'js-arrange-item',
+                            order: '3',
+                            title: 'Nhà xuất bản',
+                            attribute: 'Nhà xuất bản',
+                            id: '#FCD0099',
+                            accordionId: 'AccordionEditable3',
+                            accordionParentId: 'AccordionEditableParent',
+                          })
+                          +FieldEditable({
+                            className: 'js-arrange-item',
+                            order: '4',
+                            title: 'Chưa có tiêu đề',
+                            attribute: 'Chưa chọn',
+                            id: '#FTC0099',
+                            accordionId: 'AccordionEditable4',
+                            accordionParentId: 'AccordionEditableParent',
+                            defaultField: false,
+                          })
 
-                    .js-arrange.js-sortable.sortablejs-custom(data-hs-sortable-options='{ "animation": 150, "handle": ".sortablejs-custom-handle" }')
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Tên tác giả',
-                        attribute: 'Tên tác giả',
-                        id: '#FCD0099',
-                        accordionId: 'AccordionEditable1',
-                        accordionParentId: 'AccordionEditableParent',
-                      })
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Năm xuất bản',
-                        attribute: 'Năm xuất bản',
-                        id: '#FCD0099',
-                        accordionId: 'AccordionEditable2',
-                        accordionParentId: 'AccordionEditableParent',
-                      })
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Nhà xuất bản',
-                        attribute: 'Nhà xuất bản',
-                        id: '#FCD0099',
-                        accordionId: 'AccordionEditable3',
-                        accordionParentId: 'AccordionEditableParent',
-                      })
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Chưa có tiêu đề',
-                        attribute: 'Chưa chọn',
-                        id: '#FTC0099',
-                        accordionId: 'AccordionEditable4',
-                        accordionParentId: 'AccordionEditableParent',
-                        defaultField: false,
-                      })
+                .border.mb-3
+                  .card-body
+                    .row 
+                      .col-md-6.col-sm-12.mb-3
+                        +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'vd: Thông tin cơ bản' })
+                      .col-md-6.col-sm-12.mb-3
+                        +Select({
+                          label: 'Kiểu độ rộng nhóm',
+                          placeholder: '1 cột / 2 cột / 3 cột ',
+                          options: [
+                            { label: '1 cột', value: '1' },
+                            { label: '2 cột', value: '2' },
+                            { label: '3 cột', value: '3' },
+                          ],
+                          iconSuffix: 'tio-chevron-down',
+                          withArrow: true,
+                          })
 
-              +Card({ className: ' js-arrange-item', title: 'Tên cụm THÔNG TIN: MÔ TẢ BẢN THẢO', sortable: true, noPadding: true })
-                .card-body
-                  .row 
-                    .col-md-6.col-sm-12.mb-3
-                      +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'vd: Thông tin cơ bản' })
-                    .col-md-6.col-sm-12.mb-3
-                      +Select({
-                        label: 'Kiểu độ rộng nhóm',
-                        placeholder: '1 cột / 2 cột / 3 cột ',
-                        options: [
-                          { label: '1 cột', value: '1' },
-                          { label: '2 cột', value: '2' },
-                          { label: '3 cột', value: '3' },
-                        ],
-                        iconSuffix: 'tio-chevron-down',
-                        withArrow: true,
+                  +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
+                    .accordion
+                      .overflow-auto
+                        +FieldEditable({
+                          order: 'Thứ tự',
+                          header: true,
+                          title: 'Tên trường dữ liệu',
+                          attribute: 'Thuộc tính',
+                          id: 'ID',
                         })
 
-                +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
-                  .accordion.overflow-auto
-                    +FieldEditable({
-                      header: true,
-                      title: 'Tên trường dữ liệu',
-                      attribute: 'Thuộc tính',
-                      id: 'ID',
-                    })
+                        .FieldEditable-empty Chưa có dữ liệu
 
-                    .js-arrange.js-sortable.sortablejs-custom(data-hs-sortable-options='{ "animation": 150, "handle": ".sortablejs-custom-handle" }')
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Tên tác giả',
-                        attribute: 'Tên tác giả',
-                        id: '#FCD0099',
-                        accordionId: 'AccordionEditable5',
-                        accordionParentId: 'AccordionEditableParent',
-                      })
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Năm xuất bản',
-                        attribute: 'Năm xuất bản',
-                        id: '#FCD0099',
-                        accordionId: 'AccordionEditable6',
-                        accordionParentId: 'AccordionEditableParent',
-                      })
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Nhà xuất bản',
-                        attribute: 'Nhà xuất bản',
-                        id: '#FCD0099',
-                        accordionId: 'AccordionEditable7',
-                        accordionParentId: 'AccordionEditableParent',
-                      })
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Chưa có tiêu đề',
-                        attribute: 'Chưa chọn',
-                        id: '#FTC0099',
-                        accordionId: 'AccordionEditable8',
-                        accordionParentId: 'AccordionEditableParent',
-                        defaultField: false,
-                      })
+                .FormPage-add-group.d-flex.justify-content-center
+                  +Button({ title: 'Thêm nhóm', variant: 'btn-primary', size: 'large', icon: 'tio-add mr-1' })
 
-            +Accordion({ className: 'mb-3', id: 'Accordion4', parentId: 'AccordionParent2', title: 'Chữ ký các cấp', noPadding: true })
-              form(action="#") 
-                .card-body
-                  .row
-                    .col-md-4.col-sm-12.mb-3
-                      +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'Nhập tiêu đề cụm thông tin', value: 'Chữ ký các cấp' })
-                    .col-md-4.col-sm-12.mb-3
-                      +Select({
-                        label: 'Kiểu độ rộng nhóm',
-                        placeholder: '--- Chọn loại biểu mẫu ---',
-                        options: [
-                          { label: '1 cột', value: '1' },
-                          { label: '2 cột', value: '2' },
-                          { label: '3 cột', value: '3' },
-                        ],
-                        iconSuffix: 'tio-chevron-down',
-                        withArrow: true,
-                      })
-                    .col-md-4.col-sm-12.mb-3
-                      +Checkbox({
-                        classNameCheckbox: 'mt-2',
-                        label: 'Hiện tiêu đề khi in',
-                        title: 'Có',
-                        labelId: 'Checkbox1',
-                      })
+              //- +Card({ className: ' js-arrange-item', title: 'Tên cụm THÔNG TIN: MÔ TẢ BẢN THẢO', sortable: true })
+              //-   .card-body
+              //-     .row 
+              //-       .col-md-6.col-sm-12.mb-3
+              //-         +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'vd: Thông tin cơ bản' })
+              //-       .col-md-6.col-sm-12.mb-3
+              //-         +Select({
+              //-           label: 'Kiểu độ rộng nhóm',
+              //-           placeholder: '1 cột / 2 cột / 3 cột ',
+              //-           options: [
+              //-             { label: '1 cột', value: '1' },
+              //-             { label: '2 cột', value: '2' },
+              //-             { label: '3 cột', value: '3' },
+              //-           ],
+              //-           iconSuffix: 'tio-chevron-down',
+              //-           withArrow: true,
+              //-           })
 
-                +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
-                  .accordion.overflow-auto
-                    +FieldEditable({
-                      header: true,
-                      title: 'Tên trường dữ liệu',
-                      attribute: 'Thuộc tính',
-                      id: 'ID',
-                    })
+              //-   +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
+              //-     .accordion.overflow-auto
+              //-       +FieldEditable({
+              //-         order: 'Thứ tự',
+              //-         header: true,
+              //-         title: 'Tên trường dữ liệu',
+              //-         attribute: 'Thuộc tính',
+              //-         id: 'ID',
+              //-       })
 
-                    .js-arrange.js-sortable.sortablejs-custom(data-hs-sortable-options='{ "animation": 150, "handle": ".sortablejs-custom-handle" }')
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Tên tác giả',
-                        attribute: 'Tên tác giả',
-                        id: '#FCD0099',
-                        accordionId: 'AccordionEditable9',
-                        accordionParentId: 'AccordionEditableParent',
-                      })
-                      +FieldEditable({
-                        className: 'js-arrange-item',
-                        title: 'Năm xuất bản',
-                        attribute: 'Năm xuất bản',
-                        id: '#FCD0099',
-                        accordionId: 'AccordionEditable10',
-                        accordionParentId: 'AccordionEditableParent',
-                      })
+              //-       .js-arrange.js-sortable.sortablejs-custom(data-hs-sortable-options='{ "animation": 150, "handle": ".sortablejs-custom-handle" }')
+              //-         +FieldEditable({
+              //-           className: 'js-arrange-item',
+              //-           order: '1',
+              //-           title: 'Tên tác giả',
+              //-           attribute: 'Tên tác giả',
+              //-           id: '#FCD0099',
+              //-           accordionId: 'AccordionEditable5',
+              //-           accordionParentId: 'AccordionEditableParent',
+              //-         })
+              //-         +FieldEditable({
+              //-           className: 'js-arrange-item',
+              //-           order: '2',
+              //-           title: 'Năm xuất bản',
+              //-           attribute: 'Năm xuất bản',
+              //-           id: '#FCD0099',
+              //-           accordionId: 'AccordionEditable6',
+              //-           accordionParentId: 'AccordionEditableParent',
+              //-         })
+              //-         +FieldEditable({
+              //-           className: 'js-arrange-item',
+              //-           order: '3',
+              //-           title: 'Nhà xuất bản',
+              //-           attribute: 'Nhà xuất bản',
+              //-           id: '#FCD0099',
+              //-           accordionId: 'AccordionEditable7',
+              //-           accordionParentId: 'AccordionEditableParent',
+              //-         })
+              //-         +FieldEditable({
+              //-           className: 'js-arrange-item',
+              //-           order: '4',
+              //-           title: 'Chưa có tiêu đề',
+              //-           attribute: 'Chưa chọn',
+              //-           id: '#FTC0099',
+              //-           accordionId: 'AccordionEditable8',
+              //-           accordionParentId: 'AccordionEditableParent',
+              //-           defaultField: false,
+              //-         })
+
+            //- +Accordion({ className: 'mb-3', id: 'Accordion4', parentId: 'AccordionParent2', title: 'Chữ ký các cấp', noPadding: true })
+            //-   form(action="#") 
+            //-     .card-body
+            //-       .row
+            //-         .col-md-4.col-sm-12.mb-3
+            //-           +Input({ label: 'Tiêu đề cụm thông tin', placeholder: 'Nhập tiêu đề cụm thông tin', value: 'Chữ ký các cấp' })
+            //-         .col-md-4.col-sm-12.mb-3
+            //-           +Select({
+            //-             label: 'Kiểu độ rộng nhóm',
+            //-             placeholder: '--- Chọn loại biểu mẫu ---',
+            //-             options: [
+            //-               { label: '1 cột', value: '1' },
+            //-               { label: '2 cột', value: '2' },
+            //-               { label: '3 cột', value: '3' },
+            //-             ],
+            //-             iconSuffix: 'tio-chevron-down',
+            //-             withArrow: true,
+            //-           })
+            //-         .col-md-4.col-sm-12.mb-3
+            //-           +Checkbox({
+            //-             classNameCheckbox: 'mt-2',
+            //-             label: 'Hiện tiêu đề khi in',
+            //-             title: 'Có',
+            //-             labelId: 'Checkbox1',
+            //-           })
+
+            //-     +Card({ className: 'FormPage-margin bottom', title: 'Các Field dữ liệu trong nhóm:', dark: true, editable: true, noPadding: true })
+            //-       .accordion.overflow-auto
+            //-         +FieldEditable({
+            //-           order: 'Thứ tự',
+            //-           header: true,
+            //-           title: 'Tên trường dữ liệu',
+            //-           attribute: 'Thuộc tính',
+            //-           id: 'ID',
+            //-         })
+
+            //-         .js-arrange.js-sortable.sortablejs-custom(data-hs-sortable-options='{ "animation": 150, "handle": ".sortablejs-custom-handle" }')
+            //-           +FieldEditable({
+            //-             className: 'js-arrange-item',
+            //-             order: '1',
+            //-             title: 'Tên tác giả',
+            //-             attribute: 'Tên tác giả',
+            //-             id: '#FCD0099',
+            //-             accordionId: 'AccordionEditable9',
+            //-             accordionParentId: 'AccordionEditableParent',
+            //-           })
+            //-           +FieldEditable({
+            //-             className: 'js-arrange-item',
+            //-             order: '2',
+            //-             title: 'Năm xuất bản',
+            //-             attribute: 'Năm xuất bản',
+            //-             id: '#FCD0099',
+            //-             accordionId: 'AccordionEditable10',
+            //-             accordionParentId: 'AccordionEditableParent',
+            //-           })
 
             +Accordion({ className: 'mb-3 bottom', id: 'Accordion5', parentId: 'AccordionParent3', title: 'Tùy chỉnh biểu mẫu in' })
               +TextArea({ className: 'mb-3', label: 'Đầu trang in' })
@@ -227,13 +277,16 @@ block pages
           #scrollSpyEnd
 
         .col-lg-3.pl-lg-2
-          +ScrollSpy({
-            title: 'Điều hướng trên trang',
-            id: 'scrollSpy',
-            parentId: 'scrollSpyParent',
-            endId: 'scrollSpyEnd',
-            options: [
-              { link: '#thongtinbieuin', title: 'Thông tin biểu in' },
-              { link: '#themnhomfield', title: 'Thêm nhóm Field' },
-            ]
-          })
+          .ScrollSpy-drawer-mobile
+            .ScrollSpy-drawer-mobile-overlay
+            .ScrollSpy-drawer-mobile-main
+              +ScrollSpy({
+                title: 'Điều hướng trên trang',
+                id: 'scrollSpy',
+                parentId: 'scrollSpyParent',
+                endId: 'scrollSpyEnd',
+                options: [
+                  { link: '#thongtinbieuin', title: 'Thông tin biểu in' },
+                  { link: '#themnhomfield', title: 'Thêm nhóm Field' },
+                ]
+              })

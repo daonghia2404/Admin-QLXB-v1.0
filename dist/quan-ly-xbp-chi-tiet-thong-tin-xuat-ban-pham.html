@@ -516,17 +516,223 @@
 </aside>
     <main class="main pointer-event" id="content" role="main">
       <div class="PreviewPage"> 
+        <div class="Modal modal fade ModalConfirmSendForm" id="ModalConfirmSendForm" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Xác nhận gửi biểu mẫu</h5>
+                <button class="btn btn-xs btn-icon btn-ghost-secondary" type="button" data-dismiss="modal" aria-label="Close"><i class="tio-clear tio-lg"></i></button>
+              </div>
+              <div class="modal-body">
+                <div class="ModalConfirmSendForm-body"> 
+                  <div class="Table">
+                    <table class="table">
+                      <tbody> 
+                        <tr> 
+                          <td class="text-nowrap">Biểu mẫu</td>
+                          <td class="w-100">Đăng ký Xuất bản phẩm</td>
+                        </tr>
+                        <tr> 
+                          <td class="text-nowrap">Ngày đăng</td>
+                          <td class="w-100">17/10/2022</td>
+                        </tr>
+                        <tr> 
+                          <td class="text-nowrap">Người tạo</td>
+                          <td class="w-100">Hoàng Đức Tuấn</td>
+                        </tr>
+                        <tr> 
+                          <td class="text-nowrap">Người nhận</td>
+                          <td class="w-100">
+                            <div class="Select">
+                              <div class="input-group input-group-merge">
+                                <div class="input-group-prepend"><span class="input-group-text"><i class="tio-search"></i></span></div>
+                                <div class="Select-wrapper has-prepend">
+                                  <select class="js-select2-custom form-select" multiple="multiple" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;false&quot;, &quot;placeholder&quot;: &quot;Tìm &amp; thêm người nhận&quot; }">
+                                    <option label="empty"></option>
+                                    <option value="1">Người nhận 1</option>
+                                    <option value="2">Người nhận 2</option>
+                                    <option value="3">Người nhận 3</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td class="text-nowrap">Người duyệt 1</td>
+                          <td class="w-100">
+                            <div class="d-flex align-items-center">
+                              <div class="Select w-100">
+                                <select class="js-select2-custom form-select" multiple="multiple" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn người duyệt ---&quot; }">
+                                  <option label="empty"></option>
+                                  <option value="1">Người duyệt 1</option>
+                                  <option value="2">Người duyệt 2</option>
+                                  <option value="3">Người duyệt 3</option>
+                                </select>
+                              </div>
+                              <div class="Checkbox ml-3">
+                                <div class="custom-control custom-checkbox">
+                                  <input class="custom-control-input" type="checkbox" id="Checkbox1">
+                                  <label class="custom-control-label text-nowrap" for="Checkbox1">Vượt quyền
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td class="text-nowrap">Người duyệt 2</td>
+                          <td class="w-100">
+                            <div class="d-flex align-items-center">
+                              <div class="Select w-100">
+                                <select class="js-select2-custom form-select" multiple="multiple" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn người duyệt ---&quot; }">
+                                  <option label="empty"></option>
+                                  <option value="1">Người duyệt 1</option>
+                                  <option value="2">Người duyệt 2</option>
+                                  <option value="3">Người duyệt 3</option>
+                                </select>
+                              </div>
+                              <div class="Checkbox ml-3">
+                                <div class="custom-control custom-checkbox">
+                                  <input class="custom-control-input" type="checkbox" id="Checkbox1">
+                                  <label class="custom-control-label text-nowrap" for="Checkbox1">Vượt quyền
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td class="text-nowrap">Người duyệt 3</td>
+                          <td class="w-100">
+                            <div class="d-flex align-items-center">
+                              <div class="Select w-100">
+                                <select class="js-select2-custom form-select" multiple="multiple" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;--- Chọn người duyệt ---&quot; }">
+                                  <option label="empty"></option>
+                                  <option value="1">Người duyệt 1</option>
+                                  <option value="2">Người duyệt 2</option>
+                                  <option value="3">Người duyệt 3</option>
+                                </select>
+                              </div>
+                              <div class="Checkbox ml-3">
+                                <div class="custom-control custom-checkbox">
+                                  <input class="custom-control-input" type="checkbox" id="Checkbox1">
+                                  <label class="custom-control-label text-nowrap" for="Checkbox1">Vượt quyền
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="ModalConfirmSendForm-footer border-top">
+                  <div class="row justify-content-between"> 
+                    <div class="col col-auto">
+                      <button class="Button btn btn-soft-dark btn-sm" type="button"><i class="bio-arrow-backward mr-1"></i><span class="Button-title">Quay lại</span>
+                      </button>
+                    </div>
+                    <div class="col col-auto">
+                      <div class="row gx-1">
+                        <div class="col col-auto">
+                          <button class="Button btn btn-soft-dark btn-sm" type="button"><i class="tio-save-outlined mr-1"></i><span class="Button-title">Lưu nháp</span>
+                          </button>
+                        </div>
+                        <div class="col col-auto">
+                          <button class="Button btn btn-primary btn-sm" type="button"><i class="tio-send-outlined mr-1"></i><span class="Button-title">Gửi duyệt</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Modal modal fade ModalApproverDetailDiary" id="ModalApproverDetailDiary" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Thông tin chi tiết</h5>
+                <button class="btn btn-xs btn-icon btn-ghost-secondary" type="button" data-dismiss="modal" aria-label="Close"><i class="tio-clear tio-lg"></i></button>
+              </div>
+              <div class="modal-body">
+                <div class="ModalApproverDetailDiary-body"> 
+                  <div class="ModalApproverDetailDiary-title">Cụm thông tin 1</div>
+                  <div class="Table">
+                    <table class="table">
+                      <tbody> 
+                        <tr> 
+                          <td><strong>Trạng thái phê duyệt xuất bản phẩm</strong></td>
+                          <td>Duyệt</td>
+                        </tr>
+                        <tr> 
+                          <td><strong>Nội dung đánh giá</strong></td>
+                          <td>Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="ModalApproverDetailDiary-title">Cụm thông tin 2</div>
+                <div class="Table">
+                  <table class="table">
+                    <tbody> 
+                      <tr> 
+                        <td><strong>Trạng thái phê duyệt xuất bản phẩm</strong></td>
+                        <td>Duyệt</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>Tiêu đề của Ô điền text</strong></td>
+                        <td>Nội dung người duyệt nhập hiển thị tại đây</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>Tiêu đề của Khung nhập văn bản</strong></td>
+                        <td>Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây </td>
+                      </tr>
+                      <tr> 
+                        <td><strong>Tiêu đề của Ô tích chọn nhiều lựa chọn</strong></td>
+                        <td>Lựa chọn 1; Lựa chọn 2</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>Tiêu đề của Ô chọn 1 trong các lựa chọn</strong></td>
+                        <td>Lựa chọn 1</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>Tiêu đề của Khung upload file</strong></td>
+                        <td> <a class="Table-link" href="#">Tên-văn-bản-sau-khi-tải-lên.doc</a></td>
+                      </tr>
+                      <tr> 
+                        <td><strong>Tiêu đề của Ô chọn ngày với lịch</strong></td>
+                        <td>23/12/2022</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>Nội dung đánh giá</strong></td>
+                        <td>Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây Nội dung người duyệt nhập hiển thị tại đây </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="content container-fluid">
           <div class="row"> 
             <div class="col-lg-9 pr-lg-2">
               <div class="PreviewPage-submit d-flex flex-wrap mb-3 border">
-                <button class="Button btn btn-primary middle" type="button"><i class="tio-checkmark-square-outlined mr-1"></i>Xét Duyệt XBP
+                <button class="Button btn btn-primary middle" type="button"><i class="tio-checkmark-square-outlined mr-1"></i><span class="Button-title">Xét Duyệt XBP</span>
                 </button>
-                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-clear mr-1"></i>Từ chối
+                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-clear mr-1"></i><span class="Button-title">Từ chối</span>
                 </button>
-                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-sms-chat-outlined mr-1"></i>Comment
+                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-sms-chat-outlined mr-1"></i><span class="Button-title">Comment</span>
                 </button>
-                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-edit mr-1"></i>Chỉnh sửa
+                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-edit mr-1"></i><span class="Button-title">Chỉnh sửa</span>
+                </button>
+                <button class="Button btn show-on-mobile ml-auto js-open-scrollspy-mobile btn-icon btn-soft-dark middle" type="button"><i class="tio-menu-hamburger"></i><span class="Button-title"></span>
                 </button>
               </div>
               <div class="mb-3" id="tiendo">
@@ -564,14 +770,14 @@
               </div>
               <div class="accordion">
                 <div class="Accordion mb-3" id="thongtinchung">
-                  <div class="Accordion-parent" id="AccordionParent1_79589">
+                  <div class="Accordion-parent" id="AccordionParent1_51025">
                     <div class="Card card card-middle" id=""> 
                       <div class="card-header d-flex align-items-center justify-content-between">
                         <h3 class="card-header-title d-flex align-items-center">Thông tin chung về bản đắng ký xuất bản phẩm
                         </h3>
                         <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion1" aria-expanded="true" aria-controls="Accordion1"><i class="tio-chevron-down"></i></div>
                       </div>
-                      <div class="collapse show" id="Accordion1" data-parent="#AccordionParent1_79589">
+                      <div class="collapse show" id="Accordion1" data-parent="#AccordionParent1_51025">
                         <div class="card-body">
                           <div class="row"> 
                             <div class="col-md-6 pr-md-2 mb-3">
@@ -629,14 +835,14 @@
                   </div>
                 </div>
                 <div class="Accordion mb-3" id="quanlycongviec">
-                  <div class="Accordion-parent" id="AccordionParent2_57534">
+                  <div class="Accordion-parent" id="AccordionParent2_11603">
                     <div class="Card card card-middle" id=""> 
                       <div class="card-header d-flex align-items-center justify-content-between">
                         <h3 class="card-header-title d-flex align-items-center">Quản lý công việc (danh sách việc cần làm)
                         </h3>
                         <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion2" aria-expanded="true" aria-controls="Accordion2"><i class="tio-chevron-down"></i></div>
                       </div>
-                      <div class="collapse show" id="Accordion2" data-parent="#AccordionParent2_57534">
+                      <div class="collapse show" id="Accordion2" data-parent="#AccordionParent2_11603">
                         <div class="card-body p-0">
                           <div class="border-bottom background px-4 py-3">
                             <h4 class="mb-0">
@@ -806,14 +1012,14 @@
                   </div>
                 </div>
                 <div class="Accordion mb-3" id="banthaofile">
-                  <div class="Accordion-parent" id="AccordionParent3_92015">
+                  <div class="Accordion-parent" id="AccordionParent3_90466">
                     <div class="Card card card-middle" id=""> 
                       <div class="card-header d-flex align-items-center justify-content-between">
                         <h3 class="card-header-title d-flex align-items-center">Bản thảo &amp; FILE
                         </h3>
                         <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion3" aria-expanded="true" aria-controls="Accordion3"><i class="tio-chevron-down"></i></div>
                       </div>
-                      <div class="collapse show" id="Accordion3" data-parent="#AccordionParent3_92015">
+                      <div class="collapse show" id="Accordion3" data-parent="#AccordionParent3_90466">
                         <div class="card-body">
                           <form action="#"> 
                             <div class="Tab mb-3">
@@ -1325,25 +1531,25 @@
                   </div>
                 </div>
                 <div class="Accordion mb-3" id="thongtinkhac">
-                  <div class="Accordion-parent" id="AccordionParent4_66262">
+                  <div class="Accordion-parent" id="AccordionParent4_7192">
                     <div class="Card card card-middle" id=""> 
                       <div class="card-header d-flex align-items-center justify-content-between">
                         <h3 class="card-header-title d-flex align-items-center">Thông tin khác
                         </h3>
                         <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion4" aria-expanded="true" aria-controls="Accordion4"><i class="tio-chevron-down"></i></div>
                       </div>
-                      <div class="collapse show" id="Accordion4" data-parent="#AccordionParent4_66262">
+                      <div class="collapse show" id="Accordion4" data-parent="#AccordionParent4_7192">
                         <div class="card-body">
                           <div class="accordion">
                             <div class="Accordion" id="">
-                              <div class="Accordion-parent" id="AccordionSubParent1_14721">
+                              <div class="Accordion-parent" id="AccordionSubParent1_77546">
                                 <div class="Card card card-middle dark" id=""> 
                                   <div class="card-header d-flex align-items-center justify-content-between">
                                     <h3 class="card-header-title d-flex align-items-center">Thông tin Cơ bản
                                     </h3>
                                     <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub2" aria-expanded="true" aria-controls="AccordionSub2"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <div class="collapse show" id="AccordionSub2" data-parent="#AccordionSubParent1_14721">
+                                  <div class="collapse show" id="AccordionSub2" data-parent="#AccordionSubParent1_77546">
                                     <div class="card-body">
                                       <div class="Table">
                                         <table class="table">
@@ -1359,7 +1565,7 @@
                                             <tr> 
                                               <td class="text-nowrap"><strong>Tác giả</strong></td>
                                               <td class="w-100">NGUYỄN THỊ BÍCH NGỌC
-                                                <button class="Button btn ml-2 btn-info middle Button-badge" type="button">Chủ biên
+                                                <button class="Button btn ml-2 btn-info middle Button-badge" type="button"><span class="Button-title">Chủ biên</span>
                                                 </button>
                                               </td>
                                             </tr>
@@ -1384,14 +1590,14 @@
                               </div>
                             </div>
                             <div class="Accordion" id="">
-                              <div class="Accordion-parent" id="AccordionSubParent2_16103">
+                              <div class="Accordion-parent" id="AccordionSubParent2_6174">
                                 <div class="Card card card-middle dark" id=""> 
                                   <div class="card-header d-flex align-items-center justify-content-between">
                                     <h3 class="card-header-title d-flex align-items-center">Đối tượng sử dụng và phân loại
                                     </h3>
                                     <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub3" aria-expanded="true" aria-controls="AccordionSub3"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <div class="collapse show" id="AccordionSub3" data-parent="#AccordionSubParent2_16103">
+                                  <div class="collapse show" id="AccordionSub3" data-parent="#AccordionSubParent2_6174">
                                     <div class="card-body">
                                       <div class="row">
                                         <div class="col-md-6 pr-md-2 mb-3">
@@ -1437,14 +1643,14 @@
                               </div>
                             </div>
                             <div class="Accordion" id="">
-                              <div class="Accordion-parent" id="AccordionSubParent3_96138">
+                              <div class="Accordion-parent" id="AccordionSubParent3_59457">
                                 <div class="Card card card-middle dark" id=""> 
                                   <div class="card-header d-flex align-items-center justify-content-between">
                                     <h3 class="card-header-title d-flex align-items-center">Thông tin ngôn ngữ
                                     </h3>
                                     <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub4" aria-expanded="true" aria-controls="AccordionSub4"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <div class="collapse show" id="AccordionSub4" data-parent="#AccordionSubParent3_96138">
+                                  <div class="collapse show" id="AccordionSub4" data-parent="#AccordionSubParent3_59457">
                                     <div class="card-body">
                                       <div class="row">
                                         <div class="col-md-6 pr-md-2 mb-3">
@@ -1490,14 +1696,14 @@
                               </div>
                             </div>
                             <div class="Accordion" id="">
-                              <div class="Accordion-parent" id="AccordionSubParent4_32602">
+                              <div class="Accordion-parent" id="AccordionSubParent4_66432">
                                 <div class="Card card card-middle dark" id=""> 
                                   <div class="card-header d-flex align-items-center justify-content-between">
                                     <h3 class="card-header-title d-flex align-items-center">Thông tin định dạng
                                     </h3>
                                     <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub5" aria-expanded="true" aria-controls="AccordionSub5"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <div class="collapse show" id="AccordionSub5" data-parent="#AccordionSubParent4_32602">
+                                  <div class="collapse show" id="AccordionSub5" data-parent="#AccordionSubParent4_66432">
                                     <div class="card-body">
                                       <div class="row">
                                         <div class="col-md-6 pr-md-2 mb-3">
@@ -1575,14 +1781,14 @@
                               </div>
                             </div>
                             <div class="Accordion" id="">
-                              <div class="Accordion-parent" id="AccordionSubParent5_56790">
+                              <div class="Accordion-parent" id="AccordionSubParent5_9027">
                                 <div class="Card card card-middle dark" id=""> 
                                   <div class="card-header d-flex align-items-center justify-content-between">
                                     <h3 class="card-header-title d-flex align-items-center">Thông tin Bản quyền
                                     </h3>
                                     <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub6" aria-expanded="true" aria-controls="AccordionSub6"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <div class="collapse show" id="AccordionSub6" data-parent="#AccordionSubParent5_56790">
+                                  <div class="collapse show" id="AccordionSub6" data-parent="#AccordionSubParent5_9027">
                                     <div class="card-body">
                                       <div class="row">
                                         <div class="col-md-6 pr-md-2 mb-3">
@@ -1628,14 +1834,14 @@
                               </div>
                             </div>
                             <div class="Accordion" id="">
-                              <div class="Accordion-parent" id="AccordionSubParent6_75044">
+                              <div class="Accordion-parent" id="AccordionSubParent6_44132">
                                 <div class="Card card card-middle dark" id=""> 
                                   <div class="card-header d-flex align-items-center justify-content-between">
                                     <h3 class="card-header-title d-flex align-items-center">Thông tin Hợp đồng xuất bản
                                     </h3>
                                     <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub7" aria-expanded="true" aria-controls="AccordionSub7"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <div class="collapse show" id="AccordionSub7" data-parent="#AccordionSubParent6_75044">
+                                  <div class="collapse show" id="AccordionSub7" data-parent="#AccordionSubParent6_44132">
                                     <div class="card-body">
                                       <div class="row">
                                         <div class="col-md-6 pr-md-2 mb-3">
@@ -1683,7 +1889,7 @@
                   </div>
                 </div>
                 <div class="Accordion mb-3" id="lichsuxuatbanpham">
-                  <div class="Accordion-parent" id="AccordionParent5_18435">
+                  <div class="Accordion-parent" id="AccordionParent5_24944">
                     <div class="Card card card-middle" id=""> 
                       <div class="card-header d-flex align-items-center justify-content-between">
                         <h3 class="card-header-title d-flex align-items-center">Lịch sử thao tác
@@ -1691,7 +1897,7 @@
                         <button class="js-daterangepicker-predefined ml-auto mr-2 btn btn-ghost Card-suffix-text p-0"><i class="tio-date-range mr-2"></i><span class="js-daterangepicker-predefined-preview"></span></button>
                         <div class="Card-collapse-arrow" role="button" data-toggle="collapse" data-target="#Accordion5" aria-expanded="true" aria-controls="Accordion5"><i class="tio-chevron-down"></i></div>
                       </div>
-                      <div class="collapse show" id="Accordion5" data-parent="#AccordionParent5_18435">
+                      <div class="collapse show" id="Accordion5" data-parent="#AccordionParent5_24944">
                         <div class="card-body p-0">
                           <div class="Table" style="margin: -1px">
                             <table class="table">
@@ -1743,93 +1949,92 @@
                   </div>
                 </div>
                 <div class="Accordion mb-3" id="binhluanvaduyet">
-                  <div class="Accordion-parent" id="AccordionParent6_19998">
+                  <div class="Accordion-parent" id="AccordionParent6_61923">
                     <div class="Card card card-middle" id=""> 
                       <div class="card-header d-flex align-items-center justify-content-between">
-                        <h3 class="card-header-title d-flex align-items-center">Bình luận và duyệt
+                        <h3 class="card-header-title d-flex align-items-center">Nhật ký
                         </h3>
                         <button class="js-daterangepicker-predefined ml-auto mr-2 btn btn-ghost Card-suffix-text p-0"><i class="tio-date-range mr-2"></i><span class="js-daterangepicker-predefined-preview"></span></button>
                         <div class="Card-collapse-arrow" role="button" data-toggle="collapse" data-target="#Accordion6" aria-expanded="true" aria-controls="Accordion6"><i class="tio-chevron-down"></i></div>
                       </div>
-                      <div class="collapse show" id="Accordion6" data-parent="#AccordionParent6_19998">
+                      <div class="collapse show" id="Accordion6" data-parent="#AccordionParent6_61923">
                         <div class="card-body p-0">
                           <div class="Table" style="margin: -1px">
                             <table class="table">
                               <thead> 
                                 <tr> 
                                   <th class="text-center">#</th>
-                                  <th>Công đoạn</th>
-                                  <th>Người bình luận</th>
-                                  <th>Nội dung bình luận</th>
-                                  <th class="text-center">Trạng thái</th>
+                                  <th>Người nhập</th>
+                                  <th>Trạng thái</th>
                                   <th>Thời gian</th>
+                                  <th>Thao tác</th>
                                 </tr>
                               </thead>
                               <tbody> 
                                 <tr>
                                   <td class="text-center Table-index">1</td>
-                                  <td>Phê duyệt đề tài</td>
                                   <td>Giám đốc</td>
-                                  <td>Tôi duyệt đề tài này</td>
                                   <td>
-                                    <div class="center">
-                                      <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
-                                      </button>
+                                    <div class="Button btn Button-tag btn-soft-danger middle Button-badge" type="button"><span class="Button-title">Huỷ bỏ</span>
                                     </div>
                                   </td>
                                   <td>23:13 30/09/22</td>
+                                  <td>
+                                    <button class="Button btn btn-primary middle Button-badge" type="button" data-toggle="modal" data-target="#ModalApproverDetailDiary"><span class="Button-title">Chi tiết</span>
+                                    </button>
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td class="text-center Table-index">2</td>
-                                  <td>Phê duyệt đề tài</td>
                                   <td>Giám đốc</td>
-                                  <td>Tôi duyệt đề tài này</td>
                                   <td>
-                                    <div class="center">
-                                      <button class="Button btn btn-primary middle Button-badge" type="button">Đã duyệt
-                                      </button>
+                                    <div class="Button btn Button-tag btn-soft-success middle Button-badge" type="button"><span class="Button-title">Đã duyệt</span>
                                     </div>
                                   </td>
                                   <td>23:13 30/09/22</td>
+                                  <td>
+                                    <button class="Button btn btn-primary middle Button-badge" type="button" data-toggle="modal" data-target="#ModalApproverDetailDiary"><span class="Button-title">Chi tiết</span>
+                                    </button>
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td class="text-center Table-index">3</td>
-                                  <td>Phê duyệt đề tài</td>
                                   <td>Giám đốc</td>
-                                  <td>Tôi duyệt đề tài này</td>
                                   <td>
-                                    <div class="center">
-                                      <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
-                                      </button>
+                                    <div class="Button btn Button-tag btn-soft-warning middle Button-badge" type="button"><span class="Button-title">Trả lại</span>
                                     </div>
                                   </td>
                                   <td>23:13 30/09/22</td>
+                                  <td>
+                                    <button class="Button btn btn-primary middle Button-badge" type="button" data-toggle="modal" data-target="#ModalApproverDetailDiary"><span class="Button-title">Chi tiết</span>
+                                    </button>
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td class="text-center Table-index">4</td>
-                                  <td>Phê duyệt đề tài</td>
                                   <td>Giám đốc</td>
-                                  <td>Tôi duyệt đề tài này</td>
                                   <td>
-                                    <div class="center">
-                                      <button class="Button btn btn-primary middle Button-badge" type="button">Đã duyệt
-                                      </button>
+                                    <div class="Button btn Button-tag btn-soft-success middle Button-badge" type="button"><span class="Button-title">Đã duyệt</span>
                                     </div>
                                   </td>
                                   <td>23:13 30/09/22</td>
+                                  <td>
+                                    <button class="Button btn btn-primary middle Button-badge" type="button" data-toggle="modal" data-target="#ModalApproverDetailDiary"><span class="Button-title">Chi tiết</span>
+                                    </button>
+                                  </td>
                                 </tr>
                                 <tr>
                                   <td class="text-center Table-index">5</td>
-                                  <td>Phê duyệt đề tài</td>
                                   <td>Giám đốc</td>
-                                  <td>Tôi duyệt đề tài này</td>
                                   <td>
-                                    <div class="center">
-                                      <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
-                                      </button>
+                                    <div class="Button btn Button-tag btn-soft-danger middle Button-badge" type="button"><span class="Button-title">Huỷ bỏ</span>
                                     </div>
                                   </td>
                                   <td>23:13 30/09/22</td>
+                                  <td>
+                                    <button class="Button btn btn-primary middle Button-badge" type="button" data-toggle="modal" data-target="#ModalApproverDetailDiary"><span class="Button-title">Chi tiết</span>
+                                    </button>
+                                  </td>
                                 </tr>
                               </tbody>
                             </table>
@@ -1860,32 +2065,37 @@
               </div>
               <div id="scrollSpyEnd"></div>
             </div>
-            <div class="col-lg-3 pl-lg-2"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
-              <button class="navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0">Điều hướng trên trang</span><span class="navbar-toggle-default">
+            <div class="col-lg-3 pl-lg-2">
+              <div class="ScrollSpy-drawer-mobile">
+                <div class="ScrollSpy-drawer-mobile-overlay"></div>
+                <div class="ScrollSpy-drawer-mobile-main"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
+                  <button class="active navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0">Điều hướng trên trang</span><span class="navbar-toggle-default">
 <i class="tio-menu-hamburger"></i>
 </span>
 <span class="navbar-toggle-toggled">
 <i class="tio-clear"></i>
 </span>
 </span>
-              </button>
-              <div class="collapse navbar-collapse" id="scrollSpyParent">
-                <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
-                  <div class="Card card card-small dark" id=""> 
-                    <div class="card-header d-flex align-items-center justify-content-between">
-                      <h3 class="card-header-title d-flex align-items-center">Điều hướng trên trang
-                      </h3>
-                    </div>
-                    <div class="card-body p-0">
-                      <ul class="navbar-nav navbar-nav-lg nav-tabs card card-navbar-nav border-0 p-0">
-                        <li class="nav-item"><a class="nav-link" href="#tiendo">Tiến độ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#thongtinchung">Thông tin chung</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#quanlycongviec">Quản lý công việc</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#banthaofile">Bản thảo &amp; File</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#thongtinkhac">Thông tin khác</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#lichsuxuatbanpham">Lịch sử Xuất bản phẩm</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#binhluanvaduyet">Xem bản khai Xuất bản phẩm</a></li>
-                      </ul>
+                  </button>
+                  <div class="collapse navbar-collapse show" id="scrollSpyParent">
+                    <div class="ScrollSpy-wrapper js-sticky-block js-scrollspy" id="scrollSpy" data-hs-sticky-block-options="{ &quot;parentSelector&quot;: &quot;#scrollSpyParent&quot;, &quot;targetSelector&quot;: &quot;#header&quot;, &quot;startPoint&quot;: &quot;#scrollSpyParent&quot;, &quot;endPoint&quot;: &quot;#scrollSpyEnd&quot;, &quot;stickyOffsetTop&quot;: 8 }">
+                      <div class="Card card card-small dark" id=""> 
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                          <h3 class="card-header-title d-flex align-items-center">Điều hướng trên trang
+                          </h3>
+                        </div>
+                        <div class="card-body p-0">
+                          <ul class="navbar-nav navbar-nav-lg nav-tabs card card-navbar-nav border-0 p-0">
+                            <li class="nav-item"><a class="nav-link" href="#tiendo">Tiến độ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#thongtinchung">Thông tin chung</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#quanlycongviec">Quản lý công việc</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#banthaofile">Bản thảo &amp; File</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#thongtinkhac">Thông tin khác</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#lichsuxuatbanpham">Lịch sử Xuất bản phẩm</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#binhluanvaduyet">Xem bản khai Xuất bản phẩm</a></li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

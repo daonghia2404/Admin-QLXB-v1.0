@@ -2,9 +2,8 @@
   &.header {
     .FieldEditable {
       &-header {
-        background: #F9FBFF;
-
         &-item {
+          background: #F3F4F6;
           font-weight: 700;
         }
       }
@@ -12,15 +11,14 @@
   }
 
   &-header {
-    border-top: 1px solid #E7EAF3;
     min-height: 40px;
-
-    @media (max-width: 768px) {
-      flex-wrap: wrap;
-      border-width: 3px;
+    
+    & + .accordion-collapse {
+      min-width: 790px;
     }
 
     &-item {
+      border-top: 1px solid #E7EAF3;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -31,28 +29,57 @@
         border-right: 1px solid #E7EAF3;
       }
 
-      &:nth-child(1),
-      &:nth-child(2) {
-        max-width: 25%;
-        flex: 0 0 25%;
+      &.order {
+        width: 90px;
+        flex: 0 0 90px;
+        max-width: 90px;
       }
 
-      &:last-child {
-        max-width: 50%;
-        flex: 0 0 50%;
+      &.type {
+        width: 210px;
+        flex: 0 0 210px;
+        max-width: 210px;
+        column-gap: 8px;
       }
 
-      @media (max-width: 768px) {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-        border: none !important;
-
-        &:not(:last-child) {
-          border-bottom: 1px solid #E7EAF3 !important;
-        }
+      &.name {
+        flex: 1;
+        min-width: 190px;
       }
+
+      &.id {
+        width: calc(120px + 180px);
+        flex: 0 0 calc(120px + 180px);
+        max-width: calc(120px + 180px);
+      }
+
+      // &:nth-child(1),
+      // &:nth-child(2) {
+      //   max-width: 25%;
+      //   flex: 0 0 25%;
+      // }
+
+      // &:last-child {
+      //   max-width: 50%;
+      //   flex: 0 0 50%;
+      // }
+
+      // @media (max-width: 768px) {
+      //   flex: 0 0 100% !important;
+      //   max-width: 100% !important;
+      //   border: none !important;
+
+      //   &:not(:last-child) {
+      //     border-bottom: 1px solid #E7EAF3 !important;
+      //   }
+      // }
 
       &-actions {
+        &.disabled {
+          opacity: 0;
+          pointer-events: none;
+        }
+
         .Button {
           font-size: 12px;
           padding: 4px;
@@ -77,6 +104,11 @@
       }
 
       &-collapse {
+        &.disabled {
+          opacity: 0;
+          pointer-events: none;
+        }
+
         .Button {
           font-size: 12px;
           padding: 4px;
@@ -91,5 +123,12 @@
   &-body {
     border-top: 1px solid #E7EAF3;
     padding: 15px;
+  }
+
+  &-empty {
+    padding: 6px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #8C98A4;
   }
 }

@@ -10,9 +10,12 @@ block pages
         .col-lg-9
           .PreviewPage-view-file-header.d-flex.align-items-center.justify-content-between 
             .PreviewPage-view-file-header-title Bản thảo - 1. Phê duyệt đề tài - Hoàng Hôn Của Phía Đông.docx 
-            .PreviewPage-view-file-header-btns.d-flex.align-items-center 
-              +Button({ className: 'text-nowrap', title: 'Tải lên', size: 'btn-sm', variant: 'btn-white' })
-              +Button({ className: 'text-nowrap', title: 'Chỉnh sửa', size: 'btn-sm', variant: 'btn-white' })
+            .PreviewPage-view-file-header-item.d-flex.align-items-center
+              .PreviewPage-view-file-header-btns.d-flex.align-items-center 
+                +Button({ className: 'text-nowrap', title: 'Tải lên', size: 'btn-sm', variant: 'btn-white' })
+                +Button({ className: 'text-nowrap', title: 'Chỉnh sửa', size: 'btn-sm', variant: 'btn-white' })
+
+              +Button({ className: 'show-on-mobile ml-3 js-open-scrollspy-mobile', icon: 'tio-menu-hamburger', variant: 'btn-soft-dark' })
 
           .PreviewPage-view-file.mb-3
 
@@ -74,10 +77,14 @@ block pages
           #scrollSpyEnd
 
         .col-lg-3
-          +ScrollSpy({
-            showChildren: true,
-            id: 'scrollSpy',
-            parentId: 'scrollSpyParent',
-            endId: 'scrollSpyEnd',
-          })
-            +Button({ className: 'w-100 border', title: 'Quay lại', icon: 'tio-chevron-left mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+          .ScrollSpy-drawer-mobile
+            .ScrollSpy-drawer-mobile-overlay
+            .ScrollSpy-drawer-mobile-main
+              +ScrollSpy({
+                showChildren: true,
+                id: 'scrollSpy',
+                parentId: 'scrollSpyParent',
+                endId: 'scrollSpyEnd',
+              })
+                .px-3.px-lg-0
+                  +Button({ className: 'w-100 border', title: 'Quay lại', icon: 'tio-chevron-left mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })

@@ -12,14 +12,18 @@ block pages
     ]
 
     const dataScrollSpy2 = [
+      { link: '#nhungnoidongcanduyet', title: 'Những nội dung cần duyệt' },
       { link: '#thongtinchung', title: 'Thông tin chung' },
       { link: '#banthaofile', title: 'Bản thảo & File' },
       { link: '#lichsuthaotac', title: 'Lịch sử thao tác' },
-      { link: '#binhluanvaduyet', title: 'Bình luận và duyệt' },
+      { link: '#binhluanvaduyet', title: 'Nhật ký' },
       { link: '#nhanxet', title: 'Nhận xét' },
     ]
 
   .PreviewPage 
+    include ./includes/containers/ModalConfirmSendForm.pug
+    include ./includes/containers/ModalApproverDetailDiary.pug
+
     .content.container-fluid
       .row 
         .col-lg-9.pr-lg-2#bieuso
@@ -28,8 +32,54 @@ block pages
             +Button({ title: 'Từ chối', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
             +Button({ title: 'Comment', icon: 'tio-sms-chat-outlined mr-1', variant: 'btn-soft-dark' })  
             +Button({ title: 'In biểu', icon: 'tio-print mr-1', variant: 'btn-soft-dark' })  
+            +Button({ className: 'show-on-mobile ml-auto js-open-scrollspy-mobile', icon: 'tio-menu-hamburger', variant: 'btn-soft-dark' })
 
           .accordion
+            +Accordion({ className: 'mb-3', mainId: 'nhungnoidongcanduyet', id: 'Accordion6', parentId: 'AccordionParent6', title: 'Những nội dung cần duyệt' })
+              form(action="#") 
+                .row
+                  .col-12.mb-3
+                    +Input({ label: 'Tiêu đề của Ô điền text', placeholder: 'Nhập nội dung tại đây' })
+                  .col-12.mb-3
+                    +TextArea({ label: 'Tiêu đề của Khung nhập đoạn văn', placeholder: 'Nhập nội dung tại đây' })
+                  .col-12.mb-3
+                    +Select({
+                      label: 'Tiêu đề của Hộp chọn xổ xuống',
+                      placeholder: '--- Chọn ---',
+                      options: [
+                        { label: 'Chọn 1', value: '1' },
+                        { label: 'Chọn 2', value: '2' },
+                        { label: 'Chọn 3', value: '3' },
+                      ],
+                      iconSuffix: 'tio-chevron-down',
+                      withArrow: true,
+                    })
+                  .col-12.mb-3 
+                    label.form-label Tiêu đề của Ô chọn 1 trong các lựa chọn
+                    .row 
+                      each item in [1,2,3]
+                        .col-md-4
+                          .d-flex.justify-content-center.py-2
+                            +Radio({ labelId: `Radio1${item}`, title: `Lựa chọn ${item}`, name: 'titleRadio' })
+
+                  .col-12.mb-3 
+                    label.form-label Tiêu đề của Ô tích chọn nhiều lựa chọn
+                    .row 
+                      each item in [1,2,3,4,5,6]
+                        .col-md-4
+                          .d-flex.justify-content-center.py-2
+                            +Checkbox({ labelId: `Checkbox${item}`, title: `Lựa chọn ${item}` })
+                      
+                  .col-12.mb-3
+                    +TextArea({ label: 'Tiêu đề của Khung nhập văn bản' })
+                  .col-12.mb-3
+                    +Input({ label: 'Tiêu đề của Khung upload fileo', placeholder: 'Upload file', value: 'Tên-văn-bản-sau-khi-tải-lên.doc', required: true, suffixText: 'Tải lên', upload: true })
+                  .col-12.mb-3
+                    +DatePicker({ label: 'Tiêu đề của Ô chọn ngày với lịch', placeholder: 'Chọn ngày', iconSuffix: 'tio-date-range', withArrow: true })
+                  .col-12.mb-3
+                    +TextArea({ label: 'Nội dung đánh giá', placeholder: 'Nhập nội dung tại đây' })
+
+
             +Accordion({ className: 'mb-3', mainId: 'thongtinchung', id: 'Accordion1', parentId: 'AccordionParent1', title: 'Thông tin chung' })
               .row 
                 .col-md-6.pr-md-2.mb-3
@@ -293,27 +343,31 @@ block pages
                       td.text-center.Table-index= item
                       td Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022
 
-            +Accordion({ className: 'mb-3', mainId: 'binhluanvaduyet', id: 'Accordion4', parentId: 'AccordionParent4', title: 'Bình luận và duyệt', showDate: true, noPadding: true })
+            +Accordion({ className: 'mb-3', mainId: 'binhluanvaduyet', id: 'Accordion4', parentId: 'AccordionParent4', title: 'Nhật ký', showDate: true, noPadding: true })
               +Table({ style: 'margin: -1px', showPagination: true })
                 thead 
                   tr 
                     th.text-center #
-                    th Công đoạn
-                    th Người bình luận
-                    th Nội dung bình luận
-                    th.text-center Trạng thái
+                    th Người nhập
+                    th Trạng thái
                     th Thời gian
+                    th Thao tác
                 tbody 
                   each item in [1,2,3,4,5]
                     tr
                       td.text-center.Table-index= item
-                      td Phê duyệt đề tài
                       td Giám đốc
-                      td Tôi duyệt đề tài này
                       td
-                        .center
-                          +Button({ title: item % 2 === 0 ? 'Đã duyệt' : 'Trả lại', variant: item % 2 === 0 ? 'btn-primary' : 'btn-soft-dark', badge: true })
+                        +Button({
+                          tag: true,
+                          title: item % 2 === 0 ? 'Đã duyệt' : item % 3 === 0 ? 'Trả lại' : 'Huỷ bỏ',
+                          variant: item % 2 === 0 ? 'btn-soft-success' : item % 3 === 0 ? 'btn-soft-warning' : 'btn-soft-danger',
+                          badge: true
+                        })
                       td 23:13 30/09/22
+                      td
+                        +Button({ title: 'Chi tiết', variant: 'btn-primary', badge: true, modalId: 'ModalApproverDetailDiary' })
+
 
             +Accordion({ className: 'mb-3 bottom', mainId: 'nhanxet', id: 'Accordion5', parentId: 'AccordionParent5', title: 'Nhận xét' })
               .row 
@@ -324,18 +378,22 @@ block pages
           #scrollSpyEnd
 
         .col-lg-3.pl-lg-2
-          +ScrollSpy({
-            showChildren: true,
-            id: 'scrollSpy',
-            parentId: 'scrollSpyParent',
-            endId: 'scrollSpyEnd',
-          })
-            +Button({ className: 'w-100 border mb-3', title: 'Biểu số', icon: 'tio-laptop mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
-            +Button({ className: 'w-100 border mb-3', title: 'Biểu in', icon: 'tio-print mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
-            +Button({ className: 'w-100 border mb-3', title: 'Xem bản khai Xuất bản phẩm', icon: 'tio-document-text-outlined mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+          .ScrollSpy-drawer-mobile
+            .ScrollSpy-drawer-mobile-overlay
+            .ScrollSpy-drawer-mobile-main
+              +ScrollSpy({
+                showChildren: true,
+                id: 'scrollSpy',
+                parentId: 'scrollSpyParent',
+                endId: 'scrollSpyEnd',
+              })
+                .px-3.px-lg-0
+                  +Button({ className: 'w-100 border mb-3', title: 'Biểu số', icon: 'tio-laptop mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+                  +Button({ className: 'w-100 border mb-3', title: 'Biểu in', icon: 'tio-print mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
+                  +Button({ className: 'w-100 border mb-3', title: 'Xem bản khai Xuất bản phẩm', icon: 'tio-document-text-outlined mr-1', size: 'btn-sm', variant: 'btn-soft-dark' })
 
-            +Card({ className: 'mb-3', title: 'Điều hướng trên trang', size: 'small', dark: true, noPadding: true })
-              ul.navbar-nav.navbar-nav-lg.nav-tabs.card.card-navbar-nav.border-0.p-0
-                each item in dataScrollSpy2
-                  li.nav-item
-                    a.nav-link(href=`${item.link}` class=`${item.active ? 'active' : ''}`)= item.title
+                +Card({ className: 'mb-3', title: 'Điều hướng trên trang', size: 'small', dark: true, noPadding: true })
+                  ul.navbar-nav.navbar-nav-lg.nav-tabs.card.card-navbar-nav.border-0.p-0
+                    each item in dataScrollSpy2
+                      li.nav-item
+                        a.nav-link(href=`${item.link}` class=`${item.active ? 'active' : ''}`)= item.title

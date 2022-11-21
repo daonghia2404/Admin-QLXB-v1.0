@@ -16,6 +16,18 @@
       line-height: 20px;
       padding: 8px 15px;
       border-radius: 5px;
+
+      @media (max-width: 991px) {
+        padding: 8px 12px;
+
+        &-title {
+          display: none;
+        }
+
+        i {
+          margin: 0 !important;
+        }
+      }
     }
   }
 
@@ -37,6 +49,11 @@
       border: 1px solid #E7EAF3;
       padding: 8px 20px;
       background: #E7EAF3;
+
+      @media (max-width: 575px) {
+        flex-direction: column;
+        row-gap: 4px;
+      }
 
       &-title {
         font-size: 14px;

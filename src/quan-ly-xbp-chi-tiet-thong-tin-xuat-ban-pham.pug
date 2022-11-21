@@ -5,6 +5,9 @@ block header
 
 block pages
   .PreviewPage 
+    include ./includes/containers/ModalConfirmSendForm.pug
+    include ./includes/containers/ModalApproverDetailDiary.pug
+
     .content.container-fluid
       .row 
         .col-lg-9.pr-lg-2
@@ -13,6 +16,7 @@ block pages
             +Button({ title: 'Từ chối', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
             +Button({ title: 'Comment', icon: 'tio-sms-chat-outlined mr-1', variant: 'btn-soft-dark' })  
             +Button({ title: 'Chỉnh sửa', icon: 'tio-edit mr-1', variant: 'btn-soft-dark' })  
+            +Button({ className: 'show-on-mobile ml-auto js-open-scrollspy-mobile', icon: 'tio-menu-hamburger', variant: 'btn-soft-dark' })
 
           #tiendo.mb-3
             +Step({
@@ -367,43 +371,49 @@ block pages
                       td.text-center.Table-index= item
                       td Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022
 
-            +Accordion({ className: 'mb-3', mainId: 'binhluanvaduyet', id: 'Accordion6', parentId: 'AccordionParent6', title: 'Bình luận và duyệt', showDate: true, noPadding: true })
+            +Accordion({ className: 'mb-3', mainId: 'binhluanvaduyet', id: 'Accordion6', parentId: 'AccordionParent6', title: 'Nhật ký', showDate: true, noPadding: true })
               +Table({ style: 'margin: -1px', showPagination: true })
                 thead 
                   tr 
                     th.text-center #
-                    th Công đoạn
-                    th Người bình luận
-                    th Nội dung bình luận
-                    th.text-center Trạng thái
+                    th Người nhập
+                    th Trạng thái
                     th Thời gian
+                    th Thao tác
                 tbody 
                   each item in [1,2,3,4,5]
                     tr
                       td.text-center.Table-index= item
-                      td Phê duyệt đề tài
                       td Giám đốc
-                      td Tôi duyệt đề tài này
                       td
-                        .center
-                          +Button({ title: item % 2 === 0 ? 'Đã duyệt' : 'Trả lại', variant: item % 2 === 0 ? 'btn-primary' : 'btn-soft-dark', badge: true })
+                        +Button({
+                          tag: true,
+                          title: item % 2 === 0 ? 'Đã duyệt' : item % 3 === 0 ? 'Trả lại' : 'Huỷ bỏ',
+                          variant: item % 2 === 0 ? 'btn-soft-success' : item % 3 === 0 ? 'btn-soft-warning' : 'btn-soft-danger',
+                          badge: true
+                        })
                       td 23:13 30/09/22
+                      td
+                        +Button({ title: 'Chi tiết', variant: 'btn-primary', badge: true, modalId: 'ModalApproverDetailDiary' })
 
           #scrollSpyEnd
 
         .col-lg-3.pl-lg-2
-          +ScrollSpy({
-            title: 'Điều hướng trên trang',
-            id: 'scrollSpy',
-            parentId: 'scrollSpyParent',
-            endId: 'scrollSpyEnd',
-            options: [
-              { link: '#tiendo', title: 'Tiến độ' },
-              { link: '#thongtinchung', title: 'Thông tin chung' },
-              { link: '#quanlycongviec', title: 'Quản lý công việc' },
-              { link: '#banthaofile', title: 'Bản thảo & File' },
-              { link: '#thongtinkhac', title: 'Thông tin khác' },
-              { link: '#lichsuxuatbanpham', title: 'Lịch sử Xuất bản phẩm' },
-              { link: '#binhluanvaduyet', title: 'Xem bản khai Xuất bản phẩm' },
-            ]
-          })
+          .ScrollSpy-drawer-mobile
+            .ScrollSpy-drawer-mobile-overlay
+            .ScrollSpy-drawer-mobile-main
+              +ScrollSpy({
+                title: 'Điều hướng trên trang',
+                id: 'scrollSpy',
+                parentId: 'scrollSpyParent',
+                endId: 'scrollSpyEnd',
+                options: [
+                  { link: '#tiendo', title: 'Tiến độ' },
+                  { link: '#thongtinchung', title: 'Thông tin chung' },
+                  { link: '#quanlycongviec', title: 'Quản lý công việc' },
+                  { link: '#banthaofile', title: 'Bản thảo & File' },
+                  { link: '#thongtinkhac', title: 'Thông tin khác' },
+                  { link: '#lichsuxuatbanpham', title: 'Lịch sử Xuất bản phẩm' },
+                  { link: '#binhluanvaduyet', title: 'Xem bản khai Xuất bản phẩm' },
+                ]
+              })
