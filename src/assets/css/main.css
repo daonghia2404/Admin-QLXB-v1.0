@@ -343,6 +343,9 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
+.main {
+  background: #F3F4F6;
+}
 .main .content {
   padding: 0.9375rem !important;
 }
@@ -358,6 +361,10 @@ template {
   font-weight: 600;
 }
 
+.overflow-y-auto {
+  overflow: hidden auto;
+}
+
 .Button.Button-badge {
   padding: 2px 8px;
   font-size: 12px;
@@ -371,6 +378,11 @@ template {
 .Button-tag {
   user-select: none;
   pointer-events: none;
+}
+.Button.btn-warning.custom {
+  border-color: #F5CA99;
+  background: #F5CA99;
+  color: #132144;
 }
 .Button.circle {
   border-radius: 50%;
@@ -756,9 +768,10 @@ template {
   column-gap: 8px;
 }
 .JobCard-info-header-status .Button {
+  width: 58px;
   padding: 2px 14px;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 12px;
   border-radius: 4px;
 }
@@ -962,6 +975,9 @@ template {
 
 .Step {
   position: relative;
+}
+.Step-wrapper {
+  background: #ffffff;
 }
 .Step-line {
   position: absolute;
@@ -1248,6 +1264,12 @@ template {
   display: flex;
   justify-content: center;
   padding: 10px 4px;
+}
+@media (max-width: 991px) {
+  .FormPage-switch-wrapper .Switch {
+    display: block;
+    padding: 10px 15px;
+  }
 }
 .FormPage-switch-wrapper .col-3:not(:last-child) {
   border-right: 1px solid #E7EAF3;

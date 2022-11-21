@@ -18,6 +18,12 @@
     pointer-events: none;
   }
 
+  &.btn-warning.custom {
+    border-color: #F5CA99;
+    background: #F5CA99;
+    color: #132144;
+  }
+
   &.circle {
     border-radius: 50%;
   }

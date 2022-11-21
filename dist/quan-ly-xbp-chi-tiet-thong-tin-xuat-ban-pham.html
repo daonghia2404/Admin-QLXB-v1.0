@@ -519,107 +519,282 @@
         <div class="content container-fluid">
           <div class="row"> 
             <div class="col-lg-9 pr-lg-2">
-              <div class="Card card card-middle" id="bieuso"> 
-                <div class="card-body p-0">
-                  <div class="PreviewPage-submit d-flex flex-wrap mb-3 border">
-                    <button class="Button btn btn-primary middle" type="button"><i class="tio-checkmark-square-outlined mr-1"></i>Xét Duyệt XBP
-                    </button>
-                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-clear mr-1"></i>Từ chối
-                    </button>
-                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-sms-chat-outlined mr-1"></i>Comment
-                    </button>
-                    <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-edit mr-1"></i>Chỉnh sửa
-                    </button>
-                  </div>
-                  <div class="px-2 py-5" id="tiendo">
-                    <div class="Step d-flex align-items-start">
-                      <div class="Step-line" style="width: calc(100% / 6 * 5)">
-                        <div class="Step-line-percent" style="width: 66%;"></div>
-                      </div>
-                      <div class="Step-item active">
-                        <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
-                        <div class="Step-item-label">1. Phê Duyệt đề tài	</div>
-                      </div>
-                      <div class="Step-item active">
-                        <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
-                        <div class="Step-item-label">2. Xin cấp phép xuất bản</div>
-                      </div>
-                      <div class="Step-item active">
-                        <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
-                        <div class="Step-item-label">3.Ký hợp đồng tác giả</div>
-                      </div>
-                      <div class="Step-item active">
-                        <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
-                        <div class="Step-item-label">4. Biên tập</div>
-                      </div>
-                      <div class="Step-item">
-                        <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
-                        <div class="Step-item-label">5. Chế bản</div>
-                      </div>
-                      <div class="Step-item">
-                        <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
-                        <div class="Step-item-label">6. Ra quyết định in</div>
-                      </div>
+              <div class="PreviewPage-submit d-flex flex-wrap mb-3 border">
+                <button class="Button btn btn-primary middle" type="button"><i class="tio-checkmark-square-outlined mr-1"></i>Xét Duyệt XBP
+                </button>
+                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-clear mr-1"></i>Từ chối
+                </button>
+                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-sms-chat-outlined mr-1"></i>Comment
+                </button>
+                <button class="Button btn btn-soft-dark middle" type="button"><i class="tio-edit mr-1"></i>Chỉnh sửa
+                </button>
+              </div>
+              <div class="mb-3" id="tiendo">
+                <div class="Step-wrapper px-2 py-5">
+                  <div class="Step d-flex align-items-start">
+                    <div class="Step-line" style="width: calc(100% / 6 * 5)">
+                      <div class="Step-line-percent" style="width: 66%;"></div>
+                    </div>
+                    <div class="Step-item active">
+                      <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
+                      <div class="Step-item-label">1. Phê Duyệt đề tài	</div>
+                    </div>
+                    <div class="Step-item active">
+                      <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
+                      <div class="Step-item-label">2. Xin cấp phép xuất bản</div>
+                    </div>
+                    <div class="Step-item active">
+                      <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
+                      <div class="Step-item-label">3.Ký hợp đồng tác giả</div>
+                    </div>
+                    <div class="Step-item active">
+                      <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
+                      <div class="Step-item-label">4. Biên tập</div>
+                    </div>
+                    <div class="Step-item">
+                      <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
+                      <div class="Step-item-label">5. Chế bản</div>
+                    </div>
+                    <div class="Step-item">
+                      <div class="Step-item-circle d-flex align-items-center justify-content-center"><i class="tio-checkmark-circle-outlined"></i></div>
+                      <div class="Step-item-label">6. Ra quyết định in</div>
                     </div>
                   </div>
-                  <div class="accordion">
-                    <div class="Accordion" id="thongtinchung">
-                      <div class="Accordion-parent" id="AccordionParent1_16632">
-                        <div class="Card card card-middle" id=""> 
-                          <div class="card-header d-flex align-items-center justify-content-between">
-                            <h3 class="card-header-title d-flex align-items-center">Thông tin chung về bản đắng ký xuất bản phẩm
-                            </h3>
-                            <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion1" aria-expanded="true" aria-controls="Accordion1"><i class="tio-chevron-down"></i></div>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="Accordion mb-3" id="thongtinchung">
+                  <div class="Accordion-parent" id="AccordionParent1_79589">
+                    <div class="Card card card-middle" id=""> 
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h3 class="card-header-title d-flex align-items-center">Thông tin chung về bản đắng ký xuất bản phẩm
+                        </h3>
+                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion1" aria-expanded="true" aria-controls="Accordion1"><i class="tio-chevron-down"></i></div>
+                      </div>
+                      <div class="collapse show" id="Accordion1" data-parent="#AccordionParent1_79589">
+                        <div class="card-body">
+                          <div class="row"> 
+                            <div class="col-md-6 pr-md-2 mb-3">
+                              <div class="Table">
+                                <table class="table">
+                                  <tbody>
+                                    <tr> 
+                                      <td class="text-nowrap"><strong>Tên Xuất bản phẩm</strong></td>
+                                      <td class="w-100">Tuyển tập hội nghị khoa học thường niên năm 2022 Proceedings of the annual conference of thuy loi university</td>
+                                    </tr>
+                                    <tr> 
+                                      <td class="text-nowrap"><strong>Người đăng ký</strong></td>
+                                      <td class="w-100">Đỗ Ngọc Long</td>
+                                    </tr>
+                                    <tr> 
+                                      <td class="text-nowrap"><strong>Phương thức xuất bản</strong></td>
+                                      <td class="w-100">Tự xuất bản</td>
+                                    </tr>
+                                    <tr> 
+                                      <td class="text-nowrap"><strong>Mã số Nội bộ</strong></td>
+                                      <td class="w-100">0303243XD22</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="col-md-6 pl-md-2 mb-3">
+                              <div class="Table">
+                                <table class="table">
+                                  <tbody>
+                                    <tr> 
+                                      <td class="text-nowrap"><strong>Tác giả</strong></td>
+                                      <td class="w-100">Bộ Nông nghiệp và Phát triển Nông thôn - Trường Đại học Thủy lợi</td>
+                                    </tr>
+                                    <tr> 
+                                      <td class="text-nowrap"><strong>Ngày đăng ký</strong></td>
+                                      <td class="w-100">22/09/2022</td>
+                                    </tr>
+                                    <tr> 
+                                      <td class="text-nowrap"><strong>Chủ đề</strong></td>
+                                      <td class="w-100">Khoa học - Kĩ thuật</td>
+                                    </tr>
+                                    <tr> 
+                                      <td class="text-nowrap"><strong>Loại Xuất bản phẩm</strong></td>
+                                      <td class="w-100">Sách giấy, Sách điện tử</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
                           </div>
-                          <div class="collapse show" id="Accordion1" data-parent="#AccordionParent1_16632">
-                            <div class="card-body">
-                              <div class="row"> 
-                                <div class="col-md-6 pr-md-2 mb-3">
-                                  <div class="Table">
-                                    <table class="table">
-                                      <tbody>
-                                        <tr> 
-                                          <td class="text-nowrap"><strong>Tên Xuất bản phẩm</strong></td>
-                                          <td class="w-100">Tuyển tập hội nghị khoa học thường niên năm 2022 Proceedings of the annual conference of thuy loi university</td>
-                                        </tr>
-                                        <tr> 
-                                          <td class="text-nowrap"><strong>Người đăng ký</strong></td>
-                                          <td class="w-100">Đỗ Ngọc Long</td>
-                                        </tr>
-                                        <tr> 
-                                          <td class="text-nowrap"><strong>Phương thức xuất bản</strong></td>
-                                          <td class="w-100">Tự xuất bản</td>
-                                        </tr>
-                                        <tr> 
-                                          <td class="text-nowrap"><strong>Mã số Nội bộ</strong></td>
-                                          <td class="w-100">0303243XD22</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Accordion mb-3" id="quanlycongviec">
+                  <div class="Accordion-parent" id="AccordionParent2_57534">
+                    <div class="Card card card-middle" id=""> 
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h3 class="card-header-title d-flex align-items-center">Quản lý công việc (danh sách việc cần làm)
+                        </h3>
+                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion2" aria-expanded="true" aria-controls="Accordion2"><i class="tio-chevron-down"></i></div>
+                      </div>
+                      <div class="collapse show" id="Accordion2" data-parent="#AccordionParent2_57534">
+                        <div class="card-body p-0">
+                          <div class="border-bottom background px-4 py-3">
+                            <h4 class="mb-0">
+                              <i class="tio-settings-outlined mr-2"></i>Tiến trình xử lý xuất bản phẩm</h4>
+                          </div>
+                          <div class="FormPage-trees">
+                            <div class="FormPage-trees-wrapper">
+                              <div class="FormPage-trees-wrapper-title">1. Phê Duyệt đề tài	</div>
+                              <div class="FormPage-trees-group">
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox1">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox1">1. Phê Duyệt đề tài<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
+                                      </label>
+                                    </div>
                                   </div>
                                 </div>
-                                <div class="col-md-6 pl-md-2 mb-3">
-                                  <div class="Table">
-                                    <table class="table">
-                                      <tbody>
-                                        <tr> 
-                                          <td class="text-nowrap"><strong>Tác giả</strong></td>
-                                          <td class="w-100">Bộ Nông nghiệp và Phát triển Nông thôn - Trường Đại học Thủy lợi</td>
-                                        </tr>
-                                        <tr> 
-                                          <td class="text-nowrap"><strong>Ngày đăng ký</strong></td>
-                                          <td class="w-100">22/09/2022</td>
-                                        </tr>
-                                        <tr> 
-                                          <td class="text-nowrap"><strong>Chủ đề</strong></td>
-                                          <td class="w-100">Khoa học - Kĩ thuật</td>
-                                        </tr>
-                                        <tr> 
-                                          <td class="text-nowrap"><strong>Loại Xuất bản phẩm</strong></td>
-                                          <td class="w-100">Sách giấy, Sách điện tử</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
+                              </div>
+                            </div>
+                            <div class="FormPage-trees-wrapper">
+                              <div class="FormPage-trees-wrapper-title">2. Xin cấp phép xuất bản</div>
+                              <div class="FormPage-trees-group">
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox2">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox2">2.1 Duyệt cấp phép CXB<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-success text-success">Xong</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox3">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox3">2.2 Xin cấp phép CXB<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-success text-success">Xong</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox4">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox4">2.3 CXB đã phê duyệt<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-success text-success">Xong</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="FormPage-trees-wrapper">
+                              <div class="FormPage-trees-wrapper-title">3.Ký hợp đồng tác giả</div>
+                              <div class="FormPage-trees-group">
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox5">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox5">3.Ký hợp đồng tác giả<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-info text-info">Bình thường</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="FormPage-trees-wrapper">
+                              <div class="FormPage-trees-wrapper-title">4. Biên tập</div>
+                              <div class="FormPage-trees-group">
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox6">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox6">4.1 BTV Sửa bản thảo<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-warning text-warning">Chậm</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox7">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox7">4.2 Yêu cầu thiết kế<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-success text-success">Xong</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="FormPage-trees-wrapper">
+                              <div class="FormPage-trees-wrapper-title">5. Chế bản</div>
+                              <div class="FormPage-trees-group">
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox8">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox8">5.1 Thiết kế bìa<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox9">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox9">5.2 BTV Duyệt Market bìa<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox10">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox10">5.3 Duyệt Market ruột<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox11">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox11">5.4 BTV Duyệt Market ruột<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox12">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox12">5.5 Chế bản bông<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox13">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox13">5.6 Phê duyệt bông<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="FormPage-trees-wrapper">
+                              <div class="FormPage-trees-wrapper-title">6. Ra quyết định in	</div>
+                              <div class="FormPage-trees-group">
+                                <div class="FormPage-trees-group-item">
+                                  <div class="Checkbox">
+                                    <div class="custom-control custom-checkbox">
+                                      <input class="custom-control-input" type="checkbox" id="Checkbox14">
+                                      <label class="custom-control-label text-nowrap" for="Checkbox14">6. Ra quyết định in<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
+                                      </label>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
@@ -628,832 +803,628 @@
                         </div>
                       </div>
                     </div>
-                    <div class="Accordion" id="quanlycongviec">
-                      <div class="Accordion-parent" id="AccordionParent2_95847">
-                        <div class="Card card card-middle" id=""> 
-                          <div class="card-header d-flex align-items-center justify-content-between">
-                            <h3 class="card-header-title d-flex align-items-center">Quản lý công việc (danh sách việc cần làm)
-                            </h3>
-                            <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion2" aria-expanded="true" aria-controls="Accordion2"><i class="tio-chevron-down"></i></div>
-                          </div>
-                          <div class="collapse show" id="Accordion2" data-parent="#AccordionParent2_95847">
-                            <div class="card-body p-0">
-                              <div class="border-bottom background px-4 py-3">
-                                <h4 class="mb-0">
-                                  <i class="tio-settings-outlined mr-2"></i>Tiến trình xử lý xuất bản phẩm</h4>
+                  </div>
+                </div>
+                <div class="Accordion mb-3" id="banthaofile">
+                  <div class="Accordion-parent" id="AccordionParent3_92015">
+                    <div class="Card card card-middle" id=""> 
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h3 class="card-header-title d-flex align-items-center">Bản thảo &amp; FILE
+                        </h3>
+                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion3" aria-expanded="true" aria-controls="Accordion3"><i class="tio-chevron-down"></i></div>
+                      </div>
+                      <div class="collapse show" id="Accordion3" data-parent="#AccordionParent3_92015">
+                        <div class="card-body">
+                          <form action="#"> 
+                            <div class="Tab mb-3">
+                              <ul class="nav nav-segment nav-pills" role="tablist">
+                                <li class="nav-item"><a class="nav-link active" id="tab1" href="#tabId1" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">Tất cả</a></li>
+                                <li class="nav-item"><a class="nav-link" id="tab2" href="#tabId2" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">Phê duyệt đề tài</a></li>
+                                <li class="nav-item"><a class="nav-link" id="tab3" href="#tabId3" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">2.1 Duyệt cấp phép CXB</a></li>
+                                <li class="nav-item"><a class="nav-link" id="tab4" href="#tabId4" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">2.2 Xin cấp phép CXB</a></li>
+                                <li class="nav-item"><a class="nav-link" id="tab5" href="#tabId5" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">3. Ký HĐ Tác giả</a></li>
+                                <li class="nav-item"><a class="nav-link" id="tab6" href="#tabId6" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">4.2 Yêu cầu thiết kế</a></li>
+                                <li class="nav-item"><a class="nav-link" id="tab7" href="#tabId7" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">5.1 Thiết kế bìa</a></li>
+                                <li class="nav-item"><a class="nav-link" id="tab8" href="#tabId8" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">5.2 BTV Duyệt Market bìa	</a></li>
+                              </ul>
+                            </div>
+                            <div class="tab-content"> 
+                              <div class="tab-pane fade show active" id="tabId1" role="tabpanel">
+                                <div class="Table">
+                                  <table class="table">
+                                    <thead> 
+                                      <tr> 
+                                        <th class="text-center">#</th>
+                                        <th>Loại</th>
+                                        <th>Người bình luận</th>
+                                        <th>Thời gian</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody> 
+                                      <tr> 
+                                        <td class="text-center Table-index">1</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">2</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">3</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">4</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">5</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
                               </div>
-                              <div class="FormPage-trees">
-                                <div class="FormPage-trees-wrapper">
-                                  <div class="FormPage-trees-wrapper-title">1. Phê Duyệt đề tài	</div>
-                                  <div class="FormPage-trees-group">
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox1">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox1">1. Phê Duyệt đề tài<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                              <div class="tab-pane fade" id="tabId2" role="tabpanel">
+                                <div class="Table">
+                                  <table class="table">
+                                    <thead> 
+                                      <tr> 
+                                        <th class="text-center">#</th>
+                                        <th>Loại</th>
+                                        <th>Người bình luận</th>
+                                        <th>Thời gian</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody> 
+                                      <tr> 
+                                        <td class="text-center Table-index">1</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">2</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">3</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">4</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">5</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
-                                <div class="FormPage-trees-wrapper">
-                                  <div class="FormPage-trees-wrapper-title">2. Xin cấp phép xuất bản</div>
-                                  <div class="FormPage-trees-group">
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox2">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox2">2.1 Duyệt cấp phép CXB<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-success text-success">Xong</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox3">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox3">2.2 Xin cấp phép CXB<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-success text-success">Xong</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox4">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox4">2.3 CXB đã phê duyệt<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-success text-success">Xong</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                              </div>
+                              <div class="tab-pane fade" id="tabId3" role="tabpanel">
+                                <div class="Table">
+                                  <table class="table">
+                                    <thead> 
+                                      <tr> 
+                                        <th class="text-center">#</th>
+                                        <th>Loại</th>
+                                        <th>Người bình luận</th>
+                                        <th>Thời gian</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody> 
+                                      <tr> 
+                                        <td class="text-center Table-index">1</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">2</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">3</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">4</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">5</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
-                                <div class="FormPage-trees-wrapper">
-                                  <div class="FormPage-trees-wrapper-title">3.Ký hợp đồng tác giả</div>
-                                  <div class="FormPage-trees-group">
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox5">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox5">3.Ký hợp đồng tác giả<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-info text-info">Bình thường</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                              </div>
+                              <div class="tab-pane fade" id="tabId4" role="tabpanel">
+                                <div class="Table">
+                                  <table class="table">
+                                    <thead> 
+                                      <tr> 
+                                        <th class="text-center">#</th>
+                                        <th>Loại</th>
+                                        <th>Người bình luận</th>
+                                        <th>Thời gian</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody> 
+                                      <tr> 
+                                        <td class="text-center Table-index">1</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">2</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">3</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">4</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">5</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
-                                <div class="FormPage-trees-wrapper">
-                                  <div class="FormPage-trees-wrapper-title">4. Biên tập</div>
-                                  <div class="FormPage-trees-group">
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox6">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox6">4.1 BTV Sửa bản thảo<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-warning text-warning">Chậm</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox7">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox7">4.2 Yêu cầu thiết kế<span class="Badge badge ml-2 badge-soft-danger text-danger">Tuỳ biến</span><span class="Badge badge ml-2 badge-soft-success text-success">Xong</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                              </div>
+                              <div class="tab-pane fade" id="tabId5" role="tabpanel">
+                                <div class="Table">
+                                  <table class="table">
+                                    <thead> 
+                                      <tr> 
+                                        <th class="text-center">#</th>
+                                        <th>Loại</th>
+                                        <th>Người bình luận</th>
+                                        <th>Thời gian</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody> 
+                                      <tr> 
+                                        <td class="text-center Table-index">1</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">2</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">3</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">4</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">5</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
-                                <div class="FormPage-trees-wrapper">
-                                  <div class="FormPage-trees-wrapper-title">5. Chế bản</div>
-                                  <div class="FormPage-trees-group">
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox8">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox8">5.1 Thiết kế bìa<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox9">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox9">5.2 BTV Duyệt Market bìa<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox10">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox10">5.3 Duyệt Market ruột<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox11">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox11">5.4 BTV Duyệt Market ruột<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox12">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox12">5.5 Chế bản bông<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox13">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox13">5.6 Phê duyệt bông<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+                              </div>
+                              <div class="tab-pane fade" id="tabId6" role="tabpanel">
+                                <div class="Table">
+                                  <table class="table">
+                                    <thead> 
+                                      <tr> 
+                                        <th class="text-center">#</th>
+                                        <th>Loại</th>
+                                        <th>Người bình luận</th>
+                                        <th>Thời gian</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody> 
+                                      <tr> 
+                                        <td class="text-center Table-index">1</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">2</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">3</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">4</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">5</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
                                 </div>
-                                <div class="FormPage-trees-wrapper">
-                                  <div class="FormPage-trees-wrapper-title">6. Ra quyết định in	</div>
-                                  <div class="FormPage-trees-group">
-                                    <div class="FormPage-trees-group-item">
-                                      <div class="Checkbox">
-                                        <div class="custom-control custom-checkbox">
-                                          <input class="custom-control-input" type="checkbox" id="Checkbox14">
-                                          <label class="custom-control-label text-nowrap" for="Checkbox14">6. Ra quyết định in<span class="Badge badge ml-2 badge-soft-success text-success">Tự động</span>
-                                          </label>
-                                        </div>
+                              </div>
+                              <div class="tab-pane fade" id="tabId7" role="tabpanel">
+                                <div class="Table">
+                                  <table class="table">
+                                    <thead> 
+                                      <tr> 
+                                        <th class="text-center">#</th>
+                                        <th>Loại</th>
+                                        <th>Người bình luận</th>
+                                        <th>Thời gian</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody> 
+                                      <tr> 
+                                        <td class="text-center Table-index">1</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">2</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">3</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">4</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">5</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" id="tabId8" role="tabpanel">
+                                <div class="Table">
+                                  <table class="table">
+                                    <thead> 
+                                      <tr> 
+                                        <th class="text-center">#</th>
+                                        <th>Loại</th>
+                                        <th>Người bình luận</th>
+                                        <th>Thời gian</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody> 
+                                      <tr> 
+                                        <td class="text-center Table-index">1</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">2</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">3</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">4</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                      <tr> 
+                                        <td class="text-center Table-index">5</td>
+                                        <td> 
+                                          <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
+                                          </div>
+                                        </td>
+                                        <td> <a class="Table-link ellipsis" href="#">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</a></td>
+                                        <td class="text-nowrap">23:13’ 27/06/2022</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Accordion mb-3" id="thongtinkhac">
+                  <div class="Accordion-parent" id="AccordionParent4_66262">
+                    <div class="Card card card-middle" id=""> 
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h3 class="card-header-title d-flex align-items-center">Thông tin khác
+                        </h3>
+                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion4" aria-expanded="true" aria-controls="Accordion4"><i class="tio-chevron-down"></i></div>
+                      </div>
+                      <div class="collapse show" id="Accordion4" data-parent="#AccordionParent4_66262">
+                        <div class="card-body">
+                          <div class="accordion">
+                            <div class="Accordion" id="">
+                              <div class="Accordion-parent" id="AccordionSubParent1_14721">
+                                <div class="Card card card-middle dark" id=""> 
+                                  <div class="card-header d-flex align-items-center justify-content-between">
+                                    <h3 class="card-header-title d-flex align-items-center">Thông tin Cơ bản
+                                    </h3>
+                                    <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub2" aria-expanded="true" aria-controls="AccordionSub2"><i class="tio-chevron-down"></i></div>
+                                  </div>
+                                  <div class="collapse show" id="AccordionSub2" data-parent="#AccordionSubParent1_14721">
+                                    <div class="card-body">
+                                      <div class="Table">
+                                        <table class="table">
+                                          <tbody>
+                                            <tr> 
+                                              <td class="text-nowrap"><strong>Tên XBP</strong></td>
+                                              <td class="w-100">HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN</td>
+                                            </tr>
+                                            <tr> 
+                                              <td class="text-nowrap"><strong>Tên gốc</strong></td>
+                                              <td class="w-100"></td>
+                                            </tr>
+                                            <tr> 
+                                              <td class="text-nowrap"><strong>Tác giả</strong></td>
+                                              <td class="w-100">NGUYỄN THỊ BÍCH NGỌC
+                                                <button class="Button btn ml-2 btn-info middle Button-badge" type="button">Chủ biên
+                                                </button>
+                                              </td>
+                                            </tr>
+                                            <tr> 
+                                              <td class="text-nowrap"><strong>Tác giả</strong></td>
+                                              <td class="w-100"></td>
+                                            </tr>
+                                            <tr> 
+                                              <td class="text-nowrap"><strong>Phương thức xuất bản</strong></td>
+                                              <td class="w-100">Tự xuất bản</td>
+                                            </tr>
+                                            <tr> 
+                                              <td class="text-nowrap"><strong>Đăng ký mới/ Tái bản</strong></td>
+                                              <td class="w-100">Đăng ký mới</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Accordion" id="banthaofile">
-                      <div class="Accordion-parent" id="AccordionParent3_539">
-                        <div class="Card card card-middle" id=""> 
-                          <div class="card-header d-flex align-items-center justify-content-between">
-                            <h3 class="card-header-title d-flex align-items-center">Bản thảo &amp; FILE
-                            </h3>
-                            <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion3" aria-expanded="true" aria-controls="Accordion3"><i class="tio-chevron-down"></i></div>
-                          </div>
-                          <div class="collapse show" id="Accordion3" data-parent="#AccordionParent3_539">
-                            <div class="card-body">
-                              <form action="#"> 
-                                <div class="Tab mb-3">
-                                  <ul class="nav nav-segment nav-pills" role="tablist">
-                                    <li class="nav-item"><a class="nav-link active" id="tab1" href="#tabId1" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">Tất cả</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="tab2" href="#tabId2" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">Phê duyệt đề tài</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="tab3" href="#tabId3" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">2.1 Duyệt cấp phép CXB</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="tab4" href="#tabId4" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">2.2 Xin cấp phép CXB</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="tab5" href="#tabId5" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">3. Ký HĐ Tác giả</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="tab6" href="#tabId6" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">4.2 Yêu cầu thiết kế</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="tab7" href="#tabId7" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">5.1 Thiết kế bìa</a></li>
-                                    <li class="nav-item"><a class="nav-link" id="tab8" href="#tabId8" data-toggle="pill" role="tab" aria-controls="nav-one-eg1" aria-selected="true">5.2 BTV Duyệt Market bìa	</a></li>
-                                  </ul>
-                                </div>
-                                <div class="tab-content"> 
-                                  <div class="tab-pane fade show active" id="tabId1" role="tabpanel">
-                                    <div class="Table">
-                                      <table class="table">
-                                        <thead> 
-                                          <tr> 
-                                            <th class="text-center">#</th>
-                                            <th>Loại</th>
-                                            <th>Người bình luận</th>
-                                            <th>Thời gian</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody> 
-                                          <tr> 
-                                            <td class="text-center Table-index">1</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">2</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">3</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">4</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">5</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
+                            <div class="Accordion" id="">
+                              <div class="Accordion-parent" id="AccordionSubParent2_16103">
+                                <div class="Card card card-middle dark" id=""> 
+                                  <div class="card-header d-flex align-items-center justify-content-between">
+                                    <h3 class="card-header-title d-flex align-items-center">Đối tượng sử dụng và phân loại
+                                    </h3>
+                                    <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub3" aria-expanded="true" aria-controls="AccordionSub3"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <div class="tab-pane fade" id="tabId2" role="tabpanel">
-                                    <div class="Table">
-                                      <table class="table">
-                                        <thead> 
-                                          <tr> 
-                                            <th class="text-center">#</th>
-                                            <th>Loại</th>
-                                            <th>Người bình luận</th>
-                                            <th>Thời gian</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody> 
-                                          <tr> 
-                                            <td class="text-center Table-index">1</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">2</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">3</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">4</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">5</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                  <div class="tab-pane fade" id="tabId3" role="tabpanel">
-                                    <div class="Table">
-                                      <table class="table">
-                                        <thead> 
-                                          <tr> 
-                                            <th class="text-center">#</th>
-                                            <th>Loại</th>
-                                            <th>Người bình luận</th>
-                                            <th>Thời gian</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody> 
-                                          <tr> 
-                                            <td class="text-center Table-index">1</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">2</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">3</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">4</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">5</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                  <div class="tab-pane fade" id="tabId4" role="tabpanel">
-                                    <div class="Table">
-                                      <table class="table">
-                                        <thead> 
-                                          <tr> 
-                                            <th class="text-center">#</th>
-                                            <th>Loại</th>
-                                            <th>Người bình luận</th>
-                                            <th>Thời gian</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody> 
-                                          <tr> 
-                                            <td class="text-center Table-index">1</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">2</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">3</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">4</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">5</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                  <div class="tab-pane fade" id="tabId5" role="tabpanel">
-                                    <div class="Table">
-                                      <table class="table">
-                                        <thead> 
-                                          <tr> 
-                                            <th class="text-center">#</th>
-                                            <th>Loại</th>
-                                            <th>Người bình luận</th>
-                                            <th>Thời gian</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody> 
-                                          <tr> 
-                                            <td class="text-center Table-index">1</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">2</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">3</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">4</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">5</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                  <div class="tab-pane fade" id="tabId6" role="tabpanel">
-                                    <div class="Table">
-                                      <table class="table">
-                                        <thead> 
-                                          <tr> 
-                                            <th class="text-center">#</th>
-                                            <th>Loại</th>
-                                            <th>Người bình luận</th>
-                                            <th>Thời gian</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody> 
-                                          <tr> 
-                                            <td class="text-center Table-index">1</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">2</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">3</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">4</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">5</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                  <div class="tab-pane fade" id="tabId7" role="tabpanel">
-                                    <div class="Table">
-                                      <table class="table">
-                                        <thead> 
-                                          <tr> 
-                                            <th class="text-center">#</th>
-                                            <th>Loại</th>
-                                            <th>Người bình luận</th>
-                                            <th>Thời gian</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody> 
-                                          <tr> 
-                                            <td class="text-center Table-index">1</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">2</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">3</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">4</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">5</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                  <div class="tab-pane fade" id="tabId8" role="tabpanel">
-                                    <div class="Table">
-                                      <table class="table">
-                                        <thead> 
-                                          <tr> 
-                                            <th class="text-center">#</th>
-                                            <th>Loại</th>
-                                            <th>Người bình luận</th>
-                                            <th>Thời gian</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody> 
-                                          <tr> 
-                                            <td class="text-center Table-index">1</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">2</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">3</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">4</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-docx.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                          <tr> 
-                                            <td class="text-center Table-index">5</td>
-                                            <td> 
-                                              <div class="Table-icon">  <img src="./assets/icons/icon-pdf.svg" alt="">
-                                              </div>
-                                            </td>
-                                            <td> 
-                                              <div class="Table-link ellipsis">Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.</div>
-                                            </td>
-                                            <td class="text-nowrap">23:13’ 27/06/2022</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Accordion" id="thongtinkhac">
-                      <div class="Accordion-parent" id="AccordionParent4_15301">
-                        <div class="Card card card-middle" id=""> 
-                          <div class="card-header d-flex align-items-center justify-content-between">
-                            <h3 class="card-header-title d-flex align-items-center">Thông tin khác
-                            </h3>
-                            <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#Accordion4" aria-expanded="true" aria-controls="Accordion4"><i class="tio-chevron-down"></i></div>
-                          </div>
-                          <div class="collapse show" id="Accordion4" data-parent="#AccordionParent4_15301">
-                            <div class="card-body">
-                              <div class="accordion">
-                                <div class="Accordion" id="">
-                                  <div class="Accordion-parent" id="AccordionSubParent1_49772">
-                                    <div class="Card card card-middle dark" id=""> 
-                                      <div class="card-header d-flex align-items-center justify-content-between">
-                                        <h3 class="card-header-title d-flex align-items-center">Thông tin Cơ bản
-                                        </h3>
-                                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub2" aria-expanded="true" aria-controls="AccordionSub2"><i class="tio-chevron-down"></i></div>
-                                      </div>
-                                      <div class="collapse show" id="AccordionSub2" data-parent="#AccordionSubParent1_49772">
-                                        <div class="card-body">
+                                  <div class="collapse show" id="AccordionSub3" data-parent="#AccordionSubParent2_16103">
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-6 pr-md-2 mb-3">
                                           <div class="Table">
                                             <table class="table">
                                               <tbody>
                                                 <tr> 
-                                                  <td class="text-nowrap"><strong>Tên XBP</strong></td>
-                                                  <td class="w-100">HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN</td>
+                                                  <td class="text-nowrap"><strong>Chủ đề</strong></td>
+                                                  <td class="w-100">Khoa học - Kỹ thuật</td>
                                                 </tr>
                                                 <tr> 
-                                                  <td class="text-nowrap"><strong>Tên gốc</strong></td>
+                                                  <td class="text-nowrap"><strong>Nhóm độ tuổi</strong></td>
+                                                  <td class="w-100">12-18</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Lĩnh vực - Ngành</strong></td>
+                                                  <td class="w-100">Khoa học - Kỹ thuật</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 pl-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Nhóm đối tượng</strong></td>
+                                                  <td class="w-100">Khoa học - Kỹ thuật</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Trình độ</strong></td>
                                                   <td class="w-100"></td>
-                                                </tr>
-                                                <tr> 
-                                                  <td class="text-nowrap"><strong>Tác giả</strong></td>
-                                                  <td class="w-100">NGUYỄN THỊ BÍCH NGỌC
-                                                    <button class="Button btn ml-2 btn-info middle Button-badge" type="button">Chủ biên
-                                                    </button>
-                                                  </td>
-                                                </tr>
-                                                <tr> 
-                                                  <td class="text-nowrap"><strong>Tác giả</strong></td>
-                                                  <td class="w-100"></td>
-                                                </tr>
-                                                <tr> 
-                                                  <td class="text-nowrap"><strong>Phương thức xuất bản</strong></td>
-                                                  <td class="w-100">Tự xuất bản</td>
-                                                </tr>
-                                                <tr> 
-                                                  <td class="text-nowrap"><strong>Đăng ký mới/ Tái bản</strong></td>
-                                                  <td class="w-100">Đăng ký mới</td>
                                                 </tr>
                                               </tbody>
                                             </table>
@@ -1463,293 +1434,53 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="Accordion" id="">
-                                  <div class="Accordion-parent" id="AccordionSubParent2_93804">
-                                    <div class="Card card card-middle dark" id=""> 
-                                      <div class="card-header d-flex align-items-center justify-content-between">
-                                        <h3 class="card-header-title d-flex align-items-center">Đối tượng sử dụng và phân loại
-                                        </h3>
-                                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub3" aria-expanded="true" aria-controls="AccordionSub3"><i class="tio-chevron-down"></i></div>
-                                      </div>
-                                      <div class="collapse show" id="AccordionSub3" data-parent="#AccordionSubParent2_93804">
-                                        <div class="card-body">
-                                          <div class="row">
-                                            <div class="col-md-6 pr-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Chủ đề</strong></td>
-                                                      <td class="w-100">Khoa học - Kỹ thuật</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Nhóm độ tuổi</strong></td>
-                                                      <td class="w-100">12-18</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Lĩnh vực - Ngành</strong></td>
-                                                      <td class="w-100">Khoa học - Kỹ thuật</td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-6 pl-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Nhóm đối tượng</strong></td>
-                                                      <td class="w-100">Khoa học - Kỹ thuật</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Trình độ</strong></td>
-                                                      <td class="w-100"></td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
+                              </div>
+                            </div>
+                            <div class="Accordion" id="">
+                              <div class="Accordion-parent" id="AccordionSubParent3_96138">
+                                <div class="Card card card-middle dark" id=""> 
+                                  <div class="card-header d-flex align-items-center justify-content-between">
+                                    <h3 class="card-header-title d-flex align-items-center">Thông tin ngôn ngữ
+                                    </h3>
+                                    <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub4" aria-expanded="true" aria-controls="AccordionSub4"><i class="tio-chevron-down"></i></div>
+                                  </div>
+                                  <div class="collapse show" id="AccordionSub4" data-parent="#AccordionSubParent3_96138">
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-6 pr-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Là sách dịch?</strong></td>
+                                                  <td class="w-100">Có</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Ngôn ngữ gốc</strong></td>
+                                                  <td class="w-100">Tiếng Anh</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Dịch từ ấn phẩm</strong></td>
+                                                  <td class="w-100"><span class="ellipsis">HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN</span></td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
                                           </div>
                                         </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="Accordion" id="">
-                                  <div class="Accordion-parent" id="AccordionSubParent3_11300">
-                                    <div class="Card card card-middle dark" id=""> 
-                                      <div class="card-header d-flex align-items-center justify-content-between">
-                                        <h3 class="card-header-title d-flex align-items-center">Thông tin ngôn ngữ
-                                        </h3>
-                                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub4" aria-expanded="true" aria-controls="AccordionSub4"><i class="tio-chevron-down"></i></div>
-                                      </div>
-                                      <div class="collapse show" id="AccordionSub4" data-parent="#AccordionSubParent3_11300">
-                                        <div class="card-body">
-                                          <div class="row">
-                                            <div class="col-md-6 pr-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Là sách dịch?</strong></td>
-                                                      <td class="w-100">Có</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Ngôn ngữ gốc</strong></td>
-                                                      <td class="w-100">Tiếng Anh</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Dịch từ ấn phẩm</strong></td>
-                                                      <td class="w-100"><span class="ellipsis">HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN</span></td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-6 pl-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Dịch giả</strong></td>
-                                                      <td class="w-100">NGUYỄN THỊ BÍCH NGỌC</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Ngôn ngữ xuất bản</strong></td>
-                                                      <td class="w-100">Tiếng Việt</td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="Accordion" id="">
-                                  <div class="Accordion-parent" id="AccordionSubParent4_20720">
-                                    <div class="Card card card-middle dark" id=""> 
-                                      <div class="card-header d-flex align-items-center justify-content-between">
-                                        <h3 class="card-header-title d-flex align-items-center">Thông tin định dạng
-                                        </h3>
-                                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub5" aria-expanded="true" aria-controls="AccordionSub5"><i class="tio-chevron-down"></i></div>
-                                      </div>
-                                      <div class="collapse show" id="AccordionSub5" data-parent="#AccordionSubParent4_20720">
-                                        <div class="card-body">
-                                          <div class="row">
-                                            <div class="col-md-6 pr-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Loại Xuẩt bản phẩm</strong></td>
-                                                      <td class="w-100">Sách in, Sách điển tử</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Khổ sách</strong></td>
-                                                      <td class="w-100">Chiều dài: 24,0 cm, Chiều rông: 17,0 cm</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Ngày đủ bản thảo</strong></td>
-                                                      <td class="w-100">27/09/2022</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Loại giấy ruột</strong></td>
-                                                      <td class="w-100">C150</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Số màu in ruột</strong></td>
-                                                      <td class="w-100">1</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Số lượng in</strong></td>
-                                                      <td class="w-100">1000</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Phát hành tại</strong></td>
-                                                      <td class="w-100">NXB Xây Dựng</td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-6 pl-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Số trang</strong></td>
-                                                      <td class="w-100">620</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Giá bìa</strong></td>
-                                                      <td class="w-100">240.000 đ</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Ngày dự kiến ra sách</strong></td>
-                                                      <td class="w-100">62027/09/2022</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Loại giấy bìa</strong></td>
-                                                      <td class="w-100">C350</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Số màu in bìa</strong></td>
-                                                      <td class="w-100">4</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Định dạng điện tử</strong></td>
-                                                      <td class="w-100">pdf</td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="Accordion" id="">
-                                  <div class="Accordion-parent" id="AccordionSubParent5_64988">
-                                    <div class="Card card card-middle dark" id=""> 
-                                      <div class="card-header d-flex align-items-center justify-content-between">
-                                        <h3 class="card-header-title d-flex align-items-center">Thông tin Bản quyền
-                                        </h3>
-                                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub6" aria-expanded="true" aria-controls="AccordionSub6"><i class="tio-chevron-down"></i></div>
-                                      </div>
-                                      <div class="collapse show" id="AccordionSub6" data-parent="#AccordionSubParent5_64988">
-                                        <div class="card-body">
-                                          <div class="row">
-                                            <div class="col-md-6 pr-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Sở hữu bản quyền</strong></td>
-                                                      <td class="w-100">NXB Xây Dựng</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Người chịu trách nhiệm</strong></td>
-                                                      <td class="w-100">Đào Ngọc Long</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Bản quyền đến</strong></td>
-                                                      <td class="w-100">27/09/2022</td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-6 pl-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Kiểu bản quyền</strong></td>
-                                                      <td class="w-100">Có thời hạn</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Bản quyền từ</strong></td>
-                                                      <td class="w-100">27/09/2022</td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="Accordion" id="">
-                                  <div class="Accordion-parent" id="AccordionSubParent6_95870">
-                                    <div class="Card card card-middle dark" id=""> 
-                                      <div class="card-header d-flex align-items-center justify-content-between">
-                                        <h3 class="card-header-title d-flex align-items-center">Thông tin Hợp đồng xuất bản
-                                        </h3>
-                                        <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub7" aria-expanded="true" aria-controls="AccordionSub7"><i class="tio-chevron-down"></i></div>
-                                      </div>
-                                      <div class="collapse show" id="AccordionSub7" data-parent="#AccordionSubParent6_95870">
-                                        <div class="card-body">
-                                          <div class="row">
-                                            <div class="col-md-6 pr-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Số hợp đồng</strong></td>
-                                                      <td class="w-100">HKDH8239203</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Ngày hiệu lực</strong></td>
-                                                      <td class="w-100">27/09/2022</td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
-                                            <div class="col-md-6 pl-md-2 mb-3">
-                                              <div class="Table">
-                                                <table class="table">
-                                                  <tbody>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Kiểu hợp đồng</strong></td>
-                                                      <td class="w-100">Có thời hạn</td>
-                                                    </tr>
-                                                    <tr> 
-                                                      <td class="text-nowrap"><strong>Ngày hết hạn</strong></td>
-                                                      <td class="w-100">27/09/2022</td>
-                                                    </tr>
-                                                  </tbody>
-                                                </table>
-                                              </div>
-                                            </div>
+                                        <div class="col-md-6 pl-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Dịch giả</strong></td>
+                                                  <td class="w-100">NGUYỄN THỊ BÍCH NGỌC</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Ngôn ngữ xuất bản</strong></td>
+                                                  <td class="w-100">Tiếng Việt</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
                                           </div>
                                         </div>
                                       </div>
@@ -1758,178 +1489,190 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Accordion" id="lichsuxuatbanpham">
-                      <div class="Accordion-parent" id="AccordionParent5_5638">
-                        <div class="Card card card-middle" id=""> 
-                          <div class="card-header d-flex align-items-center justify-content-between">
-                            <h3 class="card-header-title d-flex align-items-center">Lịch sử thao tác
-                            </h3>
-                            <button class="js-daterangepicker-predefined ml-auto mr-2 btn btn-ghost Card-suffix-text p-0"><i class="tio-date-range mr-2"></i><span class="js-daterangepicker-predefined-preview"></span></button>
-                            <div class="Card-collapse-arrow" role="button" data-toggle="collapse" data-target="#Accordion5" aria-expanded="true" aria-controls="Accordion5"><i class="tio-chevron-down"></i></div>
-                          </div>
-                          <div class="collapse show" id="Accordion5" data-parent="#AccordionParent5_5638">
-                            <div class="card-body p-0">
-                              <div class="Table" style="margin: -1px">
-                                <table class="table">
-                                  <tbody> 
-                                    <tr>
-                                      <td class="text-center Table-index">1</td>
-                                      <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center Table-index">2</td>
-                                      <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center Table-index">3</td>
-                                      <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center Table-index">4</td>
-                                      <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center Table-index">5</td>
-                                      <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                <div class="Table-pagination d-flex align-items-center justify-content-between border-start border-end border-bottom">
-                                  <div class="Table-pagination-perpage d-flex align-items-center"><span class="Table-pagination-perpage-text">Hiển thị:</span>
-                                    <div class="Select">
-                                      <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;undefined&quot; }">
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                        <option value="20">20</option>
-                                      </select>
-                                    </div><span class="Table-pagination-perpage-text">/ 28</span>
+                            <div class="Accordion" id="">
+                              <div class="Accordion-parent" id="AccordionSubParent4_32602">
+                                <div class="Card card card-middle dark" id=""> 
+                                  <div class="card-header d-flex align-items-center justify-content-between">
+                                    <h3 class="card-header-title d-flex align-items-center">Thông tin định dạng
+                                    </h3>
+                                    <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub5" aria-expanded="true" aria-controls="AccordionSub5"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <ul class="Pagination pagination mb-0">
-                                    <li class="page-item"> <a class="page-link" href="#">Trước</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"> <a class="page-link" href="#">Sau</a></li>
-                                  </ul>
+                                  <div class="collapse show" id="AccordionSub5" data-parent="#AccordionSubParent4_32602">
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-6 pr-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Loại Xuẩt bản phẩm</strong></td>
+                                                  <td class="w-100">Sách in, Sách điển tử</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Khổ sách</strong></td>
+                                                  <td class="w-100">Chiều dài: 24,0 cm, Chiều rông: 17,0 cm</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Ngày đủ bản thảo</strong></td>
+                                                  <td class="w-100">27/09/2022</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Loại giấy ruột</strong></td>
+                                                  <td class="w-100">C150</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Số màu in ruột</strong></td>
+                                                  <td class="w-100">1</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Số lượng in</strong></td>
+                                                  <td class="w-100">1000</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Phát hành tại</strong></td>
+                                                  <td class="w-100">NXB Xây Dựng</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 pl-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Số trang</strong></td>
+                                                  <td class="w-100">620</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Giá bìa</strong></td>
+                                                  <td class="w-100">240.000 đ</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Ngày dự kiến ra sách</strong></td>
+                                                  <td class="w-100">62027/09/2022</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Loại giấy bìa</strong></td>
+                                                  <td class="w-100">C350</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Số màu in bìa</strong></td>
+                                                  <td class="w-100">4</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Định dạng điện tử</strong></td>
+                                                  <td class="w-100">pdf</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="Accordion" id="binhluanvaduyet">
-                      <div class="Accordion-parent" id="AccordionParent6_7230">
-                        <div class="Card card card-middle" id=""> 
-                          <div class="card-header d-flex align-items-center justify-content-between">
-                            <h3 class="card-header-title d-flex align-items-center">Bình luận và duyệt
-                            </h3>
-                            <button class="js-daterangepicker-predefined ml-auto mr-2 btn btn-ghost Card-suffix-text p-0"><i class="tio-date-range mr-2"></i><span class="js-daterangepicker-predefined-preview"></span></button>
-                            <div class="Card-collapse-arrow" role="button" data-toggle="collapse" data-target="#Accordion6" aria-expanded="true" aria-controls="Accordion6"><i class="tio-chevron-down"></i></div>
-                          </div>
-                          <div class="collapse show" id="Accordion6" data-parent="#AccordionParent6_7230">
-                            <div class="card-body p-0">
-                              <div class="Table" style="margin: -1px">
-                                <table class="table">
-                                  <thead> 
-                                    <tr> 
-                                      <th class="text-center">#</th>
-                                      <th>Công đoạn</th>
-                                      <th>Người bình luận</th>
-                                      <th>Nội dung bình luận</th>
-                                      <th class="text-center">Trạng thái</th>
-                                      <th>Thời gian</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody> 
-                                    <tr>
-                                      <td class="text-center Table-index">1</td>
-                                      <td>Phê duyệt đề tài</td>
-                                      <td>Giám đốc</td>
-                                      <td>Tôi duyệt đề tài này</td>
-                                      <td>
-                                        <div class="center">
-                                          <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
-                                          </button>
-                                        </div>
-                                      </td>
-                                      <td>23:13 30/09/22</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center Table-index">2</td>
-                                      <td>Phê duyệt đề tài</td>
-                                      <td>Giám đốc</td>
-                                      <td>Tôi duyệt đề tài này</td>
-                                      <td>
-                                        <div class="center">
-                                          <button class="Button btn btn-primary middle Button-badge" type="button">Đã duyệt
-                                          </button>
-                                        </div>
-                                      </td>
-                                      <td>23:13 30/09/22</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center Table-index">3</td>
-                                      <td>Phê duyệt đề tài</td>
-                                      <td>Giám đốc</td>
-                                      <td>Tôi duyệt đề tài này</td>
-                                      <td>
-                                        <div class="center">
-                                          <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
-                                          </button>
-                                        </div>
-                                      </td>
-                                      <td>23:13 30/09/22</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center Table-index">4</td>
-                                      <td>Phê duyệt đề tài</td>
-                                      <td>Giám đốc</td>
-                                      <td>Tôi duyệt đề tài này</td>
-                                      <td>
-                                        <div class="center">
-                                          <button class="Button btn btn-primary middle Button-badge" type="button">Đã duyệt
-                                          </button>
-                                        </div>
-                                      </td>
-                                      <td>23:13 30/09/22</td>
-                                    </tr>
-                                    <tr>
-                                      <td class="text-center Table-index">5</td>
-                                      <td>Phê duyệt đề tài</td>
-                                      <td>Giám đốc</td>
-                                      <td>Tôi duyệt đề tài này</td>
-                                      <td>
-                                        <div class="center">
-                                          <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
-                                          </button>
-                                        </div>
-                                      </td>
-                                      <td>23:13 30/09/22</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                <div class="Table-pagination d-flex align-items-center justify-content-between border-start border-end border-bottom">
-                                  <div class="Table-pagination-perpage d-flex align-items-center"><span class="Table-pagination-perpage-text">Hiển thị:</span>
-                                    <div class="Select">
-                                      <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;undefined&quot; }">
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                        <option value="20">20</option>
-                                      </select>
-                                    </div><span class="Table-pagination-perpage-text">/ 28</span>
+                            <div class="Accordion" id="">
+                              <div class="Accordion-parent" id="AccordionSubParent5_56790">
+                                <div class="Card card card-middle dark" id=""> 
+                                  <div class="card-header d-flex align-items-center justify-content-between">
+                                    <h3 class="card-header-title d-flex align-items-center">Thông tin Bản quyền
+                                    </h3>
+                                    <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub6" aria-expanded="true" aria-controls="AccordionSub6"><i class="tio-chevron-down"></i></div>
                                   </div>
-                                  <ul class="Pagination pagination mb-0">
-                                    <li class="page-item"> <a class="page-link" href="#">Trước</a></li>
-                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"> <a class="page-link" href="#">Sau</a></li>
-                                  </ul>
+                                  <div class="collapse show" id="AccordionSub6" data-parent="#AccordionSubParent5_56790">
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-6 pr-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Sở hữu bản quyền</strong></td>
+                                                  <td class="w-100">NXB Xây Dựng</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Người chịu trách nhiệm</strong></td>
+                                                  <td class="w-100">Đào Ngọc Long</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Bản quyền đến</strong></td>
+                                                  <td class="w-100">27/09/2022</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 pl-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Kiểu bản quyền</strong></td>
+                                                  <td class="w-100">Có thời hạn</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Bản quyền từ</strong></td>
+                                                  <td class="w-100">27/09/2022</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="Accordion" id="">
+                              <div class="Accordion-parent" id="AccordionSubParent6_75044">
+                                <div class="Card card card-middle dark" id=""> 
+                                  <div class="card-header d-flex align-items-center justify-content-between">
+                                    <h3 class="card-header-title d-flex align-items-center">Thông tin Hợp đồng xuất bản
+                                    </h3>
+                                    <div class="Card-collapse-arrow ml-auto" role="button" data-toggle="collapse" data-target="#AccordionSub7" aria-expanded="true" aria-controls="AccordionSub7"><i class="tio-chevron-down"></i></div>
+                                  </div>
+                                  <div class="collapse show" id="AccordionSub7" data-parent="#AccordionSubParent6_75044">
+                                    <div class="card-body">
+                                      <div class="row">
+                                        <div class="col-md-6 pr-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Số hợp đồng</strong></td>
+                                                  <td class="w-100">HKDH8239203</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Ngày hiệu lực</strong></td>
+                                                  <td class="w-100">27/09/2022</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 pl-md-2 mb-3">
+                                          <div class="Table">
+                                            <table class="table">
+                                              <tbody>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Kiểu hợp đồng</strong></td>
+                                                  <td class="w-100">Có thời hạn</td>
+                                                </tr>
+                                                <tr> 
+                                                  <td class="text-nowrap"><strong>Ngày hết hạn</strong></td>
+                                                  <td class="w-100">27/09/2022</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -1938,9 +1681,184 @@
                       </div>
                     </div>
                   </div>
-                  <div id="scrollSpyEnd"></div>
+                </div>
+                <div class="Accordion mb-3" id="lichsuxuatbanpham">
+                  <div class="Accordion-parent" id="AccordionParent5_18435">
+                    <div class="Card card card-middle" id=""> 
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h3 class="card-header-title d-flex align-items-center">Lịch sử thao tác
+                        </h3>
+                        <button class="js-daterangepicker-predefined ml-auto mr-2 btn btn-ghost Card-suffix-text p-0"><i class="tio-date-range mr-2"></i><span class="js-daterangepicker-predefined-preview"></span></button>
+                        <div class="Card-collapse-arrow" role="button" data-toggle="collapse" data-target="#Accordion5" aria-expanded="true" aria-controls="Accordion5"><i class="tio-chevron-down"></i></div>
+                      </div>
+                      <div class="collapse show" id="Accordion5" data-parent="#AccordionParent5_18435">
+                        <div class="card-body p-0">
+                          <div class="Table" style="margin: -1px">
+                            <table class="table">
+                              <tbody> 
+                                <tr>
+                                  <td class="text-center Table-index">1</td>
+                                  <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center Table-index">2</td>
+                                  <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center Table-index">3</td>
+                                  <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center Table-index">4</td>
+                                  <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center Table-index">5</td>
+                                  <td>Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div class="Table-pagination d-flex align-items-center justify-content-between border-start border-end border-bottom">
+                              <div class="Table-pagination-perpage d-flex align-items-center"><span class="Table-pagination-perpage-text">Hiển thị:</span>
+                                <div class="Select">
+                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;undefined&quot; }">
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                  </select>
+                                </div><span class="Table-pagination-perpage-text">/ 28</span>
+                              </div>
+                              <ul class="Pagination pagination mb-0">
+                                <li class="page-item"> <a class="page-link" href="#">Trước</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"> <a class="page-link" href="#">Sau</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Accordion mb-3" id="binhluanvaduyet">
+                  <div class="Accordion-parent" id="AccordionParent6_19998">
+                    <div class="Card card card-middle" id=""> 
+                      <div class="card-header d-flex align-items-center justify-content-between">
+                        <h3 class="card-header-title d-flex align-items-center">Bình luận và duyệt
+                        </h3>
+                        <button class="js-daterangepicker-predefined ml-auto mr-2 btn btn-ghost Card-suffix-text p-0"><i class="tio-date-range mr-2"></i><span class="js-daterangepicker-predefined-preview"></span></button>
+                        <div class="Card-collapse-arrow" role="button" data-toggle="collapse" data-target="#Accordion6" aria-expanded="true" aria-controls="Accordion6"><i class="tio-chevron-down"></i></div>
+                      </div>
+                      <div class="collapse show" id="Accordion6" data-parent="#AccordionParent6_19998">
+                        <div class="card-body p-0">
+                          <div class="Table" style="margin: -1px">
+                            <table class="table">
+                              <thead> 
+                                <tr> 
+                                  <th class="text-center">#</th>
+                                  <th>Công đoạn</th>
+                                  <th>Người bình luận</th>
+                                  <th>Nội dung bình luận</th>
+                                  <th class="text-center">Trạng thái</th>
+                                  <th>Thời gian</th>
+                                </tr>
+                              </thead>
+                              <tbody> 
+                                <tr>
+                                  <td class="text-center Table-index">1</td>
+                                  <td>Phê duyệt đề tài</td>
+                                  <td>Giám đốc</td>
+                                  <td>Tôi duyệt đề tài này</td>
+                                  <td>
+                                    <div class="center">
+                                      <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
+                                      </button>
+                                    </div>
+                                  </td>
+                                  <td>23:13 30/09/22</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center Table-index">2</td>
+                                  <td>Phê duyệt đề tài</td>
+                                  <td>Giám đốc</td>
+                                  <td>Tôi duyệt đề tài này</td>
+                                  <td>
+                                    <div class="center">
+                                      <button class="Button btn btn-primary middle Button-badge" type="button">Đã duyệt
+                                      </button>
+                                    </div>
+                                  </td>
+                                  <td>23:13 30/09/22</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center Table-index">3</td>
+                                  <td>Phê duyệt đề tài</td>
+                                  <td>Giám đốc</td>
+                                  <td>Tôi duyệt đề tài này</td>
+                                  <td>
+                                    <div class="center">
+                                      <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
+                                      </button>
+                                    </div>
+                                  </td>
+                                  <td>23:13 30/09/22</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center Table-index">4</td>
+                                  <td>Phê duyệt đề tài</td>
+                                  <td>Giám đốc</td>
+                                  <td>Tôi duyệt đề tài này</td>
+                                  <td>
+                                    <div class="center">
+                                      <button class="Button btn btn-primary middle Button-badge" type="button">Đã duyệt
+                                      </button>
+                                    </div>
+                                  </td>
+                                  <td>23:13 30/09/22</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center Table-index">5</td>
+                                  <td>Phê duyệt đề tài</td>
+                                  <td>Giám đốc</td>
+                                  <td>Tôi duyệt đề tài này</td>
+                                  <td>
+                                    <div class="center">
+                                      <button class="Button btn btn-soft-dark middle Button-badge" type="button">Trả lại
+                                      </button>
+                                    </div>
+                                  </td>
+                                  <td>23:13 30/09/22</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div class="Table-pagination d-flex align-items-center justify-content-between border-start border-end border-bottom">
+                              <div class="Table-pagination-perpage d-flex align-items-center"><span class="Table-pagination-perpage-text">Hiển thị:</span>
+                                <div class="Select">
+                                  <select class="js-select2-custom form-select" autocomplete="off" data-hs-select2-options="{ &quot;minimumResultsForSearch&quot;: &quot;-1&quot;, &quot;placeholder&quot;: &quot;undefined&quot; }">
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                  </select>
+                                </div><span class="Table-pagination-perpage-text">/ 28</span>
+                              </div>
+                              <ul class="Pagination pagination mb-0">
+                                <li class="page-item"> <a class="page-link" href="#">Trước</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"> <a class="page-link" href="#">Sau</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div id="scrollSpyEnd"></div>
             </div>
             <div class="col-lg-3 pl-lg-2"><div class="ScrollSpy navbar-vertical navbar-expand-lg">
               <button class="navbar-toggler btn btn-block btn-white mb-3" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="scrollSpyParent" data-toggle="collapse" data-target="#scrollSpyParent"><span class="d-flex justify-content-between align-items-center"><span class="h5 mb-0">Điều hướng trên trang</span><span class="navbar-toggle-default">

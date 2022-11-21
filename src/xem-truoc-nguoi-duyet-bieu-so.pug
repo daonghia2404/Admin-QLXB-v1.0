@@ -22,307 +22,306 @@ block pages
   .PreviewPage 
     .content.container-fluid
       .row 
-        .col-lg-9.pr-lg-2
-          +Card({ id: 'bieuso', noPadding: true })
-            .PreviewPage-submit.d-flex.flex-wrap.mb-3.border
-              +Button({ title: 'Duyệt', icon: 'tio-checkmark-square-outlined mr-1', variant: 'btn-primary' })  
-              +Button({ title: 'Từ chối', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
-              +Button({ title: 'Comment', icon: 'tio-sms-chat-outlined mr-1', variant: 'btn-soft-dark' })  
-              +Button({ title: 'In biểu', icon: 'tio-print mr-1', variant: 'btn-soft-dark' })  
+        .col-lg-9.pr-lg-2#bieuso
+          .PreviewPage-submit.d-flex.flex-wrap.mb-3.border
+            +Button({ title: 'Duyệt', icon: 'tio-checkmark-square-outlined mr-1', variant: 'btn-primary' })  
+            +Button({ title: 'Từ chối', icon: 'tio-clear mr-1', variant: 'btn-soft-dark' })  
+            +Button({ title: 'Comment', icon: 'tio-sms-chat-outlined mr-1', variant: 'btn-soft-dark' })  
+            +Button({ title: 'In biểu', icon: 'tio-print mr-1', variant: 'btn-soft-dark' })  
 
-            .accordion
-              +Accordion({ className: '', mainId: 'thongtinchung', id: 'Accordion1', parentId: 'AccordionParent1', title: 'Thông tin chung' })
-                .row 
-                  .col-md-6.pr-md-2.mb-3
-                    +Table({})
-                      tbody
-                        tr 
-                          td #[strong Người gửi]
-                          td Đỗ Thị Hòa
-                        tr 
-                          td #[strong Người duyệt]
-                          td Đỗ Thị Hòa
-                        tr 
-                          td #[strong Ngày duyệt]
-                          td 27/09/2022
+          .accordion
+            +Accordion({ className: 'mb-3', mainId: 'thongtinchung', id: 'Accordion1', parentId: 'AccordionParent1', title: 'Thông tin chung' })
+              .row 
+                .col-md-6.pr-md-2.mb-3
+                  +Table({})
+                    tbody
+                      tr 
+                        td #[strong Người gửi]
+                        td Đỗ Thị Hòa
+                      tr 
+                        td #[strong Người duyệt]
+                        td Đỗ Thị Hòa
+                      tr 
+                        td #[strong Ngày duyệt]
+                        td 27/09/2022
 
-                  .col-md-6.pl-md-2.mb-3
-                    +Table({})
-                      tbody
-                        tr 
-                          td #[strong Ngày gửi]
-                          td 27/09/2022
-                        tr 
-                          td #[strong Mã biẻu]
-                          td AKHDSH9237
+                .col-md-6.pl-md-2.mb-3
+                  +Table({})
+                    tbody
+                      tr 
+                        td #[strong Ngày gửi]
+                        td 27/09/2022
+                      tr 
+                        td #[strong Mã biẻu]
+                        td AKHDSH9237
 
-                .accordion
-                  +Accordion({ id: 'AccordionSub1', parentId: 'AccordionSubParent1', title: 'Tiến độ đề tài', dark: true })
-                    +Table({})
-                      tbody
-                        tr 
-                          td.text-nowrap #[strong Đang thuộc công đoạn]
-                          td.w-100
-                            .d-flex 
-                              +Button({ title: 'Xét duyệt đề tài', variant: 'btn-outline-primary', badge: true, size: 'btn-lg' })
-                        tr 
-                          td.text-nowrap #[strong Trạng thái]
-                          td.w-100
-                            .d-flex 
-                              +Button({ title: 'Chờ duyệt', variant: 'btn-warning', badge: true, size: 'btn-lg' })
-                        tr 
-                          td.text-nowrap #[strong Tiến độ]
-                          td.w-100
-                            .d-flex 
-                              +Button({ title: 'Đang tiến hành', variant: 'btn-warning', badge: true, size: 'btn-lg' })
+              .accordion
+                +Accordion({ id: 'AccordionSub1', parentId: 'AccordionSubParent1', title: 'Tiến độ đề tài', dark: true })
+                  +Table({})
+                    tbody
+                      tr 
+                        td.text-nowrap #[strong Đang thuộc công đoạn]
+                        td.w-100
+                          .d-flex 
+                            +Button({ title: 'Xét duyệt đề tài', variant: 'btn-outline-primary', badge: true, size: 'btn-lg' })
+                      tr 
+                        td.text-nowrap #[strong Trạng thái]
+                        td.w-100
+                          .d-flex 
+                            +Button({ title: 'Chờ duyệt', variant: 'btn-warning custom', badge: true, size: 'btn-lg' })
+                      tr 
+                        td.text-nowrap #[strong Tiến độ]
+                        td.w-100
+                          .d-flex 
+                            +Button({ title: 'Đang tiến hành', variant: 'btn-warning custom', badge: true, size: 'btn-lg' })
 
-                  +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent2', title: 'Thông tin Cơ bản', dark: true })
-                    +Table({})
-                      tbody
-                        tr 
-                          td.text-nowrap #[strong Tên XBP]
-                          td.w-100 HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
-                        tr 
-                          td.text-nowrap #[strong Tên gốc]
-                          td.w-100
-                        tr 
-                          td.text-nowrap #[strong Tác giả]
-                          td.w-100
-                            |NGUYỄN THỊ BÍCH NGỌC
-                            +Button({ className: 'ml-2', title: 'Chủ biên', variant: 'btn-info', badge: true, })
-                        tr 
-                          td.text-nowrap #[strong Tác giả]
-                          td.w-100
-                        tr 
-                          td.text-nowrap #[strong Phương thức xuất bản]
-                          td.w-100 Tự xuất bản
-                        tr 
-                          td.text-nowrap #[strong Đăng ký mới/ Tái bản]
-                          td.w-100 Đăng ký mới
+                +Accordion({ id: 'AccordionSub2', parentId: 'AccordionSubParent2', title: 'Thông tin Cơ bản', dark: true })
+                  +Table({})
+                    tbody
+                      tr 
+                        td.text-nowrap #[strong Tên XBP]
+                        td.w-100 HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
+                      tr 
+                        td.text-nowrap #[strong Tên gốc]
+                        td.w-100
+                      tr 
+                        td.text-nowrap #[strong Tác giả]
+                        td.w-100
+                          |NGUYỄN THỊ BÍCH NGỌC
+                          +Button({ className: 'ml-2', title: 'Chủ biên', variant: 'btn-info', badge: true, })
+                      tr 
+                        td.text-nowrap #[strong Tác giả]
+                        td.w-100
+                      tr 
+                        td.text-nowrap #[strong Phương thức xuất bản]
+                        td.w-100 Tự xuất bản
+                      tr 
+                        td.text-nowrap #[strong Đăng ký mới/ Tái bản]
+                        td.w-100 Đăng ký mới
 
-                  +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent3', title: 'Đối tượng sử dụng và phân loại', dark: true })
-                    .row
-                      .col-md-6.pr-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Chủ đề]
-                              td.w-100 Khoa học - Kỹ thuật
-                            tr 
-                              td.text-nowrap #[strong Nhóm độ tuổi]
-                              td.w-100 12-18
-                            tr 
-                              td.text-nowrap #[strong Lĩnh vực - Ngành]
-                              td.w-100 Khoa học - Kỹ thuật
+                +Accordion({ id: 'AccordionSub3', parentId: 'AccordionSubParent3', title: 'Đối tượng sử dụng và phân loại', dark: true })
+                  .row
+                    .col-md-6.pr-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Chủ đề]
+                            td.w-100 Khoa học - Kỹ thuật
+                          tr 
+                            td.text-nowrap #[strong Nhóm độ tuổi]
+                            td.w-100 12-18
+                          tr 
+                            td.text-nowrap #[strong Lĩnh vực - Ngành]
+                            td.w-100 Khoa học - Kỹ thuật
 
-                      .col-md-6.pl-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Nhóm đối tượng]
-                              td.w-100 Khoa học - Kỹ thuật
-                            tr 
-                              td.text-nowrap #[strong Trình độ]
-                              td.w-100
+                    .col-md-6.pl-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Nhóm đối tượng]
+                            td.w-100 Khoa học - Kỹ thuật
+                          tr 
+                            td.text-nowrap #[strong Trình độ]
+                            td.w-100
 
-                  +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent4', title: 'Thông tin ngôn ngữ', dark: true })
-                    .row
-                      .col-md-6.pr-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Là sách dịch?]
-                              td.w-100 Có
-                            tr 
-                              td.text-nowrap #[strong Ngôn ngữ gốc]
-                              td.w-100 Tiếng Anh
-                            tr 
-                              td.text-nowrap #[strong Dịch từ ấn phẩm]
-                              td.w-100
-                                span.ellipsis HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
+                +Accordion({ id: 'AccordionSub4', parentId: 'AccordionSubParent4', title: 'Thông tin ngôn ngữ', dark: true })
+                  .row
+                    .col-md-6.pr-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Là sách dịch?]
+                            td.w-100 Có
+                          tr 
+                            td.text-nowrap #[strong Ngôn ngữ gốc]
+                            td.w-100 Tiếng Anh
+                          tr 
+                            td.text-nowrap #[strong Dịch từ ấn phẩm]
+                            td.w-100
+                              span.ellipsis HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
 
-                      .col-md-6.pl-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Dịch giả]
-                              td.w-100 NGUYỄN THỊ BÍCH NGỌC
-                            tr 
-                              td.text-nowrap #[strong Ngôn ngữ xuất bản]
-                              td.w-100 Tiếng Việt
+                    .col-md-6.pl-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Dịch giả]
+                            td.w-100 NGUYỄN THỊ BÍCH NGỌC
+                          tr 
+                            td.text-nowrap #[strong Ngôn ngữ xuất bản]
+                            td.w-100 Tiếng Việt
 
-                  +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent5', title: 'Thông tin định dạng', dark: true })
-                    .row
-                      .col-md-6.pr-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Loại Xuẩt bản phẩm]
-                              td.w-100 Sách in, Sách điển tử
-                            tr 
-                              td.text-nowrap #[strong Khổ sách]
-                              td.w-100 Chiều dài: 24,0 cm, Chiều rông: 17,0 cm
-                            tr 
-                              td.text-nowrap #[strong Ngày đủ bản thảo]
-                              td.w-100 27/09/2022
-                            tr 
-                              td.text-nowrap #[strong Loại giấy ruột]
-                              td.w-100 C150
-                            tr 
-                              td.text-nowrap #[strong Số màu in ruột]
-                              td.w-100 1
-                            tr 
-                              td.text-nowrap #[strong Số lượng in]
-                              td.w-100 1000
-                            tr 
-                              td.text-nowrap #[strong Phát hành tại]
-                              td.w-100 NXB Xây Dựng
+                +Accordion({ id: 'AccordionSub5', parentId: 'AccordionSubParent5', title: 'Thông tin định dạng', dark: true })
+                  .row
+                    .col-md-6.pr-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Loại Xuẩt bản phẩm]
+                            td.w-100 Sách in, Sách điển tử
+                          tr 
+                            td.text-nowrap #[strong Khổ sách]
+                            td.w-100 Chiều dài: 24,0 cm, Chiều rông: 17,0 cm
+                          tr 
+                            td.text-nowrap #[strong Ngày đủ bản thảo]
+                            td.w-100 27/09/2022
+                          tr 
+                            td.text-nowrap #[strong Loại giấy ruột]
+                            td.w-100 C150
+                          tr 
+                            td.text-nowrap #[strong Số màu in ruột]
+                            td.w-100 1
+                          tr 
+                            td.text-nowrap #[strong Số lượng in]
+                            td.w-100 1000
+                          tr 
+                            td.text-nowrap #[strong Phát hành tại]
+                            td.w-100 NXB Xây Dựng
 
-                      .col-md-6.pl-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Số trang]
-                              td.w-100 620
-                            tr 
-                              td.text-nowrap #[strong Giá bìa]
-                              td.w-100 240.000 đ
-                            tr 
-                              td.text-nowrap #[strong Ngày dự kiến ra sách]
-                              td.w-100 62027/09/2022
-                            tr 
-                              td.text-nowrap #[strong Loại giấy bìa]
-                              td.w-100 C350
-                            tr 
-                              td.text-nowrap #[strong Số màu in bìa]
-                              td.w-100 4
-                            tr 
-                              td.text-nowrap #[strong Định dạng điện tử]
-                              td.w-100 pdf
+                    .col-md-6.pl-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Số trang]
+                            td.w-100 620
+                          tr 
+                            td.text-nowrap #[strong Giá bìa]
+                            td.w-100 240.000 đ
+                          tr 
+                            td.text-nowrap #[strong Ngày dự kiến ra sách]
+                            td.w-100 62027/09/2022
+                          tr 
+                            td.text-nowrap #[strong Loại giấy bìa]
+                            td.w-100 C350
+                          tr 
+                            td.text-nowrap #[strong Số màu in bìa]
+                            td.w-100 4
+                          tr 
+                            td.text-nowrap #[strong Định dạng điện tử]
+                            td.w-100 pdf
 
-                  +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent6', title: 'Thông tin Bản quyền', dark: true })
-                    .row
-                      .col-md-6.pr-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Sở hữu bản quyền]
-                              td.w-100 NXB Xây Dựng
-                            tr 
-                              td.text-nowrap #[strong Người chịu trách nhiệm]
-                              td.w-100 Đào Ngọc Long
-                            tr 
-                              td.text-nowrap #[strong Bản quyền đến]
-                              td.w-100 27/09/2022
+                +Accordion({ id: 'AccordionSub6', parentId: 'AccordionSubParent6', title: 'Thông tin Bản quyền', dark: true })
+                  .row
+                    .col-md-6.pr-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Sở hữu bản quyền]
+                            td.w-100 NXB Xây Dựng
+                          tr 
+                            td.text-nowrap #[strong Người chịu trách nhiệm]
+                            td.w-100 Đào Ngọc Long
+                          tr 
+                            td.text-nowrap #[strong Bản quyền đến]
+                            td.w-100 27/09/2022
 
-                      .col-md-6.pl-md-2.mb-3
-                        +Table({})
-                          tbody
+                    .col-md-6.pl-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Kiểu bản quyền]
+                            td.w-100 Có thời hạn
+                          tr 
+                            td.text-nowrap #[strong Bản quyền từ]
+                            td.w-100 27/09/2022
+
+                +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent7', title: 'Thông tin Hợp đồng xuất bản', dark: true })
+                  .row
+                    .col-md-6.pr-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Số hợp đồng]
+                            td.w-100 HKDH8239203
+                          tr 
+                            td.text-nowrap #[strong Ngày hiệu lực]
+                            td.w-100 27/09/2022
+
+                    .col-md-6.pl-md-2.mb-3
+                      +Table({})
+                        tbody
+                          tr 
+                            td.text-nowrap #[strong Kiểu hợp đồng]
+                            td.w-100 Có thời hạn
+                          tr 
+                            td.text-nowrap #[strong Ngày hết hạn]
+                            td.w-100 27/09/2022
+
+            +Accordion({ className: 'mb-3', mainId: 'banthaofile', id: 'Accordion2', parentId: 'AccordionParent2', title: 'Bản thảo & FILE' })
+              form(action="#") 
+                +Tab({
+                  className: 'mb-3',
+                  options: [
+                    { id: 'tab1', tabId: 'tabId1', label: 'Tất cả' },
+                    { id: 'tab2', tabId: 'tabId2', label: 'Phê duyệt đề tài' },
+                    { id: 'tab3', tabId: 'tabId3', label: '2.1 Duyệt cấp phép CXB' },
+                    { id: 'tab4', tabId: 'tabId4', label: '2.2 Xin cấp phép CXB' },
+                    { id: 'tab5', tabId: 'tabId5', label: '3. Ký HĐ Tác giả' },
+                    { id: 'tab6', tabId: 'tabId6', label: '4.2 Yêu cầu thiết kế' },
+                    { id: 'tab7', tabId: 'tabId7', label: '5.1 Thiết kế bìa' },
+                    { id: 'tab8', tabId: 'tabId8', label: '5.2 BTV Duyệt Market bìa	' },
+                  ],
+                })
+                .tab-content 
+                  each item, index in ['tabId1', 'tabId2', 'tabId3', 'tabId4', 'tabId5', 'tabId6', 'tabId7', 'tabId8']
+                    .tab-pane.fade(id=`${item}` role="tabpanel" class=`${index === 0 ? 'show active' : ''}`)
+                      +Table({})
+                        thead 
+                          tr 
+                            th.text-center #
+                            th Loại
+                            th Người bình luận
+                            th Thời gian
+                        tbody 
+                          each item in [1,2,3,4,5]
                             tr 
-                              td.text-nowrap #[strong Kiểu bản quyền]
-                              td.w-100 Có thời hạn
-                            tr 
-                              td.text-nowrap #[strong Bản quyền từ]
-                              td.w-100 27/09/2022
+                              td.text-center.Table-index= item
+                              td 
+                                .Table-icon   
+                                  if (item % 2 === 0)
+                                    img(src="./assets/icons/icon-docx.svg" alt="")
+                                  else
+                                    img(src="./assets/icons/icon-pdf.svg" alt="")
+                              td 
+                                a(href="#").Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
+                              td.text-nowrap 23:13’ 27/06/2022
 
-                  +Accordion({ id: 'AccordionSub7', parentId: 'AccordionSubParent7', title: 'Thông tin Hợp đồng xuất bản', dark: true })
-                    .row
-                      .col-md-6.pr-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Số hợp đồng]
-                              td.w-100 HKDH8239203
-                            tr 
-                              td.text-nowrap #[strong Ngày hiệu lực]
-                              td.w-100 27/09/2022
+            +Accordion({ className: 'mb-3', mainId: 'lichsuthaotac', id: 'Accordion3', parentId: 'AccordionParent3', title: 'Lịch sử thao tác', showDate: true, noPadding: true })
+              +Table({ style: 'margin: -1px', showPagination: true })
+                tbody 
+                  each item in [1,2,3,4,5]
+                    tr
+                      td.text-center.Table-index= item
+                      td Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022
 
-                      .col-md-6.pl-md-2.mb-3
-                        +Table({})
-                          tbody
-                            tr 
-                              td.text-nowrap #[strong Kiểu hợp đồng]
-                              td.w-100 Có thời hạn
-                            tr 
-                              td.text-nowrap #[strong Ngày hết hạn]
-                              td.w-100 27/09/2022
+            +Accordion({ className: 'mb-3', mainId: 'binhluanvaduyet', id: 'Accordion4', parentId: 'AccordionParent4', title: 'Bình luận và duyệt', showDate: true, noPadding: true })
+              +Table({ style: 'margin: -1px', showPagination: true })
+                thead 
+                  tr 
+                    th.text-center #
+                    th Công đoạn
+                    th Người bình luận
+                    th Nội dung bình luận
+                    th.text-center Trạng thái
+                    th Thời gian
+                tbody 
+                  each item in [1,2,3,4,5]
+                    tr
+                      td.text-center.Table-index= item
+                      td Phê duyệt đề tài
+                      td Giám đốc
+                      td Tôi duyệt đề tài này
+                      td
+                        .center
+                          +Button({ title: item % 2 === 0 ? 'Đã duyệt' : 'Trả lại', variant: item % 2 === 0 ? 'btn-primary' : 'btn-soft-dark', badge: true })
+                      td 23:13 30/09/22
 
-              +Accordion({ className: '', mainId: 'banthaofile', id: 'Accordion2', parentId: 'AccordionParent2', title: 'Bản thảo & FILE' })
-                form(action="#") 
-                  +Tab({
-                    className: 'mb-3',
-                    options: [
-                      { id: 'tab1', tabId: 'tabId1', label: 'Tất cả' },
-                      { id: 'tab2', tabId: 'tabId2', label: 'Phê duyệt đề tài' },
-                      { id: 'tab3', tabId: 'tabId3', label: '2.1 Duyệt cấp phép CXB' },
-                      { id: 'tab4', tabId: 'tabId4', label: '2.2 Xin cấp phép CXB' },
-                      { id: 'tab5', tabId: 'tabId5', label: '3. Ký HĐ Tác giả' },
-                      { id: 'tab6', tabId: 'tabId6', label: '4.2 Yêu cầu thiết kế' },
-                      { id: 'tab7', tabId: 'tabId7', label: '5.1 Thiết kế bìa' },
-                      { id: 'tab8', tabId: 'tabId8', label: '5.2 BTV Duyệt Market bìa	' },
-                    ],
-                  })
-                  .tab-content 
-                    each item, index in ['tabId1', 'tabId2', 'tabId3', 'tabId4', 'tabId5', 'tabId6', 'tabId7', 'tabId8']
-                      .tab-pane.fade(id=`${item}` role="tabpanel" class=`${index === 0 ? 'show active' : ''}`)
-                        +Table({})
-                          thead 
-                            tr 
-                              th.text-center #
-                              th Loại
-                              th Người bình luận
-                              th Thời gian
-                          tbody 
-                            each item in [1,2,3,4,5]
-                              tr 
-                                td.text-center.Table-index= item
-                                td 
-                                  .Table-icon   
-                                    if (item % 2 === 0)
-                                      img(src="./assets/icons/icon-docx.svg" alt="")
-                                    else
-                                      img(src="./assets/icons/icon-pdf.svg" alt="")
-                                td 
-                                  .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
-                                td.text-nowrap 23:13’ 27/06/2022
-
-              +Accordion({ className: '', mainId: 'lichsuthaotac', id: 'Accordion3', parentId: 'AccordionParent3', title: 'Lịch sử thao tác', showDate: true, noPadding: true })
-                +Table({ style: 'margin: -1px', showPagination: true })
-                  tbody 
-                    each item in [1,2,3,4,5]
-                      tr
-                        td.text-center.Table-index= item
-                        td Nguyễn Đình Toàn đã sửa tên Xuất bản phẩm 23:13’ 27/06/2022
-
-              +Accordion({ className: '', mainId: 'binhluanvaduyet', id: 'Accordion4', parentId: 'AccordionParent4', title: 'Bình luận và duyệt', showDate: true, noPadding: true })
-                +Table({ style: 'margin: -1px', showPagination: true })
-                  thead 
-                    tr 
-                      th.text-center #
-                      th Công đoạn
-                      th Người bình luận
-                      th Nội dung bình luận
-                      th.text-center Trạng thái
-                      th Thời gian
-                  tbody 
-                    each item in [1,2,3,4,5]
-                      tr
-                        td.text-center.Table-index= item
-                        td Phê duyệt đề tài
-                        td Giám đốc
-                        td Tôi duyệt đề tài này
-                        td
-                          .center
-                            +Button({ title: item % 2 === 0 ? 'Đã duyệt' : 'Trả lại', variant: item % 2 === 0 ? 'btn-primary' : 'btn-soft-dark', badge: true })
-                        td 23:13 30/09/22
-
-              +Accordion({ className: ' bottom', mainId: 'nhanxet', id: 'Accordion5', parentId: 'AccordionParent5', title: 'Nhận xét' })
-                .row 
-                  .col-12 
-                    +TextArea({ label: 'GHI CHÚ', placeholder: 'Nhập nội dung tại đây' })
+            +Accordion({ className: 'mb-3 bottom', mainId: 'nhanxet', id: 'Accordion5', parentId: 'AccordionParent5', title: 'Nhận xét' })
+              .row 
+                .col-12 
+                  +TextArea({ label: 'GHI CHÚ', placeholder: 'Nhập nội dung tại đây' })
 
 
-            #scrollSpyEnd
+          #scrollSpyEnd
 
         .col-lg-3.pl-lg-2
           +ScrollSpy({

@@ -8,7 +8,7 @@ block pages
     .content.container-fluid
       .row 
         .col-lg-9.pr-lg-2
-          +Card({})
+          +Card({ className: 'mb-3' })
             .PreviewPage-submit.d-flex.flex-wrap.mb-3.border(style="margin-top: -16px; margin-left: -16px; margin-right: -16px;")
               +Button({ title: 'Gửi', icon: 'tio-send-outlined mr-1', variant: 'btn-primary' })  
               +Button({ title: 'Xem danh sách lịch sử', icon: 'tio-invisible mr-1', variant: 'btn-soft-dark' })  
@@ -21,24 +21,24 @@ block pages
                 +Button({ title: 'Lưu nháp', size: 'btn-sm', variant: 'btn-white' })
                 +Button({ title: 'Đọc thử', size: 'btn-sm', variant: 'btn-white' })
 
-            .PreviewPage-view-file.mb-3
+            .PreviewPage-view-file
 
-            +Card({ title: 'Thông tin Cơ bản' })
-              +Table({ className: 'mb-3' })
-                tbody
-                  tr
-                    td.text-nowrap #[strong Trạng thái]
-                    td.w-100 Bản nháp / đã gửi vào bản đăng ký Xuất bản phẩm
-                  tr
-                    td.text-nowrap #[strong Thuộc Xuất bản phẩm]
-                    td.w-100
-                      |HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
-                      +Button({ className: 'ml-2', title: 'Gửi', badge: true, variant: 'btn-primary' })
-                      +Button({ className: 'ml-2', title: 'Xem danh sách lịch sử của XBP', badge: true, variant: 'btn-success' })
+          +Card({ title: 'Thông tin Cơ bản' })
+            +Table({ className: 'mb-3' })
+              tbody
+                tr
+                  td.text-nowrap #[strong Trạng thái]
+                  td.w-100 Bản nháp / đã gửi vào bản đăng ký Xuất bản phẩm
+                tr
+                  td.text-nowrap #[strong Thuộc Xuất bản phẩm]
+                  td.w-100
+                    |HƯỚNG DẪN THIẾT KẾ KIẾN TRÚC CẢNH QUAN
+                    +Button({ className: 'ml-2', title: 'Gửi', badge: true, variant: 'btn-primary' })
+                    +Button({ className: 'ml-2', title: 'Xem danh sách lịch sử của XBP', badge: true, variant: 'btn-success' })
 
-              +TextArea({ label: 'GHI CHÚ', placeholder: 'Nhập nội dung tại đây' })
-              
-            #scrollSpyEnd
+            +TextArea({ label: 'GHI CHÚ', placeholder: 'Nhập nội dung tại đây' })
+
+          #scrollSpyEnd
 
         .col-lg-3.pl-lg-2
           +ScrollSpy({

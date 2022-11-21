@@ -8,46 +8,25 @@ block pages
     .content.container-fluid
       .row 
         .col-lg-9.pr-lg-2
-          +Card({})
-            +Card({ className: 'mb-3', title: 'Xuất bản phẩm theo công đoạn' })
-              .DashboardPage-total-cards.d-flex.flex-wrap
-                each item in dataDashboardTotalCard
-                  +DashboardTotalCard(item)
+          +Card({ className: 'mb-3', title: 'Xuất bản phẩm theo công đoạn' })
+            .DashboardPage-total-cards.d-flex.flex-wrap
+              each item in dataDashboardTotalCard
+                +DashboardTotalCard(item)
 
-            .row 
-              .col-lg-6.pr-lg-2
-                +Card({ className: 'mb-3', title: 'Sách mới đăng ký', fullHeight: true, noPadding: true })
-                  .overflow-auto(style="max-height: 875px;")
-                    .DashboardPage-job
-                      each item in dataJobCards
-                        +JobCard(item)
+          .row 
+            .col-lg-6.pr-lg-2
+              +Card({ className: 'mb-3', title: 'Sách mới đăng ký', fullHeight: true, noPadding: true })
+                .overflow-y-auto(style="max-height: 875px;")
+                  .DashboardPage-job
+                    each item in dataBooksCards
+                      +JobCard(item)
 
-                  //- +Table({})
-                  //-   thead 
-                  //-     tr 
-                  //-       th.text-center #
-                  //-       th Tên sách
-                  //-       th Tác giả
-                  //-       th.text-center
-                  //-         <i class="tio-alarm"></i>
-
-                  //-   tbody 
-                  //-     each item in [1,2,3,4,5,6,7,8,9,10]
-                  //-       tr 
-                  //-         td.text-center
-                  //-           .Table-order
-                  //-             span= `${item < 10 ? '0' : ''}${item}`
-                  //-         td 
-                  //-           .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
-                  //-         td(style="color: #28A745").text-nowrap Phan Trọng Tuệ
-                  //-         td 23/11/22
-
-              .col-lg-6.pl-lg-2
-                +Card({ className: 'mb-3', title: 'Việc của bạn', fullHeight: true, noPadding: true })
-                  .overflow-auto(style="max-height: 875px;")
-                    .DashboardPage-job
-                      each item in dataJobCards
-                        +JobCard(item)
+            .col-lg-6.pl-lg-2
+              +Card({ className: 'mb-3', title: 'Việc của bạn', fullHeight: true, noPadding: true })
+                .overflow-y-auto(style="max-height: 875px;")
+                  .DashboardPage-job
+                    each item in dataJobCards
+                      +JobCard(item)
 
 
         .col-lg-3.pl-lg-2
@@ -59,7 +38,7 @@ block pages
               .DashboardPage-birthday-text #[small Bộ phận: Biên tập]
 
           +Card({ className: 'DashboardPage-birthday-user mb-3', title: 'Sinh nhật sắp tới', iconHeader: 'tio-calendar-note', orange: true, noPadding: true })
-            .overflow-auto(style="max-height: 375px")
+            .overflow-y-auto(style="max-height: 375px")
               +Table({})
                 tbody 
                   each item in [1,2,3,4,5,6,7,8]
@@ -83,7 +62,7 @@ block pages
                   tr 
                     td.text-center.Table-index= item
                     td 
-                      .Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
+                      a(href="#").Table-link.ellipsis Thế giới bên trong bất động sản: Mua, bán và tạo lợi nhuận trong thị trường bất động sản.
 
           +Card({ className: 'mb-3', title: 'Nhân viên online gần đây', size: 'small', dark: true, noPadding: true })
             .DashboardPage-users 

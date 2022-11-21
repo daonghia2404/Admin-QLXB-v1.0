@@ -1,6 +1,10 @@
 .Step {
   position: relative;
 
+  &-wrapper {
+    background: #ffffff;
+  }
+
   &-line {
     position: absolute;
     background: #E7EAF3;
@@ -8,6 +12,7 @@
     top: 10px;
     left: 50%;
     transform: translate(-50%, -50%);
+
     &-percent {
       @include fullAbsolute;
       background: #377DFF;

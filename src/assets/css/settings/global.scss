@@ -2,8 +2,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.main .content {
-  padding: .9375rem !important;
+.main {
+  background: #F3F4F6;
+
+  .content {
+    padding: .9375rem !important;
+  }
 }
 
 .form-label {
@@ -16,4 +20,8 @@
     color: #ED4C78;
     font-weight: 600;
   }
+}
+
+.overflow-y-auto {
+  overflow: hidden auto;
 }
