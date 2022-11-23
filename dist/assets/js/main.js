@@ -104,7 +104,6 @@ const storageCollpase = {
       const btnCollapse = document.querySelector(
         `[data-toggle="collapse"][data-target="#${collapse.id}"]`
       );
-      console.log(`#${collapse.id}`, collapse, btnCollapse);
       if (storageBefore.includes(`#${collapse.id}`)) {
         btnCollapse.classList.add("active");
         collapse.classList.add("show");

@@ -25,6 +25,17 @@
   }
 
   &.with-arrow {
+    .select2-selection,
+    .input-group-append,
+    .input-group-text {
+      border-top-right-radius: .3125rem !important;
+      border-bottom-right-radius: .3125rem !important;
+    }
+
+    .select2-selection {
+      background: $white;
+    }
+
     .input-group-append {
       position: absolute;
       height: 100%;

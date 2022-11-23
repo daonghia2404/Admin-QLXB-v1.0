@@ -1,4 +1,11 @@
 .FieldEditable {
+  position: relative;
+
+  .Accordion-parent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   &.header {
     .FieldEditable {
       &-header {
@@ -12,8 +19,9 @@
 
   &-header {
     min-height: 40px;
-    
-    & + .accordion-collapse {
+    transition: $common-transition;
+
+    &+.accordion-collapse {
       min-width: 790px;
     }
 
@@ -24,6 +32,21 @@
       justify-content: space-between;
       padding: 6px 20px;
       color: #58637C;
+      transition: $common-transition;
+
+      [data-toggle="collapse"] {
+        .Button {
+          border-radius: 50%;
+          transition: $common-transition;
+        }
+
+        &.active {
+          .Button {
+            background: rgba(#377DFF, 0.1);
+            color: #377DFF;
+          }
+        }
+      }
 
       &:not(:last-child) {
         border-right: 1px solid #E7EAF3;
@@ -120,9 +143,56 @@
     }
   }
 
+  .collapse.show {
+    &~.FieldEditable-header {
+      background: #F9FBFF;
+
+      .FieldEditable-header-item {
+        color: #377DFF;
+      }
+    }
+
+    .FieldEditable-body {
+
+      &::after,
+      &::before {
+        transition: $common-transition;
+        opacity: 1;
+      }
+    }
+  }
+
   &-body {
     border-top: 1px solid #E7EAF3;
     padding: 15px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 6px;
+      left: 0;
+      width: 2.5px;
+      height: 28px;
+      background: #377DFF;
+      transition: none;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    &::before {
+      @include fullAbsolute;
+      top: -1px;
+      height: calc(100% + 1px);
+      content: '';
+      border: 1px solid #377DFF;
+      opacity: 0;
+      transition: none;
+      pointer-events: none;
+    }
+
+    &.default-field {
+      background: #F3F4F6;
+    }
   }
 
   &-empty {

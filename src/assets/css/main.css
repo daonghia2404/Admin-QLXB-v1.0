@@ -360,6 +360,9 @@ template {
   color: #ED4C78;
   font-weight: 600;
 }
+.form-label span.hightlight {
+  color: #00C9A7;
+}
 
 .overflow-y-auto {
   overflow: hidden auto;
@@ -923,6 +926,15 @@ template {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+.Select.with-arrow .select2-selection,
+.Select.with-arrow .input-group-append,
+.Select.with-arrow .input-group-text {
+  border-top-right-radius: 0.3125rem !important;
+  border-bottom-right-radius: 0.3125rem !important;
+}
+.Select.with-arrow .select2-selection {
+  background: #fff;
+}
 .Select.with-arrow .input-group-append {
   position: absolute;
   height: 100%;
@@ -1091,12 +1103,20 @@ template {
   color: #677788;
 }
 
+.FieldEditable {
+  position: relative;
+}
+.FieldEditable .Accordion-parent {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .FieldEditable.header .FieldEditable-header-item {
   background: #F3F4F6;
   font-weight: 700;
 }
 .FieldEditable-header {
   min-height: 40px;
+  transition: 0.3s ease;
 }
 .FieldEditable-header + .accordion-collapse {
   min-width: 790px;
@@ -1108,6 +1128,15 @@ template {
   justify-content: space-between;
   padding: 6px 20px;
   color: #58637C;
+  transition: 0.3s ease;
+}
+.FieldEditable-header-item [data-toggle=collapse] .Button {
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.FieldEditable-header-item [data-toggle=collapse].active .Button {
+  background: rgba(55, 125, 255, 0.1);
+  color: #377DFF;
 }
 .FieldEditable-header-item:not(:last-child) {
   border-right: 1px solid #E7EAF3;
@@ -1165,9 +1194,48 @@ template {
   width: 28px;
   height: 28px;
 }
+.FieldEditable .collapse.show ~ .FieldEditable-header {
+  background: #F9FBFF;
+}
+.FieldEditable .collapse.show ~ .FieldEditable-header .FieldEditable-header-item {
+  color: #377DFF;
+}
+.FieldEditable .collapse.show .FieldEditable-body::after, .FieldEditable .collapse.show .FieldEditable-body::before {
+  transition: 0.3s ease;
+  opacity: 1;
+}
 .FieldEditable-body {
   border-top: 1px solid #E7EAF3;
   padding: 15px;
+}
+.FieldEditable-body::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 0;
+  width: 2.5px;
+  height: 28px;
+  background: #377DFF;
+  transition: none;
+  pointer-events: none;
+  opacity: 0;
+}
+.FieldEditable-body::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  top: -1px;
+  height: calc(100% + 1px);
+  content: "";
+  border: 1px solid #377DFF;
+  opacity: 0;
+  transition: none;
+  pointer-events: none;
+}
+.FieldEditable-body.default-field {
+  background: #F3F4F6;
 }
 .FieldEditable-empty {
   padding: 6px 20px;
